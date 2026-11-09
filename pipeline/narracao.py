@@ -5,12 +5,14 @@ import numpy as np
 import soundfile as sf
 from kokoro_onnx import Kokoro
 
+import os
 roteiro_path, saida_dir = sys.argv[1], sys.argv[2]
+MODELOS = os.environ.get("MODELOS", "/home/claude/tts")
 voz = sys.argv[3] if len(sys.argv) > 3 else "pm_alex"
-velocidade = float(sys.argv[4]) if len(sys.argv) > 4 else 1.05
+velocidade = float(sys.argv[4]) if len(sys.argv) > 4 else 1.0
 
 rot = json.load(open(roteiro_path))
-k = Kokoro("/home/claude/tts/kokoro-v1.0.onnx", "/home/claude/tts/voices-v1.0.bin")
+k = Kokoro(f"{MODELOS}/kokoro-v1.0.onnx", f"{MODELOS}/voices-v1.0.bin")
 
 PAUSA = 0.35  # segundos entre cenas
 INICIO = 0.3
