@@ -36,7 +36,7 @@ Use `episodios/JQE-S002/roteiro.json` como modelo. Campos:
 |---|---|
 | `numero_grande` | `valor` (texto curto, ex. "2×"), `linhas` [2 linhas], `pergunta` opcional |
 | `titulo` | `titulo` (str ou [linha1, linha2 em verde]), `subtitulo` |
-| `versus` | `a`, `b`, `centro` |
+| `versus` | `a`, `b`, `rotulo_a`, `rotulo_b` (o que é cada caixa), `centro` |
 | `formula` | `titulo`, `linha1` (conta), `resultado` (verde, grande), `nota` |
 | `barras` | `titulo` (str ou lista), `itens` [{rotulo, valor, texto, destaque, grupo}], `nota` |
 | `linhas` | `titulo`, `x_rotulo`, `x_ticks`, `ymax`, `ymin`, `y_passo`, `y_fmt` ("brl"/"num"/"pct"), `series` [{nome, pontos [[x,y]...], destaque, inicio, velocidade, rotulo_final}] |
@@ -69,4 +69,4 @@ Apague os `frame_*.png` antes do commit.
 - Plano gratuito: no máximo 10 posts agendados por canal. Antes de agendar, liste os agendados; se já houver post para a data, não duplique.
 
 ## Data de publicação
-Cada execução agenda para o **primeiro dia sem post agendado** a partir de amanhã (consultar `list_posts` com status scheduled). Registre a data em `PAUTAS.md`.
+A fila mantém cerca de uma semana agendada. Se algum canal tiver 9 ou mais posts agendados (limite do plano gratuito: 10), a rotina não produz nada naquele dia. Senão, agenda para o primeiro dia sem post no YouTube a partir de amanhã. Registre a data em `PAUTAS.md`.
