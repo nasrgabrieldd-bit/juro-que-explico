@@ -1,0 +1,160 @@
+{
+ "id": "JQE-S005",
+ "titulo": "Rendeu 10%. Mas quanto você ganhou de verdade?",
+ "pilar": "Investimentos",
+ "risco": "baixo — fórmula de Fisher, taxas ilustrativas",
+ "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos",
+ "parametros": {
+  "nominal": 0.1,
+  "inflacao": 0.045,
+  "valor": 1000,
+  "nominal_baixo": 0.04
+ },
+ "numeros_livres": [],
+ "calculos": {
+  "fator_nom": "1 + 0.10",
+  "fator_inf": "1 + 0.045",
+  "fator_baixo": "1 + 0.04",
+  "montante": "1000 * 1.10",
+  "preco_corrigido": "1000 * 1.045",
+  "poder": "1100 / 1.045",
+  "real": "(1.10 / 1.045 - 1) * 100",
+  "atalho": "10 - 4.5",
+  "perda_real": "(1 - 1.04 / 1.045) * 100"
+ },
+ "fontes": [
+  "Cálculo próprio: rentabilidade real = (1 + nominal) / (1 + inflação) − 1 (equação de Fisher)"
+ ],
+ "capa": {
+  "linha1": "Rendeu 10%.",
+  "linha2": "Ganhou quanto?",
+  "destaque": "Ganho real"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Seu investimento rendeu dez por cento no ano. Parece ótimo. Mas quanto você ganhou de verdade? Depende da inflação.",
+   "leg": "Seu investimento rendeu 10% no ano. Parece ótimo. Mas quanto você ganhou de verdade? Depende da inflação.",
+   "dados": {
+    "valor": "10%",
+    "linhas": [
+     "de rendimento",
+     "não é 10% de ganho"
+    ]
+   }
+  },
+  {
+   "id": "conceito",
+   "tipo": "titulo",
+   "tts": "Rentabilidade real é o rendimento depois de descontar a inflação. Ela mostra quanto o seu poder de compra cresceu, e não só o número que aparece no extrato.",
+   "leg": "Rentabilidade real é o rendimento depois de descontar a inflação. Mostra quanto o seu poder de compra cresceu, não só o número do extrato.",
+   "dados": {
+    "titulo": [
+     "Rentabilidade",
+     "real"
+    ],
+    "subtitulo": "quanto o seu poder de compra cresceu"
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "formula",
+   "tts": "Exemplo: você aplicou mil reais e terminou o ano com mil e cem. Se a inflação foi de quatro e meio por cento, o que custava mil reais agora custa mil e quarenta e cinco. Seus mil e cem compram o que mil e cinquenta e dois compravam antes.",
+   "leg": "Você aplicou R$ 1.000 e terminou com R$ 1.100. Com inflação de 4,5%, o que custava R$ 1.000 agora custa R$ 1.045. Seus R$ 1.100 compram o que R$ 1.052 compravam antes.",
+   "dados": {
+    "titulo": "Inflação de 4,5% no ano",
+    "linha1": "R$ 1.100 ÷ 1,045",
+    "resultado": "R$ 1.052,63",
+    "nota": "em poder de compra de antes"
+   }
+  },
+  {
+   "id": "conta",
+   "tipo": "formula",
+   "tts": "A conta certa é dividir um vírgula dez por um vírgula zero quarenta e cinco, e tirar um. O ganho real foi de cinco vírgula vinte e seis por cento.",
+   "leg": "A conta certa: 1,10 dividido por 1,045, menos 1. O ganho real foi de 5,26%.",
+   "dados": {
+    "titulo": "A conta certa",
+    "linha1": "1,10 ÷ 1,045 − 1",
+    "resultado": "= 5,26%",
+    "nota": "ganho real no ano"
+   }
+  },
+  {
+   "id": "atalho",
+   "tipo": "versus",
+   "tts": "Muita gente só subtrai: dez menos quatro e meio, cinco e meio por cento. É um atalho que chega perto quando as taxas são baixas, mas a conta certa é a divisão.",
+   "leg": "Muita gente só subtrai: 10 menos 4,5 dá 5,5%. O atalho chega perto com taxas baixas, mas a conta certa é a divisão.",
+   "dados": {
+    "a": "5,5%",
+    "b": "5,26%",
+    "rotulo_a": "atalho: 10 − 4,5",
+    "rotulo_b": "conta certa",
+    "centro": "≈"
+   }
+  },
+  {
+   "id": "negativo",
+   "tipo": "formula",
+   "tts": "E se o investimento rendesse quatro por cento, com a mesma inflação? O ganho real seria negativo: menos zero vírgula quarenta e oito por cento. O saldo sobe, mas o poder de compra cai.",
+   "leg": "E se rendesse 4%, com a mesma inflação? O ganho real seria negativo: −0,48%. O saldo sobe, mas o poder de compra cai.",
+   "dados": {
+    "titulo": "E se rendesse 4%?",
+    "linha1": "1,04 ÷ 1,045 − 1",
+    "resultado": "−0,48%",
+    "nota": "perdeu poder de compra"
+   }
+  },
+  {
+   "id": "como_usar",
+   "tipo": "lista",
+   "tts": "Para comparar direito: use a inflação do mesmo período, divida em vez de subtrair, e lembre que impostos e taxas reduzem ainda mais o ganho.",
+   "leg": "Para comparar direito: inflação do mesmo período, divida em vez de subtrair, e lembre que impostos e taxas reduzem o ganho.",
+   "dados": {
+    "titulo": [
+     "Para comparar direito"
+    ],
+    "itens": [
+     "inflação do mesmo período",
+     "divida, não subtraia",
+     "desconte impostos e taxas"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "E você, acha que o seu dinheiro ganhou da inflação este ano? Comenta aqui.",
+   "leg": "E você, acha que o seu dinheiro ganhou da inflação este ano? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Seu dinheiro ganhou",
+     "da inflação este ano?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Rendeu 10%? Veja quanto você ganhou de verdade (rentabilidade real)",
+   "texto": "Rentabilidade real é o rendimento descontada a inflação.\n\nExemplo: rendeu 10% e a inflação foi de 4,5%. O ganho real é 1,10 ÷ 1,045 − 1 = 5,26% (e não 5,5%).\nSe tivesse rendido 4%, o ganho real seria negativo: −0,48%.\n\nTaxas ilustrativas, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #inflacao #shorts"
+  },
+  "instagram": {
+   "texto": "Rendeu 10% no ano. Ganhou quanto de verdade?\n\nCom inflação de 4,5%:\n• ganho real = 1,10 ÷ 1,045 − 1 = 5,26%\n• se rendesse 4%, o ganho real seria −0,48%\n\nDivida, não subtraia. E lembre dos impostos e taxas.\n\nSeu dinheiro ganhou da inflação este ano? 👇\n\nTaxas ilustrativas. Narração gerada por IA.\n\n#educacaofinanceira #investimentos #inflacao #financaspessoais #dinheiro"
+  },
+  "tiktok": {
+   "texto": "Rendeu 10% com inflação de 4,5%? O ganho real é 5,26%, não 5,5%. Taxas ilustrativas, narração por IA. #educacaofinanceira #investimentos #inflacao #dinheiro"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador",
+ "numeros_fonte": []
+}

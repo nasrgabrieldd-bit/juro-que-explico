@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 74.959,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.3,
+   "dur": 7.083,
+   "texto": "Um por cento ao mês é o mesmo que doze por cento ao ano? Não é. E entender isso muda a forma como você compara qualquer taxa."
+  },
+  {
+   "id": "motivo",
+   "inicio": 7.733,
+   "dur": 9.877,
+   "texto": "O motivo é o juro composto. O juro de cada mês entra na conta e, no mês seguinte, também passa a render juro. Por isso não dá para simplesmente multiplicar por doze."
+  },
+  {
+   "id": "conta",
+   "inicio": 17.96,
+   "dur": 7.125,
+   "texto": "A conta é assim: um vírgula zero um, elevado a doze, menos um. Dá doze vírgula sessenta e oito por cento ao ano, e não doze."
+  },
+  {
+   "id": "reais",
+   "inicio": 25.435,
+   "dur": 9.621,
+   "texto": "Em reais: mil reais a um por cento ao mês viram mil cento e vinte e seis reais e oitenta e três centavos em um ano. Com doze por cento simples, seriam mil cento e vinte."
+  },
+  {
+   "id": "cresce",
+   "inicio": 35.407,
+   "dur": 12.949,
+   "texto": "E a diferença cresce com a taxa. Dois por cento ao mês dão vinte e seis vírgula oitenta e dois por cento ao ano, e não vinte e quatro. Três por cento ao mês dão quarenta e dois vírgula cinquenta e oito, e não trinta e seis."
+  },
+  {
+   "id": "inverso",
+   "inicio": 48.706,
+   "dur": 8.555,
+   "texto": "O caminho inverso também engana. Doze por cento ao ano equivalem a cerca de zero vírgula noventa e cinco por cento ao mês, e não a um por cento."
+  },
+  {
+   "id": "como_usar",
+   "inicio": 57.611,
+   "dur": 10.197,
+   "texto": "Então, antes de comparar um empréstimo com um investimento, coloque as duas taxas no mesmo período, converta com juro composto e desconfie de quem só multiplica por doze."
+  },
+  {
+   "id": "comenta",
+   "inicio": 68.158,
+   "dur": 4.885,
+   "texto": "Qual taxa você quer que eu converta no próximo vídeo? Escreve aqui nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 73.393,
+   "dur": 1.216,
+   "texto": "Juro que explico."
+  }
+ ]
+}

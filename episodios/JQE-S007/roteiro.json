@@ -1,0 +1,158 @@
+{
+ "id": "JQE-S007",
+ "titulo": "Parcelado sem juros ou à vista com desconto?",
+ "pilar": "Finanças pessoais",
+ "risco": "baixo — comparação por valor presente com rendimento ilustrativo",
+ "nota_tela": "Exemplo ilustrativo · rendimento hipotético, sem impostos",
+ "parametros": {
+  "preco": 1200,
+  "parcelas": 10,
+  "desconto": 0.1,
+  "rendimento_mes": 0.008,
+  "desconto_baixo": 0.03,
+  "dias_primeira_parcela": 30
+ },
+ "numeros_livres": [],
+ "calculos": {
+  "parcela": "1200 / 10",
+  "avista": "1200 * (1 - 0.10)",
+  "vp_parcelas": "120 * (1 - 1.008 ** -10) / 0.008",
+  "avista_3": "1200 * (1 - 0.03)"
+ },
+ "fontes": [
+  "Cálculo próprio: valor presente de 10 parcelas mensais postecipadas, VP = P × (1 − (1 + i)^−n) / i"
+ ],
+ "capa": {
+  "linha1": "Parcelado sem juros",
+  "linha2": "ou à vista?",
+  "destaque": "Faça a conta"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Mil e duzentos reais em dez vezes sem juros, ou mil e oitenta à vista? Qual sai mais barato?",
+   "leg": "R$ 1.200 em 10× sem juros ou R$ 1.080 à vista? Qual sai mais barato?",
+   "dados": {
+    "a": "10× R$ 120",
+    "b": "R$ 1.080",
+    "rotulo_a": "parcelado sem juros",
+    "rotulo_b": "à vista",
+    "centro": "?"
+   }
+  },
+  {
+   "id": "conceito",
+   "tipo": "titulo",
+   "tts": "Quando a loja dá desconto à vista, o parcelado sem juros tem um custo escondido: é justamente o desconto que você deixa de ganhar.",
+   "leg": "Quando a loja dá desconto à vista, o parcelado sem juros tem um custo escondido: o desconto que você deixa de ganhar.",
+   "dados": {
+    "titulo": [
+     "Sem juros",
+     "não é de graça"
+    ],
+    "subtitulo": "o desconto à vista é o custo do parcelado"
+   }
+  },
+  {
+   "id": "vp",
+   "tipo": "formula",
+   "tts": "Por outro lado, se você parcela, o dinheiro fica aplicado e rende enquanto você paga. Para comparar, a gente traz as parcelas para o valor de hoje, usando um rendimento de zero vírgula oito por cento ao mês. Dá cerca de mil cento e quarenta e nove reais.",
+   "leg": "Se você parcela, o dinheiro rende enquanto você paga. Trazendo as parcelas para o valor de hoje, com rendimento de 0,8% ao mês, dá cerca de R$ 1.149.",
+   "dados": {
+    "titulo": "Parcelas em valor de hoje",
+    "linha1": "10 × R$ 120 a 0,8% ao mês",
+    "resultado": "≈ R$ 1.149",
+    "nota": "primeira parcela em 30 dias"
+   }
+  },
+  {
+   "id": "compara",
+   "tipo": "barras",
+   "tts": "Comparando: as parcelas valem cerca de mil cento e quarenta e nove reais hoje. À vista, você paga mil e oitenta. Com dez por cento de desconto, pagar à vista sai mais barato.",
+   "leg": "As parcelas valem cerca de R$ 1.149 hoje. À vista, R$ 1.080. Com 10% de desconto, à vista sai mais barato.",
+   "dados": {
+    "titulo": [
+     "Quanto custa",
+     "em valor de hoje"
+    ],
+    "itens": [
+     {
+      "rotulo": "Parcelado",
+      "valor": 1148.85,
+      "texto": "R$ 1.148,85"
+     },
+     {
+      "rotulo": "À vista",
+      "valor": 1080,
+      "texto": "R$ 1.080",
+      "destaque": true
+     }
+    ],
+    "nota": "rendimento ilustrativo de 0,8% ao mês"
+   }
+  },
+  {
+   "id": "desconto_baixo",
+   "tipo": "formula",
+   "tts": "Mas se o desconto fosse de só três por cento, o preço à vista seria mil cento e sessenta e quatro reais. Aí o parcelado, com o dinheiro rendendo, sairia mais barato.",
+   "leg": "Mas com desconto de só 3%, o à vista seria R$ 1.164. Aí o parcelado, com o dinheiro rendendo, sairia mais barato.",
+   "dados": {
+    "titulo": "E se o desconto for 3%?",
+    "linha1": "à vista: R$ 1.164",
+    "resultado": "parcelar vence",
+    "nota": "R$ 1.164 > R$ 1.148,85"
+   }
+  },
+  {
+   "id": "como_usar",
+   "tipo": "lista",
+   "tts": "Então, antes de decidir: pergunte sempre o preço à vista, compare tudo em valor de hoje, e lembre que parcelar só compensa se o dinheiro ficar mesmo aplicado, e não for gasto em outra coisa.",
+   "leg": "Antes de decidir: pergunte o preço à vista, compare em valor de hoje, e lembre que parcelar só compensa se o dinheiro ficar aplicado.",
+   "dados": {
+    "titulo": [
+     "Antes de decidir"
+    ],
+    "itens": [
+     "pergunte o preço à vista",
+     "compare em valor de hoje",
+     "o dinheiro precisa render"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Você costuma pedir desconto à vista? Conta aqui nos comentários.",
+   "leg": "Você costuma pedir desconto à vista? Conta aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Você costuma pedir",
+     "desconto à vista?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Parcelado sem juros ou à vista com desconto? A conta certa",
+   "texto": "R$ 1.200 em 10× sem juros ou R$ 1.080 à vista?\n\nTrazendo as parcelas para o valor de hoje, com rendimento ilustrativo de 0,8% ao mês, elas valem cerca de R$ 1.148,85. À vista (10% de desconto) sai mais barato.\nCom desconto de só 3% (R$ 1.164), o parcelado sairia mais barato, desde que o dinheiro fique aplicado.\n\nValores ilustrativos, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #financaspessoais #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Parcelado sem juros ou à vista com desconto?\n\nR$ 1.200 em 10× ou R$ 1.080 à vista:\n• parcelas em valor de hoje (0,8% ao mês) → R$ 1.149\n• à vista → R$ 1.080 ✅\n• com desconto de 3% (R$ 1.164), o parcelado venceria\n\nSem juros não é de graça: o custo é o desconto que você perde.\n\nVocê costuma pedir desconto à vista? 👇\n\nValores ilustrativos. Narração gerada por IA.\n\n#educacaofinanceira #financaspessoais #dinheiro #economia"
+  },
+  "tiktok": {
+   "texto": "10× sem juros ou 10% de desconto à vista? Em valor de hoje, o à vista sai mais barato. Valores ilustrativos, narração por IA. #educacaofinanceira #financaspessoais #dinheiro"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador",
+ "numeros_fonte": []
+}

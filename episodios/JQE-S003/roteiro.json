@@ -1,0 +1,181 @@
+{
+ "id": "JQE-S003",
+ "titulo": "1% ao mês não é 12% ao ano",
+ "pilar": "Juros",
+ "risco": "baixo — matemática de taxas equivalentes, taxas ilustrativas",
+ "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos",
+ "parametros": {
+  "taxa_mes": 0.01,
+  "principal": 1000,
+  "meses": 12,
+  "taxa_ano_exemplo": 0.12
+ },
+ "numeros_livres": [],
+ "calculos": {
+  "fator": "1 + 0.01",
+  "anual_1": "(1.01 ** 12 - 1) * 100",
+  "simples_1": "1 * 12",
+  "anual_2": "(1.02 ** 12 - 1) * 100",
+  "simples_2": "2 * 12",
+  "anual_3": "(1.03 ** 12 - 1) * 100",
+  "simples_3": "3 * 12",
+  "montante": "1000 * 1.01 ** 12",
+  "montante_simples": "1000 * (1 + 0.01 * 12)",
+  "diferenca": "montante - montante_simples",
+  "mensal_de_12": "(1.12 ** (1 / 12) - 1) * 100"
+ },
+ "fontes": [
+  "Cálculo próprio: taxa equivalente composta (1 + i_mês)^12 − 1 e (1 + i_ano)^(1/12) − 1"
+ ],
+ "capa": {
+  "linha1": "1% ao mês",
+  "linha2": "é 12% ao ano?",
+  "destaque": "Não é."
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Um por cento ao mês é o mesmo que doze por cento ao ano? Não é. E entender isso muda a forma como você compara qualquer taxa.",
+   "leg": "1% ao mês é o mesmo que 12% ao ano? Não é. E entender isso muda como você compara qualquer taxa.",
+   "dados": {
+    "valor": "12,68%",
+    "linhas": [
+     "1% ao mês",
+     "não é 12% ao ano"
+    ]
+   }
+  },
+  {
+   "id": "motivo",
+   "tipo": "titulo",
+   "tts": "O motivo é o juro composto. O juro de cada mês entra na conta e, no mês seguinte, também passa a render juro. Por isso não dá para simplesmente multiplicar por doze.",
+   "leg": "O motivo é o juro composto. O juro de cada mês entra na conta e também passa a render juro. Por isso não dá para multiplicar por 12.",
+   "dados": {
+    "titulo": [
+     "Taxa ao mês",
+     "× taxa ao ano"
+    ],
+    "subtitulo": "o juro de cada mês também rende juro"
+   }
+  },
+  {
+   "id": "conta",
+   "tipo": "formula",
+   "tts": "A conta é assim: um vírgula zero um, elevado a doze, menos um. Dá doze vírgula sessenta e oito por cento ao ano, e não doze.",
+   "leg": "A conta: 1,01 elevado a 12, menos 1. Dá 12,68% ao ano, e não 12%.",
+   "dados": {
+    "titulo": "Como converter",
+    "linha1": "1,01¹² − 1",
+    "resultado": "= 12,68% ao ano",
+    "nota": "taxa mensal composta por 12 meses"
+   }
+  },
+  {
+   "id": "reais",
+   "tipo": "versus",
+   "tts": "Em reais: mil reais a um por cento ao mês viram mil cento e vinte e seis reais e oitenta e três centavos em um ano. Com doze por cento simples, seriam mil cento e vinte.",
+   "leg": "Em reais: R$ 1.000 a 1% ao mês viram R$ 1.126,83 em um ano. Com 12% simples, seriam R$ 1.120.",
+   "dados": {
+    "a": "R$ 1.120",
+    "b": "R$ 1.126,83",
+    "rotulo_a": "12% simples",
+    "rotulo_b": "1% ao mês composto",
+    "centro": "+R$ 6,83"
+   }
+  },
+  {
+   "id": "cresce",
+   "tipo": "barras",
+   "tts": "E a diferença cresce com a taxa. Dois por cento ao mês dão vinte e seis vírgula oitenta e dois por cento ao ano, e não vinte e quatro. Três por cento ao mês dão quarenta e dois vírgula cinquenta e oito, e não trinta e seis.",
+   "leg": "E a diferença cresce. 2% ao mês dão 26,82% ao ano, não 24%. 3% ao mês dão 42,58%, não 36%.",
+   "dados": {
+    "titulo": [
+     "Taxa ao mês",
+     "vira ao ano"
+    ],
+    "itens": [
+     {
+      "rotulo": "1% a.m.",
+      "valor": 12.68,
+      "texto": "12,68% (não 12%)"
+     },
+     {
+      "rotulo": "2% a.m.",
+      "valor": 26.82,
+      "texto": "26,82% (não 24%)"
+     },
+     {
+      "rotulo": "3% a.m.",
+      "valor": 42.58,
+      "texto": "42,58% (não 36%)",
+      "destaque": true
+     }
+    ],
+    "nota": "taxa anual equivalente com juro composto"
+   }
+  },
+  {
+   "id": "inverso",
+   "tipo": "formula",
+   "tts": "O caminho inverso também engana. Doze por cento ao ano equivalem a cerca de zero vírgula noventa e cinco por cento ao mês, e não a um por cento.",
+   "leg": "O caminho inverso também engana: 12% ao ano equivalem a cerca de 0,95% ao mês, e não a 1%.",
+   "dados": {
+    "titulo": "O caminho inverso",
+    "linha1": "12% ao ano",
+    "resultado": "≈ 0,95% ao mês",
+    "nota": "e não 1% ao mês"
+   }
+  },
+  {
+   "id": "como_usar",
+   "tipo": "lista",
+   "tts": "Então, antes de comparar um empréstimo com um investimento, coloque as duas taxas no mesmo período, converta com juro composto e desconfie de quem só multiplica por doze.",
+   "leg": "Antes de comparar um empréstimo com um investimento: mesmo período, conversão com juro composto, e desconfie de quem só multiplica por 12.",
+   "dados": {
+    "titulo": [
+     "Antes de comparar"
+    ],
+    "itens": [
+     "mesmo período nas duas",
+     "converta com juro composto",
+     "desconfie da conta ×12"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Qual taxa você quer que eu converta no próximo vídeo? Escreve aqui nos comentários.",
+   "leg": "Qual taxa você quer que eu converta no próximo vídeo? Escreve aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Qual taxa você quer",
+     "que eu converta?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "1% ao mês não é 12% ao ano: a conta que quase ninguém faz",
+   "texto": "Por que 1% ao mês não é 12% ao ano? Por causa do juro composto: o juro de cada mês também rende juro.\n\n1% ao mês = 12,68% ao ano\n2% ao mês = 26,82% ao ano (não 24%)\n3% ao mês = 42,58% ao ano (não 36%)\nNo caminho inverso, 12% ao ano ≈ 0,95% ao mês.\n\nTaxas ilustrativas. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #juros #jurocomposto #shorts"
+  },
+  "instagram": {
+   "texto": "1% ao mês é 12% ao ano? Não é.\n\n• 1% ao mês → 12,68% ao ano\n• 2% ao mês → 26,82% ao ano\n• 3% ao mês → 42,58% ao ano\n\nO juro de cada mês também rende juro. Antes de comparar taxas, coloque tudo no mesmo período.\n\nQual taxa você quer que eu converta? 👇\n\nTaxas ilustrativas. Narração gerada por IA.\n\n#educacaofinanceira #juros #jurocomposto #financaspessoais #dinheiro"
+  },
+  "tiktok": {
+   "texto": "1% ao mês não é 12% ao ano: com juro composto dá 12,68%. Taxas ilustrativas, narração por IA. #educacaofinanceira #juros #jurocomposto #dinheiro"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador",
+ "numeros_fonte": []
+}

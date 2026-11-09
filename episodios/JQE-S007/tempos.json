@@ -1,0 +1,55 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 67.74,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.3,
+   "dur": 5.44,
+   "texto": "Mil e duzentos reais em dez vezes sem juros, ou mil e oitenta à vista? Qual sai mais barato?"
+  },
+  {
+   "id": "conceito",
+   "inicio": 6.09,
+   "dur": 7.872,
+   "texto": "Quando a loja dá desconto à vista, o parcelado sem juros tem um custo escondido: é justamente o desconto que você deixa de ganhar."
+  },
+  {
+   "id": "vp",
+   "inicio": 14.312,
+   "dur": 14.933,
+   "texto": "Por outro lado, se você parcela, o dinheiro fica aplicado e rende enquanto você paga. Para comparar, a gente traz as parcelas para o valor de hoje, usando um rendimento de zero vírgula oito por cento ao mês. Dá cerca de mil cento e quarenta e nove reais."
+  },
+  {
+   "id": "compara",
+   "inicio": 29.595,
+   "dur": 10.368,
+   "texto": "Comparando: as parcelas valem cerca de mil cento e quarenta e nove reais hoje. À vista, você paga mil e oitenta. Com dez por cento de desconto, pagar à vista sai mais barato."
+  },
+  {
+   "id": "desconto_baixo",
+   "inicio": 40.313,
+   "dur": 9.536,
+   "texto": "Mas se o desconto fosse de só três por cento, o preço à vista seria mil cento e sessenta e quatro reais. Aí o parcelado, com o dinheiro rendendo, sairia mais barato."
+  },
+  {
+   "id": "como_usar",
+   "inicio": 50.199,
+   "dur": 11.435,
+   "texto": "Então, antes de decidir: pergunte sempre o preço à vista, compare tudo em valor de hoje, e lembre que parcelar só compensa se o dinheiro ficar mesmo aplicado, e não for gasto em outra coisa."
+  },
+  {
+   "id": "comenta",
+   "inicio": 61.984,
+   "dur": 3.84,
+   "texto": "Você costuma pedir desconto à vista? Conta aqui nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 66.174,
+   "dur": 1.216,
+   "texto": "Juro que explico."
+  }
+ ]
+}

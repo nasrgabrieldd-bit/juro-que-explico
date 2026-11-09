@@ -1,0 +1,297 @@
+{
+ "id": "JQE-S009",
+ "titulo": "R$ 15 por dia vira quanto em 10 anos",
+ "pilar": "Finanças pessoais",
+ "risco": "baixo — conta de hábito com taxa ilustrativa",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos",
+ "parametros": {
+  "gasto_dia": 15,
+  "dias_mes": 30,
+  "taxa_mes": 0.008,
+  "anos": 10,
+  "dia_baixo": 5,
+  "dia_alto": 30,
+  "assinatura_mes": 40
+ },
+ "numeros_livres": [],
+ "calculos": {
+  "mes": "15 * 30",
+  "ano": "450 * 12",
+  "dez_anos": "5400 * 10",
+  "dez_anos_mil": "dez_anos / 1000",
+  "investido": "450 * (1.008 ** 120 - 1) / 0.008",
+  "investido_mil": "investido / 1000",
+  "inv_5": "150 * (1.008 ** 120 - 1) / 0.008",
+  "inv_5_mil": "inv_5 / 1000",
+  "inv_30": "900 * (1.008 ** 120 - 1) / 0.008",
+  "inv_30_mil": "inv_30 / 1000",
+  "assin_10": "40 * 12 * 10",
+  "assin_inv": "40 * (1.008 ** 120 - 1) / 0.008"
+ },
+ "fontes": [
+  "Cálculo próprio: gasto diário × 30 dias; valor futuro de aportes mensais, VF = A × ((1 + i)^n − 1) / i"
+ ],
+ "capa": {
+  "linha1": "R$ 15 por dia",
+  "linha2": "vira quanto?",
+  "destaque": "Em 10 anos"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Quinze reais por dia. Um lanche, um café, uma taxa de entrega. Quanto isso vira em dez anos?",
+   "leg": "R$ 15 por dia. Um lanche, um café, uma taxa de entrega. Quanto isso vira em 10 anos?",
+   "dados": {
+    "valor": "R$ 15",
+    "linhas": [
+     "por dia",
+     "vira quanto em 10 anos?"
+    ]
+   }
+  },
+  {
+   "id": "mes",
+   "tipo": "formula",
+   "tts": "Primeiro, a conta simples: quinze reais vezes trinta dias são quatrocentos e cinquenta reais por mês. Em um ano, cinco mil e quatrocentos.",
+   "leg": "A conta simples: R$ 15 vezes 30 dias são R$ 450 por mês. Em um ano, R$ 5.400.",
+   "dados": {
+    "titulo": "No mês e no ano",
+    "linha1": "R$ 15 × 30 dias",
+    "resultado": "R$ 450/mês",
+    "nota": "R$ 5.400 por ano"
+   }
+  },
+  {
+   "id": "dez",
+   "tipo": "titulo",
+   "tts": "Em dez anos, cinquenta e quatro mil reais. Isso sem contar rendimento nenhum.",
+   "leg": "Em 10 anos, R$ 54.000. Isso sem contar rendimento nenhum.",
+   "dados": {
+    "titulo": [
+     "Em 10 anos",
+     "R$ 54.000"
+    ],
+    "subtitulo": "sem contar nenhum rendimento"
+   }
+  },
+  {
+   "id": "investido",
+   "tipo": "linhas",
+   "tts": "E se esse valor fosse investido todo mês, com rendimento ilustrativo de zero vírgula oito por cento ao mês? Em dez anos, chegaria a uns noventa mil reais.",
+   "leg": "E se esse valor fosse investido todo mês, rendendo 0,8% ao mês? Em 10 anos, chegaria a uns R$ 90 mil.",
+   "dados": {
+    "titulo": "R$ 450 por mês em 10 anos",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     5,
+     10
+    ],
+    "ymax": 105000,
+    "ymin": 0,
+    "y_passo": 25000,
+    "series": [
+     {
+      "nome": "investido a 0,8% ao mês",
+      "destaque": true,
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 90 mil",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        5644.05
+       ],
+       [
+        2,
+        11854.42
+       ],
+       [
+        3,
+        18687.93
+       ],
+       [
+        4,
+        26207.1
+       ],
+       [
+        5,
+        34480.74
+       ],
+       [
+        6,
+        43584.54
+       ],
+       [
+        7,
+        53601.81
+       ],
+       [
+        8,
+        64624.2
+       ],
+       [
+        9,
+        76752.56
+       ],
+       [
+        10,
+        90097.86
+       ]
+      ]
+     },
+     {
+      "nome": "só somado",
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 54 mil",
+      "pontos": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        5400
+       ],
+       [
+        2,
+        10800
+       ],
+       [
+        3,
+        16200
+       ],
+       [
+        4,
+        21600
+       ],
+       [
+        5,
+        27000
+       ],
+       [
+        6,
+        32400
+       ],
+       [
+        7,
+        37800
+       ],
+       [
+        8,
+        43200
+       ],
+       [
+        9,
+        48600
+       ],
+       [
+        10,
+        54000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "outros",
+   "tipo": "barras",
+   "tts": "Com outros valores: cinco reais por dia viram uns trinta mil em dez anos. Trinta reais por dia passam de cento e oitenta mil.",
+   "leg": "Outros valores: R$ 5 por dia viram uns R$ 30 mil em 10 anos. R$ 30 por dia passam de R$ 180 mil.",
+   "dados": {
+    "titulo": [
+     "Por dia, investido",
+     "durante 10 anos"
+    ],
+    "itens": [
+     {
+      "rotulo": "R$ 5/dia",
+      "valor": 30032.62,
+      "texto": "R$ 30 mil"
+     },
+     {
+      "rotulo": "R$ 15/dia",
+      "valor": 90097.86,
+      "texto": "R$ 90 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "R$ 30/dia",
+      "valor": 180195.72,
+      "texto": "R$ 180 mil"
+     }
+    ],
+    "nota": "aportes mensais a 0,8% ao mês"
+   }
+  },
+  {
+   "id": "assinaturas",
+   "tipo": "formula",
+   "tts": "E vale também para gastos mensais que a gente nem lembra que existem. Uma assinatura esquecida de quarenta reais por mês soma quatro mil e oitocentos reais em dez anos. Se esse valor fosse investido, seriam mais de oito mil.",
+   "leg": "Vale também para gastos que a gente esquece. Uma assinatura de R$ 40 por mês soma R$ 4.800 em 10 anos. Investido, passaria de R$ 8 mil.",
+   "dados": {
+    "titulo": "A assinatura esquecida",
+    "linha1": "R$ 40 por mês",
+    "resultado": "R$ 4.800",
+    "nota": "em 10 anos, sem rendimento"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Não é sobre cortar todo prazer. É sobre saber o tamanho de cada hábito, escolher o que vale a pena, e deixar o resto trabalhar por você.",
+   "leg": "Não é sobre cortar todo prazer. É saber o tamanho de cada hábito, escolher o que vale a pena e deixar o resto trabalhar.",
+   "dados": {
+    "titulo": [
+     "Não é sobre cortar tudo"
+    ],
+    "itens": [
+     "saiba o tamanho do hábito",
+     "escolha o que vale a pena",
+     "o resto pode render"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Qual é o gasto pequeno que você mais faz no dia a dia? Conta aqui nos comentários.",
+   "leg": "Qual é o gasto pequeno que você mais faz no dia a dia? Conta aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Qual gasto pequeno",
+     "você mais faz?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 15 por dia vira quanto em 10 anos? Faça a conta",
+   "texto": "R$ 15 por dia = R$ 450 por mês = R$ 5.400 por ano = R$ 54.000 em 10 anos, sem rendimento.\nInvestidos todo mês a 0,8% ao mês (taxa ilustrativa), chegariam a cerca de R$ 90 mil.\n\nR$ 5 por dia: cerca de R$ 30 mil. R$ 30 por dia: mais de R$ 180 mil.\n\nNão é sobre cortar tudo, é saber o tamanho de cada hábito.\n\nTaxa hipotética, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #financaspessoais #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "R$ 15 por dia vira quanto?\n\n• por mês → R$ 450\n• em 10 anos → R$ 54.000\n• investindo a 0,8% ao mês → cerca de R$ 90 mil\n\nNão é sobre cortar todo prazer. É saber o tamanho de cada hábito.\n\nQual gasto pequeno você mais faz? 👇\n\nTaxa hipotética. Narração gerada por IA.\n\n#educacaofinanceira #financaspessoais #dinheiro #economia"
+  },
+  "tiktok": {
+   "texto": "R$ 15 por dia são R$ 54 mil em 10 anos. Investidos, uns R$ 90 mil. Taxa hipotética, narração por IA. #educacaofinanceira #financaspessoais #dinheiro"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador",
+ "numeros_fonte": []
+}

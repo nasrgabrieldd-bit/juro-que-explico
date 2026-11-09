@@ -1,0 +1,55 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 67.057,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.3,
+   "dur": 7.701,
+   "texto": "Se você gasta três mil reais por mês, a sua reserva de emergência pode precisar de dezoito mil reais. Vamos fazer essa conta."
+  },
+  {
+   "id": "conceito",
+   "inicio": 8.351,
+   "dur": 11.264,
+   "texto": "Reserva de emergência é o dinheiro separado para imprevistos: perda de renda, um conserto, um problema de saúde. A função dela não é render muito, é estar disponível quando você precisar."
+  },
+  {
+   "id": "conta",
+   "inicio": 19.965,
+   "dur": 7.232,
+   "texto": "A conta é simples: custo de vida mensal vezes o número de meses de proteção. Use quanto você gasta, e não quanto você ganha."
+  },
+  {
+   "id": "meses",
+   "inicio": 27.547,
+   "dur": 12.523,
+   "texto": "Uma referência comum: três meses como mínimo, seis meses para quem tem renda estável, e doze meses para quem tem renda variável, como autônomos. Com três mil de gasto, são nove, dezoito ou trinta e seis mil reais."
+  },
+  {
+   "id": "construir",
+   "inicio": 40.42,
+   "dur": 10.389,
+   "texto": "Parece muito? Guardando quinhentos reais por mês, você chega aos dezoito mil em trinta e seis meses, sem contar o rendimento. E em dezoito meses já tem o mínimo de três meses."
+  },
+  {
+   "id": "onde",
+   "inicio": 51.159,
+   "dur": 8.853,
+   "texto": "E onde deixar esse dinheiro? Em uma aplicação de baixo risco e com resgate rápido, separada da conta do dia a dia, para não gastar sem perceber."
+  },
+  {
+   "id": "comenta",
+   "inicio": 60.363,
+   "dur": 4.779,
+   "texto": "Você já tem a sua reserva? Quantos meses ela cobre? Conta aqui nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 65.491,
+   "dur": 1.216,
+   "texto": "Juro que explico."
+  }
+ ]
+}

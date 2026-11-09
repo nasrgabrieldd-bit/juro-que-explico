@@ -1,0 +1,417 @@
+{
+ "id": "JQE-S008",
+ "titulo": "O custo de começar a investir 5 anos depois",
+ "pilar": "Investimentos",
+ "risco": "baixo — juro composto com taxa ilustrativa, sem produto",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos nem inflação",
+ "parametros": {
+  "aporte": 300,
+  "taxa_mes": 0.008,
+  "anos_a": 30,
+  "anos_b": 25,
+  "atraso": 5
+ },
+ "numeros_livres": [],
+ "calculos": {
+  "fv30": "300 * (1.008 ** 360 - 1) / 0.008",
+  "fv25": "300 * (1.008 ** 300 - 1) / 0.008",
+  "dif": "fv30 - fv25",
+  "fv30_mil": "fv30 / 1000",
+  "fv25_mil": "fv25 / 1000",
+  "dif_mil": "dif / 1000",
+  "aportado30_mil": "300 * 360 / 1000",
+  "aportado25_mil": "300 * 300 / 1000",
+  "extra_mil": "300 * 60 / 1000"
+ },
+ "fontes": [
+  "Cálculo próprio: valor futuro de aportes mensais, VF = A × ((1 + i)^n − 1) / i"
+ ],
+ "capa": {
+  "linha1": "Esperar 5 anos",
+  "linha2": "para começar custa",
+  "destaque": "R$ 250 mil"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Começar a investir cinco anos depois pode custar mais de duzentos e cinquenta mil reais. Mesmo que a diferença no que você guardou seja bem menor.",
+   "leg": "Começar a investir 5 anos depois pode custar mais de R$ 250 mil. Mesmo que a diferença no que você guardou seja bem menor.",
+   "dados": {
+    "valor": "R$ 250 mil",
+    "linhas": [
+     "é o custo de",
+     "esperar 5 anos"
+    ]
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "titulo",
+   "tts": "O exemplo: trezentos reais por mês, com rendimento ilustrativo de zero vírgula oito por cento ao mês. Uma pessoa começa agora, a outra cinco anos depois. As duas param na mesma data.",
+   "leg": "O exemplo: R$ 300 por mês, rendendo 0,8% ao mês. Uma pessoa começa agora, a outra 5 anos depois. As duas param na mesma data.",
+   "dados": {
+    "titulo": [
+     "O custo",
+     "de esperar"
+    ],
+    "subtitulo": "R$ 300 por mês, a 0,8% ao mês"
+   }
+  },
+  {
+   "id": "grafico",
+   "tipo": "linhas",
+   "tts": "Quem começa agora investe por trinta anos e chega a cerca de seiscentos e vinte e três mil reais. Quem espera investe por vinte e cinco e chega a uns trezentos e setenta e dois mil.",
+   "leg": "Quem começa agora investe por 30 anos e chega a cerca de R$ 623 mil. Quem espera investe por 25 e chega a uns R$ 372 mil.",
+   "dados": {
+    "titulo": "R$ 300 por mês a 0,8% ao mês",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     10,
+     20,
+     30
+    ],
+    "ymax": 720000,
+    "ymin": 0,
+    "y_passo": 100000,
+    "y_fmt": "brl",
+    "series": [
+     {
+      "nome": "começa agora",
+      "destaque": true,
+      "velocidade": 0.55,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 623 mil",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        3762.7
+       ],
+       [
+        2,
+        7902.95
+       ],
+       [
+        3,
+        12458.62
+       ],
+       [
+        4,
+        17471.4
+       ],
+       [
+        5,
+        22987.16
+       ],
+       [
+        6,
+        29056.36
+       ],
+       [
+        7,
+        35734.54
+       ],
+       [
+        8,
+        43082.8
+       ],
+       [
+        9,
+        51168.37
+       ],
+       [
+        10,
+        60065.24
+       ],
+       [
+        11,
+        69854.81
+       ],
+       [
+        12,
+        80626.65
+       ],
+       [
+        13,
+        92479.32
+       ],
+       [
+        14,
+        105521.28
+       ],
+       [
+        15,
+        119871.85
+       ],
+       [
+        16,
+        135662.33
+       ],
+       [
+        17,
+        153037.22
+       ],
+       [
+        18,
+        172155.47
+       ],
+       [
+        19,
+        193192.03
+       ],
+       [
+        20,
+        216339.37
+       ],
+       [
+        21,
+        241809.28
+       ],
+       [
+        22,
+        269834.8
+       ],
+       [
+        23,
+        300672.38
+       ],
+       [
+        24,
+        334604.15
+       ],
+       [
+        25,
+        371940.6
+       ],
+       [
+        26,
+        413023.33
+       ],
+       [
+        27,
+        458228.25
+       ],
+       [
+        28,
+        507968.98
+       ],
+       [
+        29,
+        562700.62
+       ],
+       [
+        30,
+        622923.97
+       ]
+      ]
+     },
+     {
+      "nome": "começa 5 anos depois",
+      "velocidade": 0.55,
+      "inicio": 1.2,
+      "rotulo_final": "R$ 372 mil",
+      "pontos": [
+       [
+        5,
+        0.0
+       ],
+       [
+        6,
+        3762.7
+       ],
+       [
+        7,
+        7902.95
+       ],
+       [
+        8,
+        12458.62
+       ],
+       [
+        9,
+        17471.4
+       ],
+       [
+        10,
+        22987.16
+       ],
+       [
+        11,
+        29056.36
+       ],
+       [
+        12,
+        35734.54
+       ],
+       [
+        13,
+        43082.8
+       ],
+       [
+        14,
+        51168.37
+       ],
+       [
+        15,
+        60065.24
+       ],
+       [
+        16,
+        69854.81
+       ],
+       [
+        17,
+        80626.65
+       ],
+       [
+        18,
+        92479.32
+       ],
+       [
+        19,
+        105521.28
+       ],
+       [
+        20,
+        119871.85
+       ],
+       [
+        21,
+        135662.33
+       ],
+       [
+        22,
+        153037.22
+       ],
+       [
+        23,
+        172155.47
+       ],
+       [
+        24,
+        193192.03
+       ],
+       [
+        25,
+        216339.37
+       ],
+       [
+        26,
+        241809.28
+       ],
+       [
+        27,
+        269834.8
+       ],
+       [
+        28,
+        300672.38
+       ],
+       [
+        29,
+        334604.15
+       ],
+       [
+        30,
+        371940.6
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "bolso",
+   "tipo": "barras",
+   "tts": "Do próprio bolso, a diferença é pequena: cento e oito mil contra noventa mil. São só dezoito mil reais a mais de aportes.",
+   "leg": "Do próprio bolso, a diferença é pequena: R$ 108 mil contra R$ 90 mil. Só R$ 18 mil a mais de aportes.",
+   "dados": {
+    "titulo": [
+     "Quanto cada um",
+     "tirou do bolso"
+    ],
+    "itens": [
+     {
+      "rotulo": "30 anos",
+      "valor": 108000,
+      "texto": "R$ 108 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "25 anos",
+      "valor": 90000,
+      "texto": "R$ 90 mil"
+     }
+    ],
+    "nota": "o resto do saldo é rendimento"
+   }
+  },
+  {
+   "id": "diferenca",
+   "tipo": "formula",
+   "tts": "Mas no final, a diferença passa de duzentos e cinquenta mil reais. Os últimos anos são os que mais rendem, porque o juro já incide sobre um saldo grande. E é desses anos que quem espera abre mão.",
+   "leg": "Mas no final, a diferença passa de R$ 250 mil. Os últimos anos são os que mais rendem, porque o juro incide sobre um saldo grande.",
+   "dados": {
+    "titulo": "A diferença final",
+    "linha1": "R$ 18 mil a mais de aportes",
+    "resultado": "+R$ 250 mil",
+    "nota": "no saldo final"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "A lição: o tempo pesa muito. Começar com pouco já conta, e a constância dos aportes importa mais do que acertar o momento.",
+   "leg": "A lição: o tempo pesa muito. Começar com pouco já conta, e a constância importa mais do que acertar o momento.",
+   "dados": {
+    "titulo": [
+     "O que levar daqui"
+    ],
+    "itens": [
+     "o tempo pesa muito",
+     "começar pequeno conta",
+     "constância importa"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Com quantos anos você começou a investir? Ou ainda vai começar? Conta aqui nos comentários.",
+   "leg": "Com quantos anos você começou a investir? Ou ainda vai começar? Conta aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Com quantos anos",
+     "você começou?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Quanto custa começar a investir 5 anos depois?",
+   "texto": "R$ 300 por mês, com rendimento ilustrativo de 0,8% ao mês:\n30 anos → cerca de R$ 623 mil (R$ 108 mil aportados)\n25 anos → cerca de R$ 372 mil (R$ 90 mil aportados)\n\nSó R$ 18 mil a mais de aportes, e mais de R$ 250 mil de diferença no final. Os últimos anos são os que mais rendem.\n\nTaxa hipotética, sem impostos nem inflação. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #shorts"
+  },
+  "instagram": {
+   "texto": "Esperar 5 anos para começar custa quanto?\n\nR$ 300 por mês a 0,8% ao mês:\n• 30 anos → R$ 623 mil\n• 25 anos → R$ 372 mil\n\nSó R$ 18 mil a mais do bolso. Mais de R$ 250 mil de diferença no final.\n\nCom quantos anos você começou? 👇\n\nTaxa hipotética, sem impostos. Narração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #financaspessoais #dinheiro"
+  },
+  "tiktok": {
+   "texto": "Começar 5 anos depois custou mais de R$ 250 mil nesse exemplo, com só R$ 18 mil a menos de aportes. Taxa hipotética, narração por IA. #educacaofinanceira #investimentos #jurocomposto"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador",
+ "numeros_fonte": []
+}

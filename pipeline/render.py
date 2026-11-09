@@ -135,7 +135,10 @@ def c_versus(d, t, dur, D):
         d.rounded_rectangle([x0 + dx, 640, x1 + dx, 860], radius=22, outline=cor + (int(255 * a),), width=4,
                             fill=(LIME + (int(28 * a),)) if cheio else None)
         texto(d, ((x0 + x1) / 2 + dx, 750), txt, "xb", cabe(d, txt, "xb", 64, 360), cor, a)
-    texto(d, (W / 2, 1010), D.get("centro", "?"), "black", 150, WHITE, jan(t, 1.8))
+    for chave, xc, a in (("rotulo_a", 295, a1), ("rotulo_b", 785, a2)):
+        if D.get(chave):  # legenda curta embaixo de cada caixa
+            texto(d, (xc, 900), D[chave], "semi", cabe(d, D[chave], "semi", 36, 400), GRAY, a)
+    texto(d, (W / 2, 1060 if (D.get("rotulo_a") or D.get("rotulo_b")) else 1010), D.get("centro", "?"), "black", 150, WHITE, jan(t, 1.8))
 
 
 def c_formula(d, t, dur, D):
@@ -223,7 +226,7 @@ def c_linhas(d, t, dur, D):
             x, y = sub[-1]
             d.ellipse([x - 11, y - 11, x + 11, y + 11], fill=cor)
             if prog >= 0.999 and s.get("rotulo_final"):
-                caixa(d, (min(x - 10, GX1 - 140), y - 60 if s.get("destaque") else y + 60), s["rotulo_final"],
+                caixa(d, (min(x - 10, GX1 - 140), y - 60 if s.get("destaque") else y + 85), s["rotulo_final"],
                       40, jan(t, ini + dur * s.get("velocidade", 0.6)), cheia=bool(s.get("destaque")), cor=cor)
         texto(d, (GX0 + 10, 470 + k * 50), "● " + s["nome"], "semi", 32, cor, jan(t, ini), "lm")
 
