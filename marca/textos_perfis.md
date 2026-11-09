@@ -3,12 +3,18 @@
 ## YouTube (@JuroqueExplico)
 **Nome:** Juro que Explico
 
-**Descrição:**
+**Descrição (aplicada via API em 09/11/2026):**
 Juro que Explico é um canal de educação financeira que explica dinheiro, juros, economia e investimentos sem complicação.
 
-Cada vídeo mostra a conta, o gráfico e a fonte, com dados do Banco Central, do IBGE e de outras fontes oficiais, para você entender o mecanismo, e não só a manchete.
+Cada vídeo mostra a conta e o gráfico por trás do assunto, para você entender o mecanismo, e não só a manchete. Quando usamos dados reais, citamos a fonte oficial, como Banco Central e IBGE.
+
+Vídeo novo todo dia.
 
 Conteúdo educativo, sem recomendação de investimento. Narração gerada por inteligência artificial.
+
+Contato: contato.juroqueexplico@gmail.com
+
+País: Brasil · Idioma: português
 
 **Palavras-chave do canal:** educação financeira, juros, juro composto, economia, investimentos, finanças pessoais, dinheiro
 
@@ -17,17 +23,17 @@ Conteúdo educativo, sem recomendação de investimento. Narração gerada por i
 ## Instagram (@juroqueexplicobr)
 **Nome:** Juro que Explico | Finanças
 **Categoria:** Educação
-**Bio (125 de 150 caracteres):**
-Dinheiro, juros e economia explicados sem complicação.
-A conta e a fonte em cada vídeo.
+**Bio (125 de 150 caracteres) — aplicar manualmente, a API não permite:**
+Dinheiro, juros e economia sem complicação.
+Um vídeo novo por dia, com a conta na tela.
 Conteúdo educativo, sem recomendação.
 
 **Imagem:** foto de perfil (mesma opção)
 
 ## TikTok (@juro.que.explico)
 **Nome:** Juro que Explico
-**Bio (77 de 80 caracteres):**
-Dinheiro e juros explicados sem complicação. A conta e a fonte em cada vídeo.
+**Bio (72 de 80 caracteres) — aplicar manualmente, a API não permite:**
+Dinheiro e juros sem complicação. Um vídeo por dia, com a conta na tela.
 
 **Imagem:** foto de perfil (mesma opção)
 
