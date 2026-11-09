@@ -8,16 +8,19 @@ Este repositório guarda o código que produz os vídeos e os vídeos prontos pa
 ## Estrutura
 - `pipeline/checagem.py`: passada de checagem independente. Recalcula cada número do roteiro e reprova se algo divergir.
 - `pipeline/narracao.py`: narração por cena com Kokoro TTS (vozes pt-BR, licença Apache 2.0).
-- `pipeline/render_s001.py`: render 9:16 (Pillow + FFmpeg) com identidade visual, gráficos, legendas e marca d'água.
+- `pipeline/render.py`: motor genérico de render 9:16 (Pillow + FFmpeg) com cenas tipadas, gráficos, legendas, capa e marca d'água.
+- `pipeline/checa.py`: checagem genérica de números, termos proibidos e duração.
+- `pipeline/render_s001.py` e `pipeline/checagem.py`: versões do piloto S001.
+- `PRODUCAO.md`: manual da rotina diária automática. `PAUTAS.md`: fila e histórico de pautas.
 - `marca/`: foto de perfil, banner e textos dos perfis.
 - `episodios/<ID>/`: roteiro, tempos, metadados por plataforma e vídeo final.
 
 ## Como rodar
 ```bash
 ./setup.sh                                   # instala dependências e baixa o modelo de voz
-python3 pipeline/checagem.py episodios/JQE-S001/roteiro.json
-python3 pipeline/narracao.py episodios/JQE-S001/roteiro.json episodios/JQE-S001 pm_alex 1.0
-python3 pipeline/render_s001.py episodios/JQE-S001
+python3 pipeline/checa.py episodios/JQE-S002
+python3 pipeline/narracao.py episodios/JQE-S002/roteiro.json episodios/JQE-S002 pm_alex 1.0
+python3 pipeline/render.py episodios/JQE-S002
 ```
 
 ## Regras de produção
