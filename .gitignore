@@ -1,0 +1,7 @@
+*.onnx
+voices-*.bin
+*.wav
+__pycache__/
+episodios/*/frame_*.png
+episodios/*/qa*.png
+episodios/*/contato*.png
