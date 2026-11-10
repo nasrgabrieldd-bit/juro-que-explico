@@ -6,57 +6,6 @@
   "nota": "subir via Composio YOUTUBE_UPLOAD_VIDEO + publishAt (ver PRODUCAO.md, 'Vídeo longo no YouTube'); Buffer recusa vídeo longo"
  },
  {
-  "episodio": "JQE-L001-P2",
-  "canal": "ig",
-  "create_post": {
-   "channelId": "6af2406162b70b94b0d6d913",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-16T18:05:00-03:00",
-   "text": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes. (Parte 2/3)\n\nR$ 500 por mês a 0,8% ao mês, por 30 anos:\n• aportes dos anos 1 a 10 (R$ 60 mil) → R$ 677 mil\n• aportes dos anos 11 a 30 (R$ 120 mil) → R$ 360 mil\n\nOs primeiros aportes são os que ficam mais tempo rendendo.\n\nParte 3 amanhã: quanto investir para viver de dividendos. 👇\n\nTaxa hipotética, sem impostos. Narração gerada por IA.\n\n#educacaofinanceira #jurocomposto #investimentos #financaspessoais #dinheiro",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-L001-P2/JQE-L001-P2_ig.mp4",
-      "metadata": {
-       "thumbnailOffset": 66821
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "instagram": {
-     "type": "reel",
-     "shouldShareToFeed": true,
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-L001-P2",
-  "canal": "tt",
-  "create_post": {
-   "channelId": "6af240ab62b70b94b0d6db65",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-16T18:10:00-03:00",
-   "text": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes. A conta está aqui. Parte 2 de 3. Taxa hipotética, narração por IA. #educacaofinanceira #jurocomposto #investimentos",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-L001-P2/JQE-L001-P2.mp4"
-     }
-    }
-   ],
-   "metadata": {
-    "tiktok": {
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
   "episodio": "JQE-L001-P3",
   "canal": "ig",
   "create_post": {
@@ -154,36 +103,6 @@
    "metadata": {
     "tiktok": {
      "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S011",
-  "canal": "yt",
-  "create_post": {
-   "channelId": "6af240c662b70b94b0d6dc1b",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-20T12:00:00-03:00",
-   "text": "R$ 100 mil com dividend yield de 8% ao ano (ilustrativo):\nGastando: R$ 8.000 por ano (≈ R$ 667/mês) para sempre; patrimônio parado em R$ 100 mil.\nReinvestindo por 20 anos: cerca de R$ 466 mil, pagando ≈ R$ 3.107 por mês.\n\nDY e preço constantes, sem impostos. Dividendos variam e não têm garantia. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #shorts",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S011/JQE-S011.mp4",
-      "metadata": {
-       "title": "Reinvestir ou gastar os dividendos? A bola de neve em 20 anos"
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "youtube": {
-     "title": "Reinvestir ou gastar os dividendos? A bola de neve em 20 anos",
-     "categoryId": "27",
-     "privacy": "public",
-     "isAiGenerated": true,
-     "madeForKids": false
     }
    }
   }
