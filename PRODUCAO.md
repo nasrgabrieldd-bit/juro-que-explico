@@ -1,4 +1,4 @@
-# Manual da produção diária — Provento
+# Manual da produção diária — Juro que Explico
 
 Este arquivo é a fonte de verdade da rotina automática. Cada execução diária lê este manual, produz **um** vídeo vertical e agenda a publicação para o dia seguinte.
 
@@ -61,7 +61,7 @@ Use `episodios/JQE-S002/roteiro.json` como modelo. Campos:
 | `linhas` | `titulo`, `x_rotulo`, `x_ticks`, `ymax`, `ymin`, `y_passo`, `y_fmt` ("brl"/"num"/"pct"), `series` [{nome, pontos [[x,y]...], destaque, inicio, velocidade, rotulo_final}] |
 | `lista` | `titulo` (lista), `itens` (3 itens curtos, até ~30 caracteres) |
 | `cta` | `linhas` [2], `botao` |
-| `assinatura` | sem dados; sempre a última cena, `tts`/`leg` = `assinatura_tts` de `marca/marca.json` ("Provento. O dinheiro que trabalha por você.") |
+| `assinatura` | sem dados; sempre a última cena, `tts`/`leg` = `assinatura_tts` de `marca/marca.json` ("Juro que explico.") |
 
 Limites de texto: títulos até ~22 caracteres por linha; `resultado` até ~14; legendas são quebradas automaticamente.
 Para o vídeo passar de 61 s, o roteiro precisa de cerca de 150 a 190 palavras faladas em 8 a 10 cenas.
@@ -88,7 +88,7 @@ Apague os `frame_*.png` antes do commit.
 - Plano gratuito: no máximo 10 posts agendados por canal. Antes de agendar, liste os agendados; se já houver post para a data, não duplique.
 
 ## Data de publicação
-A fila mantém cerca de uma semana agendada. Se algum canal tiver 9 ou mais posts agendados (limite do plano gratuito: 10), a rotina não produz nada naquele dia. Senão, agenda para o primeiro dia sem post no YouTube a partir de amanhã. Registre a data em `PAUTAS.md`.
+A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente.json`**: são posts já produzidos (vídeo no GitHub) que esperam vaga no Buffer. Para cada item, na ordem, se o canal tiver menos de 10 agendados, crie o post com os dados do item, confirme `scheduled` e tire o item da lista; se o `dueAt` já passou, mova para o primeiro dia livre daquele canal no mesmo horário. Só produza vídeo novo quando a lista estiver vazia e nenhum canal tiver 9 ou mais agendados. A data do vídeo novo é o primeiro dia, a partir de amanhã, sem post das 12:00 no YouTube (depois de tudo que está na lista e no Buffer). Registre a data em `PAUTAS.md`.
 
 ## Formato longo (YouTube 16:9) + cortes
 - Roteiro com `formato: "horizontal 16:9"`; o render recompõe as cenas num quadro 1920x1080. Alvo de 4 a 6 minutos (`checa.py` exige ≥ 4 min).

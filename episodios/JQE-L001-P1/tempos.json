@@ -1,7 +1,7 @@
 {
  "voz": "pm_alex",
  "velocidade": 1.0,
- "total": 75.689,
+ "total": 74.367,
  "cenas": [
   {
    "id": "b1_hook",
@@ -48,8 +48,8 @@
   {
    "id": "assinatura",
    "inicio": 72.801,
-   "dur": 2.539,
-   "texto": "Provento. O dinheiro que trabalha por você."
+   "dur": 1.216,
+   "texto": "Juro que explico."
   }
  ]
 }

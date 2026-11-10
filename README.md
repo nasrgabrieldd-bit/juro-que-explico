@@ -1,7 +1,7 @@
-# Provento — linha de produção
+# Juro que Explico — linha de produção
 
 Canal de educação financeira: **"O dinheiro sem complicação."**
-Marca: Provento (até 09/11/2026: Juro que Explico). Os @ das redes estão sendo trocados.
+Marca: Juro que Explico (@juroqueexplico). O rebrand estudado em 09–10/11 (Provento/Montante) foi descartado; arquivos em marca/*provento* ficam só como histórico.
 
 Este repositório guarda o código que produz os vídeos e os vídeos prontos para publicação. Tudo roda com ferramentas gratuitas.
 
