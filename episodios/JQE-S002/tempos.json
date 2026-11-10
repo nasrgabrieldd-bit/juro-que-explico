@@ -1,61 +1,61 @@
 {
  "voz": "pm_alex",
  "velocidade": 1.0,
- "total": 66.447,
+ "total": 67.57,
  "cenas": [
   {
    "id": "hook",
-   "inicio": 0.3,
+   "inicio": 0.1,
    "dur": 5.781,
    "texto": "Em quanto tempo o seu dinheiro dobra? Existe uma conta de cabeça que responde isso em segundos."
   },
   {
    "id": "regra",
-   "inicio": 6.431,
+   "inicio": 6.231,
    "dur": 9.749,
    "texto": "Ela se chama regra dos setenta e dois. Você divide setenta e dois pela taxa de juros ao ano. O resultado é, mais ou menos, o número de anos para o dinheiro dobrar."
   },
   {
    "id": "exemplo",
-   "inicio": 16.531,
+   "inicio": 16.331,
    "dur": 5.248,
    "texto": "Um exemplo com oito por cento ao ano: setenta e dois dividido por oito dá nove anos."
   },
   {
    "id": "conta_exata",
-   "inicio": 22.129,
+   "inicio": 21.929,
    "dur": 9.877,
    "texto": "E a conta exata? Com juro composto de oito por cento ao ano, mil reais chegam a mil novecentos e noventa e nove reais em nove anos. Praticamente o dobro. A regra acertou."
   },
   {
    "id": "taxas",
-   "inicio": 32.356,
+   "inicio": 32.156,
    "dur": 10.411,
    "texto": "Quanto maior a taxa, mais rápido dobra. A quatro por cento ao ano, dezoito anos. A seis por cento, doze. A doze por cento, só seis anos. E a conta exata fica sempre perto."
   },
   {
    "id": "divida",
-   "inicio": 43.117,
+   "inicio": 42.917,
    "dur": 8.725,
    "texto": "E vale para dívidas também. Uma dívida a três por cento ao mês dobra em cerca de vinte e quatro meses. Na conta exata, vinte e três meses e meio."
   },
   {
    "id": "como_usar",
-   "inicio": 52.192,
+   "inicio": 51.992,
    "dur": 7.552,
    "texto": "Para usar direito: a taxa e o tempo têm que estar no mesmo período, a regra vale para juro composto, e o resultado é uma aproximação."
   },
   {
    "id": "comenta",
-   "inicio": 60.094,
+   "inicio": 59.894,
    "dur": 4.437,
    "texto": "Que outra conta de cabeça você quer aprender? Escreve aqui nos comentários."
   },
   {
    "id": "assinatura",
-   "inicio": 64.881,
-   "dur": 1.216,
-   "texto": "Juro que explico."
+   "inicio": 64.681,
+   "dur": 2.539,
+   "texto": "Provento. O dinheiro que trabalha por você."
   }
  ]
 }

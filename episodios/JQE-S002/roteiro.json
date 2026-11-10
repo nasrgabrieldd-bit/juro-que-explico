@@ -1,83 +1,244 @@
 {
-  "id": "JQE-S002",
-  "titulo": "Regra dos 72: em quanto tempo o dinheiro dobra",
-  "formato": "vertical 9:16",
-  "pilar": "Investimentos",
-  "tipo": "evergreen / explicador",
-  "risco": "baixo — matemática de juro composto, taxas ilustrativas, sem recomendação de produto",
-  "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos",
-  "parametros": {"principal": 1000, "taxa_anual_exemplo": 0.08, "taxa_mensal_divida": 0.03},
-  "numeros_livres": [72],
-  "calculos": {
-    "regra_8": "72 / 8",
-    "exato_8": "log(2) / log(1.08)",
-    "valor_9_anos": "1000 * 1.08 ** 9",
-    "regra_4": "72 / 4",
-    "exato_4": "log(2) / log(1.04)",
-    "regra_6": "72 / 6",
-    "exato_6": "log(2) / log(1.06)",
-    "regra_12": "72 / 12",
-    "exato_12": "log(2) / log(1.12)",
-    "regra_divida": "72 / 3",
-    "exato_divida": "log(2) / log(1.03)",
-    "dobro": "2 * 1000"
+ "id": "JQE-S002",
+ "titulo": "Regra dos 72: em quanto tempo o dinheiro dobra",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — matemática de juro composto, taxas ilustrativas, sem recomendação de produto",
+ "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos",
+ "parametros": {
+  "principal": 1000,
+  "taxa_anual_exemplo": 0.08,
+  "taxa_mensal_divida": 0.03
+ },
+ "numeros_livres": [
+  72
+ ],
+ "calculos": {
+  "regra_8": "72 / 8",
+  "exato_8": "log(2) / log(1.08)",
+  "valor_9_anos": "1000 * 1.08 ** 9",
+  "regra_4": "72 / 4",
+  "exato_4": "log(2) / log(1.04)",
+  "regra_6": "72 / 6",
+  "exato_6": "log(2) / log(1.06)",
+  "regra_12": "72 / 12",
+  "exato_12": "log(2) / log(1.12)",
+  "regra_divida": "72 / 3",
+  "exato_divida": "log(2) / log(1.03)",
+  "dobro": "2 * 1000"
+ },
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: juro composto M = C(1 + i)^n; tempo exato para dobrar n = ln 2 / ln(1 + i); regra dos 72 como aproximação"
+ ],
+ "capa": {
+  "linha1": "Em quanto tempo",
+  "linha2": "seu dinheiro dobra?",
+  "destaque": "Regra dos 72"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Em quanto tempo o seu dinheiro dobra? Existe uma conta de cabeça que responde isso em segundos.",
+   "leg": "Em quanto tempo o seu dinheiro dobra? Existe uma conta de cabeça que responde em segundos.",
+   "dados": {
+    "valor": "2×",
+    "linhas": [
+     "Em quanto tempo",
+     "seu dinheiro dobra?"
+    ]
+   }
   },
-  "numeros_fonte": [],
-  "fontes": ["Cálculo próprio: juro composto M = C(1 + i)^n; tempo exato para dobrar n = ln 2 / ln(1 + i); regra dos 72 como aproximação"],
-  "capa": {"linha1": "Em quanto tempo", "linha2": "seu dinheiro dobra?", "destaque": "Regra dos 72"},
-  "cenas": [
-    {"id": "hook", "tipo": "numero_grande",
-     "tts": "Em quanto tempo o seu dinheiro dobra? Existe uma conta de cabeça que responde isso em segundos.",
-     "leg": "Em quanto tempo o seu dinheiro dobra? Existe uma conta de cabeça que responde em segundos.",
-     "dados": {"valor": "2×", "linhas": ["Em quanto tempo", "seu dinheiro dobra?"]}},
-    {"id": "regra", "tipo": "titulo",
-     "tts": "Ela se chama regra dos setenta e dois. Você divide setenta e dois pela taxa de juros ao ano. O resultado é, mais ou menos, o número de anos para o dinheiro dobrar.",
-     "leg": "Ela se chama regra dos 72. Você divide 72 pela taxa de juros ao ano. O resultado é, mais ou menos, quantos anos leva para dobrar.",
-     "dados": {"titulo": ["A regra", "dos 72"], "subtitulo": "72 ÷ taxa ao ano ≈ anos para dobrar"}},
-    {"id": "exemplo", "tipo": "formula",
-     "tts": "Um exemplo com oito por cento ao ano: setenta e dois dividido por oito dá nove anos.",
-     "leg": "Um exemplo com 8% ao ano: 72 dividido por 8 dá 9 anos.",
-     "dados": {"titulo": "Exemplo: 8% ao ano", "linha1": "72 ÷ 8", "resultado": "≈ 9 anos", "nota": "pela regra de bolso"}},
-    {"id": "conta_exata", "tipo": "linhas",
-     "tts": "E a conta exata? Com juro composto de oito por cento ao ano, mil reais chegam a mil novecentos e noventa e nove reais em nove anos. Praticamente o dobro. A regra acertou.",
-     "leg": "E a conta exata? A 8% ao ano, R$ 1.000 chegam a R$ 1.999 em 9 anos. Praticamente o dobro.",
-     "dados": {"titulo": "R$ 1.000 a 8% ao ano", "x_rotulo": "anos", "x_ticks": [0, 3, 6, 9], "ymax": 2400, "y_passo": 500,
-               "series": [{"nome": "juro composto", "destaque": true, "velocidade": 0.7, "inicio": 0.4,
-                           "rotulo_final": "R$ 1.999",
-                           "pontos": [[0, 1000], [1, 1080], [2, 1166.4], [3, 1259.71], [4, 1360.49], [5, 1469.33], [6, 1586.87], [7, 1713.82], [8, 1850.93], [9, 1999.0]]}]}},
-    {"id": "taxas", "tipo": "barras",
-     "tts": "Quanto maior a taxa, mais rápido dobra. A quatro por cento ao ano, dezoito anos. A seis por cento, doze. A doze por cento, só seis anos. E a conta exata fica sempre perto.",
-     "leg": "Quanto maior a taxa, mais rápido dobra. A 4% ao ano, 18 anos. A 6%, 12. A 12%, só 6 anos. A conta exata fica sempre perto.",
-     "dados": {"titulo": ["Anos para dobrar", "pela regra dos 72"],
-               "itens": [{"rotulo": "4% a.a.", "valor": 18, "texto": "18 anos (exato: 17,7)"},
-                         {"rotulo": "6% a.a.", "valor": 12, "texto": "12 anos (exato: 11,9)"},
-                         {"rotulo": "8% a.a.", "valor": 9, "texto": "9 anos (exato: 9,0)"},
-                         {"rotulo": "12% a.a.", "valor": 6, "texto": "6 anos (exato: 6,1)", "destaque": true}],
-               "nota": "regra dos 72 × conta exata com juro composto"}},
-    {"id": "divida", "tipo": "formula",
-     "tts": "E vale para dívidas também. Uma dívida a três por cento ao mês dobra em cerca de vinte e quatro meses. Na conta exata, vinte e três meses e meio.",
-     "leg": "E vale para dívidas também. Uma dívida a 3% ao mês dobra em cerca de 24 meses. Na conta exata, 23,4 meses.",
-     "dados": {"titulo": "Vale para dívidas", "linha1": "72 ÷ 3% ao mês", "resultado": "≈ 24 meses", "nota": "conta exata: 23,4 meses"}},
-    {"id": "como_usar", "tipo": "lista",
-     "tts": "Para usar direito: a taxa e o tempo têm que estar no mesmo período, a regra vale para juro composto, e o resultado é uma aproximação.",
-     "leg": "Para usar direito: taxa e tempo no mesmo período, vale para juro composto, e o resultado é uma aproximação.",
-     "dados": {"titulo": ["Para usar direito"], "itens": ["taxa e tempo no mesmo período", "só para juro composto", "é uma aproximação"]}},
-    {"id": "comenta", "tipo": "cta",
-     "tts": "Que outra conta de cabeça você quer aprender? Escreve aqui nos comentários.",
-     "leg": "Que outra conta de cabeça você quer aprender? Escreve aqui nos comentários.",
-     "dados": {"linhas": ["Que outra conta de cabeça", "você quer aprender?"], "botao": "Comenta aqui embaixo"}},
-    {"id": "assinatura", "tipo": "assinatura", "tts": "Juro que explico.", "leg": "Juro que explico."}
-  ],
-  "posts": {
-    "youtube": {
-      "titulo": "Regra dos 72: em quanto tempo seu dinheiro dobra?",
-      "texto": "Uma conta de cabeça para saber em quanto tempo um valor dobra com juro composto: divida 72 pela taxa.\n\nExemplo: a 8% ao ano, 72 ÷ 8 = 9 anos. Na conta exata, R$ 1.000 viram R$ 1.999 em 9 anos.\nA 4% ao ano: 18 anos (exato 17,7). A 12%: 6 anos (exato 6,1).\nVale para dívidas: a 3% ao mês, uma dívida dobra em cerca de 24 meses (exato 23,4).\n\nTaxas ilustrativas, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #jurocomposto #investimentos #shorts"
-    },
-    "instagram": {
-      "texto": "Em quanto tempo seu dinheiro dobra? Divida 72 pela taxa.\n\n• 8% ao ano → 9 anos\n• 4% ao ano → 18 anos\n• 12% ao ano → 6 anos\n\nE vale para dívida: a 3% ao mês, ela dobra em cerca de 24 meses.\n\nQue outra conta de cabeça você quer aprender? Comenta aqui 👇\n\nTaxas ilustrativas. Narração gerada por IA.\n\n#educacaofinanceira #jurocomposto #investimentos #financaspessoais #dinheiro"
-    },
-    "tiktok": {
-      "texto": "Regra dos 72: divida 72 pela taxa e descubra em quantos anos o dinheiro dobra. Vale até para dívida. Taxas ilustrativas, narração por IA. #educacaofinanceira #jurocomposto #investimentos #dinheiro"
-    }
+  {
+   "id": "regra",
+   "tipo": "titulo",
+   "tts": "Ela se chama regra dos setenta e dois. Você divide setenta e dois pela taxa de juros ao ano. O resultado é, mais ou menos, o número de anos para o dinheiro dobrar.",
+   "leg": "Ela se chama regra dos 72. Você divide 72 pela taxa de juros ao ano. O resultado é, mais ou menos, quantos anos leva para dobrar.",
+   "dados": {
+    "titulo": [
+     "A regra",
+     "dos 72"
+    ],
+    "subtitulo": "72 ÷ taxa ao ano ≈ anos para dobrar"
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "formula",
+   "tts": "Um exemplo com oito por cento ao ano: setenta e dois dividido por oito dá nove anos.",
+   "leg": "Um exemplo com 8% ao ano: 72 dividido por 8 dá 9 anos.",
+   "dados": {
+    "titulo": "Exemplo: 8% ao ano",
+    "linha1": "72 ÷ 8",
+    "resultado": "≈ 9 anos",
+    "nota": "pela regra de bolso"
+   }
+  },
+  {
+   "id": "conta_exata",
+   "tipo": "linhas",
+   "tts": "E a conta exata? Com juro composto de oito por cento ao ano, mil reais chegam a mil novecentos e noventa e nove reais em nove anos. Praticamente o dobro. A regra acertou.",
+   "leg": "E a conta exata? A 8% ao ano, R$ 1.000 chegam a R$ 1.999 em 9 anos. Praticamente o dobro.",
+   "dados": {
+    "titulo": "R$ 1.000 a 8% ao ano",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     3,
+     6,
+     9
+    ],
+    "ymax": 2400,
+    "y_passo": 500,
+    "series": [
+     {
+      "nome": "juro composto",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.4,
+      "rotulo_final": "R$ 1.999",
+      "pontos": [
+       [
+        0,
+        1000
+       ],
+       [
+        1,
+        1080
+       ],
+       [
+        2,
+        1166.4
+       ],
+       [
+        3,
+        1259.71
+       ],
+       [
+        4,
+        1360.49
+       ],
+       [
+        5,
+        1469.33
+       ],
+       [
+        6,
+        1586.87
+       ],
+       [
+        7,
+        1713.82
+       ],
+       [
+        8,
+        1850.93
+       ],
+       [
+        9,
+        1999.0
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "taxas",
+   "tipo": "barras",
+   "tts": "Quanto maior a taxa, mais rápido dobra. A quatro por cento ao ano, dezoito anos. A seis por cento, doze. A doze por cento, só seis anos. E a conta exata fica sempre perto.",
+   "leg": "Quanto maior a taxa, mais rápido dobra. A 4% ao ano, 18 anos. A 6%, 12. A 12%, só 6 anos. A conta exata fica sempre perto.",
+   "dados": {
+    "titulo": [
+     "Anos para dobrar",
+     "pela regra dos 72"
+    ],
+    "itens": [
+     {
+      "rotulo": "4% a.a.",
+      "valor": 18,
+      "texto": "18 anos (exato: 17,7)"
+     },
+     {
+      "rotulo": "6% a.a.",
+      "valor": 12,
+      "texto": "12 anos (exato: 11,9)"
+     },
+     {
+      "rotulo": "8% a.a.",
+      "valor": 9,
+      "texto": "9 anos (exato: 9,0)"
+     },
+     {
+      "rotulo": "12% a.a.",
+      "valor": 6,
+      "texto": "6 anos (exato: 6,1)",
+      "destaque": true
+     }
+    ],
+    "nota": "regra dos 72 × conta exata com juro composto"
+   }
+  },
+  {
+   "id": "divida",
+   "tipo": "formula",
+   "tts": "E vale para dívidas também. Uma dívida a três por cento ao mês dobra em cerca de vinte e quatro meses. Na conta exata, vinte e três meses e meio.",
+   "leg": "E vale para dívidas também. Uma dívida a 3% ao mês dobra em cerca de 24 meses. Na conta exata, 23,4 meses.",
+   "dados": {
+    "titulo": "Vale para dívidas",
+    "linha1": "72 ÷ 3% ao mês",
+    "resultado": "≈ 24 meses",
+    "nota": "conta exata: 23,4 meses"
+   }
+  },
+  {
+   "id": "como_usar",
+   "tipo": "lista",
+   "tts": "Para usar direito: a taxa e o tempo têm que estar no mesmo período, a regra vale para juro composto, e o resultado é uma aproximação.",
+   "leg": "Para usar direito: taxa e tempo no mesmo período, vale para juro composto, e o resultado é uma aproximação.",
+   "dados": {
+    "titulo": [
+     "Para usar direito"
+    ],
+    "itens": [
+     "taxa e tempo no mesmo período",
+     "só para juro composto",
+     "é uma aproximação"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Que outra conta de cabeça você quer aprender? Escreve aqui nos comentários.",
+   "leg": "Que outra conta de cabeça você quer aprender? Escreve aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Que outra conta de cabeça",
+     "você quer aprender?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Provento. O dinheiro que trabalha por você.",
+   "leg": "Provento. O dinheiro que trabalha por você."
   }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Regra dos 72: em quanto tempo seu dinheiro dobra?",
+   "texto": "Uma conta de cabeça para saber em quanto tempo um valor dobra com juro composto: divida 72 pela taxa.\n\nExemplo: a 8% ao ano, 72 ÷ 8 = 9 anos. Na conta exata, R$ 1.000 viram R$ 1.999 em 9 anos.\nA 4% ao ano: 18 anos (exato 17,7). A 12%: 6 anos (exato 6,1).\nVale para dívidas: a 3% ao mês, uma dívida dobra em cerca de 24 meses (exato 23,4).\n\nTaxas ilustrativas, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #jurocomposto #investimentos #shorts"
+  },
+  "instagram": {
+   "texto": "Em quanto tempo seu dinheiro dobra? Divida 72 pela taxa.\n\n• 8% ao ano → 9 anos\n• 4% ao ano → 18 anos\n• 12% ao ano → 6 anos\n\nE vale para dívida: a 3% ao mês, ela dobra em cerca de 24 meses.\n\nQue outra conta de cabeça você quer aprender? Comenta aqui 👇\n\nTaxas ilustrativas. Narração gerada por IA.\n\n#educacaofinanceira #jurocomposto #investimentos #financaspessoais #dinheiro"
+  },
+  "tiktok": {
+   "texto": "Regra dos 72: divida 72 pela taxa e descubra em quantos anos o dinheiro dobra. Vale até para dívida. Taxas ilustrativas, narração por IA. #educacaofinanceira #jurocomposto #investimentos #dinheiro"
+  }
+ }
 }

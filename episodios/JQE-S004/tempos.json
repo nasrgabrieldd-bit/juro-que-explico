@@ -1,55 +1,55 @@
 {
  "voz": "pm_alex",
  "velocidade": 1.0,
- "total": 66.417,
+ "total": 67.54,
  "cenas": [
   {
    "id": "hook",
-   "inicio": 0.3,
+   "inicio": 0.1,
    "dur": 10.581,
    "texto": "Uma nota de cem reais guardada na gaveta por dez anos continua sendo cem reais. Mas, com inflação de cinco por cento ao ano, ela vai comprar o que hoje custa sessenta e um reais."
   },
   {
    "id": "conceito",
-   "inicio": 11.231,
+   "inicio": 11.031,
    "dur": 9.301,
    "texto": "Isso é a inflação. O dinheiro continua igual, mas os preços sobem. E a alta de cada ano vem em cima da alta do ano anterior, como um juro composto ao contrário."
   },
   {
    "id": "preco",
-   "inicio": 20.883,
+   "inicio": 20.683,
    "dur": 10.155,
    "texto": "Do outro lado, algo que custa cem reais hoje, com cinco por cento de inflação ao ano, vai custar cento e sessenta e dois reais e oitenta e nove centavos daqui a dez anos."
   },
   {
    "id": "grafico",
-   "inicio": 31.387,
+   "inicio": 31.187,
    "dur": 8.555,
    "texto": "No gráfico, o poder de compra dos cem reais. Em cinco anos, setenta e oito reais. Em dez, sessenta e um. Em vinte anos, menos de trinta e oito."
   },
   {
    "id": "taxas",
-   "inicio": 40.292,
+   "inicio": 40.092,
    "dur": 9.813,
    "texto": "E a taxa faz muita diferença. Com inflação de três por cento ao ano, os cem reais valem setenta e quatro em dez anos. Com oito por cento, menos de quarenta e sete."
   },
   {
    "id": "licao",
-   "inicio": 50.455,
+   "inicio": 50.255,
    "dur": 8.256,
    "texto": "A lição: dinheiro parado perde valor. Antes de comemorar um rendimento, compare com a inflação do mesmo período. O que importa é o ganho real."
   },
   {
    "id": "comenta",
-   "inicio": 59.061,
+   "inicio": 58.861,
    "dur": 5.44,
    "texto": "Qual produto você lembra que custava bem menos alguns anos atrás? Conta aqui nos comentários."
   },
   {
    "id": "assinatura",
-   "inicio": 64.851,
-   "dur": 1.216,
-   "texto": "Juro que explico."
+   "inicio": 64.651,
+   "dur": 2.539,
+   "texto": "Provento. O dinheiro que trabalha por você."
   }
  ]
 }

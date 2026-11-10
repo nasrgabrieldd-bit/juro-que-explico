@@ -1,0 +1,715 @@
+{
+ "id": "JQE-L001",
+ "titulo": "Juros compostos na prática: quando o dinheiro trabalha sozinho",
+ "formato": "horizontal 16:9",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — taxa ilustrativa, sem ativos citados; Bazin com fonte",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos nem inflação",
+ "parametros": {
+  "aporte": 500,
+  "taxa_mes": 0.008,
+  "anos": 30,
+  "anos_seguintes": 20,
+  "dy": 0.08,
+  "dy_baixo": 0.06,
+  "dy_alto": 0.1,
+  "renda_mes": 1000,
+  "dividendo_acao": 3,
+  "preco_baixo": 40,
+  "preco_alto": 60,
+  "mes_juros_passam_aportes": 159
+ },
+ "calculos": {
+  "taxa_ano": "(1.008 ** 12 - 1) * 100",
+  "juros_mes1": "500 * 0.008",
+  "saldo_virada": "500 / 0.008",
+  "mes_virada": "log(2) / log(1.008)",
+  "juros_120": "0.008 * 500 * (1.008 ** 120 - 1) / 0.008",
+  "fv_159": "500 * (1.008 ** 159 - 1) / 0.008",
+  "aportado_159": "500 * 159",
+  "juros_159": "fv_159 - aportado_159",
+  "fv_158": "500 * (1.008 ** 158 - 1) / 0.008",
+  "juros_158": "fv_158 - 500 * 158",
+  "anos_159": "floor(159 / 12)",
+  "fv30": "500 * (1.008 ** 360 - 1) / 0.008",
+  "fv30_mi": "fv30 / 1000000",
+  "aportado30_mil": "500 * 360 / 1000",
+  "juros30_mil": "(fv30 - 180000) / 1000",
+  "prim10_mil": "500 * (1.008 ** 360 - 1.008 ** 240) / 0.008 / 1000",
+  "ult20_mil": "500 * (1.008 ** 240 - 1) / 0.008 / 1000",
+  "aporte10_mil": "500 * 120 / 1000",
+  "aporte20_mil": "500 * 240 / 1000",
+  "aporte_ano": "500 * 12",
+  "ano1_mil": "500 * (1.008 ** 360 - 1.008 ** 348) / 0.008 / 1000",
+  "ano10_mil": "500 * (1.008 ** 252 - 1.008 ** 240) / 0.008 / 1000",
+  "ano20_mil": "500 * (1.008 ** 132 - 1.008 ** 120) / 0.008 / 1000",
+  "ano30": "500 * (1.008 ** 12 - 1) / 0.008",
+  "renda_ano": "1000 * 12",
+  "capital_8_mil": "12000 / 0.08 / 1000",
+  "capital_6_mil": "12000 / 0.06 / 1000",
+  "capital_10_mil": "12000 / 0.10 / 1000",
+  "tempo_8": "log(1 + 150000 * 0.008 / 500) / log(1.008)",
+  "tempo_8_anos": "tempo_8 / 12",
+  "teto": "3 / 0.06",
+  "dy_40": "3 / 40 * 100",
+  "dy_60": "3 / 60 * 100"
+ },
+ "numeros_livres": [
+  100
+ ],
+ "numeros_fonte": [
+  {
+   "descricao": "Décio Bazin publicou 'Faça Fortuna com Ações Antes que seja Tarde' em 1992",
+   "valor": 1992,
+   "url": "https://investidor10.com.br/conteudo/estrategia-de-decio-bazin/",
+   "data_referencia": "2026-08-05"
+  },
+  {
+   "descricao": "Critério de Bazin: dividend yield mínimo de 6% ao ano; preço-teto = proventos ÷ 0,06",
+   "valor": 6,
+   "url": "https://www.infomoney.com.br/?p=1982816",
+   "data_referencia": "2023"
+  }
+ ],
+ "fontes": [
+  "Cálculo próprio: VF = A × ((1 + i)^n − 1) / i; ponto de virada n = ln 2 / ln(1 + i); capital = renda anual ÷ DY",
+  "Método Bazin: InfoMoney e Investidor10 (links em numeros_fonte)"
+ ],
+ "capa": {
+  "linha1": "Quando o dinheiro",
+  "linha2": "trabalha sozinho?",
+  "destaque": "Mês 87"
+ },
+ "cenas": [
+  {
+   "id": "i1",
+   "tipo": "numero_grande",
+   "tts": "Quinhentos reais por mês, durante trinta anos, podem passar de um milhão de reais. E o surpreendente é de onde ele vem.",
+   "leg": "R$ 500 por mês, durante 30 anos, podem passar de R$ 1 milhão. E o surpreendente é de onde ele vem.",
+   "dados": {
+    "valor": "R$ 1,04 milhão",
+    "linhas": [
+     "com R$ 500 por mês",
+     "durante 30 anos"
+    ]
+   }
+  },
+  {
+   "id": "i2",
+   "tipo": "lista",
+   "tts": "Este vídeo tem três partes. Primeiro, o ponto de virada, quando os juros começam a trabalhar mais que você. Depois, por que os primeiros aportes valem tanto. E no fim, quanto dinheiro você precisa para receber mil reais por mês em dividendos. O exemplo é sempre o mesmo: quinhentos reais por mês, rendendo zero vírgula oito por cento ao mês, cerca de dez por cento ao ano.",
+   "leg": "Três partes: o ponto de virada dos juros, por que os primeiros aportes valem tanto, e quanto investir para receber R$ 1.000 por mês em dividendos. Exemplo: R$ 500 por mês a 0,8% ao mês, cerca de 10% ao ano.",
+   "dados": {
+    "titulo": [
+     "Três partes"
+    ],
+    "itens": [
+     "o ponto de virada",
+     "por que começar cedo",
+     "viver de dividendos"
+    ]
+   }
+  },
+  {
+   "id": "b1_hook",
+   "tipo": "numero_grande",
+   "tts": "Tem um mês em que os juros rendem mais que o seu aporte. É o ponto de virada. E dá para calcular quando ele chega.",
+   "leg": "Tem um mês em que os juros rendem mais que o seu aporte. É o ponto de virada. E dá para calcular.",
+   "dados": {
+    "valor": "Mês 87",
+    "linhas": [
+     "os juros do mês",
+     "passam o seu aporte"
+    ]
+   }
+  },
+  {
+   "id": "b1_mes1",
+   "tipo": "formula",
+   "tts": "No primeiro mês, você coloca quinhentos reais e eles rendem zero vírgula oito por cento. São quatro reais de juros. Quase nada. Quem está fazendo o trabalho é você.",
+   "leg": "No primeiro mês, R$ 500 rendem 0,8%: R$ 4 de juros. Quase nada. Quem faz o trabalho é você.",
+   "dados": {
+    "titulo": "No primeiro mês",
+    "linha1": "R$ 500 × 0,8%",
+    "resultado": "= R$ 4",
+    "nota": "de juros no mês"
+   }
+  },
+  {
+   "id": "b1_conta",
+   "tipo": "formula",
+   "tts": "Os juros do mês chegam a quinhentos reais quando o saldo bate sessenta e dois mil e quinhentos reais. Porque zero vírgula oito por cento de sessenta e dois mil e quinhentos dá exatamente quinhentos.",
+   "leg": "Os juros do mês chegam a R$ 500 quando o saldo bate R$ 62.500. Porque 0,8% de R$ 62.500 dá exatamente R$ 500.",
+   "dados": {
+    "titulo": "Juros do mês = R$ 500?",
+    "linha1": "R$ 500 ÷ 0,8%",
+    "resultado": "R$ 62.500",
+    "nota": "saldo necessário"
+   }
+  },
+  {
+   "id": "b1_grafico",
+   "tipo": "linhas",
+   "tts": "No gráfico, a linha verde são os juros de cada mês, e a cinza é o seu aporte. Elas se cruzam no mês oitenta e sete, depois de sete anos e três meses. A partir daí, os juros sozinhos colocam mais dinheiro na conta do que você.",
+   "leg": "A linha verde são os juros de cada mês; a cinza, o seu aporte. Elas se cruzam no mês 87, depois de 7 anos e 3 meses. Daí em diante, os juros colocam mais dinheiro que você.",
+   "dados": {
+    "titulo": "Juros do mês × seu aporte",
+    "x_rotulo": "meses",
+    "x_ticks": [
+     0,
+     24,
+     48,
+     72,
+     96,
+     120
+    ],
+    "ymax": 900,
+    "ymin": 0,
+    "y_passo": 200,
+    "series": [
+     {
+      "nome": "juros do mês",
+      "destaque": true,
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 801",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        4,
+        16.19
+       ],
+       [
+        8,
+        32.91
+       ],
+       [
+        12,
+        50.17
+       ],
+       [
+        16,
+        67.99
+       ],
+       [
+        20,
+        86.38
+       ],
+       [
+        24,
+        105.37
+       ],
+       [
+        28,
+        124.98
+       ],
+       [
+        32,
+        145.22
+       ],
+       [
+        36,
+        166.11
+       ],
+       [
+        40,
+        187.69
+       ],
+       [
+        44,
+        209.96
+       ],
+       [
+        48,
+        232.95
+       ],
+       [
+        52,
+        256.69
+       ],
+       [
+        56,
+        281.2
+       ],
+       [
+        60,
+        306.5
+       ],
+       [
+        64,
+        332.61
+       ],
+       [
+        68,
+        359.58
+       ],
+       [
+        72,
+        387.42
+       ],
+       [
+        76,
+        416.16
+       ],
+       [
+        80,
+        445.83
+       ],
+       [
+        84,
+        476.46
+       ],
+       [
+        88,
+        508.08
+       ],
+       [
+        92,
+        540.73
+       ],
+       [
+        96,
+        574.44
+       ],
+       [
+        100,
+        609.23
+       ],
+       [
+        104,
+        645.16
+       ],
+       [
+        108,
+        682.24
+       ],
+       [
+        112,
+        720.53
+       ],
+       [
+        116,
+        760.06
+       ],
+       [
+        120,
+        800.87
+       ]
+      ]
+     },
+     {
+      "nome": "seu aporte",
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 500",
+      "pontos": [
+       [
+        0,
+        500
+       ],
+       [
+        4,
+        500
+       ],
+       [
+        8,
+        500
+       ],
+       [
+        12,
+        500
+       ],
+       [
+        16,
+        500
+       ],
+       [
+        20,
+        500
+       ],
+       [
+        24,
+        500
+       ],
+       [
+        28,
+        500
+       ],
+       [
+        32,
+        500
+       ],
+       [
+        36,
+        500
+       ],
+       [
+        40,
+        500
+       ],
+       [
+        44,
+        500
+       ],
+       [
+        48,
+        500
+       ],
+       [
+        52,
+        500
+       ],
+       [
+        56,
+        500
+       ],
+       [
+        60,
+        500
+       ],
+       [
+        64,
+        500
+       ],
+       [
+        68,
+        500
+       ],
+       [
+        72,
+        500
+       ],
+       [
+        76,
+        500
+       ],
+       [
+        80,
+        500
+       ],
+       [
+        84,
+        500
+       ],
+       [
+        88,
+        500
+       ],
+       [
+        92,
+        500
+       ],
+       [
+        96,
+        500
+       ],
+       [
+        100,
+        500
+       ],
+       [
+        104,
+        500
+       ],
+       [
+        108,
+        500
+       ],
+       [
+        112,
+        500
+       ],
+       [
+        116,
+        500
+       ],
+       [
+        120,
+        500
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "b1_qualquer",
+   "tipo": "titulo",
+   "tts": "E tem um detalhe curioso: com essa taxa, a virada chega no mês oitenta e sete para qualquer valor de aporte. Cem reais, quinhentos ou mil. Quem muda a data é a taxa, não o tamanho do aporte.",
+   "leg": "Detalhe curioso: com essa taxa, a virada chega no mês 87 para qualquer valor de aporte. Quem muda a data é a taxa, não o tamanho do aporte.",
+   "dados": {
+    "titulo": [
+     "Vale para",
+     "qualquer aporte"
+    ],
+    "subtitulo": "a 0,8% ao mês, a virada é no mês 87"
+   }
+  },
+  {
+   "id": "b1_cruza",
+   "tipo": "versus",
+   "tts": "Tem um segundo marco. No mês cento e cinquenta e nove, com treze anos e três meses, os juros acumulados passam o total que você aportou. Dali em diante, mais da metade do seu patrimônio veio dos juros.",
+   "leg": "Segundo marco: no mês 159, com 13 anos e 3 meses, os juros acumulados passam o total aportado. Dali em diante, mais da metade do patrimônio veio dos juros.",
+   "dados": {
+    "a": "R$ 79.500",
+    "b": "R$ 79.873",
+    "rotulo_a": "você aportou",
+    "rotulo_b": "juros acumulados",
+    "centro": "mês 159"
+   }
+  },
+  {
+   "id": "b2_hook",
+   "tipo": "numero_grande",
+   "tts": "Seus primeiros dez anos investindo valem mais que os vinte anos seguintes. Parece estranho, mas a conta mostra.",
+   "leg": "Seus primeiros 10 anos investindo valem mais que os 20 anos seguintes. Parece estranho, mas a conta mostra.",
+   "dados": {
+    "valor": "10 > 20",
+    "linhas": [
+     "os 10 primeiros anos",
+     "valem mais que os 20 seguintes"
+    ]
+   }
+  },
+  {
+   "id": "b2_total",
+   "tipo": "formula",
+   "tts": "Em trinta anos, com quinhentos reais por mês a zero vírgula oito por cento, você aporta cento e oitenta mil reais e termina com cerca de um vírgula zero quatro milhão. Oitocentos e cinquenta e oito mil vieram dos juros.",
+   "leg": "Em 30 anos, com R$ 500 por mês a 0,8%, você aporta R$ 180 mil e termina com cerca de R$ 1,04 milhão. R$ 858 mil vieram dos juros.",
+   "dados": {
+    "titulo": "Em 30 anos",
+    "linha1": "R$ 180 mil aportados",
+    "resultado": "R$ 1,04 milhão",
+    "nota": "R$ 858 mil vieram dos juros"
+   }
+  },
+  {
+   "id": "b2_divide",
+   "tipo": "barras",
+   "tts": "Agora separe esse resultado. Os aportes dos primeiros dez anos, sessenta mil reais, viram seiscentos e setenta e sete mil. Os aportes dos vinte anos seguintes, o dobro, cento e vinte mil, viram só trezentos e sessenta mil.",
+   "leg": "Separando: os aportes dos primeiros 10 anos, R$ 60 mil, viram R$ 677 mil. Os dos 20 anos seguintes, R$ 120 mil, viram só R$ 360 mil.",
+   "dados": {
+    "titulo": [
+     "De onde vem",
+     "o R$ 1,04 milhão"
+    ],
+    "itens": [
+     {
+      "rotulo": "anos 1 a 10",
+      "valor": 677641,
+      "texto": "R$ 677 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "anos 11 a 30",
+      "valor": 360566,
+      "texto": "R$ 360 mil"
+     }
+    ],
+    "nota": "aportes: R$ 60 mil × R$ 120 mil"
+   }
+  },
+  {
+   "id": "b2_ano",
+   "tipo": "barras",
+   "tts": "Olhe ano a ano. Os seis mil reais aportados no primeiro ano viram cem mil. Os do décimo ano, quarenta e dois mil. Os do vigésimo, dezesseis mil. E os do último ano, pouco mais de seis mil. O mesmo dinheiro, com menos tempo para render.",
+   "leg": "Ano a ano: os R$ 6.000 do 1º ano viram R$ 100 mil. Os do 10º, R$ 42 mil. Os do 20º, R$ 16 mil. Os do último, R$ 6.271. Mesmo dinheiro, menos tempo.",
+   "dados": {
+    "titulo": [
+     "R$ 6.000 aportados",
+     "em cada ano viram"
+    ],
+    "itens": [
+     {
+      "rotulo": "ano 1",
+      "valor": 100372,
+      "texto": "R$ 100 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "ano 10",
+      "valor": 42450,
+      "texto": "R$ 42 mil"
+     },
+     {
+      "rotulo": "ano 20",
+      "valor": 16316,
+      "texto": "R$ 16 mil"
+     },
+     {
+      "rotulo": "ano 30",
+      "valor": 6271,
+      "texto": "R$ 6.271"
+     }
+    ],
+    "nota": "valor de cada ano no fim do ano 30"
+   }
+  },
+  {
+   "id": "b2_licao",
+   "tipo": "lista",
+   "tts": "Por isso o começo importa tanto. Os primeiros aportes parecem pequenos e lentos, mas são eles que ficam mais tempo rendendo. São a base da bola de neve.",
+   "leg": "Por isso o começo importa tanto. Os primeiros aportes parecem pequenos, mas são os que ficam mais tempo rendendo.",
+   "dados": {
+    "titulo": [
+     "Por que começar cedo"
+    ],
+    "itens": [
+     "o tempo multiplica",
+     "o começo é a base",
+     "atrasar custa caro"
+    ]
+   }
+  },
+  {
+   "id": "b3_hook",
+   "tipo": "numero_grande",
+   "tts": "Quanto dinheiro você precisa para receber mil reais por mês em dividendos? Depende de um número só.",
+   "leg": "Quanto você precisa para receber R$ 1.000 por mês em dividendos? Depende de um número só.",
+   "dados": {
+    "valor": "R$ 1.000/mês",
+    "linhas": [
+     "em dividendos:",
+     "quanto precisa investir?"
+    ]
+   }
+  },
+  {
+   "id": "b3_dy",
+   "tipo": "formula",
+   "tts": "Esse número é o dividend yield: quanto um investimento pagou em dividendos no ano, dividido pelo valor investido. Um yield de oito por cento significa oito reais por ano para cada cem reais investidos.",
+   "leg": "Dividend yield: dividendos do ano divididos pelo valor investido. Yield de 8% = R$ 8 por ano para cada R$ 100 investidos.",
+   "dados": {
+    "titulo": "Dividend yield (DY)",
+    "linha1": "dividendos no ano ÷ valor investido",
+    "resultado": "8% ao ano",
+    "nota": "R$ 8 por ano a cada R$ 100"
+   }
+  },
+  {
+   "id": "b3_conta",
+   "tipo": "formula",
+   "tts": "Mil reais por mês são doze mil por ano. Dividindo doze mil por oito por cento, você chega a cento e cinquenta mil reais investidos.",
+   "leg": "R$ 1.000 por mês são R$ 12.000 por ano. Dividindo por 8%, você chega a R$ 150 mil investidos.",
+   "dados": {
+    "titulo": "Para R$ 1.000 por mês",
+    "linha1": "R$ 12.000 ÷ 8%",
+    "resultado": "= R$ 150 mil",
+    "nota": "capital = renda anual ÷ DY"
+   }
+  },
+  {
+   "id": "b3_barras",
+   "tipo": "barras",
+   "tts": "Com yield de seis por cento, precisaria de duzentos mil. Com dez por cento, cento e vinte mil. Mas atenção: dividendos variam de um ano para o outro e não têm garantia. E yield alto demais às vezes é sinal de problema, não de oportunidade.",
+   "leg": "Com yield de 6%, R$ 200 mil. Com 10%, R$ 120 mil. Atenção: dividendos variam e não têm garantia. Yield alto demais pode ser sinal de problema.",
+   "dados": {
+    "titulo": [
+     "Capital para",
+     "R$ 1.000 por mês"
+    ],
+    "itens": [
+     {
+      "rotulo": "DY 6%",
+      "valor": 200000,
+      "texto": "R$ 200 mil"
+     },
+     {
+      "rotulo": "DY 8%",
+      "valor": 150000,
+      "texto": "R$ 150 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "DY 10%",
+      "valor": 120000,
+      "texto": "R$ 120 mil"
+     }
+    ],
+    "nota": "dividendos variam e não têm garantia"
+   }
+  },
+  {
+   "id": "b3_tempo",
+   "tipo": "formula",
+   "tts": "E quanto tempo leva para juntar cento e cinquenta mil? Com quinhentos reais por mês, rendendo zero vírgula oito por cento, cerca de cento e cinquenta e quatro meses. Quase treze anos.",
+   "leg": "Quanto tempo para juntar R$ 150 mil? Com R$ 500 por mês a 0,8%, cerca de 154 meses. Quase 13 anos.",
+   "dados": {
+    "titulo": "Quanto tempo até lá",
+    "linha1": "R$ 500 por mês a 0,8%",
+    "resultado": "≈ 12,8 anos",
+    "nota": "154 meses até R$ 150 mil"
+   }
+  },
+  {
+   "id": "b3_bazin",
+   "tipo": "formula",
+   "tts": "Essa mesma conta está por trás de um método famoso no Brasil. Décio Bazin, no livro Faça Fortuna com Ações, de mil novecentos e noventa e dois, defendia comprar uma ação só se ela pagasse pelo menos seis por cento ao ano em dividendos. O preço máximo, o preço-teto, é o dividendo dividido por seis por cento.",
+   "leg": "Essa conta está por trás do método Bazin. No livro Faça Fortuna com Ações, de 1992, Décio Bazin defendia só comprar com pelo menos 6% ao ano em dividendos. Preço-teto = dividendo ÷ 6%.",
+   "dados": {
+    "titulo": "O método Bazin",
+    "linha1": "dividendo anual ÷ 6%",
+    "resultado": "= preço-teto",
+    "nota": "Décio Bazin, 1992"
+   }
+  },
+  {
+   "id": "b3_bazin_ex",
+   "tipo": "versus",
+   "tts": "Exemplo com uma empresa fictícia que paga três reais por ação no ano. O preço-teto é cinquenta reais. A quarenta reais, o yield seria sete e meio por cento. A sessenta, só cinco por cento, abaixo do critério. É um filtro de preço, não uma promessa de retorno.",
+   "leg": "Empresa fictícia que paga R$ 3 por ação no ano: preço-teto de R$ 50. A R$ 40, yield de 7,5%. A R$ 60, só 5%. É um filtro de preço, não uma promessa de retorno.",
+   "dados": {
+    "a": "R$ 40",
+    "b": "R$ 60",
+    "rotulo_a": "DY 7,5% · abaixo do teto",
+    "rotulo_b": "DY 5% · acima do teto",
+    "centro": "teto R$ 50"
+   }
+  },
+  {
+   "id": "o_resumo",
+   "tipo": "lista",
+   "tts": "Resumindo. Com zero vírgula oito por cento ao mês, os juros passam o seu aporte no mês oitenta e sete. Os primeiros dez anos valem mais que os vinte seguintes. E, com yield de oito por cento, cento e cinquenta mil reais pagariam cerca de mil reais por mês.",
+   "leg": "Resumo: a 0,8% ao mês, os juros passam o aporte no mês 87. Os primeiros 10 anos valem mais que os 20 seguintes. Com yield de 8%, R$ 150 mil pagariam cerca de R$ 1.000 por mês.",
+   "dados": {
+    "titulo": [
+     "Resumo"
+    ],
+    "itens": [
+     "virada no mês 87",
+     "o começo vale mais",
+     "R$ 150 mil → R$ 1.000/mês"
+    ]
+   }
+  },
+  {
+   "id": "o_cta",
+   "tipo": "cta",
+   "tts": "Se essa conta te ajudou, se inscreve no canal. E comenta qual conta você quer ver no próximo vídeo.",
+   "leg": "Se essa conta te ajudou, se inscreve no canal. E comenta qual conta você quer ver no próximo vídeo.",
+   "dados": {
+    "linhas": [
+     "Qual conta você quer",
+     "ver no próximo vídeo?"
+    ],
+    "botao": "Inscreva-se e comente"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Provento. O dinheiro que trabalha por você.",
+   "leg": "Provento. O dinheiro que trabalha por você."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Juros compostos na prática: quando o dinheiro trabalha sozinho",
+   "texto": "R$ 500 por mês, durante 30 anos, a 0,8% ao mês (cerca de 10% ao ano), podem passar de R$ 1 milhão. Neste vídeo, a conta completa:\n\n1. O ponto de virada: no mês 87, os juros do mês passam o seu aporte. No mês 159, os juros acumulados passam o total aportado.\n2. Por que começar cedo: os aportes dos primeiros 10 anos (R$ 60 mil) viram R$ 677 mil; os dos 20 anos seguintes (R$ 120 mil) viram R$ 360 mil.\n3. Viver de dividendos: para R$ 1.000 por mês com dividend yield de 8%, cerca de R$ 150 mil. E o método Bazin: preço-teto = dividendo ÷ 6%.\n\nTaxa hipotética, sem impostos nem inflação. Dividendos variam e não têm garantia. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\nFontes do método Bazin: InfoMoney e Investidor10.\n\n#educacaofinanceira #jurocomposto #dividendos #investimentos"
+  }
+ }
+}

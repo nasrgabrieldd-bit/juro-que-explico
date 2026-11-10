@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 94.642,
+ "cenas": [
+  {
+   "id": "b3_hook",
+   "inicio": 0.1,
+   "dur": 5.867,
+   "texto": "Quanto dinheiro você precisa para receber mil reais por mês em dividendos? Depende de um número só."
+  },
+  {
+   "id": "b3_dy",
+   "inicio": 6.317,
+   "dur": 12.48,
+   "texto": "Esse número é o dividend yield: quanto um investimento pagou em dividendos no ano, dividido pelo valor investido. Um yield de oito por cento significa oito reais por ano para cada cem reais investidos."
+  },
+  {
+   "id": "b3_conta",
+   "inicio": 19.147,
+   "dur": 7.787,
+   "texto": "Mil reais por mês são doze mil por ano. Dividindo doze mil por oito por cento, você chega a cento e cinquenta mil reais investidos."
+  },
+  {
+   "id": "b3_barras",
+   "inicio": 27.283,
+   "dur": 14.251,
+   "texto": "Com yield de seis por cento, precisaria de duzentos mil. Com dez por cento, cento e vinte mil. Mas atenção: dividendos variam de um ano para o outro e não têm garantia. E yield alto demais às vezes é sinal de problema, não de oportunidade."
+  },
+  {
+   "id": "b3_tempo",
+   "inicio": 41.884,
+   "dur": 10.773,
+   "texto": "E quanto tempo leva para juntar cento e cinquenta mil? Com quinhentos reais por mês, rendendo zero vírgula oito por cento, cerca de cento e cinquenta e quatro meses. Quase treze anos."
+  },
+  {
+   "id": "b3_bazin",
+   "inicio": 53.007,
+   "dur": 17.771,
+   "texto": "Essa mesma conta está por trás de um método famoso no Brasil. Décio Bazin, no livro Faça Fortuna com Ações, de mil novecentos e noventa e dois, defendia comprar uma ação só se ela pagasse pelo menos seis por cento ao ano em dividendos. O preço máximo, o preço-teto, é o dividendo dividido por seis por cento."
+  },
+  {
+   "id": "b3_bazin_ex",
+   "inicio": 71.128,
+   "dur": 14.805,
+   "texto": "Exemplo com uma empresa fictícia que paga três reais por ação no ano. O preço-teto é cinquenta reais. A quarenta reais, o yield seria sete e meio por cento. A sessenta, só cinco por cento, abaixo do critério. É um filtro de preço, não uma promessa de retorno."
+  },
+  {
+   "id": "p_cta",
+   "inicio": 86.283,
+   "dur": 5.12,
+   "texto": "E você, quanto gostaria de receber por mês em dividendos? Comenta aqui que eu faço a conta."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 91.753,
+   "dur": 2.539,
+   "texto": "Provento. O dinheiro que trabalha por você."
+  }
+ ]
+}

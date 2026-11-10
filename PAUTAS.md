@@ -1,8 +1,8 @@
-# Pautas — Juro que Explico
+# Pautas — Provento
 
 A rotina diária pega a primeira pauta da fila, produz, move para "Publicadas" com o ID e a data, e pode acrescentar ideias novas no fim da fila.
 
-## Publicadas / agendadas
+## Produzidas (reagendamento pendente após a troca de marca)
 | ID | Pauta | Publicação |
 |---|---|---|
 | JQE-S001 | Juro composto: o mesmo dinheiro, dois resultados | 10/11/2026 |
@@ -15,22 +15,30 @@ A rotina diária pega a primeira pauta da fila, produz, move para "Publicadas" c
 | JQE-S008 | O custo de começar a investir 5 anos depois | 17/11/2026 |
 | JQE-S009 | R$ 15 por dia em 10 anos | 18/11/2026 |
 
-## Fila (evergreen, baixo risco)
-1. Regra 50/30/20 para organizar o salário
-2. Juros do cartão: rotativo × parcelamento da fatura (respeitar o teto de juros do rotativo, Lei 14.690/2023; taxas hipotéticas)
-3. Liquidez, risco e rentabilidade: o triângulo dos investimentos
-4. O que é CDI e por que tanto investimento rende "% do CDI"
-5. Diversificação explicada com uma conta simples
-6. Taxa de administração: quanto 1% ao ano come em 20 anos
-7. Imposto de renda regressivo na renda fixa: como funciona a tabela (conferir a tabela vigente na Receita Federal)
-8. Financiamento: Price × SAC, quem paga mais juros
-9. Valor presente: quanto vale hoje R$ 1.000 daqui a 5 anos
-10. Dividend yield: o que significa e o que ele não diz
-11. Preço × valor: por que ação "barata" não é sinônimo de pechincha
-12. O que é a Selic e como ela mexe com o seu bolso (valor atual só se buscado no Banco Central)
-13. Regra dos 114 e dos 144: triplicar e quadruplicar o dinheiro
-14. Empréstimo consignado × pessoal: por que a taxa muda (taxas hipotéticas)
-15. CET: o custo efetivo total de um empréstimo
-16. Aporte maior ou rendimento maior: o que pesa mais
-17. Inflação acumulada: por que 5% + 5% não é 10%
-18. Juro de atraso de conta: multa, juros de mora e correção
+## Fila (evergreen, baixo risco) — prioridade: investir, juros compostos e dividendos (pedido do fundador, 09/11)
+1. O ponto de virada: em quanto tempo os juros do mês passam a render mais que o seu aporte (n = ln 2 / ln(1 + i), não depende do valor do aporte)
+2. Quanto investir para ganhar R$ 1.000 por mês em dividendos (capital = renda anual ÷ dividend yield; DY ilustrativo, dividendo varia e não é garantido)
+3. Método Bazin explicado: preço-teto = dividendo médio ÷ 6% (empresa fictícia, sem citar ações)
+4. Os primeiros R$ 100 mil são os mais difíceis: quanto tempo leva cada 100 mil com aporte fixo
+5. Bola de neve dos dividendos: reinvestir × gastar os dividendos em 20 anos
+6. Por que os primeiros aportes valem mais: quanto cada R$ 1 aportado no ano 1 vira no ano 30
+7. Luiz Barsi: a história do investidor que ficou conhecido pelos dividendos (só fatos checados em fontes jornalísticas; sem citar ações como recomendação; sem frases inventadas)
+8. Quando os juros acumulados passam o total que você aportou
+9. Dividend yield: o que significa e o que ele não diz
+10. Regra 50/30/20 para organizar o salário
+11. Juros do cartão: rotativo × parcelamento da fatura (respeitar o teto do rotativo, Lei 14.690/2023; taxas hipotéticas)
+12. Liquidez, risco e rentabilidade: o triângulo dos investimentos
+13. O que é CDI e por que tanto investimento rende "% do CDI"
+14. Diversificação explicada com uma conta simples
+15. Taxa de administração: quanto 1% ao ano come em 20 anos
+16. Imposto de renda regressivo na renda fixa (conferir a tabela vigente na Receita Federal)
+17. Financiamento: Price × SAC, quem paga mais juros
+18. Valor presente: quanto vale hoje R$ 1.000 daqui a 5 anos
+19. Preço × valor: por que ação "barata" não é sinônimo de pechincha
+20. O que é a Selic e como ela mexe com o seu bolso (valor atual só se buscado no Banco Central)
+21. Regra dos 114 e dos 144: triplicar e quadruplicar o dinheiro
+22. CET: o custo efetivo total de um empréstimo
+23. Aporte maior ou rendimento maior: o que pesa mais
+24. Inflação acumulada: por que 5% + 5% não é 10%
+
+Regras para histórias de investidores (Barsi e outros): todo fato com fonte (link e data) em `numeros_fonte`/`fontes`; nada de citação literal sem fonte; deixar claro que é história, não recomendação; não citar patrimônio ou carteira sem fonte recente.

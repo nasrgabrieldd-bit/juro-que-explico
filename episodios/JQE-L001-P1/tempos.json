@@ -1,0 +1,55 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 75.689,
+ "cenas": [
+  {
+   "id": "b1_hook",
+   "inicio": 0.1,
+   "dur": 6.357,
+   "texto": "Tem um mês em que os juros rendem mais que o seu aporte. É o ponto de virada. E dá para calcular quando ele chega."
+  },
+  {
+   "id": "b1_mes1",
+   "inicio": 6.807,
+   "dur": 9.749,
+   "texto": "No primeiro mês, você coloca quinhentos reais e eles rendem zero vírgula oito por cento. São quatro reais de juros. Quase nada. Quem está fazendo o trabalho é você."
+  },
+  {
+   "id": "b1_conta",
+   "inicio": 16.907,
+   "dur": 11.221,
+   "texto": "Os juros do mês chegam a quinhentos reais quando o saldo bate sessenta e dois mil e quinhentos reais. Porque zero vírgula oito por cento de sessenta e dois mil e quinhentos dá exatamente quinhentos."
+  },
+  {
+   "id": "b1_grafico",
+   "inicio": 28.478,
+   "dur": 13.035,
+   "texto": "No gráfico, a linha verde são os juros de cada mês, e a cinza é o seu aporte. Elas se cruzam no mês oitenta e sete, depois de sete anos e três meses. A partir daí, os juros sozinhos colocam mais dinheiro na conta do que você."
+  },
+  {
+   "id": "b1_qualquer",
+   "inicio": 41.863,
+   "dur": 10.837,
+   "texto": "E tem um detalhe curioso: com essa taxa, a virada chega no mês oitenta e sete para qualquer valor de aporte. Cem reais, quinhentos ou mil. Quem muda a data é a taxa, não o tamanho do aporte."
+  },
+  {
+   "id": "b1_cruza",
+   "inicio": 53.05,
+   "dur": 11.925,
+   "texto": "Tem um segundo marco. No mês cento e cinquenta e nove, com treze anos e três meses, os juros acumulados passam o total que você aportou. Dali em diante, mais da metade do seu patrimônio veio dos juros."
+  },
+  {
+   "id": "p_cta",
+   "inicio": 65.325,
+   "dur": 7.125,
+   "texto": "Na parte dois, a conta que mostra por que os primeiros anos valem mais que todos os outros. Segue o perfil para não perder."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 72.801,
+   "dur": 2.539,
+   "texto": "Provento. O dinheiro que trabalha por você."
+  }
+ ]
+}

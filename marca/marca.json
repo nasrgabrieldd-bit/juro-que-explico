@@ -1,0 +1,16 @@
+{
+  "nome": "Provento",
+  "nome_topo": "PROVENTO",
+  "inicial": "P",
+  "tagline": "O dinheiro que trabalha por você.",
+  "assinatura_tts": "Provento. O dinheiro que trabalha por você.",
+  "cores": {
+    "fundo": [244, 239, 230],
+    "destaque": [45, 91, 255],
+    "texto": [20, 22, 27],
+    "secundaria": [112, 118, 130],
+    "grade": [214, 205, 190],
+    "legenda_fundo": [20, 22, 27, 220],
+    "legenda_texto": [244, 239, 230]
+  }
+}

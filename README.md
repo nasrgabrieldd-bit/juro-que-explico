@@ -1,7 +1,7 @@
-# Juro que Explico — linha de produção
+# Provento — linha de produção
 
 Canal de educação financeira: **"O dinheiro sem complicação."**
-YouTube @JuroqueExplico · Instagram @juroqueexplicobr · TikTok @juro.que.explico
+Marca: Provento (até 09/11/2026: Juro que Explico). Os @ das redes estão sendo trocados.
 
 Este repositório guarda o código que produz os vídeos e os vídeos prontos para publicação. Tudo roda com ferramentas gratuitas.
 

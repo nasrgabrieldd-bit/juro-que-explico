@@ -1,0 +1,465 @@
+{
+ "id": "JQE-L001-P1",
+ "titulo": "O ponto de virada dos juros compostos",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — taxa ilustrativa, sem ativos citados; Bazin com fonte",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos nem inflação",
+ "parametros": {
+  "aporte": 500,
+  "taxa_mes": 0.008,
+  "anos": 30,
+  "anos_seguintes": 20,
+  "dy": 0.08,
+  "dy_baixo": 0.06,
+  "dy_alto": 0.1,
+  "renda_mes": 1000,
+  "dividendo_acao": 3,
+  "preco_baixo": 40,
+  "preco_alto": 60,
+  "mes_juros_passam_aportes": 159
+ },
+ "calculos": {
+  "taxa_ano": "(1.008 ** 12 - 1) * 100",
+  "juros_mes1": "500 * 0.008",
+  "saldo_virada": "500 / 0.008",
+  "mes_virada": "log(2) / log(1.008)",
+  "juros_120": "0.008 * 500 * (1.008 ** 120 - 1) / 0.008",
+  "fv_159": "500 * (1.008 ** 159 - 1) / 0.008",
+  "aportado_159": "500 * 159",
+  "juros_159": "fv_159 - aportado_159",
+  "fv_158": "500 * (1.008 ** 158 - 1) / 0.008",
+  "juros_158": "fv_158 - 500 * 158",
+  "anos_159": "floor(159 / 12)",
+  "fv30": "500 * (1.008 ** 360 - 1) / 0.008",
+  "fv30_mi": "fv30 / 1000000",
+  "aportado30_mil": "500 * 360 / 1000",
+  "juros30_mil": "(fv30 - 180000) / 1000",
+  "prim10_mil": "500 * (1.008 ** 360 - 1.008 ** 240) / 0.008 / 1000",
+  "ult20_mil": "500 * (1.008 ** 240 - 1) / 0.008 / 1000",
+  "aporte10_mil": "500 * 120 / 1000",
+  "aporte20_mil": "500 * 240 / 1000",
+  "aporte_ano": "500 * 12",
+  "ano1_mil": "500 * (1.008 ** 360 - 1.008 ** 348) / 0.008 / 1000",
+  "ano10_mil": "500 * (1.008 ** 252 - 1.008 ** 240) / 0.008 / 1000",
+  "ano20_mil": "500 * (1.008 ** 132 - 1.008 ** 120) / 0.008 / 1000",
+  "ano30": "500 * (1.008 ** 12 - 1) / 0.008",
+  "renda_ano": "1000 * 12",
+  "capital_8_mil": "12000 / 0.08 / 1000",
+  "capital_6_mil": "12000 / 0.06 / 1000",
+  "capital_10_mil": "12000 / 0.10 / 1000",
+  "tempo_8": "log(1 + 150000 * 0.008 / 500) / log(1.008)",
+  "tempo_8_anos": "tempo_8 / 12",
+  "teto": "3 / 0.06",
+  "dy_40": "3 / 40 * 100",
+  "dy_60": "3 / 60 * 100"
+ },
+ "numeros_livres": [
+  100
+ ],
+ "numeros_fonte": [
+  {
+   "descricao": "Décio Bazin publicou 'Faça Fortuna com Ações Antes que seja Tarde' em 1992",
+   "valor": 1992,
+   "url": "https://investidor10.com.br/conteudo/estrategia-de-decio-bazin/",
+   "data_referencia": "2026-08-05"
+  },
+  {
+   "descricao": "Critério de Bazin: dividend yield mínimo de 6% ao ano; preço-teto = proventos ÷ 0,06",
+   "valor": 6,
+   "url": "https://www.infomoney.com.br/?p=1982816",
+   "data_referencia": "2023"
+  }
+ ],
+ "fontes": [
+  "Cálculo próprio: VF = A × ((1 + i)^n − 1) / i; ponto de virada n = ln 2 / ln(1 + i); capital = renda anual ÷ DY",
+  "Método Bazin: InfoMoney e Investidor10 (links em numeros_fonte)"
+ ],
+ "capa": {
+  "linha1": "Quando os juros",
+  "linha2": "passam o seu aporte?",
+  "destaque": "Parte 1"
+ },
+ "cenas": [
+  {
+   "id": "b1_hook",
+   "tipo": "numero_grande",
+   "tts": "Tem um mês em que os juros rendem mais que o seu aporte. É o ponto de virada. E dá para calcular quando ele chega.",
+   "leg": "Tem um mês em que os juros rendem mais que o seu aporte. É o ponto de virada. E dá para calcular.",
+   "dados": {
+    "valor": "Mês 87",
+    "linhas": [
+     "os juros do mês",
+     "passam o seu aporte"
+    ]
+   }
+  },
+  {
+   "id": "b1_mes1",
+   "tipo": "formula",
+   "tts": "No primeiro mês, você coloca quinhentos reais e eles rendem zero vírgula oito por cento. São quatro reais de juros. Quase nada. Quem está fazendo o trabalho é você.",
+   "leg": "No primeiro mês, R$ 500 rendem 0,8%: R$ 4 de juros. Quase nada. Quem faz o trabalho é você.",
+   "dados": {
+    "titulo": "No primeiro mês",
+    "linha1": "R$ 500 × 0,8%",
+    "resultado": "= R$ 4",
+    "nota": "de juros no mês"
+   }
+  },
+  {
+   "id": "b1_conta",
+   "tipo": "formula",
+   "tts": "Os juros do mês chegam a quinhentos reais quando o saldo bate sessenta e dois mil e quinhentos reais. Porque zero vírgula oito por cento de sessenta e dois mil e quinhentos dá exatamente quinhentos.",
+   "leg": "Os juros do mês chegam a R$ 500 quando o saldo bate R$ 62.500. Porque 0,8% de R$ 62.500 dá exatamente R$ 500.",
+   "dados": {
+    "titulo": "Juros do mês = R$ 500?",
+    "linha1": "R$ 500 ÷ 0,8%",
+    "resultado": "R$ 62.500",
+    "nota": "saldo necessário"
+   }
+  },
+  {
+   "id": "b1_grafico",
+   "tipo": "linhas",
+   "tts": "No gráfico, a linha verde são os juros de cada mês, e a cinza é o seu aporte. Elas se cruzam no mês oitenta e sete, depois de sete anos e três meses. A partir daí, os juros sozinhos colocam mais dinheiro na conta do que você.",
+   "leg": "A linha verde são os juros de cada mês; a cinza, o seu aporte. Elas se cruzam no mês 87, depois de 7 anos e 3 meses. Daí em diante, os juros colocam mais dinheiro que você.",
+   "dados": {
+    "titulo": "Juros do mês × seu aporte",
+    "x_rotulo": "meses",
+    "x_ticks": [
+     0,
+     24,
+     48,
+     72,
+     96,
+     120
+    ],
+    "ymax": 900,
+    "ymin": 0,
+    "y_passo": 200,
+    "series": [
+     {
+      "nome": "juros do mês",
+      "destaque": true,
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 801",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        4,
+        16.19
+       ],
+       [
+        8,
+        32.91
+       ],
+       [
+        12,
+        50.17
+       ],
+       [
+        16,
+        67.99
+       ],
+       [
+        20,
+        86.38
+       ],
+       [
+        24,
+        105.37
+       ],
+       [
+        28,
+        124.98
+       ],
+       [
+        32,
+        145.22
+       ],
+       [
+        36,
+        166.11
+       ],
+       [
+        40,
+        187.69
+       ],
+       [
+        44,
+        209.96
+       ],
+       [
+        48,
+        232.95
+       ],
+       [
+        52,
+        256.69
+       ],
+       [
+        56,
+        281.2
+       ],
+       [
+        60,
+        306.5
+       ],
+       [
+        64,
+        332.61
+       ],
+       [
+        68,
+        359.58
+       ],
+       [
+        72,
+        387.42
+       ],
+       [
+        76,
+        416.16
+       ],
+       [
+        80,
+        445.83
+       ],
+       [
+        84,
+        476.46
+       ],
+       [
+        88,
+        508.08
+       ],
+       [
+        92,
+        540.73
+       ],
+       [
+        96,
+        574.44
+       ],
+       [
+        100,
+        609.23
+       ],
+       [
+        104,
+        645.16
+       ],
+       [
+        108,
+        682.24
+       ],
+       [
+        112,
+        720.53
+       ],
+       [
+        116,
+        760.06
+       ],
+       [
+        120,
+        800.87
+       ]
+      ]
+     },
+     {
+      "nome": "seu aporte",
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 500",
+      "pontos": [
+       [
+        0,
+        500
+       ],
+       [
+        4,
+        500
+       ],
+       [
+        8,
+        500
+       ],
+       [
+        12,
+        500
+       ],
+       [
+        16,
+        500
+       ],
+       [
+        20,
+        500
+       ],
+       [
+        24,
+        500
+       ],
+       [
+        28,
+        500
+       ],
+       [
+        32,
+        500
+       ],
+       [
+        36,
+        500
+       ],
+       [
+        40,
+        500
+       ],
+       [
+        44,
+        500
+       ],
+       [
+        48,
+        500
+       ],
+       [
+        52,
+        500
+       ],
+       [
+        56,
+        500
+       ],
+       [
+        60,
+        500
+       ],
+       [
+        64,
+        500
+       ],
+       [
+        68,
+        500
+       ],
+       [
+        72,
+        500
+       ],
+       [
+        76,
+        500
+       ],
+       [
+        80,
+        500
+       ],
+       [
+        84,
+        500
+       ],
+       [
+        88,
+        500
+       ],
+       [
+        92,
+        500
+       ],
+       [
+        96,
+        500
+       ],
+       [
+        100,
+        500
+       ],
+       [
+        104,
+        500
+       ],
+       [
+        108,
+        500
+       ],
+       [
+        112,
+        500
+       ],
+       [
+        116,
+        500
+       ],
+       [
+        120,
+        500
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "b1_qualquer",
+   "tipo": "titulo",
+   "tts": "E tem um detalhe curioso: com essa taxa, a virada chega no mês oitenta e sete para qualquer valor de aporte. Cem reais, quinhentos ou mil. Quem muda a data é a taxa, não o tamanho do aporte.",
+   "leg": "Detalhe curioso: com essa taxa, a virada chega no mês 87 para qualquer valor de aporte. Quem muda a data é a taxa, não o tamanho do aporte.",
+   "dados": {
+    "titulo": [
+     "Vale para",
+     "qualquer aporte"
+    ],
+    "subtitulo": "a 0,8% ao mês, a virada é no mês 87"
+   }
+  },
+  {
+   "id": "b1_cruza",
+   "tipo": "versus",
+   "tts": "Tem um segundo marco. No mês cento e cinquenta e nove, com treze anos e três meses, os juros acumulados passam o total que você aportou. Dali em diante, mais da metade do seu patrimônio veio dos juros.",
+   "leg": "Segundo marco: no mês 159, com 13 anos e 3 meses, os juros acumulados passam o total aportado. Dali em diante, mais da metade do patrimônio veio dos juros.",
+   "dados": {
+    "a": "R$ 79.500",
+    "b": "R$ 79.873",
+    "rotulo_a": "você aportou",
+    "rotulo_b": "juros acumulados",
+    "centro": "mês 159"
+   }
+  },
+  {
+   "id": "p_cta",
+   "tipo": "cta",
+   "tts": "Na parte dois, a conta que mostra por que os primeiros anos valem mais que todos os outros. Segue o perfil para não perder.",
+   "leg": "Na parte 2: por que os primeiros anos valem mais que todos os outros. Segue o perfil para não perder.",
+   "dados": {
+    "linhas": [
+     "Parte 2: por que",
+     "começar cedo vale tanto"
+    ],
+    "botao": "Segue para ver a parte 2"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Provento. O dinheiro que trabalha por você.",
+   "leg": "Provento. O dinheiro que trabalha por você."
+  }
+ ],
+ "posts": {
+  "instagram": {
+   "texto": "Tem um mês em que os juros rendem mais que o seu aporte. (Parte 1/3)\n\nR$ 500 por mês a 0,8% ao mês:\n• mês 1 → R$ 4 de juros\n• mês 87 → os juros do mês passam os R$ 500\n• mês 159 → os juros acumulados passam tudo o que você aportou\n\nE a virada no mês 87 vale para qualquer valor de aporte.\n\nParte 2 amanhã: por que os primeiros 10 anos valem mais. 👇\n\nTaxa hipotética, sem impostos. Narração gerada por IA.\n\n#educacaofinanceira #jurocomposto #investimentos #financaspessoais #dinheiro"
+  },
+  "tiktok": {
+   "texto": "Tem um mês em que os juros rendem mais que o seu aporte: no exemplo, o mês 87. Parte 1 de 3. Taxa hipotética, narração por IA. #educacaofinanceira #jurocomposto #investimentos #dinheiro"
+  }
+ },
+ "parte_de": "JQE-L001"
+}

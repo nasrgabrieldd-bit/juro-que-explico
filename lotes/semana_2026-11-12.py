@@ -18,7 +18,8 @@ def cena(id_, tipo, tts, leg, dados=None):
     return c
 
 
-ASS = cena("assinatura", "assinatura", "Juro que explico.", "Juro que explico.")
+MARCA = json.load(open("/home/claude/juro-que-explico/marca/marca.json"))
+ASS = cena("assinatura", "assinatura", MARCA["assinatura_tts"], MARCA["assinatura_tts"])
 eps = []
 
 # ---------------- S003 — taxa ao mês x ao ano ----------------

@@ -1,4 +1,4 @@
-"""Motor de render genérico — Juro que Explico (9:16, 1080x1920).
+"""Motor de render genérico (9:16, 1080x1920; modo horizontal 1920x1080). Marca e cores vêm de marca/marca.json.
 Lê episodios/<ID>/roteiro.json (cenas tipadas) + tempos.json (da narração) e gera <ID>.mp4 e capa.png.
 Uso: python3 pipeline/render.py episodios/<ID> [frames t1 t2 ...]"""
 import hashlib
@@ -11,12 +11,19 @@ from functools import lru_cache
 from PIL import Image, ImageDraw, ImageFont
 
 EP = sys.argv[1].rstrip("/")
-W, H, FPS = 1080, 1920, 30
-BG, LIME, MOSS = (8, 11, 9), (182, 242, 59), (57, 70, 61)
-WHITE, GRAY = (244, 247, 243), (170, 179, 170)
+W, H, FPS = 1080, 1920, 30  # a cena é sempre desenhada no palco vertical; o modo horizontal recorta e recompõe
+import os
+MARCA = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "marca", "marca.json")))
+_c = MARCA["cores"]
+# nomes antigos mantidos por compatibilidade: LIME = destaque, WHITE = texto principal, BG = fundo, MOSS = grade
+BG, LIME, MOSS = tuple(_c["fundo"]), tuple(_c["destaque"]), tuple(_c["grade"])
+WHITE, GRAY = tuple(_c["texto"]), tuple(_c["secundaria"])
+LEG_BG, LEG_TX = tuple(_c["legenda_fundo"]), tuple(_c["legenda_texto"])
 FONTS = "/usr/share/fonts/opentype/inter/"
 
 rot = json.load(open(f"{EP}/roteiro.json"))
+HORIZONTAL = rot.get("formato", "").startswith("horizontal")
+HW, HH = 1920, 1080
 tempos = json.load(open(f"{EP}/tempos.json"))
 CAUDA = 1.2
 DUR = tempos["total"] + CAUDA
@@ -95,12 +102,22 @@ for x in range(0, W, GRADE):
     bd.line([(x, 0), (x, H)], fill=MOSS + (55,), width=1)
 for y in range(0, H, GRADE):
     bd.line([(0, y), (W, y)], fill=MOSS + (55,), width=1)
-bd.text((70, 215), "JURO QUE EXPLICO", font=fonte("bold", 34), fill=LIME, anchor="lm")
+bd.text((70, 215), MARCA["nome_topo"], font=fonte("xb", 36), fill=LIME, anchor="lm")
 bd.rectangle([70, 245, 150, 250], fill=LIME)
 if rot.get("nota_tela"):
     bd.text((70, 288), rot["nota_tela"], font=fonte("med", 28), fill=GRAY, anchor="lm")
 # marca d'água anti-recorte (D14)
-bd.text((W / 2, 1530), "J%  Juro que Explico", font=fonte("bold", 34), fill=WHITE + (95,), anchor="mm")
+def selo(dd, cx, cy, tam, alpha):
+    """Marca d'água: círculo com a inicial + nome."""
+    tw = dd.textlength(MARCA["nome"], font=fonte("bold", tam))
+    x0 = cx - (tam * 1.3 + 12 + tw) / 2
+    r = tam * 0.65
+    dd.ellipse([x0, cy - r, x0 + 2 * r, cy + r], fill=LIME + (alpha,))
+    dd.text((x0 + r, cy), MARCA["inicial"], font=fonte("black", tam * 0.8), fill=BG + (alpha,), anchor="mm")
+    dd.text((x0 + 2 * r + 12, cy), MARCA["nome"], font=fonte("bold", tam), fill=WHITE + (alpha,), anchor="lm")
+
+
+selo(bd, W / 2, 1530, 34, 120)
 
 
 # ---------------- tipos de cena ----------------
@@ -259,9 +276,12 @@ def c_cta(d, t, dur, D):
 
 
 def c_assinatura(d, t, dur, D):
-    texto(d, (W / 2, 760), "Juro que", "black", 150, WHITE, jan(t, 0))
-    texto(d, (W / 2, 920), "Explico.", "black", 170, LIME, jan(t, 0.25))
-    texto(d, (W / 2, 1080), "O dinheiro sem complicação.", "med", 52, GRAY, jan(t, 0.8))
+    a = jan(t, 0)
+    r = 110
+    d.ellipse([W / 2 - r, 700 - r, W / 2 + r, 700 + r], fill=LIME + (int(255 * a),))
+    texto(d, (W / 2, 700), MARCA["inicial"], "black", 150, BG, a)
+    texto(d, (W / 2, 930), MARCA["nome"] + ".", "black", 150, WHITE, jan(t, 0.25))
+    texto(d, (W / 2, 1060), MARCA["tagline"], "med", cabe(d, MARCA["tagline"], "med", 52, 960), GRAY, jan(t, 0.8))
 
 
 TIPOS = {"numero_grande": c_numero_grande, "titulo": c_titulo, "versus": c_versus, "formula": c_formula,
@@ -311,29 +331,72 @@ def legenda(d, t):
         if ini <= t < fim + 0.05:
             f = fonte("bold", cabe(d, s, "bold", 54, 960))
             l, t_, r, b = d.textbbox((W / 2, 1420), s, font=f, anchor="mm")
-            d.rounded_rectangle([l - 28, t_ - 20, r + 28, b + 20], radius=16, fill=(0, 0, 0, 170))
-            d.text((W / 2, 1420), s, font=f, fill=WHITE, anchor="mm")
+            d.rounded_rectangle([l - 28, t_ - 20, r + 28, b + 20], radius=16, fill=LEG_BG)
+            d.text((W / 2, 1420), s, font=f, fill=LEG_TX, anchor="mm")
             return
 
 
-def quadro(t):
-    img = base.copy()
-    d = ImageDraw.Draw(img, "RGBA")
+def cena_em(d, t):
     for c in cenas:
         if c["inicio"] - 0.001 <= t < c["fim"] or (c is cenas[0] and t < c["inicio"]):
             tl = max(0.0, t - c["inicio"])
-            if c is cenas[0] and rot.get("abertura_rapida", True):
+            rapido = c is cenas[0] and rot.get("abertura_rapida", True)
+            if rapido:
                 # retenção: o gancho já está montado no primeiro quadro e os elementos entram 3x mais rápido
                 tl = 2.4 + tl * 3
-            TIPOS[c["spec"]["tipo"]](d, tl, c["dur"] * 3, c["spec"].get("dados", {})) if c is cenas[0] and rot.get("abertura_rapida", True) \
-                else TIPOS[c["spec"]["tipo"]](d, tl, c["dur"], c["spec"].get("dados", {}))
+            TIPOS[c["spec"]["tipo"]](d, tl, c["dur"] * (3 if rapido else 1), c["spec"].get("dados", {}))
             sobra = c["fim"] - t
             if sobra < 0.2 and c is not cenas[-1]:
                 d.rectangle([0, 300, W, 1300], fill=BG + (int(255 * (1 - sobra / 0.2) * 0.9),))
             break
+
+
+def quadro_vertical(t):
+    img = base.copy()
+    d = ImageDraw.Draw(img, "RGBA")
+    cena_em(d, t)
     legenda(d, t)
     d.rectangle([0, 0, int(W * t / DUR), 8], fill=LIME)
     return img
+
+
+# ---------- modo horizontal (YouTube longo, 1920x1080) ----------
+base_h = Image.new("RGB", (HW, HH), BG)
+_bh = ImageDraw.Draw(base_h, "RGBA")
+for x in range(0, HW, GRADE):
+    _bh.line([(x, 0), (x, HH)], fill=MOSS + (55,), width=1)
+for y in range(0, HH, GRADE):
+    _bh.line([(0, y), (HW, y)], fill=MOSS + (55,), width=1)
+_bh.text((80, 70), MARCA["nome_topo"], font=fonte("xb", 32), fill=LIME, anchor="lm")
+_bh.rectangle([80, 96, 150, 100], fill=LIME)
+if rot.get("nota_tela"):
+    _bh.text((80, 128), rot["nota_tela"], font=fonte("med", 24), fill=GRAY, anchor="lm")
+selo(_bh, HW - 200, 70, 30, 120)
+CROP = (0, 330, 1080, 1330)          # área útil do palco vertical
+ESC = 0.80                           # 1080x1000 -> 864x800
+PALCO = (int(1080 * ESC), int(1000 * ESC))
+PX, PY = (HW - PALCO[0]) // 2, 150
+
+
+def quadro_horizontal(t):
+    palco = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    cena_em(ImageDraw.Draw(palco, "RGBA"), t)
+    img = base_h.copy().convert("RGBA")
+    img.alpha_composite(palco.crop(CROP).resize(PALCO, Image.LANCZOS), (PX, PY))
+    d = ImageDraw.Draw(img, "RGBA")
+    for ini, fim, txt in LEG:
+        if ini <= t < fim + 0.05:
+            f = fonte("bold", cabe(d, txt, "bold", 46, 1500))
+            l, t_, r, b = d.textbbox((HW / 2, 1010), txt, font=f, anchor="mm")
+            d.rounded_rectangle([l - 24, t_ - 16, r + 24, b + 16], radius=14, fill=LEG_BG)
+            d.text((HW / 2, 1010), txt, font=f, fill=LEG_TX, anchor="mm")
+            break
+    d.rectangle([0, 0, int(HW * t / DUR), 6], fill=LIME)
+    return img.convert("RGB")
+
+
+def quadro(t):
+    return quadro_horizontal(t) if HORIZONTAL else quadro_vertical(t)
 
 
 def capa():
@@ -354,9 +417,10 @@ if __name__ == "__main__":
         for ts in sys.argv[3:]:
             quadro(float(ts)).save(f"{EP}/frame_{ts}.png")
         sys.exit()
-    capa()
+    if not HORIZONTAL:
+        capa()
     saida = f"{EP}/{rot['id']}.mp4"
-    cmd = ["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+    cmd = ["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{HW}x{HH}" if HORIZONTAL else f"{W}x{H}",
            "-r", str(FPS), "-i", "-", "-i", f"{EP}/narracao.wav", "-filter_complex",
            "[1:a]loudnorm=I=-14:TP=-1.5:LRA=7,apad[a]", "-map", "0:v", "-map", "[a]", "-t", f"{DUR:.3f}",
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",

@@ -100,7 +100,10 @@ if os.path.exists(f"{EP}/tempos.json"):
     if len(tj["cenas"]) > 1:
         ok(tj["cenas"][1]["inicio"] <= 8.0, f"gancho: cena 2 começa até 8 s ({tj['cenas'][1]['inicio']:.1f} s)")
     ok(total > 61, f"duração {total:.1f} s > 61 s (TikTok Creator Rewards)")
-    ok(total < 175, f"duração {total:.1f} s < 3 min (Shorts)")
+    if rot.get("formato", "").startswith("horizontal"):
+        ok(total >= 240, f"duração {total:.1f} s ≥ 4 min (vídeo longo)")
+    else:
+        ok(total < 175, f"duração {total:.1f} s < 3 min (Shorts)")
 
 if erros:
     sys.exit(f"REPROVADO: {len(erros)} falha(s)")

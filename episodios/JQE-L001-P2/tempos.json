@@ -1,0 +1,49 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 66.443,
+ "cenas": [
+  {
+   "id": "b2_hook",
+   "inicio": 0.1,
+   "dur": 6.421,
+   "texto": "Seus primeiros dez anos investindo valem mais que os vinte anos seguintes. Parece estranho, mas a conta mostra."
+  },
+  {
+   "id": "b2_total",
+   "inicio": 6.871,
+   "dur": 13.163,
+   "texto": "Em trinta anos, com quinhentos reais por mês a zero vírgula oito por cento, você aporta cento e oitenta mil reais e termina com cerca de um vírgula zero quatro milhão. Oitocentos e cinquenta e oito mil vieram dos juros."
+  },
+  {
+   "id": "b2_divide",
+   "inicio": 20.384,
+   "dur": 13.077,
+   "texto": "Agora separe esse resultado. Os aportes dos primeiros dez anos, sessenta mil reais, viram seiscentos e setenta e sete mil. Os aportes dos vinte anos seguintes, o dobro, cento e vinte mil, viram só trezentos e sessenta mil."
+  },
+  {
+   "id": "b2_ano",
+   "inicio": 33.811,
+   "dur": 13.44,
+   "texto": "Olhe ano a ano. Os seis mil reais aportados no primeiro ano viram cem mil. Os do décimo ano, quarenta e dois mil. Os do vigésimo, dezesseis mil. E os do último ano, pouco mais de seis mil. O mesmo dinheiro, com menos tempo para render."
+  },
+  {
+   "id": "b2_licao",
+   "inicio": 47.601,
+   "dur": 9.045,
+   "texto": "Por isso o começo importa tanto. Os primeiros aportes parecem pequenos e lentos, mas são eles que ficam mais tempo rendendo. São a base da bola de neve."
+  },
+  {
+   "id": "p_cta",
+   "inicio": 56.997,
+   "dur": 6.208,
+   "texto": "Na parte três, quanto dinheiro você precisa para receber mil reais por mês em dividendos. Segue o perfil."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 63.555,
+   "dur": 2.539,
+   "texto": "Provento. O dinheiro que trabalha por você."
+  }
+ ]
+}

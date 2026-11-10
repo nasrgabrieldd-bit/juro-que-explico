@@ -1,6 +1,9 @@
-# Manual da produção diária — Juro que Explico
+# Manual da produção diária — Provento
 
 Este arquivo é a fonte de verdade da rotina automática. Cada execução diária lê este manual, produz **um** vídeo vertical e agenda a publicação para o dia seguinte.
+
+## Marca
+Nome, inicial, tagline, assinatura e cores ficam em `marca/marca.json`. O render lê esse arquivo: trocar a marca = editar o JSON e renderizar de novo. Nunca escreva o nome da marca direto no código ou no roteiro (exceto a cena de assinatura, que copia `assinatura_tts`).
 
 ## Regras fixas (decisões do fundador)
 - Orçamento zero. Só ferramentas gratuitas.
@@ -16,7 +19,7 @@ Este arquivo é a fonte de verdade da rotina automática. Cada execução diári
 - Proibido: notícia do dia, previsão de mercado, recomendação de ativo, corretora, banco ou produto específico, promessa de ganho, conteúdo político.
 - Números: preferir exemplos ilustrativos calculados (taxas hipotéticas, avisadas em `nota_tela`). Dado oficial (Selic, IPCA, etc.) só se buscado na hora com WebFetch na fonte oficial e registrado em `numeros_fonte` com `url` e `data_referencia`.
 - Não repetir pauta já feita (ver `PAUTAS.md`).
-- Tom: didático, direto, segunda pessoa, frases curtas. Abertura com pergunta ou número forte nos primeiros 3 s. Fechamento com pergunta para comentar e a assinatura "Juro que explico."
+- Tom: didático, direto, segunda pessoa, frases curtas. Abertura com pergunta ou número forte nos primeiros 3 s. Fechamento com pergunta para comentar e a assinatura da marca (`marca/marca.json` → `assinatura_tts`).
 
 ## Retenção nos primeiros segundos (obrigatório a partir do JQE-S010)
 O gancho decide se a pessoa fica. Regras:
@@ -58,7 +61,7 @@ Use `episodios/JQE-S002/roteiro.json` como modelo. Campos:
 | `linhas` | `titulo`, `x_rotulo`, `x_ticks`, `ymax`, `ymin`, `y_passo`, `y_fmt` ("brl"/"num"/"pct"), `series` [{nome, pontos [[x,y]...], destaque, inicio, velocidade, rotulo_final}] |
 | `lista` | `titulo` (lista), `itens` (3 itens curtos, até ~30 caracteres) |
 | `cta` | `linhas` [2], `botao` |
-| `assinatura` | sem dados; sempre a última cena, `tts`/`leg` = "Juro que explico." |
+| `assinatura` | sem dados; sempre a última cena, `tts`/`leg` = `assinatura_tts` de `marca/marca.json` ("Provento. O dinheiro que trabalha por você.") |
 
 Limites de texto: títulos até ~22 caracteres por linha; `resultado` até ~14; legendas são quebradas automaticamente.
 Para o vídeo passar de 61 s, o roteiro precisa de cerca de 150 a 190 palavras faladas em 8 a 10 cenas.
@@ -86,3 +89,8 @@ Apague os `frame_*.png` antes do commit.
 
 ## Data de publicação
 A fila mantém cerca de uma semana agendada. Se algum canal tiver 9 ou mais posts agendados (limite do plano gratuito: 10), a rotina não produz nada naquele dia. Senão, agenda para o primeiro dia sem post no YouTube a partir de amanhã. Registre a data em `PAUTAS.md`.
+
+## Formato longo (YouTube 16:9) + cortes
+- Roteiro com `formato: "horizontal 16:9"`; o render recompõe as cenas num quadro 1920x1080. Alvo de 4 a 6 minutos (`checa.py` exige ≥ 4 min).
+- O longo é dividido em 3 blocos; cada bloco começa com cena de gancho e vira um corte vertical (`<ID>-P1..P3`), cada um com mais de 61 s, CTA para a próxima parte e assinatura.
+- Modelo: `lotes/longo_L001.py`. Publicação: longo no YouTube; cortes no Instagram e TikTok em dias seguidos, às 18:00.
