@@ -50,8 +50,8 @@ for arg in sys.argv[1:]:
         lista.append({"episodio": ep, "canal": c, "create_post": p})
         chaves.add((ep, c))
 
-lista.sort(key=lambda i: i["create_post"]["dueAt"])
+lista.sort(key=lambda i: i.get("create_post", {}).get("dueAt", i.get("publishAt", "")))
 json.dump(lista, open(arq, "w"), ensure_ascii=False, indent=1)
 print(len(lista), "itens pendentes")
 for i in lista:
-    print(" ", i["episodio"], i["canal"], i["create_post"]["dueAt"])
+    print(" ", i["episodio"], i["canal"], i.get("create_post", {}).get("dueAt", i.get("publishAt")))

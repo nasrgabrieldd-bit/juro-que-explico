@@ -17,7 +17,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-L001-P2/JQE-L001-P2.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-L001-P2/JQE-L001-P2_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 66821
+      }
      }
     }
    ],
@@ -65,7 +68,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-L001-P3/JQE-L001-P3.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-L001-P3/JQE-L001-P3_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 95019
+      }
      }
     }
    ],
@@ -113,7 +119,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S010/JQE-S010.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S010/JQE-S010_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 70209
+      }
      }
     }
    ],
