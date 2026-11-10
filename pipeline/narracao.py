@@ -15,7 +15,7 @@ rot = json.load(open(roteiro_path))
 k = Kokoro(f"{MODELOS}/kokoro-v1.0.onnx", f"{MODELOS}/voices-v1.0.bin")
 
 PAUSA = 0.35  # segundos entre cenas
-INICIO = 0.3
+INICIO = 0.1  # retenção: a voz começa quase junto com o primeiro quadro
 trechos, tempos, t = [], [], INICIO
 sr_final = 24000
 trechos.append(np.zeros(int(INICIO * sr_final), dtype=np.float32))

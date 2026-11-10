@@ -18,6 +18,22 @@ Este arquivo é a fonte de verdade da rotina automática. Cada execução diári
 - Não repetir pauta já feita (ver `PAUTAS.md`).
 - Tom: didático, direto, segunda pessoa, frases curtas. Abertura com pergunta ou número forte nos primeiros 3 s. Fechamento com pergunta para comentar e a assinatura "Juro que explico."
 
+## Retenção nos primeiros segundos (obrigatório a partir do JQE-S010)
+O gancho decide se a pessoa fica. Regras:
+1. **Primeiro quadro já cheio.** O render monta a cena 1 inteira no quadro zero (número, linhas e pergunta já na tela) e a voz entra em 0,1 s. Nunca abrir com tela vazia, logo ou vinheta.
+2. **Primeira frase com até 16 palavras**, com um número concreto e uma lacuna que só o vídeo fecha. Fórmulas que funcionam no nicho:
+   - contradição: "1% ao mês não é 12% ao ano."
+   - custo escondido: "Esperar 5 anos pode custar R$ 250 mil."
+   - pergunta com número: "R$ 15 por dia vira quanto em 10 anos?"
+   - escolha: "10× sem juros ou 10% à vista: qual sai mais barato?"
+   - erro comum: "Quase todo mundo faz essa conta do jeito errado."
+3. **Sem saudação, sem nome do canal, sem "neste vídeo".** A marca aparece só na assinatura final.
+4. **Promessa e adiamento (open loop):** o gancho faz a pergunta; a resposta completa vem só a partir da cena 3 ou 4. Pode antecipar: "e a resposta muda conforme a taxa".
+5. **Cena 2 começa em até 8 s.** Depois, troca visual a cada 4 a 8 s (nova cena ou novo elemento na tela).
+6. **Clique coerente:** o título do YouTube, a capa e a primeira frase prometem a mesma coisa. Nada de promessa que o vídeo não cumpre.
+7. **Fim que puxa replay:** a pergunta do CTA retoma o número do gancho, para o fim emendar no começo quando o Short repete.
+O `checa.py` reprova: primeira frase com mais de 16 palavras, cena 1 sem número/comparação/conta, saudação no gancho e cena 2 depois de 8 s.
+
 ## Formato do roteiro (`episodios/<ID>/roteiro.json`)
 Use `episodios/JQE-S002/roteiro.json` como modelo. Campos:
 - `id` (JQE-S###, sequencial), `titulo`, `formato` ("vertical 9:16"), `pilar`, `tipo`, `risco`.

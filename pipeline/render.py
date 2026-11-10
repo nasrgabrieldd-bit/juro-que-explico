@@ -321,7 +321,12 @@ def quadro(t):
     d = ImageDraw.Draw(img, "RGBA")
     for c in cenas:
         if c["inicio"] - 0.001 <= t < c["fim"] or (c is cenas[0] and t < c["inicio"]):
-            TIPOS[c["spec"]["tipo"]](d, max(0.0, t - c["inicio"]), c["dur"], c["spec"].get("dados", {}))
+            tl = max(0.0, t - c["inicio"])
+            if c is cenas[0] and rot.get("abertura_rapida", True):
+                # retenção: o gancho já está montado no primeiro quadro e os elementos entram 3x mais rápido
+                tl = 2.4 + tl * 3
+            TIPOS[c["spec"]["tipo"]](d, tl, c["dur"] * 3, c["spec"].get("dados", {})) if c is cenas[0] and rot.get("abertura_rapida", True) \
+                else TIPOS[c["spec"]["tipo"]](d, tl, c["dur"], c["spec"].get("dados", {}))
             sobra = c["fim"] - t
             if sobra < 0.2 and c is not cenas[-1]:
                 d.rectangle([0, 300, W, 1300], fill=BG + (int(255 * (1 - sobra / 0.2) * 0.9),))

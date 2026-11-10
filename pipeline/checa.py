@@ -86,9 +86,19 @@ for p in ["garantido", "garantia de lucro", "recomendo comprar", "compre agora",
 ok(bool(rot.get("fontes")), "fontes registradas")
 ok(rot["cenas"][-1]["tipo"] == "assinatura", "termina com a assinatura")
 
+# retenção (regras para episódios a partir do JQE-S010)
+gancho = rot["cenas"][0]
+primeira = re.split(r"(?<=[.?!])\s+", gancho["tts"].strip())[0]
+ok(len(primeira.split()) <= 16, f"gancho: primeira frase com até 16 palavras ({len(primeira.split())})")
+ok(gancho["tipo"] in ("numero_grande", "versus", "formula", "titulo"), "gancho: cena 1 mostra número, comparação ou conta")
+ok(not re.match(r"(?i)\s*(ol[áa]|oi|fala|bem-vindo|neste v[íi]deo|hoje vamos)", gancho["tts"]), "gancho: sem saudação nem introdução")
+
 # 4. duração
 if os.path.exists(f"{EP}/tempos.json"):
-    total = json.load(open(f"{EP}/tempos.json"))["total"] + 1.2
+    tj = json.load(open(f"{EP}/tempos.json"))
+    total = tj["total"] + 1.2
+    if len(tj["cenas"]) > 1:
+        ok(tj["cenas"][1]["inicio"] <= 8.0, f"gancho: cena 2 começa até 8 s ({tj['cenas'][1]['inicio']:.1f} s)")
     ok(total > 61, f"duração {total:.1f} s > 61 s (TikTok Creator Rewards)")
     ok(total < 175, f"duração {total:.1f} s < 3 min (Shorts)")
 
