@@ -103,36 +103,6 @@
  },
  {
   "episodio": "JQE-S010",
-  "canal": "yt",
-  "create_post": {
-   "channelId": "6af240c662b70b94b0d6dc1b",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-19T12:00:00-03:00",
-   "text": "R$ 1.000 por mês a 0,8% ao mês (taxa ilustrativa):\n1º R$ 100 mil → 74 meses\n2º → 46 meses\n3º → 34 meses\n4º → 27 meses\n5º → 22 meses\n\nCom R$ 100 mil investidos, os juros já colocam R$ 800 por mês na conta. Com R$ 400 mil, R$ 3.200.\n\nTaxa hipotética, sem impostos nem inflação. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #shorts",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S010/JQE-S010.mp4",
-      "metadata": {
-       "title": "Os primeiros R$ 100 mil são os mais difíceis (a conta mostra)"
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "youtube": {
-     "title": "Os primeiros R$ 100 mil são os mais difíceis (a conta mostra)",
-     "categoryId": "27",
-     "privacy": "public",
-     "isAiGenerated": true,
-     "madeForKids": false
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S010",
   "canal": "ig",
   "create_post": {
    "channelId": "6af2406162b70b94b0d6d913",
