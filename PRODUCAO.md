@@ -64,7 +64,7 @@ Use `episodios/JQE-S002/roteiro.json` como modelo. Campos:
 | `assinatura` | sem dados; sempre a última cena, `tts`/`leg` = `assinatura_tts` de `marca/marca.json` ("Juro que explico.") |
 
 Limites de texto: títulos até ~22 caracteres por linha; `resultado` até ~14; legendas são quebradas automaticamente.
-Para o vídeo passar de 61 s, o roteiro precisa de cerca de 150 a 190 palavras faladas em 8 a 10 cenas.
+Para o vídeo passar de 61 s, o roteiro precisa de 195 a 230 palavras faladas em 8 a 10 cenas (a voz pm_alex fala cerca de 3 palavras por segundo; 170 palavras deram 57 s).
 
 ## Passo a passo
 ```bash
