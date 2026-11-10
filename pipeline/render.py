@@ -108,7 +108,10 @@ if rot.get("nota_tela"):
     bd.text((70, 288), rot["nota_tela"], font=fonte("med", 28), fill=GRAY, anchor="lm")
 # marca d'água anti-recorte (D14)
 def selo(dd, cx, cy, tam, alpha):
-    """Marca d'água: círculo com a inicial + nome."""
+    """Marca d'água: texto simples (selo_texto) ou círculo com a inicial + nome."""
+    if MARCA.get("selo_texto"):
+        dd.text((cx, cy), MARCA["selo_texto"], font=fonte("bold", tam), fill=WHITE + (95,), anchor="mm")
+        return
     tw = dd.textlength(MARCA["nome"], font=fonte("bold", tam))
     x0 = cx - (tam * 1.3 + 12 + tw) / 2
     r = tam * 0.65
@@ -276,6 +279,12 @@ def c_cta(d, t, dur, D):
 
 
 def c_assinatura(d, t, dur, D):
+    if MARCA.get("assinatura_linhas"):
+        l1, l2 = MARCA["assinatura_linhas"]
+        texto(d, (W / 2, 760), l1, "black", 150, WHITE, jan(t, 0))
+        texto(d, (W / 2, 920), l2, "black", 170, LIME, jan(t, 0.25))
+        texto(d, (W / 2, 1080), MARCA["tagline"], "med", 52, GRAY, jan(t, 0.8))
+        return
     a = jan(t, 0)
     r = 110
     d.ellipse([W / 2 - r, 700 - r, W / 2 + r, 700 + r], fill=LIME + (int(255 * a),))

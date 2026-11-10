@@ -1,79 +1,79 @@
 {
  "voz": "pm_alex",
  "velocidade": 1.0,
- "total": 68.044,
+ "total": 66.921,
  "cenas": [
   {
    "id": "hook",
-   "inicio": 0.1,
+   "inicio": 0.3,
    "dur": 5.611,
    "texto": "Você pega mil reais emprestados, a dois por cento ao mês. Três anos depois, quanto você deve?"
   },
   {
    "id": "pergunta",
-   "inicio": 6.061,
+   "inicio": 6.261,
    "dur": 3.883,
    "texto": "A resposta depende de um detalhe: o juro é simples ou composto?"
   },
   {
    "id": "simples1",
-   "inicio": 10.293,
+   "inicio": 10.493,
    "dur": 6.464,
    "texto": "No juro simples, os dois por cento incidem sempre sobre os mil reais iniciais. São vinte reais todo mês."
   },
   {
    "id": "simples2",
-   "inicio": 17.107,
+   "inicio": 17.307,
    "dur": 6.4,
    "texto": "Em trinta e seis meses, são setecentos e vinte reais de juros. A dívida chega a mil setecentos e vinte."
   },
   {
    "id": "composto1",
-   "inicio": 23.857,
+   "inicio": 24.057,
    "dur": 5.12,
    "texto": "No juro composto, o juro de cada mês entra na conta do mês seguinte. É juro sobre juro."
   },
   {
    "id": "composto2",
-   "inicio": 29.327,
+   "inicio": 29.527,
    "dur": 4.331,
    "texto": "No primeiro mês, são vinte reais de juros. No último, já são quarenta."
   },
   {
    "id": "composto3",
-   "inicio": 34.008,
+   "inicio": 34.208,
    "dur": 3.499,
    "texto": "Resultado: dois mil e trinta e nove reais. A dívida dobrou."
   },
   {
    "id": "diferenca",
-   "inicio": 37.857,
+   "inicio": 38.057,
    "dur": 6.976,
    "texto": "São quase trezentos e vinte reais a mais, só pela forma de calcular. E essa diferença cresce quanto maior o prazo."
   },
   {
    "id": "prazo5",
-   "inicio": 45.183,
+   "inicio": 45.383,
    "dur": 9.451,
    "texto": "E se o prazo fosse de cinco anos? No juro simples, dois mil e duzentos reais. No composto, três mil duzentos e oitenta e um. Mais de mil reais de diferença."
   },
   {
    "id": "dica",
-   "inicio": 54.983,
+   "inicio": 55.183,
    "dur": 4.587,
    "texto": "Antes de parcelar ou atrasar uma conta, olhe sempre a taxa ao mês e o prazo."
   },
   {
    "id": "comenta",
-   "inicio": 59.92,
+   "inicio": 60.12,
    "dur": 4.885,
    "texto": "Qual dívida você quer que eu explique no próximo vídeo? Escreve aqui nos comentários."
   },
   {
    "id": "assinatura",
-   "inicio": 65.155,
-   "dur": 2.539,
-   "texto": "Provento. O dinheiro que trabalha por você."
+   "inicio": 65.355,
+   "dur": 1.216,
+   "texto": "Juro que explico."
   }
  ]
 }

@@ -1,16 +1,18 @@
 {
-  "nome": "Provento",
-  "nome_topo": "PROVENTO",
-  "inicial": "P",
-  "tagline": "O dinheiro que trabalha por você.",
-  "assinatura_tts": "Provento. O dinheiro que trabalha por você.",
+  "nome": "Juro que Explico",
+  "nome_topo": "JURO QUE EXPLICO",
+  "inicial": "J%",
+  "selo_texto": "J%  Juro que Explico",
+  "assinatura_linhas": ["Juro que", "Explico."],
+  "tagline": "O dinheiro sem complicação.",
+  "assinatura_tts": "Juro que explico.",
   "cores": {
-    "fundo": [244, 239, 230],
-    "destaque": [45, 91, 255],
-    "texto": [20, 22, 27],
-    "secundaria": [112, 118, 130],
-    "grade": [214, 205, 190],
-    "legenda_fundo": [20, 22, 27, 220],
-    "legenda_texto": [244, 239, 230]
+    "fundo": [8, 11, 9],
+    "destaque": [182, 242, 59],
+    "texto": [244, 247, 243],
+    "secundaria": [170, 179, 170],
+    "grade": [57, 70, 61],
+    "legenda_fundo": [0, 0, 0, 170],
+    "legenda_texto": [244, 247, 243]
   }
 }

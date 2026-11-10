@@ -1,61 +1,61 @@
 {
  "voz": "pm_alex",
  "velocidade": 1.0,
- "total": 66.077,
+ "total": 64.954,
  "cenas": [
   {
    "id": "hook",
-   "inicio": 0.1,
+   "inicio": 0.3,
    "dur": 5.44,
    "texto": "Quinze reais por dia. Um lanche, um café, uma taxa de entrega. Quanto isso vira em dez anos?"
   },
   {
    "id": "mes",
-   "inicio": 5.89,
+   "inicio": 6.09,
    "dur": 8.213,
    "texto": "Primeiro, a conta simples: quinze reais vezes trinta dias são quatrocentos e cinquenta reais por mês. Em um ano, cinco mil e quatrocentos."
   },
   {
    "id": "dez",
-   "inicio": 14.453,
+   "inicio": 14.653,
    "dur": 4.651,
    "texto": "Em dez anos, cinquenta e quatro mil reais. Isso sem contar rendimento nenhum."
   },
   {
    "id": "investido",
-   "inicio": 19.454,
+   "inicio": 19.654,
    "dur": 9.173,
    "texto": "E se esse valor fosse investido todo mês, com rendimento ilustrativo de zero vírgula oito por cento ao mês? Em dez anos, chegaria a uns noventa mil reais."
   },
   {
    "id": "outros",
-   "inicio": 28.977,
+   "inicio": 29.177,
    "dur": 7.381,
    "texto": "Com outros valores: cinco reais por dia viram uns trinta mil em dez anos. Trinta reais por dia passam de cento e oitenta mil."
   },
   {
    "id": "assinaturas",
-   "inicio": 36.709,
+   "inicio": 36.909,
    "dur": 13.035,
    "texto": "E vale também para gastos mensais que a gente nem lembra que existem. Uma assinatura esquecida de quarenta reais por mês soma quatro mil e oitocentos reais em dez anos. Se esse valor fosse investido, seriam mais de oito mil."
   },
   {
    "id": "licao",
-   "inicio": 50.093,
+   "inicio": 50.293,
    "dur": 7.744,
    "texto": "Não é sobre cortar todo prazer. É sobre saber o tamanho de cada hábito, escolher o que vale a pena, e deixar o resto trabalhar por você."
   },
   {
    "id": "comenta",
-   "inicio": 58.187,
+   "inicio": 58.387,
    "dur": 4.651,
    "texto": "Qual é o gasto pequeno que você mais faz no dia a dia? Conta aqui nos comentários."
   },
   {
    "id": "assinatura",
-   "inicio": 63.188,
-   "dur": 2.539,
-   "texto": "Provento. O dinheiro que trabalha por você."
+   "inicio": 63.388,
+   "dur": 1.216,
+   "texto": "Juro que explico."
   }
  ]
 }

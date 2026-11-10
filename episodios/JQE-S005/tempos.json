@@ -1,61 +1,61 @@
 {
  "voz": "pm_alex",
  "velocidade": 1.0,
- "total": 76.146,
+ "total": 75.023,
  "cenas": [
   {
    "id": "hook",
-   "inicio": 0.1,
+   "inicio": 0.3,
    "dur": 6.912,
    "texto": "Seu investimento rendeu dez por cento no ano. Parece ótimo. Mas quanto você ganhou de verdade? Depende da inflação."
   },
   {
    "id": "conceito",
-   "inicio": 7.362,
+   "inicio": 7.562,
    "dur": 9.259,
    "texto": "Rentabilidade real é o rendimento depois de descontar a inflação. Ela mostra quanto o seu poder de compra cresceu, e não só o número que aparece no extrato."
   },
   {
    "id": "exemplo",
-   "inicio": 16.971,
+   "inicio": 17.171,
    "dur": 13.205,
    "texto": "Exemplo: você aplicou mil reais e terminou o ano com mil e cem. Se a inflação foi de quatro e meio por cento, o que custava mil reais agora custa mil e quarenta e cinco. Seus mil e cem compram o que mil e cinquenta e dois compravam antes."
   },
   {
    "id": "conta",
-   "inicio": 30.526,
+   "inicio": 30.726,
    "dur": 8.533,
    "texto": "A conta certa é dividir um vírgula dez por um vírgula zero quarenta e cinco, e tirar um. O ganho real foi de cinco vírgula vinte e seis por cento."
   },
   {
    "id": "atalho",
-   "inicio": 39.409,
+   "inicio": 39.609,
    "dur": 9.045,
    "texto": "Muita gente só subtrai: dez menos quatro e meio, cinco e meio por cento. É um atalho que chega perto quando as taxas são baixas, mas a conta certa é a divisão."
   },
   {
    "id": "negativo",
-   "inicio": 48.805,
+   "inicio": 49.005,
    "dur": 10.965,
    "texto": "E se o investimento rendesse quatro por cento, com a mesma inflação? O ganho real seria negativo: menos zero vírgula quarenta e oito por cento. O saldo sobe, mas o poder de compra cai."
   },
   {
    "id": "como_usar",
-   "inicio": 60.12,
+   "inicio": 60.32,
    "dur": 8.299,
    "texto": "Para comparar direito: use a inflação do mesmo período, divida em vez de subtrair, e lembre que impostos e taxas reduzem ainda mais o ganho."
   },
   {
    "id": "comenta",
-   "inicio": 68.769,
+   "inicio": 68.969,
    "dur": 4.139,
    "texto": "E você, acha que o seu dinheiro ganhou da inflação este ano? Comenta aqui."
   },
   {
    "id": "assinatura",
-   "inicio": 73.257,
-   "dur": 2.539,
-   "texto": "Provento. O dinheiro que trabalha por você."
+   "inicio": 73.457,
+   "dur": 1.216,
+   "texto": "Juro que explico."
   }
  ]
 }

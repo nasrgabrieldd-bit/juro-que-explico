@@ -1,403 +1,113 @@
 {
- "id": "JQE-S001",
- "titulo": "Juro simples × juro composto: a mesma dívida, dois resultados",
- "formato": "vertical 9:16",
- "pilar": "Dinheiro no cotidiano",
- "tipo": "evergreen / explicador",
- "risco": "baixo — exemplo matemático ilustrativo, sem dado de mercado, sem recomendação",
- "nota_tela": "Exemplo ilustrativo · sem IOF, tarifas ou multas",
- "parametros": {
-  "principal": 1000,
-  "taxa_mensal": 0.02,
-  "meses": 36,
-  "anos_longo": 5
- },
- "numeros_livres": [],
- "numeros_fonte": [],
- "calculos": {
-  "juro_mes": "1000 * 0.02",
-  "juros_simples_36": "1000 * 0.02 * 36",
-  "simples_36": "1000 * (1 + 0.02 * 36)",
-  "composto_36": "1000 * 1.02 ** 36",
-  "fator": "1 + 0.02",
-  "ultimo_juros": "1000 * 1.02 ** 35 * 0.02",
-  "diferenca_36": "composto_36 - simples_36",
-  "simples_60": "1000 * (1 + 0.02 * 60)",
-  "composto_60": "1000 * 1.02 ** 60",
-  "diferenca_60": "composto_60 - simples_60"
- },
- "fontes": [
-  "Cálculo próprio (juro simples M = C(1 + i·n) e composto M = C(1 + i)^n)"
- ],
- "capa": {
-  "linha1": "R$ 1.000 a 2% ao mês",
-  "linha2": "viram quanto?",
-  "destaque": "Simples × composto"
- },
- "cenas": [
-  {
-   "id": "hook",
-   "tipo": "numero_grande",
-   "tts": "Você pega mil reais emprestados, a dois por cento ao mês. Três anos depois, quanto você deve?",
-   "leg": "Você pega R$ 1.000 emprestados, a 2% ao mês. Três anos depois, quanto você deve?",
-   "dados": {
-    "valor": "R$ 1.000",
-    "linhas": [
-     "a 2% ao mês",
-     "viram quanto em 3 anos?"
-    ]
-   }
+  "id": "JQE-S001",
+  "titulo": "Juro simples x juro composto: a mesma dívida, dois resultados",
+  "formato": "curto 9:16",
+  "pilar": "Dinheiro no cotidiano",
+  "tipo": "evergreen / explicador",
+  "risco": "baixo — exemplo matemático ilustrativo, sem dado de mercado, sem recomendação",
+  "parametros": {
+    "principal": 1000,
+    "taxa_mensal": 0.02,
+    "meses": 36
   },
-  {
-   "id": "pergunta",
-   "tipo": "versus",
-   "tts": "A resposta depende de um detalhe: o juro é simples ou composto?",
-   "leg": "A resposta depende de um detalhe: o juro é simples ou composto?",
-   "dados": {
-    "a": "simples",
-    "b": "composto",
-    "rotulo_a": "juro sobre o valor inicial",
-    "rotulo_b": "juro sobre juro",
-    "centro": "?"
-   }
-  },
-  {
-   "id": "simples1",
-   "tipo": "formula",
-   "tts": "No juro simples, os dois por cento incidem sempre sobre os mil reais iniciais. São vinte reais todo mês.",
-   "leg": "No juro simples, os 2% incidem sempre sobre os R$ 1.000 iniciais. São R$ 20 todo mês.",
-   "dados": {
-    "titulo": "Juro simples",
-    "linha1": "2% de R$ 1.000",
-    "resultado": "R$ 20/mês",
-    "nota": "sempre sobre o valor inicial"
-   }
-  },
-  {
-   "id": "simples2",
-   "tipo": "formula",
-   "tts": "Em trinta e seis meses, são setecentos e vinte reais de juros. A dívida chega a mil setecentos e vinte.",
-   "leg": "Em 36 meses, são R$ 720 de juros. A dívida chega a R$ 1.720.",
-   "dados": {
-    "titulo": "Em 36 meses",
-    "linha1": "R$ 20 × 36 = R$ 720",
-    "resultado": "R$ 1.720",
-    "nota": "dívida com juro simples"
-   }
-  },
-  {
-   "id": "composto1",
-   "tipo": "titulo",
-   "tts": "No juro composto, o juro de cada mês entra na conta do mês seguinte. É juro sobre juro.",
-   "leg": "No juro composto, o juro de cada mês entra na conta do mês seguinte. É juro sobre juro.",
-   "dados": {
-    "titulo": [
-     "Juro composto",
-     "juro sobre juro"
-    ],
-    "subtitulo": "o juro de cada mês entra na conta do seguinte"
-   }
-  },
-  {
-   "id": "composto2",
-   "tipo": "barras",
-   "tts": "No primeiro mês, são vinte reais de juros. No último, já são quarenta.",
-   "leg": "No primeiro mês, são R$ 20 de juros. No último, já são R$ 40.",
-   "dados": {
-    "titulo": [
-     "Juros do mês",
-     "no juro composto"
-    ],
-    "itens": [
-     {
-      "rotulo": "mês 1",
-      "valor": 20,
-      "texto": "R$ 20"
-     },
-     {
-      "rotulo": "mês 36",
-      "valor": 40,
-      "texto": "R$ 40",
-      "destaque": true
-     }
-    ],
-    "nota": "o juro cresce porque a base cresce"
-   }
-  },
-  {
-   "id": "composto3",
-   "tipo": "linhas",
-   "tts": "Resultado: dois mil e trinta e nove reais. A dívida dobrou.",
-   "leg": "Resultado: R$ 2.039. A dívida dobrou.",
-   "dados": {
-    "titulo": "Dívida de R$ 1.000 a 2% ao mês",
-    "x_rotulo": "meses",
-    "x_ticks": [
-     0,
-     12,
-     24,
-     36
-    ],
-    "ymax": 2200,
-    "ymin": 1000,
-    "y_passo": 250,
-    "series": [
-     {
-      "nome": "juro composto",
-      "destaque": true,
-      "velocidade": 0.6,
-      "inicio": 0.2,
-      "rotulo_final": "R$ 2.039,89",
-      "pontos": [
-       [
-        0,
-        1000.0
-       ],
-       [
-        2,
-        1040.4
-       ],
-       [
-        4,
-        1082.43
-       ],
-       [
-        6,
-        1126.16
-       ],
-       [
-        8,
-        1171.66
-       ],
-       [
-        10,
-        1218.99
-       ],
-       [
-        12,
-        1268.24
-       ],
-       [
-        14,
-        1319.48
-       ],
-       [
-        16,
-        1372.79
-       ],
-       [
-        18,
-        1428.25
-       ],
-       [
-        20,
-        1485.95
-       ],
-       [
-        22,
-        1545.98
-       ],
-       [
-        24,
-        1608.44
-       ],
-       [
-        26,
-        1673.42
-       ],
-       [
-        28,
-        1741.02
-       ],
-       [
-        30,
-        1811.36
-       ],
-       [
-        32,
-        1884.54
-       ],
-       [
-        34,
-        1960.68
-       ],
-       [
-        36,
-        2039.89
-       ]
-      ]
-     },
-     {
-      "nome": "juro simples",
-      "velocidade": 0.6,
-      "inicio": 0.2,
-      "rotulo_final": "R$ 1.720",
-      "pontos": [
-       [
-        0,
-        1000.0
-       ],
-       [
-        2,
-        1040.0
-       ],
-       [
-        4,
-        1080.0
-       ],
-       [
-        6,
-        1120.0
-       ],
-       [
-        8,
-        1160.0
-       ],
-       [
-        10,
-        1200.0
-       ],
-       [
-        12,
-        1240.0
-       ],
-       [
-        14,
-        1280.0
-       ],
-       [
-        16,
-        1320.0
-       ],
-       [
-        18,
-        1360.0
-       ],
-       [
-        20,
-        1400.0
-       ],
-       [
-        22,
-        1440.0
-       ],
-       [
-        24,
-        1480.0
-       ],
-       [
-        26,
-        1520.0
-       ],
-       [
-        28,
-        1560.0
-       ],
-       [
-        30,
-        1600.0
-       ],
-       [
-        32,
-        1640.0
-       ],
-       [
-        34,
-        1680.0
-       ],
-       [
-        36,
-        1720.0
-       ]
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "id": "diferenca",
-   "tipo": "versus",
-   "tts": "São quase trezentos e vinte reais a mais, só pela forma de calcular. E essa diferença cresce quanto maior o prazo.",
-   "leg": "São quase R$ 320 a mais, só pela forma de calcular. E essa diferença cresce quanto maior o prazo.",
-   "dados": {
-    "a": "R$ 1.720",
-    "b": "R$ 2.039,89",
-    "rotulo_a": "simples",
-    "rotulo_b": "composto",
-    "centro": "+R$ 320"
-   }
-  },
-  {
-   "id": "prazo5",
-   "tipo": "barras",
-   "tts": "E se o prazo fosse de cinco anos? No juro simples, dois mil e duzentos reais. No composto, três mil duzentos e oitenta e um. Mais de mil reais de diferença.",
-   "leg": "E se o prazo fosse de 5 anos? No juro simples, R$ 2.200. No composto, R$ 3.281. Mais de R$ 1.000 de diferença.",
-   "dados": {
-    "titulo": [
-     "E em 5 anos?"
-    ],
-    "itens": [
-     {
-      "rotulo": "simples",
-      "valor": 2200,
-      "texto": "R$ 2.200"
-     },
-     {
-      "rotulo": "composto",
-      "valor": 3281.03,
-      "texto": "R$ 3.281",
-      "destaque": true
-     }
-    ],
-    "nota": "mais de R$ 1.000 de diferença"
-   }
-  },
-  {
-   "id": "dica",
-   "tipo": "lista",
-   "tts": "Antes de parcelar ou atrasar uma conta, olhe sempre a taxa ao mês e o prazo.",
-   "leg": "Antes de parcelar ou atrasar uma conta, olhe sempre a taxa ao mês e o prazo.",
-   "dados": {
-    "titulo": [
-     "Antes de parcelar"
-    ],
-    "itens": [
-     "olhe a taxa ao mês",
-     "olhe o prazo",
-     "pergunte se é composto"
-    ]
-   }
-  },
-  {
-   "id": "comenta",
-   "tipo": "cta",
-   "tts": "Qual dívida você quer que eu explique no próximo vídeo? Escreve aqui nos comentários.",
-   "leg": "Qual dívida você quer que eu explique no próximo vídeo? Escreve aqui nos comentários.",
-   "dados": {
-    "linhas": [
-     "Qual dívida você quer",
-     "que eu explique?"
-    ],
-    "botao": "Comenta aqui embaixo"
-   }
-  },
-  {
-   "id": "assinatura",
-   "tipo": "assinatura",
-   "tts": "Provento. O dinheiro que trabalha por você.",
-   "leg": "Provento. O dinheiro que trabalha por você."
-  }
- ],
- "posts": {
-  "youtube": {
-   "titulo": "R$ 1.000 a 2% ao mês: juro simples ou composto?",
-   "texto": "Mesma dívida, mesma taxa: quase R$ 320 de diferença em 3 anos, e mais de R$ 1.000 em 5. Tudo depende de como o juro é calculado.\n\nJuro simples: M = C × (1 + i × n) → R$ 1.720 em 36 meses\nJuro composto: M = C × (1 + i)^n → R$ 2.039,89 em 36 meses\nEm 5 anos: R$ 2.200 × R$ 3.281\n\nExemplo ilustrativo com R$ 1.000 a 2% ao mês, sem IOF, tarifas ou multas. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\nQual dívida você quer que eu explique no próximo vídeo? Comenta aqui.\n\n#educacaofinanceira #juros #financaspessoais #shorts"
-  },
-  "instagram": {
-   "texto": "Mesma dívida, mesma taxa: quase R$ 320 de diferença.\n\nR$ 1.000 a 2% ao mês, por 36 meses:\n• juro simples → R$ 1.720\n• juro composto → R$ 2.039,89\n\nEm 5 anos, a diferença passa de R$ 1.000.\n\nAntes de parcelar ou atrasar uma conta, olhe a taxa ao mês e o prazo.\n\nQual dívida você quer que eu explique no próximo vídeo? Comenta aqui 👇\n\nExemplo ilustrativo, sem IOF, tarifas ou multas. Narração gerada por IA.\n\n#educacaofinanceira #juros #jurocomposto #financaspessoais #dinheiro"
-  },
-  "tiktok": {
-   "texto": "R$ 1.000 a 2% ao mês vira quanto em 3 anos? Juro simples × composto, na conta. Exemplo ilustrativo, narração por IA. #educacaofinanceira #juros #financaspessoais #dinheiro"
-  }
- }
+  "nota_tela": "Exemplo ilustrativo · sem IOF, tarifas ou multas",
+  "cenas": [
+    {
+      "id": "hook",
+      "tts": "Você pega mil reais emprestados, a dois por cento ao mês. Três anos depois, quanto você deve?",
+      "leg": "Você pega R$ 1.000 emprestados, a 2% ao mês. Três anos depois, quanto você deve?"
+    },
+    {
+      "id": "pergunta",
+      "tts": "A resposta depende de um detalhe: o juro é simples ou composto?",
+      "leg": "A resposta depende de um detalhe: o juro é simples ou composto?"
+    },
+    {
+      "id": "simples1",
+      "tts": "No juro simples, os dois por cento incidem sempre sobre os mil reais iniciais. São vinte reais todo mês.",
+      "leg": "No juro simples, os 2% incidem sempre sobre os R$ 1.000 iniciais. São R$ 20 todo mês."
+    },
+    {
+      "id": "simples2",
+      "tts": "Em trinta e seis meses, são setecentos e vinte reais de juros. A dívida chega a mil setecentos e vinte.",
+      "leg": "Em 36 meses, são R$ 720 de juros. A dívida chega a R$ 1.720."
+    },
+    {
+      "id": "composto1",
+      "tts": "No juro composto, o juro de cada mês entra na conta do mês seguinte. É juro sobre juro.",
+      "leg": "No juro composto, o juro de cada mês entra na conta do mês seguinte. É juro sobre juro."
+    },
+    {
+      "id": "composto2",
+      "tts": "No primeiro mês, são vinte reais de juros. No último, já são quarenta.",
+      "leg": "No primeiro mês, são R$ 20 de juros. No último, já são R$ 40."
+    },
+    {
+      "id": "composto3",
+      "tts": "Resultado: dois mil e trinta e nove reais. A dívida dobrou.",
+      "leg": "Resultado: R$ 2.039. A dívida dobrou."
+    },
+    {
+      "id": "diferenca",
+      "tts": "São quase trezentos e vinte reais a mais, só pela forma de calcular. E essa diferença cresce quanto maior o prazo.",
+      "leg": "São quase R$ 320 a mais, só pela forma de calcular. E essa diferença cresce quanto maior o prazo."
+    },
+    {
+      "id": "prazo5",
+      "tts": "E se o prazo fosse de cinco anos? No juro simples, dois mil e duzentos reais. No composto, três mil duzentos e oitenta e um. Mais de mil reais de diferença.",
+      "leg": "E se o prazo fosse de 5 anos? No juro simples, R$ 2.200. No composto, R$ 3.281. Mais de R$ 1.000 de diferença."
+    },
+    {
+      "id": "dica",
+      "tts": "Antes de parcelar ou atrasar uma conta, olhe sempre a taxa ao mês e o prazo.",
+      "leg": "Antes de parcelar ou atrasar uma conta, olhe sempre a taxa ao mês e o prazo."
+    },
+    {
+      "id": "comenta",
+      "tts": "Qual dívida você quer que eu explique no próximo vídeo? Escreve aqui nos comentários.",
+      "leg": "Qual dívida você quer que eu explique no próximo vídeo? Escreve aqui nos comentários."
+    },
+    {
+      "id": "assinatura",
+      "tts": "Juro que explico.",
+      "leg": "Juro que explico."
+    }
+  ],
+  "checagem": [
+    {
+      "afirmacao": "Juro simples: 2% de R$ 1.000 = R$ 20 por mês",
+      "verificacao": "1000 * 0,02 = 20"
+    },
+    {
+      "afirmacao": "Juros simples em 36 meses = R$ 720; montante R$ 1.720",
+      "verificacao": "1000 * 0,02 * 36 = 720"
+    },
+    {
+      "afirmacao": "Juro composto: montante R$ 2.039,89 em 36 meses",
+      "verificacao": "1000 * 1,02^36 = 2039,887"
+    },
+    {
+      "afirmacao": "Juro do último mês ≈ R$ 40",
+      "verificacao": "1000 * 1,02^35 * 0,02 = 39,998"
+    },
+    {
+      "afirmacao": "A dívida dobrou",
+      "verificacao": "2039,89 >= 2000; no mês 35 era 1999,89"
+    },
+    {
+      "afirmacao": "Diferença ≈ R$ 320",
+      "verificacao": "2039,89 - 1720 = 319,89"
+    },
+    {
+      "afirmacao": "A diferença cresce com o prazo",
+      "verificacao": "Para i > 0, (1+i)^n - (1 + i*n) é crescente em n"
+    },
+    {
+      "afirmacao": "5 anos: simples R$ 2.200; composto R$ 3.281; diferença > R$ 1.000",
+      "verificacao": "1000*(1+0,02*60)=2200; 1000*1,02^60=3281,03; diferença 1081,03"
+    }
+  ],
+  "fontes": [
+    "Cálculo próprio (fórmulas de juro simples M = C(1 + i·n) e composto M = C(1 + i)^n)"
+  ]
 }

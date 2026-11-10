@@ -1,55 +1,55 @@
 {
  "voz": "pm_alex",
  "velocidade": 1.0,
- "total": 66.751,
+ "total": 65.628,
  "cenas": [
   {
    "id": "hook",
-   "inicio": 0.1,
+   "inicio": 0.3,
    "dur": 8.96,
    "texto": "Começar a investir cinco anos depois pode custar mais de duzentos e cinquenta mil reais. Mesmo que a diferença no que você guardou seja bem menor."
   },
   {
    "id": "exemplo",
-   "inicio": 9.41,
+   "inicio": 9.61,
    "dur": 10.837,
    "texto": "O exemplo: trezentos reais por mês, com rendimento ilustrativo de zero vírgula oito por cento ao mês. Uma pessoa começa agora, a outra cinco anos depois. As duas param na mesma data."
   },
   {
    "id": "grafico",
-   "inicio": 20.597,
+   "inicio": 20.797,
    "dur": 10.603,
    "texto": "Quem começa agora investe por trinta anos e chega a cerca de seiscentos e vinte e três mil reais. Quem espera investe por vinte e cinco e chega a uns trezentos e setenta e dois mil."
   },
   {
    "id": "bolso",
-   "inicio": 31.55,
+   "inicio": 31.75,
    "dur": 7.381,
    "texto": "Do próprio bolso, a diferença é pequena: cento e oito mil contra noventa mil. São só dezoito mil reais a mais de aportes."
   },
   {
    "id": "diferenca",
-   "inicio": 39.281,
+   "inicio": 39.481,
    "dur": 10.923,
    "texto": "Mas no final, a diferença passa de duzentos e cinquenta mil reais. Os últimos anos são os que mais rendem, porque o juro já incide sobre um saldo grande. E é desses anos que quem espera abre mão."
   },
   {
    "id": "licao",
-   "inicio": 50.554,
+   "inicio": 50.754,
    "dur": 7.253,
    "texto": "A lição: o tempo pesa muito. Começar com pouco já conta, e a constância dos aportes importa mais do que acertar o momento."
   },
   {
    "id": "comenta",
-   "inicio": 58.157,
+   "inicio": 58.357,
    "dur": 5.355,
    "texto": "Com quantos anos você começou a investir? Ou ainda vai começar? Conta aqui nos comentários."
   },
   {
    "id": "assinatura",
-   "inicio": 63.862,
-   "dur": 2.539,
-   "texto": "Provento. O dinheiro que trabalha por você."
+   "inicio": 64.062,
+   "dur": 1.216,
+   "texto": "Juro que explico."
   }
  ]
 }
