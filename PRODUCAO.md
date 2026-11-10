@@ -100,7 +100,7 @@ O canal do YouTube no Buffer recusa vídeo horizontal ou com mais de 3 min. O lo
 
 ## Aprendizados do último ciclo
 (Relatório de 10/11/2026, ciclo 0. Vale até o relatório de 24/11. A rotina diária segue estas regras antes das gerais.)
-Ainda não há dados de desempenho: o primeiro post saiu em 10/11. Regras deste ciclo:
+Ainda não há dados de desempenho: o primeiro post estava agendado para 10/11 12:00. Regras deste ciclo:
 1. **Registre o gancho e o formato.** Todo roteiro novo leva `tipo_gancho` (contradição, custo escondido, pergunta com número, escolha, erro comum, história) e `formato_narrativo` (explicador, passo a passo, versus, lista, história, mito ou verdade). Use os indicados na fila e nunca repita o mesmo tipo de gancho dois dias seguidos. Sem isso o relatório de 24/11 não consegue comparar.
 2. **Estrutura variada (conteúdo inautêntico do YouTube).** A sequência de tipos de cena não pode repetir a de nenhum dos 5 episódios anteriores. A cena 1 alterna entre numero_grande, versus, formula e titulo. O CTA muda de frase a cada vídeo.
 3. **Pauta [LONGO] na fila:** nessa execução, produza o longo (16:9, ≥ 4 min; copie `lotes/longo_L001.py` para `lotes/longo_L002.py` e adapte, nunca rode o do L001) e os 3 cortes verticais em vez de um curto. Longo no YouTube às 18:00 pela seção "Vídeo longo no YouTube" (ou item `youtube_longo` em `agenda_pendente.json`); cortes no Instagram e TikTok às 18:05/18:10 em dias seguidos.
