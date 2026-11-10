@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 65.714,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.016,
+   "texto": "Uma taxa de um por cento ao ano parece pouco. Em vinte anos, pode levar cinquenta e seis mil reais."
+  },
+  {
+   "id": "exemplo",
+   "inicio": 6.466,
+   "dur": 6.805,
+   "texto": "O exemplo: cinquenta mil reais, rendendo dez por cento ao ano antes da taxa, por vinte anos. Sem novos aportes."
+  },
+  {
+   "id": "grafico",
+   "inicio": 13.621,
+   "dur": 10.176,
+   "texto": "Sem taxa, os cinquenta mil viram trezentos e trinta e seis mil. Com um por cento ao ano, o rendimento líquido cai para nove por cento, e o resultado para duzentos e oitenta mil."
+  },
+  {
+   "id": "diferenca",
+   "inicio": 24.147,
+   "dur": 5.632,
+   "texto": "São cinquenta e seis mil reais a menos. Mais do que todo o dinheiro que você colocou no começo."
+  },
+  {
+   "id": "taxas",
+   "inicio": 30.129,
+   "dur": 7.829,
+   "texto": "Com dois por cento de taxa, o resultado cai para duzentos e trinta e três mil. Cada ponto de taxa pesa mais quanto maior o prazo."
+  },
+  {
+   "id": "olhar",
+   "inicio": 38.309,
+   "dur": 9.536,
+   "texto": "Por isso, antes de investir, procure a taxa de administração e compare com o rendimento líquido. Taxa só vale a pena se o resultado depois dela compensar."
+  },
+  {
+   "id": "composto",
+   "inicio": 48.195,
+   "dur": 11.243,
+   "texto": "O motivo é o juro composto ao contrário. A taxa não sai só do dinheiro de hoje: ela também tira o rendimento que esse dinheiro geraria nos anos seguintes. Por isso pesa tanto no longo prazo."
+  },
+  {
+   "id": "comenta",
+   "inicio": 59.787,
+   "dur": 4.011,
+   "texto": "Você sabe quanto paga de taxa nos seus investimentos? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 64.148,
+   "dur": 1.216,
+   "texto": "Juro que explico."
+  }
+ ]
+}

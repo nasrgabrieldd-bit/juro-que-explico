@@ -1,0 +1,372 @@
+{
+ "id": "JQE-S011",
+ "titulo": "Reinvestir ou gastar os dividendos?",
+ "pilar": "Investimentos",
+ "risco": "baixo — DY e preço constantes, ilustrativo",
+ "nota_tela": "Exemplo ilustrativo · dividend yield e preço constantes, sem impostos",
+ "parametros": {
+  "capital": 100000,
+  "dy": 0.08,
+  "anos": 20
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "ganchos_alternativos": [
+  "R$ 667 ou R$ 3.107 por mês: a escolha é sua.",
+  "O que fazer com os dividendos que caem na conta?"
+ ],
+ "calculos": {
+  "div_ano": "100000 * 0.08",
+  "div_mes": "100000 * 0.08 / 12",
+  "gasto_total": "8000 * 20",
+  "gasto_total_mil": "160000 / 1000",
+  "reinv_20": "100000 * 1.08 ** 20",
+  "reinv_20_mil": "reinv_20 / 1000",
+  "div_ano_20": "reinv_20 * 0.08",
+  "div_mes_20": "reinv_20 * 0.08 / 12",
+  "capital_mil": "100000 / 1000"
+ },
+ "fontes": [
+  "Cálculo próprio: reinvestindo, capital × (1 + DY)^anos; gastando, o capital fica igual (preço e DY constantes)"
+ ],
+ "capa": {
+  "linha1": "Reinvestir ou gastar",
+  "linha2": "os dividendos?",
+  "destaque": "A bola de neve"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Seiscentos e sessenta e sete ou três mil e cem reais por mês. A diferença é uma escolha.",
+   "leg": "R$ 667 ou R$ 3.107 por mês. A diferença é uma escolha.",
+   "dados": {
+    "a": "R$ 667/mês",
+    "b": "R$ 3.107/mês",
+    "rotulo_a": "gastando os dividendos",
+    "rotulo_b": "reinvestindo por 20 anos",
+    "centro": "?"
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "formula",
+   "tts": "Exemplo: cem mil reais investidos, pagando oito por cento ao ano em dividendos. São oito mil por ano, uns seiscentos e sessenta e sete por mês.",
+   "leg": "Exemplo: R$ 100 mil pagando 8% ao ano em dividendos. São R$ 8.000 por ano, uns R$ 667 por mês.",
+   "dados": {
+    "titulo": "R$ 100 mil com DY de 8%",
+    "linha1": "R$ 100 mil × 8%",
+    "resultado": "R$ 8.000/ano",
+    "nota": "≈ R$ 667 por mês"
+   }
+  },
+  {
+   "id": "gastar",
+   "tipo": "titulo",
+   "tts": "Se você gasta tudo, o patrimônio fica parado em cem mil. Em vinte anos, você recebeu cento e sessenta mil, mas a renda nunca cresceu.",
+   "leg": "Se gasta tudo, o patrimônio fica parado em R$ 100 mil. Em 20 anos, recebeu R$ 160 mil, mas a renda nunca cresceu.",
+   "dados": {
+    "titulo": [
+     "Gastando tudo:",
+     "renda parada"
+    ],
+    "subtitulo": "R$ 667 por mês hoje e daqui a 20 anos"
+   }
+  },
+  {
+   "id": "grafico",
+   "tipo": "linhas",
+   "tts": "Se você reinveste, os dividendos compram mais cotas, que pagam mais dividendos. Em vinte anos, os cem mil viram uns quatrocentos e sessenta e seis mil.",
+   "leg": "Reinvestindo, os dividendos compram mais cotas, que pagam mais dividendos. Em 20 anos, R$ 100 mil viram uns R$ 466 mil.",
+   "dados": {
+    "titulo": "R$ 100 mil com DY de 8% ao ano",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "ymax": 520000,
+    "ymin": 0,
+    "y_passo": 100000,
+    "series": [
+     {
+      "nome": "reinvestindo",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 466 mil",
+      "pontos": [
+       [
+        0,
+        100000.0
+       ],
+       [
+        1,
+        108000.0
+       ],
+       [
+        2,
+        116640.0
+       ],
+       [
+        3,
+        125971.2
+       ],
+       [
+        4,
+        136048.9
+       ],
+       [
+        5,
+        146932.81
+       ],
+       [
+        6,
+        158687.43
+       ],
+       [
+        7,
+        171382.43
+       ],
+       [
+        8,
+        185093.02
+       ],
+       [
+        9,
+        199900.46
+       ],
+       [
+        10,
+        215892.5
+       ],
+       [
+        11,
+        233163.9
+       ],
+       [
+        12,
+        251817.01
+       ],
+       [
+        13,
+        271962.37
+       ],
+       [
+        14,
+        293719.36
+       ],
+       [
+        15,
+        317216.91
+       ],
+       [
+        16,
+        342594.26
+       ],
+       [
+        17,
+        370001.81
+       ],
+       [
+        18,
+        399601.95
+       ],
+       [
+        19,
+        431570.11
+       ],
+       [
+        20,
+        466095.71
+       ]
+      ]
+     },
+     {
+      "nome": "gastando",
+      "velocidade": 0.5,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 100 mil",
+      "pontos": [
+       [
+        0,
+        100000
+       ],
+       [
+        1,
+        100000
+       ],
+       [
+        2,
+        100000
+       ],
+       [
+        3,
+        100000
+       ],
+       [
+        4,
+        100000
+       ],
+       [
+        5,
+        100000
+       ],
+       [
+        6,
+        100000
+       ],
+       [
+        7,
+        100000
+       ],
+       [
+        8,
+        100000
+       ],
+       [
+        9,
+        100000
+       ],
+       [
+        10,
+        100000
+       ],
+       [
+        11,
+        100000
+       ],
+       [
+        12,
+        100000
+       ],
+       [
+        13,
+        100000
+       ],
+       [
+        14,
+        100000
+       ],
+       [
+        15,
+        100000
+       ],
+       [
+        16,
+        100000
+       ],
+       [
+        17,
+        100000
+       ],
+       [
+        18,
+        100000
+       ],
+       [
+        19,
+        100000
+       ],
+       [
+        20,
+        100000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "renda",
+   "tipo": "barras",
+   "tts": "E a renda acompanha: no ano vinte, quem reinvestiu recebe uns três mil e cem reais por mês. Quem gastou, continua nos seiscentos e sessenta e sete.",
+   "leg": "E a renda acompanha: no ano 20, quem reinvestiu recebe uns R$ 3.107 por mês. Quem gastou, continua nos R$ 667.",
+   "dados": {
+    "titulo": [
+     "Dividendos por mês",
+     "no ano 20"
+    ],
+    "itens": [
+     {
+      "rotulo": "gastando",
+      "valor": 666.67,
+      "texto": "R$ 667"
+     },
+     {
+      "rotulo": "reinvestindo",
+      "valor": 3107.3,
+      "texto": "R$ 3.107",
+      "destaque": true
+     }
+    ],
+    "nota": "dividendos variam e não têm garantia"
+   }
+  },
+  {
+   "id": "cuidado",
+   "tipo": "lista",
+   "tts": "Na vida real, dividendos e preços variam, e há impostos em alguns casos. Mas a lógica da bola de neve é a mesma: reinvestir no começo, viver da renda depois.",
+   "leg": "Na vida real, dividendos e preços variam, e pode haver impostos. Mas a lógica é a mesma: reinvestir no começo, viver da renda depois.",
+   "dados": {
+    "titulo": [
+     "A bola de neve"
+    ],
+    "itens": [
+     "reinvista no começo",
+     "a renda cresce sozinha",
+     "viva da renda depois"
+    ]
+   }
+  },
+  {
+   "id": "tempo",
+   "tipo": "titulo",
+   "tts": "E repare: nos primeiros anos, a diferença entre reinvestir e gastar é pequena. Ela só fica enorme depois de uma década. Por isso, quem desiste cedo nunca vê a bola de neve crescer.",
+   "leg": "Nos primeiros anos, a diferença entre reinvestir e gastar é pequena. Ela só fica enorme depois de uma década.",
+   "dados": {
+    "titulo": [
+     "A bola de neve",
+     "demora a crescer"
+    ],
+    "subtitulo": "a diferença aparece depois de 10 anos"
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "E você, reinveste ou gasta os seus dividendos? Comenta aqui.",
+   "leg": "E você, reinveste ou gasta os seus dividendos? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Você reinveste ou",
+     "gasta os dividendos?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Reinvestir ou gastar os dividendos? A bola de neve em 20 anos",
+   "texto": "R$ 100 mil com dividend yield de 8% ao ano (ilustrativo):\nGastando: R$ 8.000 por ano (≈ R$ 667/mês) para sempre; patrimônio parado em R$ 100 mil.\nReinvestindo por 20 anos: cerca de R$ 466 mil, pagando ≈ R$ 3.107 por mês.\n\nDY e preço constantes, sem impostos. Dividendos variam e não têm garantia. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #shorts"
+  },
+  "instagram": {
+   "texto": "R$ 667 ou R$ 3.107 por mês? A diferença é uma escolha.\n\nR$ 100 mil com DY de 8% ao ano:\n• gastando os dividendos → R$ 667/mês para sempre\n• reinvestindo por 20 anos → ≈ R$ 466 mil, pagando ≈ R$ 3.107/mês\n\nDividendos variam e não têm garantia.\n\nVocê reinveste ou gasta? 👇\n\nExemplo ilustrativo. Narração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #dinheiro"
+  },
+  "tiktok": {
+   "texto": "R$ 667 ou R$ 3.107 por mês em dividendos: a diferença é reinvestir por 20 anos. Exemplo ilustrativo, narração por IA. #educacaofinanceira #dividendos #rendapassiva"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador"
+}

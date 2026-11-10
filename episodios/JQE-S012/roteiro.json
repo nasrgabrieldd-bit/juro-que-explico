@@ -1,0 +1,161 @@
+{
+ "id": "JQE-S012",
+ "titulo": "Dividend yield alto nem sempre é bom sinal",
+ "pilar": "Investimentos",
+ "risco": "baixo — empresa fictícia, sem ativos reais",
+ "nota_tela": "Exemplo ilustrativo · empresa fictícia",
+ "parametros": {
+  "dividendo": 2,
+  "preco": 25,
+  "preco_queda": 12.5,
+  "dividendo_corte": 1
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "ganchos_alternativos": [
+  "Essa ação paga 16% de dividendos. E isso pode ser péssimo.",
+  "O yield dobrou e ninguém comemorou."
+ ],
+ "calculos": {
+  "dy_25": "2 / 25 * 100",
+  "dy_12": "2 / 12.5 * 100",
+  "dy_corte": "1 / 12.5 * 100",
+  "queda": "(1 - 12.5 / 25) * 100",
+  "div_100": "2 / 25 * 100"
+ },
+ "fontes": [
+  "Definição: dividend yield = dividendos pagos nos últimos 12 meses ÷ preço atual"
+ ],
+ "capa": {
+  "linha1": "Dividend yield de 16%",
+  "linha2": "é bom sinal?",
+  "destaque": "Nem sempre"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Uma ação pagando dezesseis por cento de dividendos. Parece ótimo. Pode ser uma armadilha.",
+   "leg": "Uma ação pagando 16% de dividendos. Parece ótimo. Pode ser uma armadilha.",
+   "dados": {
+    "valor": "16%",
+    "linhas": [
+     "de dividend yield",
+     "bom sinal ou armadilha?"
+    ]
+   }
+  },
+  {
+   "id": "conceito",
+   "tipo": "formula",
+   "tts": "O dividend yield é o dividendo pago nos últimos doze meses dividido pelo preço atual. Uma empresa fictícia pagou dois reais por ação, e a ação custa vinte e cinco. Yield de oito por cento.",
+   "leg": "O dividend yield é o dividendo dos últimos 12 meses dividido pelo preço. Empresa fictícia: pagou R$ 2, a ação custa R$ 25. Yield de 8%.",
+   "dados": {
+    "titulo": "Dividend yield",
+    "linha1": "R$ 2 ÷ R$ 25",
+    "resultado": "= 8%",
+    "nota": "dividendos de 12 meses ÷ preço atual"
+   }
+  },
+  {
+   "id": "queda",
+   "tipo": "versus",
+   "tts": "Agora a empresa tem um problema e a ação cai pela metade, para doze e cinquenta. O dividendo do passado continua na conta, e o yield pula para dezesseis por cento.",
+   "leg": "Agora a empresa tem um problema e a ação cai pela metade, para R$ 12,50. O dividendo passado continua na conta, e o yield pula para 16%.",
+   "dados": {
+    "a": "8%",
+    "b": "16%",
+    "rotulo_a": "ação a R$ 25",
+    "rotulo_b": "ação a R$ 12,50",
+    "centro": "↑ yield"
+   }
+  },
+  {
+   "id": "armadilha",
+   "tipo": "titulo",
+   "tts": "O yield subiu porque o preço caiu, e não porque a empresa passou a pagar mais. A fórmula olha para trás.",
+   "leg": "O yield subiu porque o preço caiu, e não porque a empresa passou a pagar mais. A fórmula olha para trás.",
+   "dados": {
+    "titulo": [
+     "Yield alto",
+     "pode ser preço caindo"
+    ],
+    "subtitulo": "o dividendo usado na conta é do passado"
+   }
+  },
+  {
+   "id": "corte",
+   "tipo": "formula",
+   "tts": "E se, por causa do problema, ela cortar o dividendo para um real? O yield volta para oito por cento, e quem comprou pelo número alto ficou com a ação desvalorizada.",
+   "leg": "Se ela cortar o dividendo para R$ 1, o yield volta para 8%. E quem comprou pelo número alto ficou com a ação desvalorizada.",
+   "dados": {
+    "titulo": "Se o dividendo for cortado",
+    "linha1": "R$ 1 ÷ R$ 12,50",
+    "resultado": "= 8%",
+    "nota": "e a ação já caiu 50%"
+   }
+  },
+  {
+   "id": "olhar",
+   "tipo": "lista",
+   "tts": "Por isso, além do yield, olhe por que o preço mudou, se o lucro sustenta o dividendo e se os pagamentos são constantes ao longo dos anos.",
+   "leg": "Além do yield, olhe por que o preço mudou, se o lucro sustenta o dividendo e se os pagamentos são constantes.",
+   "dados": {
+    "titulo": [
+     "Antes do yield, olhe"
+    ],
+    "itens": [
+     "por que o preço mudou",
+     "se o lucro sustenta",
+     "histórico de pagamentos"
+    ]
+   }
+  },
+  {
+   "id": "constancia",
+   "tipo": "titulo",
+   "tts": "Um yield moderado, pago com regularidade por muitos anos, costuma dizer mais sobre a empresa do que um número altíssimo em um ano só. Constância vale mais que um pico.",
+   "leg": "Um yield moderado, pago com regularidade por muitos anos, costuma dizer mais do que um número altíssimo em um ano só.",
+   "dados": {
+    "titulo": [
+     "Constância",
+     "vale mais que pico"
+    ],
+    "subtitulo": "olhe vários anos, não só o último"
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Você já se animou com um yield alto que não se sustentou? Comenta aqui.",
+   "leg": "Você já se animou com um yield alto que não se sustentou? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Já caiu em um",
+     "yield alto demais?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Dividend yield de 16%: bom sinal ou armadilha?",
+   "texto": "Dividend yield = dividendos dos últimos 12 meses ÷ preço atual.\n\nEmpresa fictícia: pagou R$ 2 por ação; a R$ 25, o yield é 8%. Se a ação cai para R$ 12,50, o yield vira 16%, sem a empresa pagar nada a mais. Se o dividendo for cortado para R$ 1, o yield volta para 8%, com a ação 50% mais barata.\n\nOlhe por que o preço mudou, se o lucro sustenta o dividendo e o histórico de pagamentos.\n\nExemplo ilustrativo. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #shorts"
+  },
+  "instagram": {
+   "texto": "Uma ação pagando 16% de dividendos. Pode ser uma armadilha.\n\nDY = dividendos de 12 meses ÷ preço\n• a R$ 25, com R$ 2 de dividendo → 8%\n• se cai para R$ 12,50 → 16%\n• se o dividendo é cortado para R$ 1 → 8% de novo, com a ação 50% menor\n\nYield alto pode ser só preço caindo.\n\nJá caiu em um yield alto demais? 👇\n\nEmpresa fictícia. Narração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #acoes #dinheiro"
+  },
+  "tiktok": {
+   "texto": "Uma ação pagando 16% de dividendos pode ser uma armadilha: o yield sobe quando o preço cai. Empresa fictícia, narração por IA. #educacaofinanceira #dividendos #investimentos"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador"
+}

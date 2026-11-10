@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex",
+ "velocidade": 1.0,
+ "total": 68.509,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.141,
+   "texto": "Os primeiros cem mil reais levam seis anos. Os próximos, bem menos. Olha a conta."
+  },
+  {
+   "id": "exemplo",
+   "inicio": 5.591,
+   "dur": 7.104,
+   "texto": "O exemplo: mil reais por mês, rendendo zero vírgula oito por cento ao mês. Sempre o mesmo aporte, sem aumentar nada."
+  },
+  {
+   "id": "grafico",
+   "inicio": 13.045,
+   "dur": 7.424,
+   "texto": "O primeiro marco de cem mil chega no mês setenta e quatro, pouco mais de seis anos. Depois disso, a curva começa a empinar."
+  },
+  {
+   "id": "tempos",
+   "inicio": 20.819,
+   "dur": 9.899,
+   "texto": "Veja quanto tempo leva cada novo bloco de cem mil. O segundo leva quarenta e seis meses. O terceiro, trinta e quatro. O quarto, vinte e sete. E o quinto, só vinte e dois."
+  },
+  {
+   "id": "porque",
+   "inicio": 31.068,
+   "dur": 9.643,
+   "texto": "O motivo: com cem mil investidos, os juros já colocam oitocentos reais por mês na conta. Com quatrocentos mil, são três mil e duzentos. Mais que o seu próprio aporte."
+  },
+  {
+   "id": "licao",
+   "inicio": 41.061,
+   "dur": 8.619,
+   "texto": "Por isso o começo parece lento e desanima muita gente. Mas é justamente ele que monta a base. Quem atravessa os primeiros cem mil vê a coisa acelerar."
+  },
+  {
+   "id": "dica",
+   "inicio": 50.029,
+   "dur": 12.181,
+   "texto": "E dá para encurtar o caminho. Aumentar o aporte quando o salário sobe, ou reinvestir um décimo terceiro, faz os primeiros cem mil chegarem bem antes. Cada real a mais no começo trabalha por mais tempo."
+  },
+  {
+   "id": "comenta",
+   "inicio": 62.561,
+   "dur": 4.032,
+   "texto": "E você, já passou dos primeiros cem mil, ou está a caminho? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 66.943,
+   "dur": 1.216,
+   "texto": "Juro que explico."
+  }
+ ]
+}

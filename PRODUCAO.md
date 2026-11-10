@@ -94,3 +94,9 @@ A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente
 - Roteiro com `formato: "horizontal 16:9"`; o render recompõe as cenas num quadro 1920x1080. Alvo de 4 a 6 minutos (`checa.py` exige ≥ 4 min).
 - O longo é dividido em 3 blocos; cada bloco começa com cena de gancho e vira um corte vertical (`<ID>-P1..P3`), cada um com mais de 61 s, CTA para a próxima parte e assinatura.
 - Modelo: `lotes/longo_L001.py`. Publicação: longo no YouTube; cortes no Instagram e TikTok em dias seguidos, às 18:00.
+
+## Vídeo longo no YouTube (o Buffer só aceita Shorts)
+O canal do YouTube no Buffer recusa vídeo horizontal ou com mais de 3 min. O longo sobe direto pela API (Composio, conta youtube): no workbench, baixar o mp4 da URL raw do GitHub, `upload_local_file`, `YOUTUBE_UPLOAD_VIDEO` com `privacyStatus: "private"`, categoryId "27", título, descrição e tags do `roteiro.json`; depois `proxy_execute` PUT `/youtube/v3/videos?part=status` com `{"id": <videoId>, "status": {"privacyStatus": "private", "publishAt": "<data>T21:00:00Z", "selfDeclaredMadeForKids": false, "containsSyntheticMedia": true}}` para publicar sozinho às 18:00 de Brasília. Conferir com `YOUTUBE_GET_VIDEO_DETAILS_BATCH` (parts status). Se a cota de upload do Composio estiver esgotada (erro 429 "Video Uploads per day"), tentar de novo no dia seguinte logo depois das 05:00 de Brasília. Os cortes Parte 1/2/3 vão pelo Buffer (Instagram e TikTok, 18:05 e 18:10).
+
+## Aprendizados do último ciclo
+(Preenchido pelo assistente quinzenal, ver `ASSISTENTE.md`. A rotina diária segue estas regras antes das gerais. Ainda sem dados: primeiro relatório em 24/11/2026.)

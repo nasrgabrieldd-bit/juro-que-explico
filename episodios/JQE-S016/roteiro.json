@@ -1,0 +1,162 @@
+{
+ "id": "JQE-S016",
+ "titulo": "R$ 1 milhão rende quanto por mês?",
+ "pilar": "Investimentos",
+ "risco": "baixo — taxas ilustrativas, sem produto",
+ "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos",
+ "parametros": {
+  "capital": 1000000,
+  "taxa_mes": 0.008,
+  "inflacao_mes": 0.004
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "ganchos_alternativos": [
+  "Com R$ 1 milhão, dá para viver de renda? Depende de um detalhe.",
+  "R$ 8 mil por mês. Mas você não pode gastar tudo."
+ ],
+ "calculos": {
+  "renda": "1000000 * 0.008",
+  "real": "((1.008 / 1.004) - 1) * 1000000",
+  "infl_mes": "1000000 * 0.004",
+  "taxa_ano": "(1.008 ** 12 - 1) * 100",
+  "infl_ano": "(1.004 ** 12 - 1) * 100",
+  "capital_10_gasta_tudo": "1000000 / 1.004 ** 120",
+  "capital_10_mil": "capital_10_gasta_tudo / 1000"
+ },
+ "fontes": [
+  "Cálculo próprio: renda nominal = capital × taxa; ganho real = (1 + taxa) / (1 + inflação) − 1; poder de compra = capital / (1 + inflação)^n"
+ ],
+ "capa": {
+  "linha1": "R$ 1 milhão",
+  "linha2": "rende quanto por mês?",
+  "destaque": "E quanto dá para gastar"
+ },
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Um milhão de reais rende quanto por mês? E quanto disso dá para gastar?",
+   "leg": "R$ 1 milhão rende quanto por mês? E quanto disso dá para gastar?",
+   "dados": {
+    "valor": "R$ 1 milhão",
+    "linhas": [
+     "rende quanto",
+     "por mês?"
+    ]
+   }
+  },
+  {
+   "id": "conta",
+   "tipo": "formula",
+   "tts": "Com um rendimento ilustrativo de zero vírgula oito por cento ao mês, cerca de dez por cento ao ano, um milhão rende oito mil reais por mês.",
+   "leg": "Com rendimento ilustrativo de 0,8% ao mês, cerca de 10% ao ano, R$ 1 milhão rende R$ 8.000 por mês.",
+   "dados": {
+    "titulo": "Rendimento do mês",
+    "linha1": "R$ 1 milhão × 0,8%",
+    "resultado": "R$ 8.000",
+    "nota": "por mês, antes da inflação"
+   }
+  },
+  {
+   "id": "armadilha",
+   "tipo": "titulo",
+   "tts": "Parece suficiente para viver de renda. Mas tem um detalhe: a inflação também trabalha todo mês, contra você.",
+   "leg": "Parece suficiente para viver de renda. Mas tem um detalhe: a inflação também trabalha todo mês, contra você.",
+   "dados": {
+    "titulo": [
+     "O detalhe",
+     "que ninguém conta"
+    ],
+    "subtitulo": "a inflação come uma parte da renda"
+   }
+  },
+  {
+   "id": "inflacao",
+   "tipo": "versus",
+   "tts": "Com inflação de zero vírgula quatro por cento ao mês, cerca de cinco por cento ao ano, uns quatro mil dos oito mil só repõem o poder de compra do milhão.",
+   "leg": "Com inflação de 0,4% ao mês, cerca de 5% ao ano, uns R$ 4.000 dos R$ 8.000 só repõem o poder de compra do milhão.",
+   "dados": {
+    "a": "R$ 4.000",
+    "b": "R$ 4.000",
+    "rotulo_a": "repõe a inflação",
+    "rotulo_b": "ganho real",
+    "centro": "= R$ 8.000"
+   }
+  },
+  {
+   "id": "gasta_tudo",
+   "tipo": "formula",
+   "tts": "Se você gasta os oito mil todo mês, o milhão continua um milhão no extrato, mas em dez anos compra o que hoje compram uns seiscentos e vinte mil.",
+   "leg": "Se gasta os R$ 8.000 todo mês, o milhão continua R$ 1 milhão no extrato, mas em 10 anos compra o que hoje compram uns R$ 620 mil.",
+   "dados": {
+    "titulo": "Gastando tudo por 10 anos",
+    "linha1": "R$ 1 milhão no extrato",
+    "resultado": "≈ R$ 620 mil",
+    "nota": "em poder de compra de hoje"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Por isso, para viver de renda sem empobrecer, a conta é com o ganho real: o que sobra depois da inflação. Com esses números, uns quatro mil por mês.",
+   "leg": "Para viver de renda sem empobrecer, a conta é com o ganho real, o que sobra depois da inflação. Com esses números, uns R$ 4.000 por mês.",
+   "dados": {
+    "titulo": [
+     "Para viver de renda"
+    ],
+    "itens": [
+     "use o ganho real",
+     "reinvista a inflação",
+     "revise todo ano"
+    ]
+   }
+  },
+  {
+   "id": "regra",
+   "tipo": "titulo",
+   "tts": "Uma forma simples de pensar: guarde no investimento a parte que repõe a inflação e use só o resto. Assim o milhão continua valendo um milhão de verdade, ano após ano.",
+   "leg": "Guarde no investimento a parte que repõe a inflação e use só o resto. Assim o milhão continua valendo um milhão de verdade.",
+   "dados": {
+    "titulo": [
+     "Reinvista",
+     "a inflação"
+    ],
+    "subtitulo": "gaste só o ganho real"
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Quanto você precisaria por mês para viver de renda? Comenta aqui o seu número.",
+   "leg": "Quanto você precisaria por mês para viver de renda? Comenta aqui o seu número.",
+   "dados": {
+    "linhas": [
+     "Quanto você precisa",
+     "por mês?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar",
+   "texto": "Com rendimento ilustrativo de 0,8% ao mês (≈ 10% ao ano), R$ 1 milhão rende R$ 8.000 por mês.\nCom inflação de 0,4% ao mês (≈ 5% ao ano), cerca de R$ 4.000 só repõem o poder de compra.\nGastando os R$ 8.000 todo mês, em 10 anos o milhão compra o que hoje compram uns R$ 620 mil.\n\nPara viver de renda, a conta é com o ganho real. Taxas hipotéticas, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #rendapassiva #investimentos #shorts"
+  },
+  "instagram": {
+   "texto": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar?\n\nA 0,8% ao mês → R$ 8.000\nCom inflação de 0,4% ao mês:\n• ≈ R$ 4.000 repõem a inflação\n• ≈ R$ 4.000 são ganho real\n\nGastando tudo, em 10 anos o milhão vale uns R$ 620 mil de hoje.\n\nQuanto você precisaria por mês? 👇\n\nTaxas hipotéticas. Narração gerada por IA.\n\n#educacaofinanceira #rendapassiva #investimentos #dinheiro"
+  },
+  "tiktok": {
+   "texto": "R$ 1 milhão rende R$ 8 mil por mês nesse exemplo, mas só uns R$ 4 mil são ganho real. Taxas hipotéticas, narração por IA. #educacaofinanceira #rendapassiva #investimentos"
+  }
+ },
+ "formato": "vertical 9:16",
+ "tipo": "evergreen / explicador"
+}
