@@ -200,7 +200,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S011/JQE-S011.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S011/JQE-S011_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 77374
+      }
      }
     }
    ],
@@ -278,7 +281,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S012/JQE-S012.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S012/JQE-S012_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 78602
+      }
      }
     }
    ],
@@ -356,7 +362,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S013/JQE-S013.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S013/JQE-S013_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 74009
+      }
      }
     }
    ],
@@ -434,7 +443,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S014/JQE-S014.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S014/JQE-S014_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 75454
+      }
      }
     }
    ],
@@ -512,7 +524,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S015/JQE-S015.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S015/JQE-S015_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 73985
+      }
      }
     }
    ],
@@ -590,7 +605,10 @@
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S016/JQE-S016.mp4"
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S016/JQE-S016_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 71061
+      }
      }
     }
    ],
