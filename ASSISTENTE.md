@@ -25,6 +25,8 @@ Requisitos (conferidos em 10/11/2026; reconferir em fonte oficial a cada relató
 | Instagram | Presentes em Reels | 500 seguidores, conta profissional |
 | Instagram | Assinaturas / bônus (convite) | 10 mil seguidores; não há pagamento por view garantido no Brasil |
 
+Reconferência de 10/11/2026 (relatório do ciclo 0): sem mudanças nos requisitos do YouTube e do TikTok. Fontes lidas: [YouTube Help 72851](https://support.google.com/youtube/answer/72851?hl=en), [YouTube Help 12843009 (mudanças de 01/02/2027)](https://support.google.com/youtube/answer/12843009?hl=en), [TikTok Newsroom](https://newsroom.tiktok.com/introducing-the-new-creator-rewards-program?lang=en) (a Creator Academy e os termos BR bloqueiam leitura automática). As linhas do Instagram não puderam ser confirmadas: a Central de Ajuda não renderiza na leitura automática; conferir no app (Painel profissional → Monetização). Acréscimo da política de monetização ([YouTube Help 1311392](https://support.google.com/youtube/answer/1311392?hl=en)): personas de IA que se apresentam como especialista humano em finanças não monetizam.
+
 Para cada linha: valor atual, quanto falta, ritmo dos últimos 15 dias e **data projetada** (falta ÷ ritmo), comparando com a meta oficial abaixo. Se o ritmo não fecha a meta, dizer o que precisa mudar (ex.: "precisamos de X views/dia no TikTok").
 
 **Metas oficiais (revisar a cada relatório com os dados reais):**

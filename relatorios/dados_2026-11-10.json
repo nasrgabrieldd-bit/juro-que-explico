@@ -1,0 +1,173 @@
+{
+ "coletado_em": "2026-11-10T10:45:00-03:00",
+ "janela": {
+  "inicio": "2026-10-26T00:00:00-03:00",
+  "fim": "2026-11-10T10:45:00-03:00",
+  "observacao": "Primeira execução do relatório. O primeiro post do canal (JQE-S001) está agendado para hoje, 10/11, 12:00. Na hora da coleta nenhum post tinha saído."
+ },
+ "buffer": {
+  "organizacao": {
+   "id": "6af23ffd5d5d54506b39e88f",
+   "nome": "My organization"
+  },
+  "canais": [
+   {
+    "id": "6af240c662b70b94b0d6dc1b",
+    "servico": "youtube",
+    "nome": "Juro que Explico",
+    "desconectado": false
+   },
+   {
+    "id": "6af2406162b70b94b0d6d913",
+    "servico": "instagram",
+    "nome": "juroqueexplicobr",
+    "tipo": "business",
+    "desconectado": false
+   },
+   {
+    "id": "6af240ab62b70b94b0d6db65",
+    "servico": "tiktok",
+    "nome": "juro.que.explico",
+    "tipo": "account",
+    "desconectado": false
+   }
+  ],
+  "list_posts_sent_ultimos_15_dias": {
+   "includeMetrics": true,
+   "resultado": []
+  },
+  "get_aggregated_post_metrics": {
+   "startDateTime": "2026-10-26T03:00:00Z",
+   "endDateTime": "2026-11-10T13:45:00Z",
+   "postCount": 0,
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "metricsUpdatedAt": null
+  },
+  "agendados_por_canal": {
+   "youtube": 10,
+   "instagram": 10,
+   "tiktok": 10,
+   "obs": "YouTube passou de 9 para 10 às 10h45 (JQE-S010, 19/11 12:00, agendado por outra sessão)"
+  },
+  "agendados": [
+   {
+    "episodio": "JQE-S001",
+    "youtube": "2026-11-10 12:00",
+    "instagram": "2026-11-10 12:05",
+    "tiktok": "2026-11-10 12:10"
+   },
+   {
+    "episodio": "JQE-S002",
+    "youtube": "2026-11-11 12:00",
+    "instagram": "2026-11-11 12:05",
+    "tiktok": "2026-11-11 12:10"
+   },
+   {
+    "episodio": "JQE-S003",
+    "youtube": "2026-11-12 12:00",
+    "instagram": "2026-11-12 12:05",
+    "tiktok": "2026-11-12 12:10"
+   },
+   {
+    "episodio": "JQE-S004",
+    "youtube": "2026-11-13 12:00",
+    "instagram": "2026-11-13 12:05",
+    "tiktok": "2026-11-13 12:10"
+   },
+   {
+    "episodio": "JQE-S005",
+    "youtube": "2026-11-14 12:00",
+    "instagram": "2026-11-14 12:05",
+    "tiktok": "2026-11-14 12:10"
+   },
+   {
+    "episodio": "JQE-S006",
+    "youtube": "2026-11-15 12:00",
+    "instagram": "2026-11-15 12:05",
+    "tiktok": "2026-11-15 12:10"
+   },
+   {
+    "episodio": "JQE-S007",
+    "youtube": "2026-11-16 12:00",
+    "instagram": "2026-11-16 12:05",
+    "tiktok": "2026-11-16 12:10"
+   },
+   {
+    "episodio": "JQE-S008",
+    "youtube": "2026-11-17 12:00",
+    "instagram": "2026-11-17 12:05",
+    "tiktok": "2026-11-17 12:10"
+   },
+   {
+    "episodio": "JQE-S009",
+    "youtube": "2026-11-18 12:00",
+    "instagram": "2026-11-18 12:05",
+    "tiktok": "2026-11-18 12:10"
+   },
+   {
+    "episodio": "JQE-L001-P1",
+    "instagram": "2026-11-15 18:05",
+    "tiktok": "2026-11-15 18:10"
+   },
+   {
+    "episodio": "JQE-S010",
+    "youtube": "2026-11-19 12:00"
+   }
+  ],
+  "tiktok_seguidores": "indisponível (Buffer não devolve contagem de seguidores)"
+ },
+ "youtube_composio": {
+  "canal": "UC77S2lSiqSBFmmdSGC-oPnw",
+  "handle": "@juroqueexplico",
+  "criado_em": "2026-11-09T21:19:17Z",
+  "subscriberCount": 0,
+  "viewCount": 0,
+  "videoCount": 0,
+  "videos_listados": []
+ },
+ "instagram_composio": {
+  "id": "39843918951918388",
+  "username": "juroqueexplicobr",
+  "account_type": "MEDIA_CREATOR",
+  "followers_count": 0,
+  "follows_count": 0,
+  "media_count": 0,
+  "media": []
+ },
+ "pendencias_detectadas": {
+  "agenda_pendente": "Depois do commit 0f79ef6: L001 (youtube_longo, publishAt 15/11 21:00Z), L001-P2/P3 (ig, tt), S010 ig/tt e S011–S016 (yt, ig, tt)",
+  "observacao": "Às 10h42 as pastas JQE-S010…S016 e o item youtube_longo ainda não estavam no GitHub; foram enviados às 10h45 (commit f116939). Às 10h50 o vídeo do S010 respondia HTTP 200."
+ },
+ "monetizacao_fontes": [
+  {
+   "plataforma": "YouTube",
+   "url": "https://support.google.com/youtube/answer/72851?hl=en",
+   "lido_em": "2026-11-10"
+  },
+  {
+   "plataforma": "YouTube",
+   "url": "https://support.google.com/youtube/answer/12843009?hl=en",
+   "lido_em": "2026-11-10"
+  },
+  {
+   "plataforma": "YouTube",
+   "url": "https://support.google.com/youtube/answer/1311392?hl=en",
+   "lido_em": "2026-11-10"
+  },
+  {
+   "plataforma": "TikTok",
+   "url": "https://newsroom.tiktok.com/introducing-the-new-creator-rewards-program?lang=en",
+   "lido_em": "2026-11-10",
+   "obs": "Creator Academy e termos BR bloqueiam leitura automática (robots)"
+  },
+  {
+   "plataforma": "Instagram",
+   "url": "https://help.instagram.com/427415519366046",
+   "lido_em": "2026-11-10",
+   "obs": "Central de Ajuda não renderizou o texto na leitura automática"
+  }
+ ]
+}
