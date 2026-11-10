@@ -1,60 +1,60 @@
 {
- "voz": "pm_alex",
- "velocidade": 1.0,
- "total": 64.306,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 72.285,
  "cenas": [
   {
    "id": "hook",
    "inicio": 0.1,
-   "dur": 5.419,
+   "dur": 6.244,
    "texto": "Cem reais a mais por mês, ou um rendimento um pouco maior? Um ganha no começo, o outro no fim."
   },
   {
    "id": "cenario",
-   "inicio": 5.869,
-   "dur": 7.488,
+   "inicio": 6.794,
+   "dur": 7.96,
    "texto": "Pessoa A aporta seiscentos reais por mês a zero vírgula oito por cento. Pessoa B aporta quinhentos, mas a um por cento ao mês."
   },
   {
    "id": "curto",
-   "inicio": 13.707,
-   "dur": 7.061,
+   "inicio": 15.204,
+   "dur": 7.789,
    "texto": "Em cinco anos, quem aporta mais está na frente: quarenta e seis mil contra quarenta e um mil. No começo, o aporte manda."
   },
   {
    "id": "grafico",
-   "inicio": 21.118,
-   "dur": 7.424,
+   "inicio": 23.443,
+   "dur": 8.301,
    "texto": "Mas as curvas se cruzam no mês cento e cinquenta e dois, com doze anos e oito meses. Daí em diante, quem rende mais dispara."
   },
   {
    "id": "longo",
-   "inicio": 28.892,
-   "dur": 7.808,
+   "inicio": 32.195,
+   "dur": 8.579,
    "texto": "Em trinta anos, quem rende mais termina com cerca de um vírgula setenta e cinco milhão. Quem aporta mais, com um vírgula vinte e cinco."
   },
   {
    "id": "licao",
-   "inicio": 37.05,
-   "dur": 9.536,
+   "inicio": 41.223,
+   "dur": 10.136,
    "texto": "A lição: no começo, aumentar o aporte é o que mais acelera. Com o tempo, buscar um rendimento melhor, com risco que você entende, faz cada vez mais diferença."
   },
   {
    "id": "porque",
-   "inicio": 46.936,
-   "dur": 10.944,
+   "inicio": 51.809,
+   "dur": 12.604,
    "texto": "Por quê? No começo, quase todo o patrimônio é dinheiro que você colocou, então aportar mais pesa. Com os anos, o patrimônio fica grande, e cada décimo de taxa age sobre uma base enorme."
   },
   {
    "id": "comenta",
-   "inicio": 58.23,
-   "dur": 4.16,
+   "inicio": 64.863,
+   "dur": 5.199,
    "texto": "E você, está focado em aportar mais ou em render mais? Comenta aqui."
   },
   {
    "id": "assinatura",
-   "inicio": 62.74,
-   "dur": 1.216,
+   "inicio": 70.512,
+   "dur": 1.323,
    "texto": "Juro que explico."
   }
  ]

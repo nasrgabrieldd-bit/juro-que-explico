@@ -1,60 +1,60 @@
 {
- "voz": "pm_alex",
- "velocidade": 1.0,
- "total": 65.714,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 73.754,
  "cenas": [
   {
    "id": "hook",
    "inicio": 0.1,
-   "dur": 6.016,
+   "dur": 6.616,
    "texto": "Uma taxa de um por cento ao ano parece pouco. Em vinte anos, pode levar cinquenta e seis mil reais."
   },
   {
    "id": "exemplo",
-   "inicio": 6.466,
-   "dur": 6.805,
+   "inicio": 7.166,
+   "dur": 7.512,
    "texto": "O exemplo: cinquenta mil reais, rendendo dez por cento ao ano antes da taxa, por vinte anos. Sem novos aportes."
   },
   {
    "id": "grafico",
-   "inicio": 13.621,
-   "dur": 10.176,
+   "inicio": 15.128,
+   "dur": 11.16,
    "texto": "Sem taxa, os cinquenta mil viram trezentos e trinta e seis mil. Com um por cento ao ano, o rendimento líquido cai para nove por cento, e o resultado para duzentos e oitenta mil."
   },
   {
    "id": "diferenca",
-   "inicio": 24.147,
-   "dur": 5.632,
+   "inicio": 26.738,
+   "dur": 6.339,
    "texto": "São cinquenta e seis mil reais a menos. Mais do que todo o dinheiro que você colocou no começo."
   },
   {
    "id": "taxas",
-   "inicio": 30.129,
-   "dur": 7.829,
+   "inicio": 33.527,
+   "dur": 8.557,
    "texto": "Com dois por cento de taxa, o resultado cai para duzentos e trinta e três mil. Cada ponto de taxa pesa mais quanto maior o prazo."
   },
   {
    "id": "olhar",
-   "inicio": 38.309,
-   "dur": 9.536,
+   "inicio": 42.534,
+   "dur": 10.072,
    "texto": "Por isso, antes de investir, procure a taxa de administração e compare com o rendimento líquido. Taxa só vale a pena se o resultado depois dela compensar."
   },
   {
    "id": "composto",
-   "inicio": 48.195,
-   "dur": 11.243,
+   "inicio": 53.056,
+   "dur": 12.827,
    "texto": "O motivo é o juro composto ao contrário. A taxa não sai só do dinheiro de hoje: ela também tira o rendimento que esse dinheiro geraria nos anos seguintes. Por isso pesa tanto no longo prazo."
   },
   {
    "id": "comenta",
-   "inicio": 59.787,
-   "dur": 4.011,
+   "inicio": 66.333,
+   "dur": 5.199,
    "texto": "Você sabe quanto paga de taxa nos seus investimentos? Comenta aqui."
   },
   {
    "id": "assinatura",
-   "inicio": 64.148,
-   "dur": 1.216,
+   "inicio": 71.981,
+   "dur": 1.323,
    "texto": "Juro que explico."
   }
  ]

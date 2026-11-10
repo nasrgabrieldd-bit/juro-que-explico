@@ -1,60 +1,60 @@
 {
- "voz": "pm_alex",
- "velocidade": 1.0,
- "total": 67.698,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 75.674,
  "cenas": [
   {
    "id": "hook",
    "inicio": 0.1,
-   "dur": 5.419,
+   "dur": 6.019,
    "texto": "Seiscentos e sessenta e sete ou três mil e cem reais por mês. A diferença é uma escolha."
   },
   {
    "id": "exemplo",
-   "inicio": 5.869,
-   "dur": 8.512,
+   "inicio": 6.569,
+   "dur": 9.176,
    "texto": "Exemplo: cem mil reais investidos, pagando oito por cento ao ano em dividendos. São oito mil por ano, uns seiscentos e sessenta e sete por mês."
   },
   {
    "id": "gastar",
-   "inicio": 14.731,
-   "dur": 8.107,
+   "inicio": 16.195,
+   "dur": 8.856,
    "texto": "Se você gasta tudo, o patrimônio fica parado em cem mil. Em vinte anos, você recebeu cento e sessenta mil, mas a renda nunca cresceu."
   },
   {
    "id": "grafico",
-   "inicio": 23.187,
-   "dur": 8.875,
+   "inicio": 25.501,
+   "dur": 9.901,
    "texto": "Se você reinveste, os dividendos compram mais cotas, que pagam mais dividendos. Em vinte anos, os cem mil viram uns quatrocentos e sessenta e seis mil."
   },
   {
    "id": "renda",
-   "inicio": 32.412,
-   "dur": 8.405,
+   "inicio": 35.852,
+   "dur": 9.261,
    "texto": "E a renda acompanha: no ano vinte, quem reinvestiu recebe uns três mil e cem reais por mês. Quem gastou, continua nos seiscentos e sessenta e sete."
   },
   {
    "id": "cuidado",
-   "inicio": 41.167,
-   "dur": 9.6,
+   "inicio": 45.563,
+   "dur": 10.2,
    "texto": "Na vida real, dividendos e preços variam, e há impostos em alguns casos. Mas a lógica da bola de neve é a mesma: reinvestir no começo, viver da renda depois."
   },
   {
    "id": "tempo",
-   "inicio": 51.117,
-   "dur": 10.752,
+   "inicio": 56.213,
+   "dur": 12.123,
    "texto": "E repare: nos primeiros anos, a diferença entre reinvestir e gastar é pequena. Ela só fica enorme depois de uma década. Por isso, quem desiste cedo nunca vê a bola de neve crescer."
   },
   {
    "id": "comenta",
-   "inicio": 62.219,
-   "dur": 3.563,
+   "inicio": 68.786,
+   "dur": 4.665,
    "texto": "E você, reinveste ou gasta os seus dividendos? Comenta aqui."
   },
   {
    "id": "assinatura",
-   "inicio": 66.132,
-   "dur": 1.216,
+   "inicio": 73.901,
+   "dur": 1.323,
    "texto": "Juro que explico."
   }
  ]

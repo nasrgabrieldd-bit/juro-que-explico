@@ -1,60 +1,60 @@
 {
- "voz": "pm_alex",
- "velocidade": 1.0,
- "total": 68.359,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 76.902,
  "cenas": [
   {
    "id": "hook",
    "inicio": 0.1,
-   "dur": 5.504,
+   "dur": 6.96,
    "texto": "Uma ação pagando dezesseis por cento de dividendos. Parece ótimo. Pode ser uma armadilha."
   },
   {
    "id": "conceito",
-   "inicio": 5.954,
-   "dur": 11.733,
+   "inicio": 7.51,
+   "dur": 13.232,
    "texto": "O dividend yield é o dividendo pago nos últimos doze meses dividido pelo preço atual. Uma empresa fictícia pagou dois reais por ação, e a ação custa vinte e cinco. Yield de oito por cento."
   },
   {
    "id": "queda",
-   "inicio": 18.037,
-   "dur": 9.749,
+   "inicio": 21.192,
+   "dur": 10.221,
    "texto": "Agora a empresa tem um problema e a ação cai pela metade, para doze e cinquenta. O dividendo do passado continua na conta, e o yield pula para dezesseis por cento."
   },
   {
    "id": "armadilha",
-   "inicio": 28.137,
-   "dur": 6.08,
+   "inicio": 31.863,
+   "dur": 6.765,
    "texto": "O yield subiu porque o preço caiu, e não porque a empresa passou a pagar mais. A fórmula olha para trás."
   },
   {
    "id": "corte",
-   "inicio": 34.567,
-   "dur": 9.365,
+   "inicio": 39.079,
+   "dur": 10.553,
    "texto": "E se, por causa do problema, ela cortar o dividendo para um real? O yield volta para oito por cento, e quem comprou pelo número alto ficou com a ação desvalorizada."
   },
   {
    "id": "olhar",
-   "inicio": 44.282,
-   "dur": 7.829,
+   "inicio": 50.082,
+   "dur": 8.107,
    "texto": "Por isso, além do yield, olhe por que o preço mudou, se o lucro sustenta o dividendo e se os pagamentos são constantes ao longo dos anos."
   },
   {
    "id": "constancia",
-   "inicio": 52.461,
-   "dur": 9.707,
+   "inicio": 58.639,
+   "dur": 10.584,
    "texto": "Um yield moderado, pago com regularidade por muitos anos, costuma dizer mais sobre a empresa do que um número altíssimo em um ano só. Constância vale mais que um pico."
   },
   {
    "id": "comenta",
-   "inicio": 62.518,
-   "dur": 3.925,
+   "inicio": 69.673,
+   "dur": 5.007,
    "texto": "Você já se animou com um yield alto que não se sustentou? Comenta aqui."
   },
   {
    "id": "assinatura",
-   "inicio": 66.793,
-   "dur": 1.216,
+   "inicio": 75.129,
+   "dur": 1.323,
    "texto": "Juro que explico."
   }
  ]

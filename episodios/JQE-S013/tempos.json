@@ -1,60 +1,60 @@
 {
- "voz": "pm_alex",
- "velocidade": 1.0,
- "total": 63.602,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 72.309,
  "cenas": [
   {
    "id": "hook",
    "inicio": 0.1,
-   "dur": 4.629,
+   "dur": 5.208,
    "texto": "Cinquenta, trinta, vinte. Três números para saber para onde vai o seu salário."
   },
   {
    "id": "regra",
-   "inicio": 5.079,
-   "dur": 7.659,
+   "inicio": 5.758,
+   "dur": 8.216,
    "texto": "A regra divide o que entra em três partes. Cinquenta por cento para o essencial, trinta para o que você gosta, e vinte para o futuro."
   },
   {
    "id": "exemplo",
-   "inicio": 13.088,
-   "dur": 8.597,
+   "inicio": 14.424,
+   "dur": 9.989,
    "texto": "Com um salário líquido de quatro mil reais: dois mil para moradia, contas e mercado. Mil e duzentos para lazer e compras. E oitocentos para investir."
   },
   {
    "id": "grafico",
-   "inicio": 22.035,
-   "dur": 9.664,
+   "inicio": 24.863,
+   "dur": 10.669,
    "texto": "Esses oitocentos por mês, rendendo zero vírgula oito por cento ao mês, viram cerca de cento e sessenta mil reais em dez anos. Você aportou noventa e seis mil."
   },
   {
    "id": "ajuste",
-   "inicio": 32.049,
-   "dur": 7.317,
+   "inicio": 35.983,
+   "dur": 7.917,
    "texto": "Se o essencial passa de cinquenta por cento, comece pelo que der. Até cinco ou dez por cento para o futuro já criam o hábito."
   },
   {
    "id": "como",
-   "inicio": 39.717,
-   "dur": 6.656,
+   "inicio": 44.35,
+   "dur": 7.448,
    "texto": "O truque é separar a parte do futuro logo que o salário cai, antes de gastar. O que sobra é o que você pode gastar."
   },
   {
    "id": "variacoes",
-   "inicio": 46.723,
-   "dur": 10.197,
+   "inicio": 52.248,
+   "dur": 11.933,
    "texto": "A regra é um ponto de partida, não uma lei. Tem gente que usa sessenta, vinte, vinte. Outros, setenta, vinte, dez. O que importa é a parte do futuro existir todo mês, sem falhar."
   },
   {
    "id": "comenta",
-   "inicio": 57.27,
-   "dur": 4.416,
+   "inicio": 64.631,
+   "dur": 5.455,
    "texto": "Hoje, quanto do seu salário vai para o futuro? Comenta aqui a sua porcentagem."
   },
   {
    "id": "assinatura",
-   "inicio": 62.036,
-   "dur": 1.216,
+   "inicio": 70.536,
+   "dur": 1.323,
    "texto": "Juro que explico."
   }
  ]

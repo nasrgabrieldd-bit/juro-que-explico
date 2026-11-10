@@ -1,60 +1,60 @@
 {
- "voz": "pm_alex",
- "velocidade": 1.0,
- "total": 62.855,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 69.361,
  "cenas": [
   {
    "id": "hook",
    "inicio": 0.1,
-   "dur": 4.203,
+   "dur": 5.177,
    "texto": "Um milhão de reais rende quanto por mês? E quanto disso dá para gastar?"
   },
   {
    "id": "conta",
-   "inicio": 4.653,
-   "dur": 8.341,
+   "inicio": 5.727,
+   "dur": 8.768,
    "texto": "Com um rendimento ilustrativo de zero vírgula oito por cento ao mês, cerca de dez por cento ao ano, um milhão rende oito mil reais por mês."
   },
   {
    "id": "armadilha",
-   "inicio": 13.344,
-   "dur": 6.677,
+   "inicio": 14.945,
+   "dur": 7.341,
    "texto": "Parece suficiente para viver de renda. Mas tem um detalhe: a inflação também trabalha todo mês, contra você."
   },
   {
    "id": "inflacao",
-   "inicio": 20.371,
-   "dur": 8.683,
+   "inicio": 22.737,
+   "dur": 9.109,
    "texto": "Com inflação de zero vírgula quatro por cento ao mês, cerca de cinco por cento ao ano, uns quatro mil dos oito mil só repõem o poder de compra do milhão."
   },
   {
    "id": "gasta_tudo",
-   "inicio": 29.404,
-   "dur": 8.064,
+   "inicio": 32.296,
+   "dur": 8.427,
    "texto": "Se você gasta os oito mil todo mês, o milhão continua um milhão no extrato, mas em dez anos compra o que hoje compram uns seiscentos e vinte mil."
   },
   {
    "id": "licao",
-   "inicio": 37.818,
-   "dur": 8.043,
+   "inicio": 41.173,
+   "dur": 8.835,
    "texto": "Por isso, para viver de renda sem empobrecer, a conta é com o ganho real: o que sobra depois da inflação. Com esses números, uns quatro mil por mês."
   },
   {
    "id": "regra",
-   "inicio": 46.211,
-   "dur": 9.728,
+   "inicio": 50.457,
+   "dur": 10.755,
    "texto": "Uma forma simples de pensar: guarde no investimento a parte que repõe a inflação e use só o resto. Assim o milhão continua valendo um milhão de verdade, ano após ano."
   },
   {
    "id": "comenta",
-   "inicio": 56.289,
-   "dur": 4.651,
+   "inicio": 61.662,
+   "dur": 5.476,
    "texto": "Quanto você precisaria por mês para viver de renda? Comenta aqui o seu número."
   },
   {
    "id": "assinatura",
-   "inicio": 61.289,
-   "dur": 1.216,
+   "inicio": 67.588,
+   "dur": 1.323,
    "texto": "Juro que explico."
   }
  ]
