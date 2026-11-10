@@ -95,6 +95,12 @@ A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente
 - O longo é dividido em 3 blocos; cada bloco começa com cena de gancho e vira um corte vertical (`<ID>-P1..P3`), cada um com mais de 61 s, CTA para a próxima parte e assinatura.
 - Modelo: `lotes/longo_L001.py`. Publicação: longo no YouTube; cortes no Instagram e TikTok em dias seguidos, às 18:00.
 
+## Capa do Instagram (obrigatória)
+Depois do render, rode `python3 pipeline/capa_ig.py episodios/<ID>`. Ele gera `capa_ig.png` (número do gancho gigante + título + faixa verde, tudo dentro do recorte 3:4 da grade) e `<ID>_ig.mp4` (vídeo + 1 s da capa no fim), e grava o `thumbnailOffset` em `capa_ig.json`. O post do Instagram usa o `<ID>_ig.mp4` com `assets[0].video.metadata.thumbnailOffset` desse arquivo; YouTube e TikTok continuam com o `<ID>.mp4`. O `lotes/gera_agenda.py` já monta assim. Olhe a capa antes de publicar: texto não pode repetir o número gigante nem sair da faixa central.
+
+## Voz
+Padrão desde 10/11/2026: mistura 60% `pm_alex` + 40% `pm_santa`, velocidade 0,94, frase a frase com pausas naturais e tratamento de áudio (`narracao.py` sem argumentos de voz já usa isso). Com essa velocidade, mire 185–215 palavras para ficar entre 65 e 90 s.
+
 ## Vídeo longo no YouTube (o Buffer só aceita Shorts)
 O canal do YouTube no Buffer recusa vídeo horizontal ou com mais de 3 min. O longo sobe direto pela API (Composio, conta youtube): no workbench, baixar o mp4 da URL raw do GitHub, `upload_local_file`, `YOUTUBE_UPLOAD_VIDEO` com `privacyStatus: "private"`, categoryId "27", título, descrição e tags do `roteiro.json`; depois `proxy_execute` PUT `/youtube/v3/videos?part=status` com `{"id": <videoId>, "status": {"privacyStatus": "private", "publishAt": "<data>T21:00:00Z", "selfDeclaredMadeForKids": false, "containsSyntheticMedia": true}}` para publicar sozinho às 18:00 de Brasília. Conferir com `YOUTUBE_GET_VIDEO_DETAILS_BATCH` (parts status). Se a cota de upload do Composio estiver esgotada (erro 429 "Video Uploads per day"), tentar de novo no dia seguinte logo depois das 05:00 de Brasília. Os cortes Parte 1/2/3 vão pelo Buffer (Instagram e TikTok, 18:05 e 18:10).
 

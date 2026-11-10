@@ -12,6 +12,11 @@ CANAIS = {
 }
 arq = f"{BASE}/agenda_pendente.json"
 lista = json.load(open(arq)) if os.path.exists(arq) else []
+REFAZER = "--refazer-ig" in sys.argv  # recria os itens de Instagram já pendentes (ex.: depois de gerar a capa)
+sys.argv = [a for a in sys.argv if a != "--refazer-ig"]
+if REFAZER:
+    alvo = {a.split(":")[0] for a in sys.argv[1:]}
+    lista = [i for i in lista if not (i["canal"] == "ig" and i["episodio"] in alvo)]
 chaves = {(i["episodio"], i["canal"]) for i in lista}
 
 for arg in sys.argv[1:]:
@@ -34,7 +39,10 @@ for arg in sys.argv[1:]:
                      metadata={"youtube": {"title": t["titulo"], "categoryId": "27", "privacy": "public",
                                            "isAiGenerated": True, "madeForKids": False}})
         elif c == "ig":
-            p.update(text=r["posts"]["instagram"]["texto"], assets=[{"video": {"url": url}}],
+            # Instagram: versão com a capa chamativa no último segundo, escolhida como capa da grade
+            ci = json.load(open(f"{BASE}/episodios/{ep}/capa_ig.json"))
+            vid = {"url": f"{RAW}/{ep}/{ci['arquivo']}", "metadata": {"thumbnailOffset": ci["thumbnailOffset"]}}
+            p.update(text=r["posts"]["instagram"]["texto"], assets=[{"video": vid}],
                      metadata={"instagram": {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": True}})
         else:
             p.update(text=r["posts"]["tiktok"]["texto"], assets=[{"video": {"url": url}}],
