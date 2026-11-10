@@ -96,12 +96,27 @@ def fmt(v, estilo="brl", casas=None):
 
 
 # ---------------- fundo fixo ----------------
-base = Image.new("RGB", (W, H), BG)
-bd = ImageDraw.Draw(base, "RGBA")
+# Margem de segurança (TikTok, Reels e Shorts, verificadas em 10/11/2026): a interface cobre ~220–290 px no topo,
+# ~480–670 px embaixo (legenda/descrição), ~120–190 px à direita (botões) e ~50–65 px à esquerda.
+# Com MARGEM_SEGURA, toda a camada de conteúdo (marca, nota, cena, legenda, selo) é desenhada no palco 1080x1920
+# e reduzida para caber na caixa segura SEG; só a grade de fundo e a barra de progresso ocupam a tela inteira.
+MARGEM_SEGURA = rot.get("margem_segura", True)
+SEG = (92, 260, 930, 1400)            # x0, y0, x1, y1 da caixa segura (esq. 92, topo 260, dir. 150, base 520)
+FONTE_RECT = (0, 110, 1080, 1580)     # parte do palco que tem conteúdo (marca no topo até o selo)
+_esc = min((SEG[2] - SEG[0]) / (FONTE_RECT[2] - FONTE_RECT[0]), (SEG[3] - SEG[1]) / (FONTE_RECT[3] - FONTE_RECT[1]))
+SEG_TAM = (int((FONTE_RECT[2] - FONTE_RECT[0]) * _esc), int((FONTE_RECT[3] - FONTE_RECT[1]) * _esc))
+SEG_POS = (SEG[2] - SEG_TAM[0], SEG[1])  # encostado na margem direita segura (botões ficam à direita)
+
+fundo = Image.new("RGB", (W, H), BG)
+_fd = ImageDraw.Draw(fundo, "RGBA")
 for x in range(0, W, GRADE):
-    bd.line([(x, 0), (x, H)], fill=MOSS + (55,), width=1)
+    _fd.line([(x, 0), (x, H)], fill=MOSS + (55,), width=1)
 for y in range(0, H, GRADE):
-    bd.line([(0, y), (W, y)], fill=MOSS + (55,), width=1)
+    _fd.line([(0, y), (W, y)], fill=MOSS + (55,), width=1)
+
+# camada fixa (marca, nota, selo): transparente quando há margem segura; no modo antigo é o próprio fundo
+base = Image.new("RGBA", (W, H), (0, 0, 0, 0)) if MARGEM_SEGURA else fundo.copy()
+bd = ImageDraw.Draw(base, "RGBA")
 bd.text((70, 215), MARCA["nome_topo"], font=fonte("xb", 36), fill=LIME, anchor="lm")
 bd.rectangle([70, 245, 150, 250], fill=LIME)
 if rot.get("nota_tela"):
@@ -120,7 +135,7 @@ def selo(dd, cx, cy, tam, alpha):
     dd.text((x0 + 2 * r + 12, cy), MARCA["nome"], font=fonte("bold", tam), fill=WHITE + (alpha,), anchor="lm")
 
 
-selo(bd, W / 2, 1530, 34, 120)
+selo(bd, W / 2, 1530, 40 if MARGEM_SEGURA else 34, 120)
 
 
 # ---------------- tipos de cena ----------------
@@ -338,7 +353,7 @@ for c in cenas:
 def legenda(d, t):
     for ini, fim, s in LEG:
         if ini <= t < fim + 0.05:
-            f = fonte("bold", cabe(d, s, "bold", 54, 960))
+            f = fonte("bold", cabe(d, s, "bold", 62 if MARGEM_SEGURA else 54, 960))
             l, t_, r, b = d.textbbox((W / 2, 1420), s, font=f, anchor="mm")
             d.rounded_rectangle([l - 28, t_ - 20, r + 28, b + 20], radius=16, fill=LEG_BG)
             d.text((W / 2, 1420), s, font=f, fill=LEG_TX, anchor="mm")
@@ -361,12 +376,21 @@ def cena_em(d, t):
 
 
 def quadro_vertical(t):
-    img = base.copy()
-    d = ImageDraw.Draw(img, "RGBA")
+    if not MARGEM_SEGURA:
+        img = base.copy()
+        d = ImageDraw.Draw(img, "RGBA")
+        cena_em(d, t)
+        legenda(d, t)
+        d.rectangle([0, 0, int(W * t / DUR), 8], fill=LIME)
+        return img
+    camada = base.copy()
+    d = ImageDraw.Draw(camada, "RGBA")
     cena_em(d, t)
     legenda(d, t)
-    d.rectangle([0, 0, int(W * t / DUR), 8], fill=LIME)
-    return img
+    img = fundo.copy().convert("RGBA")
+    img.alpha_composite(camada.crop(FONTE_RECT).resize(SEG_TAM, Image.LANCZOS), SEG_POS)
+    ImageDraw.Draw(img).rectangle([0, 0, int(W * t / DUR), 8], fill=LIME)
+    return img.convert("RGB")
 
 
 # ---------- modo horizontal (YouTube longo, 1920x1080) ----------
@@ -376,15 +400,17 @@ for x in range(0, HW, GRADE):
     _bh.line([(x, 0), (x, HH)], fill=MOSS + (55,), width=1)
 for y in range(0, HH, GRADE):
     _bh.line([(0, y), (HW, y)], fill=MOSS + (55,), width=1)
-_bh.text((80, 70), MARCA["nome_topo"], font=fonte("xb", 32), fill=LIME, anchor="lm")
-_bh.rectangle([80, 96, 150, 100], fill=LIME)
+_bh.text((110, 100), MARCA["nome_topo"], font=fonte("xb", 32), fill=LIME, anchor="lm")
+_bh.rectangle([110, 126, 180, 130], fill=LIME)
 if rot.get("nota_tela"):
-    _bh.text((80, 128), rot["nota_tela"], font=fonte("med", 24), fill=GRAY, anchor="lm")
-selo(_bh, HW - 200, 70, 30, 120)
+    _bh.text((110, 158), rot["nota_tela"], font=fonte("med", 24), fill=GRAY, anchor="lm")
+selo(_bh, HW - 240, 100, 30, 120)
 CROP = (0, 330, 1080, 1330)          # área útil do palco vertical
-ESC = 0.80                           # 1080x1000 -> 864x800
+# margens do player do YouTube/IGTV: título e botões no topo (~90 px), controles e barra embaixo (~120 px)
+ESC = 0.76                           # 1080x1000 -> 820x760
 PALCO = (int(1080 * ESC), int(1000 * ESC))
-PX, PY = (HW - PALCO[0]) // 2, 150
+PX, PY = (HW - PALCO[0]) // 2, 135
+LEG_HY = 918
 
 
 def quadro_horizontal(t):
@@ -396,9 +422,9 @@ def quadro_horizontal(t):
     for ini, fim, txt in LEG:
         if ini <= t < fim + 0.05:
             f = fonte("bold", cabe(d, txt, "bold", 46, 1500))
-            l, t_, r, b = d.textbbox((HW / 2, 1010), txt, font=f, anchor="mm")
+            l, t_, r, b = d.textbbox((HW / 2, LEG_HY), txt, font=f, anchor="mm")
             d.rounded_rectangle([l - 24, t_ - 16, r + 24, b + 16], radius=14, fill=LEG_BG)
-            d.text((HW / 2, 1010), txt, font=f, fill=LEG_TX, anchor="mm")
+            d.text((HW / 2, LEG_HY), txt, font=f, fill=LEG_TX, anchor="mm")
             break
     d.rectangle([0, 0, int(HW * t / DUR), 6], fill=LIME)
     return img.convert("RGB")
@@ -411,14 +437,15 @@ def quadro(t):
 def capa():
     """Capa 1080x1920 para Reels/TikTok a partir de rot['capa'] = {linha1, linha2, destaque}."""
     cp = rot.get("capa", {})
-    img = base.copy()
+    img = fundo.copy().convert("RGBA")
+    img.alpha_composite(base.convert("RGBA"))
     d = ImageDraw.Draw(img, "RGBA")
     l1, l2, dst = cp.get("linha1", ""), cp.get("linha2", ""), cp.get("destaque", "")
     texto(d, (W / 2, 620), l1, "black", cabe(d, l1, "black", 120, 960), WHITE)
     texto(d, (W / 2, 760), l2, "black", cabe(d, l2, "black", 120, 960), WHITE)
     if dst:
         caixa(d, (W / 2, 960), dst, cabe(d, dst, "black", 90, 860), 1, cheia=True, peso="black")
-    img.save(f"{EP}/capa.png")
+    img.convert("RGB").save(f"{EP}/capa.png")
 
 
 if __name__ == "__main__":

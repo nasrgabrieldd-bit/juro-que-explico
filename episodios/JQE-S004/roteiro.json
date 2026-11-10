@@ -264,5 +264,6 @@
  },
  "formato": "vertical 9:16",
  "tipo": "evergreen / explicador",
- "numeros_fonte": []
+ "numeros_fonte": [],
+ "margem_segura": false
 }

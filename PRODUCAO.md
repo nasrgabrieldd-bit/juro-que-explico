@@ -95,6 +95,9 @@ A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente
 - O longo é dividido em 3 blocos; cada bloco começa com cena de gancho e vira um corte vertical (`<ID>-P1..P3`), cada um com mais de 61 s, CTA para a próxima parte e assinatura.
 - Modelo: `lotes/longo_L001.py`. Publicação: longo no YouTube; cortes no Instagram e TikTok em dias seguidos, às 18:00.
 
+## Margem de segurança (obrigatória do S017 e do L002 em diante)
+A interface dos apps cobre parte da tela. Valores usados (1080×1920, união conservadora de TikTok, Reels e Shorts, conferidos em 10/11/2026): topo ~250 px, base ~480–670 px (descrição e legenda do app), direita ~140–190 px (botões), esquerda ~60 px. O `render.py` agora desenha toda a camada de conteúdo (marca, nota, cena, legenda, selo) reduzida dentro da caixa segura x 92–930, y 260–1400; só a grade de fundo e a barra de progresso vão de ponta a ponta. No horizontal (YouTube longo), marca e selo descem para y 100 e a legenda sobe para y 918, longe do título e dos controles do player. Episódios antigos têm `"margem_segura": false` no roteiro para não mudarem se forem renderizados de novo; roteiro novo não precisa do campo (padrão = true). Antes do render completo, rode `python3 pipeline/margens.py episodios/<ID> 0 t1 t2 ...` e olhe a imagem: nenhum texto pode cair na área vermelha.
+
 ## Capa do Instagram (obrigatória)
 Depois do render, rode `python3 pipeline/capa_ig.py episodios/<ID>`. Ele gera `capa_ig.png` (número do gancho gigante + título + faixa verde, tudo dentro do recorte 3:4 da grade) e `<ID>_ig.mp4` (vídeo + 1 s da capa no fim), e grava o `thumbnailOffset` em `capa_ig.json`. O post do Instagram usa o `<ID>_ig.mp4` com `assets[0].video.metadata.thumbnailOffset` desse arquivo; YouTube e TikTok continuam com o `<ID>.mp4`. O `lotes/gera_agenda.py` já monta assim. Olhe a capa antes de publicar: texto não pode repetir o número gigante nem sair da faixa central.
 

@@ -456,5 +456,6 @@
   }
  },
  "formato": "vertical 9:16",
- "tipo": "evergreen / explicador"
+ "tipo": "evergreen / explicador",
+ "margem_segura": false
 }
