@@ -1,11 +1,5 @@
 [
  {
-  "episodio": "JQE-L001",
-  "canal": "youtube_longo",
-  "publishAt": "2026-11-15T21:00:00Z",
-  "nota": "subir via Composio YOUTUBE_UPLOAD_VIDEO + publishAt (ver PRODUCAO.md, 'Vídeo longo no YouTube'); Buffer recusa vídeo longo"
- },
- {
   "episodio": "JQE-L001-P3",
   "canal": "ig",
   "create_post": {
