@@ -458,7 +458,7 @@ if __name__ == "__main__":
     saida = f"{EP}/{rot['id']}.mp4"
     cmd = ["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{HW}x{HH}" if HORIZONTAL else f"{W}x{H}",
            "-r", str(FPS), "-i", "-", "-i", f"{EP}/narracao.wav", "-filter_complex",
-           "[1:a]loudnorm=I=-14:TP=-1.5:LRA=7,apad[a]", "-map", "0:v", "-map", "[a]", "-t", f"{DUR:.3f}",
+           "[1:a]loudnorm=I=-14:TP=-1.5:LRA=7,aresample=48000,aformat=channel_layouts=stereo,apad[a]", "-map", "0:v", "-map", "[a]", "-t", f"{DUR:.3f}",
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
            "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", saida]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
