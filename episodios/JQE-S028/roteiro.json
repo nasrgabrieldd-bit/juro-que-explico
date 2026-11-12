@@ -1,0 +1,256 @@
+{
+ "id": "JQE-S028",
+ "titulo": "Reserva de emergência: R$ 9 mil, R$ 18 mil ou R$ 36 mil?",
+ "formato": "vertical 9:16",
+ "pilar": "Finanças pessoais",
+ "tipo": "evergreen / passo a passo",
+ "risco": "baixo — referência comum de 3 a 12 meses, sem indicar produto",
+ "refeito_de": "JQE-S006",
+ "tipo_gancho": "pergunta com número",
+ "formato_narrativo": "passo a passo",
+ "nota_tela": "Exemplo ilustrativo · valores hipotéticos",
+ "parametros": {
+  "gasto": 3000,
+  "meses_min": 3,
+  "meses_estavel": 6,
+  "meses_variavel": 12,
+  "guardar_mes": 500
+ },
+ "calculos": {
+  "reserva_min": "3000 * 3",
+  "reserva_estavel": "3000 * 6",
+  "reserva_variavel": "3000 * 12",
+  "tempo": "18000 / 500",
+  "tempo_min": "9000 / 500",
+  "min_mil": "9000 / 1000",
+  "estavel_mil": "18000 / 1000",
+  "variavel_mil": "36000 / 1000"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: reserva = custo de vida mensal × meses de proteção. Faixa de 3 a 12 meses é referência usual de educação financeira, não regra oficial."
+ ],
+ "capa": {
+  "linha1": "Reserva de",
+  "linha2": "emergência",
+  "destaque": "quanto guardar?"
+ },
+ "ganchos_alternativos": [
+  "Use o que você gasta, não o que ganha.",
+  "3, 6 ou 12 meses: quanto guardar para o imprevisto?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Quem gasta três mil por mês precisa de quanto guardado para emergências? Nove, dezoito ou trinta e seis mil?",
+   "leg": "Quem gasta R$ 3.000 por mês precisa de quanto guardado para emergências? R$ 9 mil, R$ 18 mil ou R$ 36 mil?",
+   "dados": {
+    "a": "R$ 9 mil",
+    "b": "R$ 36 mil",
+    "rotulo_a": "o mínimo?",
+    "rotulo_b": "o ideal?",
+    "centro": "?"
+   }
+  },
+  {
+   "id": "conceito",
+   "tipo": "titulo",
+   "tts": "Reserva de emergência é o dinheiro do imprevisto: perder a renda, um conserto, a saúde. Ela não existe para render muito. Existe para estar lá.",
+   "leg": "Reserva de emergência é o dinheiro do imprevisto: perder a renda, um conserto, a saúde. Não existe para render muito.",
+   "dados": {
+    "titulo": [
+     "Reserva",
+     "de emergência"
+    ],
+    "subtitulo": "dinheiro para o imprevisto"
+   }
+  },
+  {
+   "id": "conta",
+   "tipo": "formula",
+   "tts": "Passo um: some quanto você gasta por mês, e não quanto ganha. Passo dois: multiplique pelos meses de proteção.",
+   "leg": "Passo 1: some quanto você gasta por mês, não quanto ganha. Passo 2: multiplique pelos meses de proteção.",
+   "dados": {
+    "titulo": "A conta",
+    "linha1": "custo mensal × meses",
+    "resultado": "= reserva",
+    "nota": "use o gasto, não o salário"
+   }
+  },
+  {
+   "id": "meses",
+   "tipo": "barras",
+   "tts": "Passo três: escolha os meses. Três é o mínimo. Seis, para renda estável. Doze, para renda variável. Com três mil de gasto: nove, dezoito ou trinta e seis mil.",
+   "leg": "Passo 3: escolha os meses. 3 é o mínimo. 6, para renda estável. 12, para renda variável. Com R$ 3.000: R$ 9, 18 ou 36 mil.",
+   "dados": {
+    "titulo": [
+     "Quantos meses",
+     "guardar"
+    ],
+    "itens": [
+     {
+      "rotulo": "3 meses",
+      "valor": 9000,
+      "texto": "R$ 9.000 (mínimo)"
+     },
+     {
+      "rotulo": "6 meses",
+      "valor": 18000,
+      "texto": "R$ 18.000 (estável)",
+      "destaque": true
+     },
+     {
+      "rotulo": "12 meses",
+      "valor": 36000,
+      "texto": "R$ 36.000 (variável)"
+     }
+    ],
+    "nota": "custo de vida de R$ 3.000 por mês"
+   }
+  },
+  {
+   "id": "variavel",
+   "tipo": "numero_grande",
+   "tts": "Por que doze meses para quem tem renda variável? Porque autônomo pode ficar mais tempo sem entrar dinheiro.",
+   "leg": "Por que 12 meses para renda variável? Porque autônomo pode ficar mais tempo sem entrar dinheiro.",
+   "dados": {
+    "valor": "12 meses",
+    "linhas": [
+     "para quem tem",
+     "renda variável"
+    ]
+   }
+  },
+  {
+   "id": "chegar",
+   "tipo": "linhas",
+   "tts": "Parece muito? Guardando quinhentos por mês, você chega a dezoito mil em trinta e seis meses, sem contar rendimento. Em dezoito meses, já tem o mínimo.",
+   "leg": "Parece muito? Guardando R$ 500 por mês, chega a R$ 18.000 em 36 meses, sem rendimento. Em 18 meses, já tem o mínimo.",
+   "dados": {
+    "titulo": "Guardando R$ 500 por mês",
+    "x_rotulo": "meses",
+    "x_ticks": [
+     0,
+     12,
+     24,
+     36
+    ],
+    "ymax": 21000,
+    "ymin": 0,
+    "y_passo": 5000,
+    "series": [
+     {
+      "nome": "reserva acumulada",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.4,
+      "rotulo_final": "R$ 18.000",
+      "pontos": [
+       [
+        0,
+        0
+       ],
+       [
+        3,
+        1500
+       ],
+       [
+        6,
+        3000
+       ],
+       [
+        9,
+        4500
+       ],
+       [
+        12,
+        6000
+       ],
+       [
+        15,
+        7500
+       ],
+       [
+        18,
+        9000
+       ],
+       [
+        21,
+        10500
+       ],
+       [
+        24,
+        12000
+       ],
+       [
+        27,
+        13500
+       ],
+       [
+        30,
+        15000
+       ],
+       [
+        33,
+        16500
+       ],
+       [
+        36,
+        18000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "onde",
+   "tipo": "lista",
+   "tts": "E onde guardar? Em algo de baixo risco, com resgate rápido, separado da conta do dia a dia.",
+   "leg": "E onde guardar? Em algo de baixo risco, com resgate rápido, separado da conta do dia a dia.",
+   "dados": {
+    "titulo": [
+     "Onde deixar"
+    ],
+    "itens": [
+     "resgate rápido",
+     "baixo risco",
+     "longe do dia a dia"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Nove, dezoito ou trinta e seis mil: quantos meses a sua reserva cobre hoje? Comenta aqui.",
+   "leg": "R$ 9, 18 ou 36 mil: quantos meses a sua reserva cobre hoje? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Quantos meses a",
+     "sua reserva cobre?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Reserva de emergência: R$ 9 mil, R$ 18 mil ou R$ 36 mil? Faça a conta",
+   "texto": "Reserva de emergência = custo de vida mensal × meses de proteção.\n\nCom gasto de R$ 3.000 por mês:\n3 meses (mínimo): R$ 9.000\n6 meses (renda estável): R$ 18.000\n12 meses (renda variável): R$ 36.000\n\nGuardando R$ 500 por mês, chega a R$ 18.000 em 36 meses, sem contar rendimento.\n\nValores ilustrativos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #reservadeemergencia #dinheiro #organizacaofinanceira #shorts"
+  },
+  "instagram": {
+   "texto": "Quem gasta R$ 3.000 por mês precisa de quanto para emergências?\n\nCusto de vida × meses de proteção:\n• 3 meses → R$ 9.000\n• 6 meses → R$ 18.000\n• 12 meses → R$ 36.000\n\nOnde deixar: baixo risco, resgate rápido e longe da conta do dia a dia.\n\nQuantos meses a sua reserva cobre? 👇\n\nValores ilustrativos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #reservadeemergencia #dinheiro #organizacaofinanceira #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Gasta R$ 3.000 por mês? Sua reserva de emergência vai de R$ 9 mil a R$ 36 mil. A conta em 3 passos. Narração por IA. #educacaofinanceira #reservadeemergencia #dinheiro #organizacaofinanceira"
+  }
+ }
+}

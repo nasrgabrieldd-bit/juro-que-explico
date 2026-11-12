@@ -1,0 +1,365 @@
+{
+ "id": "JQE-S029",
+ "titulo": "Os primeiros R$ 100 mil levam 6 anos. O quinto, menos de 2",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — juro composto com taxa ilustrativa",
+ "refeito_de": "JQE-S010",
+ "tipo_gancho": "contradição",
+ "formato_narrativo": "explicador",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos nem inflação",
+ "parametros": {
+  "aporte": 1000,
+  "taxa_mes": 0.008,
+  "meta": 100000,
+  "aporte_maior": 1500
+ },
+ "calculos": {
+  "m100": "log(1 + 100000 * 0.008 / 1000) / log(1.008)",
+  "m200": "log(1 + 200000 * 0.008 / 1000) / log(1.008)",
+  "m300": "log(1 + 300000 * 0.008 / 1000) / log(1.008)",
+  "m400": "log(1 + 400000 * 0.008 / 1000) / log(1.008)",
+  "m500": "log(1 + 500000 * 0.008 / 1000) / log(1.008)",
+  "d2": "m200 - m100",
+  "d3": "m300 - m200",
+  "d4": "m400 - m300",
+  "d5": "m500 - m400",
+  "anos100": "m100 / 12",
+  "anos5": "d5 / 12",
+  "mil100": "100000 / 1000",
+  "mil200": "200000 / 1000",
+  "mil300": "300000 / 1000",
+  "mil400": "400000 / 1000",
+  "mil500": "500000 / 1000",
+  "juros_mes_100": "100000 * 0.008",
+  "juros_mes_400": "400000 * 0.008",
+  "m100_1500": "log(1 + 100000 * 0.008 / 1500) / log(1.008)",
+  "adianta": "m100 - m100_1500"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: tempo para acumular F com aportes A, n = ln(1 + F·i/A) / ln(1 + i)"
+ ],
+ "capa": {
+  "linha1": "Os primeiros",
+  "linha2": "R$ 100 mil",
+  "destaque": "são os mais difíceis"
+ },
+ "ganchos_alternativos": [
+  "Por que juntar dinheiro fica mais fácil com o tempo?",
+  "74 meses para o primeiro R$ 100 mil. 22 para o quinto."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Os primeiros cem mil levam seis anos. O quinto bloco de cem mil, menos de dois.",
+   "leg": "Os primeiros R$ 100 mil levam 6 anos. O quinto bloco de R$ 100 mil, menos de 2.",
+   "dados": {
+    "valor": "6 anos",
+    "linhas": [
+     "para os primeiros",
+     "R$ 100 mil"
+    ]
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "titulo",
+   "tts": "O exemplo: mil reais por mês, sempre o mesmo valor, rendendo zero vírgula oito por cento ao mês.",
+   "leg": "O exemplo: R$ 1.000 por mês, sempre o mesmo valor, rendendo 0,8% ao mês.",
+   "dados": {
+    "titulo": [
+     "Mesmo aporte,",
+     "tempos diferentes"
+    ],
+    "subtitulo": "R$ 1.000 por mês, a 0,8% ao mês"
+   }
+  },
+  {
+   "id": "grafico",
+   "tipo": "linhas",
+   "tts": "Os primeiros cem mil chegam no mês setenta e quatro. Depois disso, a curva começa a empinar.",
+   "leg": "Os primeiros R$ 100 mil chegam no mês 74. Depois disso, a curva começa a empinar.",
+   "dados": {
+    "titulo": "R$ 1.000 por mês a 0,8% ao mês",
+    "x_rotulo": "meses",
+    "x_ticks": [
+     0,
+     60,
+     120,
+     180
+    ],
+    "ymax": 560000,
+    "ymin": 0,
+    "y_passo": 100000,
+    "series": [
+     {
+      "nome": "patrimônio",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 500 mil",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        6,
+        6121.29
+       ],
+       [
+        12,
+        12542.34
+       ],
+       [
+        18,
+        19277.83
+       ],
+       [
+        24,
+        26343.16
+       ],
+       [
+        30,
+        33754.48
+       ],
+       [
+        36,
+        41528.73
+       ],
+       [
+        42,
+        49683.69
+       ],
+       [
+        48,
+        58238.0
+       ],
+       [
+        54,
+        67211.23
+       ],
+       [
+        60,
+        76623.87
+       ],
+       [
+        66,
+        86497.45
+       ],
+       [
+        72,
+        96854.54
+       ],
+       [
+        78,
+        107718.83
+       ],
+       [
+        84,
+        119115.14
+       ],
+       [
+        90,
+        131069.53
+       ],
+       [
+        96,
+        143609.33
+       ],
+       [
+        102,
+        156763.21
+       ],
+       [
+        108,
+        170561.24
+       ],
+       [
+        114,
+        185034.96
+       ],
+       [
+        120,
+        200217.47
+       ],
+       [
+        126,
+        216143.47
+       ],
+       [
+        132,
+        232849.37
+       ],
+       [
+        138,
+        250373.36
+       ],
+       [
+        144,
+        268755.5
+       ],
+       [
+        150,
+        288037.83
+       ],
+       [
+        156,
+        308264.42
+       ],
+       [
+        162,
+        329481.51
+       ],
+       [
+        168,
+        351737.6
+       ],
+       [
+        174,
+        375083.59
+       ],
+       [
+        180,
+        399572.83
+       ],
+       [
+        186,
+        425261.32
+       ],
+       [
+        192,
+        452207.78
+       ],
+       [
+        198,
+        480473.82
+       ],
+       [
+        204,
+        510124.06
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "blocos",
+   "tipo": "barras",
+   "tts": "Cada novo bloco fica mais rápido. O segundo leva quarenta e seis meses. O terceiro, trinta e quatro. O quarto, vinte e sete. E o quinto, só vinte e dois.",
+   "leg": "Cada novo bloco fica mais rápido. O 2º leva 46 meses. O 3º, 34. O 4º, 27. E o 5º, só 22.",
+   "dados": {
+    "titulo": [
+     "Meses para cada",
+     "novo R$ 100 mil"
+    ],
+    "itens": [
+     {
+      "rotulo": "1º",
+      "valor": 73.8,
+      "texto": "74 meses"
+     },
+     {
+      "rotulo": "2º",
+      "valor": 46.1,
+      "texto": "46 meses"
+     },
+     {
+      "rotulo": "3º",
+      "valor": 33.7,
+      "texto": "34 meses"
+     },
+     {
+      "rotulo": "4º",
+      "valor": 26.5,
+      "texto": "27 meses"
+     },
+     {
+      "rotulo": "5º",
+      "valor": 21.9,
+      "texto": "22 meses",
+      "destaque": true
+     }
+    ],
+    "nota": "mesmo aporte de R$ 1.000 por mês"
+   }
+  },
+  {
+   "id": "motivo",
+   "tipo": "versus",
+   "tts": "O motivo: com cem mil investidos, os juros já colocam oitocentos reais por mês. Com quatrocentos mil, três mil e duzentos. Mais que o seu aporte.",
+   "leg": "O motivo: com R$ 100 mil, os juros já colocam R$ 800 por mês. Com R$ 400 mil, R$ 3.200. Mais que o seu aporte.",
+   "dados": {
+    "a": "R$ 800",
+    "b": "R$ 3.200",
+    "rotulo_a": "juros/mês com R$ 100 mil",
+    "rotulo_b": "juros/mês com R$ 400 mil",
+    "centro": "×4"
+   }
+  },
+  {
+   "id": "encurtar",
+   "tipo": "formula",
+   "tts": "Dá para encurtar o começo. Com mil e quinhentos por mês, os primeiros cem mil chegam no mês cinquenta e quatro. Vinte meses antes.",
+   "leg": "Dá para encurtar o começo. Com R$ 1.500 por mês, os primeiros R$ 100 mil chegam no mês 54. 20 meses antes.",
+   "dados": {
+    "titulo": "Com R$ 1.500 por mês",
+    "linha1": "primeiros R$ 100 mil",
+    "resultado": "mês 54",
+    "nota": "20 meses antes"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Por isso o começo parece lento e desanima. Mas é ele que monta a base. Quem atravessa os primeiros cem mil vê a coisa acelerar.",
+   "leg": "O começo parece lento e desanima. Mas é ele que monta a base. Quem atravessa os primeiros R$ 100 mil vê a coisa acelerar.",
+   "dados": {
+    "titulo": [
+     "O que isso ensina"
+    ],
+    "itens": [
+     "o começo é o mais lento",
+     "constância vence pressa",
+     "depois, acelera"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Seis anos para os primeiros cem mil. Em qual bloco você está? Comenta aqui.",
+   "leg": "6 anos para os primeiros R$ 100 mil. Em qual bloco você está? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Em qual bloco de",
+     "R$ 100 mil você está?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Os primeiros R$ 100 mil levam 6 anos. O quinto, menos de 2",
+   "texto": "R$ 1.000 por mês a 0,8% ao mês (taxa ilustrativa):\n1º R$ 100 mil → 74 meses\n2º → 46 meses\n3º → 34 meses\n4º → 27 meses\n5º → 22 meses\n\nCom R$ 100 mil investidos, os juros já colocam R$ 800 por mês. Com R$ 1.500 por mês de aporte, os primeiros R$ 100 mil chegam no mês 54.\n\nTaxa hipotética, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Os primeiros R$ 100 mil levam 6 anos. O quinto bloco, menos de 2.\n\nR$ 1.000 por mês a 0,8% ao mês:\n• 1º R$ 100 mil → 74 meses\n• 3º → 34 meses\n• 5º → 22 meses\n\nO começo é lento, mas é ele que monta a base.\n\nEm qual bloco de R$ 100 mil você está? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Os primeiros R$ 100 mil levam 6 anos. O quinto bloco, menos de 2. Taxa hipotética. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro"
+  }
+ }
+}

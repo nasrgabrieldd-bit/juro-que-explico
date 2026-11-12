@@ -1,0 +1,179 @@
+{
+ "id": "JQE-S024",
+ "titulo": "Parcelado sem juros ou à vista: qual sai mais barato?",
+ "formato": "vertical 9:16",
+ "pilar": "Finanças pessoais",
+ "tipo": "evergreen / versus",
+ "risco": "baixo — comparação por valor presente com rendimento ilustrativo",
+ "refeito_de": "JQE-S007",
+ "tipo_gancho": "escolha",
+ "formato_narrativo": "versus",
+ "nota_tela": "Exemplo ilustrativo · rendimento hipotético, sem impostos",
+ "parametros": {
+  "preco": 1200,
+  "parcelas": 10,
+  "desconto": 0.1,
+  "rendimento_mes": 0.008,
+  "desconto_baixo": 0.03,
+  "dias_primeira_parcela": 30
+ },
+ "calculos": {
+  "parcela": "1200 / 10",
+  "avista": "1200 * (1 - 0.10)",
+  "vp_parcelas": "120 * (1 - 1.008 ** -10) / 0.008",
+  "avista_3": "1200 * (1 - 0.03)",
+  "desconto_empate": "(1 - vp_parcelas / 1200) * 100"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor presente de 10 parcelas mensais postecipadas, VP = P × (1 − (1 + i)^−n) / i"
+ ],
+ "capa": {
+  "linha1": "Parcelado sem juros",
+  "linha2": "ou à vista?",
+  "destaque": "a conta certa"
+ },
+ "ganchos_alternativos": [
+  "Sem juros não quer dizer de graça.",
+  "A loja oferece 10× sem juros ou desconto. Qual escolher?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Dez vezes de cento e vinte ou mil e oitenta à vista: qual sai mais barato? A resposta depende de um detalhe.",
+   "leg": "10× de R$ 120 ou R$ 1.080 à vista: qual sai mais barato? A resposta depende de um detalhe.",
+   "dados": {
+    "a": "10× R$ 120",
+    "b": "R$ 1.080",
+    "rotulo_a": "parcelado sem juros",
+    "rotulo_b": "à vista",
+    "centro": "?"
+   }
+  },
+  {
+   "id": "gratis",
+   "tipo": "titulo",
+   "tts": "Sem juros não quer dizer de graça. Quando tem desconto à vista, o custo do parcelado é o desconto que você perde.",
+   "leg": "Sem juros não quer dizer de graça. Quando tem desconto à vista, o custo do parcelado é o desconto que você perde.",
+   "dados": {
+    "titulo": [
+     "Sem juros",
+     "não é de graça"
+    ],
+    "subtitulo": "o desconto perdido é o custo"
+   }
+  },
+  {
+   "id": "rende",
+   "tipo": "formula",
+   "tts": "Mas parcelar tem uma vantagem: o dinheiro rende enquanto você paga. A zero vírgula oito por cento ao mês, as parcelas valem hoje cerca de mil cento e quarenta e nove.",
+   "leg": "Mas parcelar tem uma vantagem: o dinheiro rende enquanto você paga. A 0,8% ao mês, as parcelas valem hoje cerca de R$ 1.149.",
+   "dados": {
+    "titulo": "Parcelas em valor de hoje",
+    "linha1": "10 × R$ 120 a 0,8% ao mês",
+    "resultado": "≈ R$ 1.149",
+    "nota": "primeira parcela em 30 dias"
+   }
+  },
+  {
+   "id": "compara",
+   "tipo": "barras",
+   "tts": "Então compare: mil cento e quarenta e nove contra mil e oitenta. Com dez por cento de desconto, à vista ganha.",
+   "leg": "Compare: R$ 1.149 contra R$ 1.080. Com 10% de desconto, à vista ganha.",
+   "dados": {
+    "titulo": [
+     "Quanto custa",
+     "em valor de hoje"
+    ],
+    "itens": [
+     {
+      "rotulo": "Parcelado",
+      "valor": 1148.85,
+      "texto": "R$ 1.148,85"
+     },
+     {
+      "rotulo": "À vista",
+      "valor": 1080,
+      "texto": "R$ 1.080",
+      "destaque": true
+     }
+    ],
+    "nota": "rendimento ilustrativo de 0,8% ao mês"
+   }
+  },
+  {
+   "id": "tres",
+   "tipo": "numero_grande",
+   "tts": "E se o desconto fosse só três por cento? À vista sairia por mil cento e sessenta e quatro. Aí parcelar, com o dinheiro rendendo, sairia mais barato.",
+   "leg": "E se o desconto fosse só 3%? À vista sairia por R$ 1.164. Aí parcelar, com o dinheiro rendendo, sairia mais barato.",
+   "dados": {
+    "valor": "3%",
+    "linhas": [
+     "de desconto:",
+     "parcelar vence"
+    ]
+   }
+  },
+  {
+   "id": "virada",
+   "tipo": "formula",
+   "tts": "O ponto de virada, nesse exemplo, é um desconto de quatro vírgula vinte e seis por cento. Acima disso, à vista. Abaixo, parcelado.",
+   "leg": "O ponto de virada, nesse exemplo, é um desconto de 4,26%. Acima disso, à vista. Abaixo, parcelado.",
+   "dados": {
+    "titulo": "Ponto de virada",
+    "linha1": "1 − R$ 1.148,85 ÷ R$ 1.200",
+    "resultado": "4,26%",
+    "nota": "de desconto à vista"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Antes de decidir: pergunte o preço à vista, compare em valor de hoje, e só parcele se o dinheiro ficar aplicado.",
+   "leg": "Antes de decidir: pergunte o preço à vista, compare em valor de hoje, e só parcele se o dinheiro ficar aplicado.",
+   "dados": {
+    "titulo": [
+     "Antes de decidir"
+    ],
+    "itens": [
+     "pergunte o preço à vista",
+     "compare em valor de hoje",
+     "o dinheiro precisa render"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Na sua última compra, você pegou as dez vezes ou o desconto? Comenta aqui.",
+   "leg": "Na sua última compra, você pegou as 10 vezes ou o desconto? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "10 vezes",
+     "ou desconto?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Parcelado sem juros ou à vista com desconto? A conta certa",
+   "texto": "R$ 1.200 em 10× sem juros ou R$ 1.080 à vista?\n\nCom rendimento ilustrativo de 0,8% ao mês, as parcelas valem hoje cerca de R$ 1.148,85. À vista (10% de desconto) sai mais barato.\nCom desconto de só 3% (R$ 1.164), o parcelado sairia mais barato, se o dinheiro ficar aplicado.\nO ponto de virada nesse exemplo é um desconto de 4,26%.\n\nValores ilustrativos, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dinheiro #economia #compras #shorts"
+  },
+  "instagram": {
+   "texto": "10× de R$ 120 ou R$ 1.080 à vista: qual sai mais barato?\n\n• parcelas em valor de hoje (0,8% ao mês) → R$ 1.149\n• à vista → R$ 1.080 ✅\n• com desconto de 3% (R$ 1.164), parcelar venceria\n• virada: desconto de 4,26%\n\nSem juros não é de graça.\n\nVocê pega as 10 vezes ou o desconto? 👇\n\nValores ilustrativos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dinheiro #economia #compras #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "10× de R$ 120 ou R$ 1.080 à vista? Em valor de hoje, à vista ganha. Com 3% de desconto, não. Valores ilustrativos. Narração por IA. #educacaofinanceira #dinheiro #economia #compras"
+  }
+ }
+}

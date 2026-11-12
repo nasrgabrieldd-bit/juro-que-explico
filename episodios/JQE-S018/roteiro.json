@@ -1,0 +1,177 @@
+{
+ "id": "JQE-S018",
+ "titulo": "Dividend yield de 16%: presente ou armadilha?",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / mito ou verdade",
+ "risco": "baixo — empresa fictícia, sem ativos reais",
+ "refeito_de": "JQE-S012",
+ "tipo_gancho": "contradição",
+ "formato_narrativo": "mito ou verdade",
+ "nota_tela": "Exemplo ilustrativo · empresa fictícia",
+ "parametros": {
+  "dividendo": 2,
+  "preco": 25,
+  "preco_queda": 12.5,
+  "dividendo_corte": 1
+ },
+ "calculos": {
+  "dy_25": "2 / 25 * 100",
+  "dy_12": "2 / 12.5 * 100",
+  "dy_corte": "1 / 12.5 * 100",
+  "queda": "(1 - 12.5 / 25) * 100",
+  "div_100": "2 / 25 * 100"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Definição: dividend yield = dividendos pagos nos últimos 12 meses ÷ preço atual"
+ ],
+ "capa": {
+  "linha1": "Dividend yield alto",
+  "linha2": "presente ou armadilha?",
+  "destaque": "olhe o preço"
+ },
+ "ganchos_alternativos": [
+  "Uma ação pagando 16% de dividendos pode ser a pior da lista.",
+  "Yield de 16%? Primeiro descubra por que ele subiu."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "A mesma ação rendia oito por cento em dividendos. Agora, dezesseis. Sem pagar nada a mais.",
+   "leg": "A mesma ação rendia 8% em dividendos. Agora, 16%. Sem pagar nada a mais.",
+   "dados": {
+    "a": "8%",
+    "b": "16%",
+    "rotulo_a": "dividend yield antes",
+    "rotulo_b": "mesma empresa, depois",
+    "centro": "?"
+   }
+  },
+  {
+   "id": "conceito",
+   "tipo": "formula",
+   "tts": "O dividend yield é o dividendo dos últimos doze meses dividido pelo preço. Empresa fictícia: pagou dois reais, a ação custa vinte e cinco. Yield de oito por cento.",
+   "leg": "Dividend yield é o dividendo dos últimos 12 meses dividido pelo preço. Empresa fictícia: pagou R$ 2, a ação custa R$ 25. Yield de 8%.",
+   "dados": {
+    "titulo": "Dividend yield",
+    "linha1": "R$ 2 ÷ R$ 25",
+    "resultado": "= 8%",
+    "nota": "dividendos de 12 meses ÷ preço atual"
+   }
+  },
+  {
+   "id": "truque",
+   "tipo": "titulo",
+   "tts": "Então como ele dobrou? Repara na fórmula: o dividendo fica em cima, o preço embaixo. Se o de baixo cai, o resultado sobe.",
+   "leg": "Como ele dobrou? Repara na fórmula: o dividendo fica em cima, o preço embaixo. Se o de baixo cai, o resultado sobe.",
+   "dados": {
+    "titulo": [
+     "O truque",
+     "está no preço"
+    ],
+    "subtitulo": "dividendo em cima, preço embaixo"
+   }
+  },
+  {
+   "id": "queda",
+   "tipo": "barras",
+   "tts": "A empresa teve um problema e a ação caiu pela metade, para doze e cinquenta. O dividendo antigo continua na conta, e o yield pula para dezesseis.",
+   "leg": "A empresa teve um problema e a ação caiu pela metade, para R$ 12,50. O dividendo antigo continua na conta, e o yield pula para 16%.",
+   "dados": {
+    "titulo": [
+     "Mesmo dividendo,",
+     "preço diferente"
+    ],
+    "itens": [
+     {
+      "rotulo": "ação a R$ 25",
+      "valor": 8,
+      "texto": "8%"
+     },
+     {
+      "rotulo": "ação a R$ 12,50",
+      "valor": 16,
+      "texto": "16%",
+      "destaque": true
+     }
+    ],
+    "nota": "o dividendo da conta é o do passado"
+   }
+  },
+  {
+   "id": "corte",
+   "tipo": "formula",
+   "tts": "E se a empresa cortar o dividendo para um real? O yield volta para oito por cento. Mas quem comprou pelo número alto já viu a ação cair cinquenta por cento.",
+   "leg": "E se a empresa cortar o dividendo para R$ 1? O yield volta para 8%. Mas quem comprou pelo número alto já viu a ação cair 50%.",
+   "dados": {
+    "titulo": "Se o dividendo for cortado",
+    "linha1": "R$ 1 ÷ R$ 12,50",
+    "resultado": "= 8%",
+    "nota": "e a ação já caiu 50%"
+   }
+  },
+  {
+   "id": "olhe",
+   "tipo": "lista",
+   "tts": "Antes de se animar com um yield alto, olhe três coisas: por que o preço caiu, se o lucro sustenta o dividendo e o histórico de vários anos.",
+   "leg": "Antes de se animar com um yield alto, olhe: por que o preço caiu, se o lucro sustenta o dividendo e o histórico de vários anos.",
+   "dados": {
+    "titulo": [
+     "Antes do yield, olhe"
+    ],
+    "itens": [
+     "por que o preço caiu",
+     "se o lucro sustenta",
+     "histórico de vários anos"
+    ]
+   }
+  },
+  {
+   "id": "constancia",
+   "tipo": "titulo",
+   "tts": "Um yield moderado, pago com regularidade, costuma dizer mais do que um número altíssimo em um ano só.",
+   "leg": "Um yield moderado, pago com regularidade, costuma dizer mais do que um número altíssimo em um ano só.",
+   "dados": {
+    "titulo": [
+     "Constância",
+     "vale mais que pico"
+    ],
+    "subtitulo": "olhe vários anos, não só o último"
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "E você, já se animou com um yield de dezesseis por cento que não se sustentou? Comenta aqui.",
+   "leg": "E você, já se animou com um yield de 16% que não se sustentou? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Já se animou com",
+     "um yield de 16%?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Dividend yield de 16%: presente ou armadilha? A conta mostra",
+   "texto": "Dividend yield = dividendos dos últimos 12 meses ÷ preço atual.\n\nEmpresa fictícia: pagou R$ 2 por ação; a R$ 25, o yield é 8%. Se a ação cai para R$ 12,50, o yield vira 16% sem a empresa pagar nada a mais. Se o dividendo for cortado para R$ 1, o yield volta para 8%, com a ação 50% mais barata.\n\nOlhe por que o preço mudou, se o lucro sustenta o dividendo e o histórico de pagamentos.\n\nExemplo ilustrativo, empresa fictícia.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "A mesma ação rendia 8% em dividendos. Agora rende 16%. E a empresa não pagou nada a mais.\n\n• yield = dividendo de 12 meses ÷ preço\n• o preço caiu pela metade → o yield dobrou\n• se o dividendo for cortado, volta a 8%, com a ação 50% mais barata\n\nYield alto pode ser só preço caindo.\n\nJá se animou com um yield alto que não se sustentou? 👇\n\nExemplo ilustrativo, empresa fictícia.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "A mesma ação rendia 8% em dividendos e agora rende 16%, sem pagar nada a mais. Entenda a armadilha. Empresa fictícia. Narração por IA. #educacaofinanceira #dividendos #investimentos #dinheiro"
+  }
+ }
+}

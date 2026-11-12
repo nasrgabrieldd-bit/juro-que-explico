@@ -1,0 +1,247 @@
+{
+ "id": "JQE-S032",
+ "titulo": "Regra 50/30/20: o erro é investir o que sobra",
+ "formato": "vertical 9:16",
+ "pilar": "Finanças pessoais",
+ "tipo": "evergreen / passo a passo",
+ "risco": "baixo — regra de orçamento popular, exemplo ilustrativo",
+ "refeito_de": "JQE-S013",
+ "tipo_gancho": "erro comum",
+ "formato_narrativo": "passo a passo",
+ "nota_tela": "Exemplo ilustrativo · valores hipotéticos",
+ "parametros": {
+  "salario": 4000,
+  "p50": 0.5,
+  "p30": 0.3,
+  "p20": 0.2,
+  "taxa_mes": 0.008,
+  "anos": 10
+ },
+ "calculos": {
+  "n50": "4000 * 0.5",
+  "n30": "4000 * 0.3",
+  "n20": "4000 * 0.2",
+  "inv10": "800 * (1.008 ** 120 - 1) / 0.008",
+  "inv10_mil": "inv10 / 1000",
+  "aportado": "800 * 120",
+  "aportado_mil": "800 * 120 / 1000"
+ },
+ "numeros_livres": [
+  60,
+  70
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Regra de orçamento 50/30/20 (necessidades, desejos, futuro), referência comum de educação financeira; cálculo próprio do valor futuro"
+ ],
+ "capa": {
+  "linha1": "Como dividir",
+  "linha2": "o seu salário",
+  "destaque": "o futuro primeiro"
+ },
+ "ganchos_alternativos": [
+  "Investir o que sobra quase nunca funciona.",
+  "R$ 800 por mês, separados no dia do salário, viram R$ 160 mil."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Cinquenta, trinta, vinte. O erro é investir o que sobra, e essa regra faz o contrário.",
+   "leg": "50, 30, 20. O erro é investir o que sobra, e essa regra faz o contrário.",
+   "dados": {
+    "valor": "50/30/20",
+    "linhas": [
+     "a regra para",
+     "dividir o salário"
+    ]
+   }
+  },
+  {
+   "id": "divide",
+   "tipo": "barras",
+   "tts": "A regra divide o que entra em três partes: metade para o essencial, trinta por cento para o que você gosta, vinte para o futuro.",
+   "leg": "A regra divide o que entra: 50% para o essencial, 30% para o que você gosta, 20% para o futuro.",
+   "dados": {
+    "titulo": [
+     "Como dividir",
+     "o salário"
+    ],
+    "itens": [
+     {
+      "rotulo": "essencial",
+      "valor": 50,
+      "texto": "50%"
+     },
+     {
+      "rotulo": "desejos",
+      "valor": 30,
+      "texto": "30%"
+     },
+     {
+      "rotulo": "futuro",
+      "valor": 20,
+      "texto": "20%",
+      "destaque": true
+     }
+    ],
+    "nota": "porcentagens do salário líquido"
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "formula",
+   "tts": "Com quatro mil líquidos: dois mil para moradia, contas e mercado. Mil e duzentos para lazer. E oitocentos para investir.",
+   "leg": "Com R$ 4.000 líquidos: R$ 2.000 para moradia, contas e mercado. R$ 1.200 para lazer. E R$ 800 para investir.",
+   "dados": {
+    "titulo": "Salário de R$ 4.000",
+    "linha1": "R$ 2.000 · R$ 1.200",
+    "resultado": "R$ 800",
+    "nota": "vão para o futuro todo mês"
+   }
+  },
+  {
+   "id": "ordem",
+   "tipo": "titulo",
+   "tts": "O pulo do gato é a ordem. Os vinte por cento saem primeiro, no dia em que o salário cai. O resto é para viver.",
+   "leg": "O pulo do gato é a ordem. Os 20% saem primeiro, no dia em que o salário cai. O resto é para viver.",
+   "dados": {
+    "titulo": [
+     "Pague o futuro",
+     "primeiro"
+    ],
+    "subtitulo": "separe os 20% no dia do salário"
+   }
+  },
+  {
+   "id": "grafico",
+   "tipo": "linhas",
+   "tts": "Os oitocentos por mês, rendendo zero vírgula oito por cento, viram uns cento e sessenta mil em dez anos. Você aportou noventa e seis mil.",
+   "leg": "Os R$ 800 por mês, rendendo 0,8%, viram uns R$ 160 mil em 10 anos. Você aportou R$ 96 mil.",
+   "dados": {
+    "titulo": "R$ 800 por mês a 0,8% ao mês",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     5,
+     10
+    ],
+    "ymax": 180000,
+    "ymin": 0,
+    "y_passo": 40000,
+    "series": [
+     {
+      "nome": "investindo os 20%",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 160 mil",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        10033.87
+       ],
+       [
+        2,
+        21074.52
+       ],
+       [
+        3,
+        33222.98
+       ],
+       [
+        4,
+        46590.4
+       ],
+       [
+        5,
+        61299.09
+       ],
+       [
+        6,
+        77483.63
+       ],
+       [
+        7,
+        95292.11
+       ],
+       [
+        8,
+        114887.46
+       ],
+       [
+        9,
+        136448.99
+       ],
+       [
+        10,
+        160173.98
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "ajuste",
+   "tipo": "titulo",
+   "tts": "Se o essencial passa de cinquenta por cento, comece pelo que der. Cinco ou dez por cento para o futuro já criam o hábito.",
+   "leg": "Se o essencial passa de 50%, comece pelo que der. 5% ou 10% para o futuro já criam o hábito.",
+   "dados": {
+    "titulo": [
+     "Não fechou?",
+     "Ajuste a regra"
+    ],
+    "subtitulo": "o importante é ter uma parte para o futuro"
+   }
+  },
+  {
+   "id": "variacoes",
+   "tipo": "versus",
+   "tts": "Dá para adaptar: tem quem use sessenta, vinte, vinte, ou setenta, vinte, dez. O que importa é a parte do futuro existir todo mês.",
+   "leg": "Dá para adaptar: tem quem use 60/20/20 ou 70/20/10. O que importa é a parte do futuro existir todo mês.",
+   "dados": {
+    "a": "60/20/20",
+    "b": "70/20/10",
+    "rotulo_a": "essencial mais caro",
+    "rotulo_b": "começando agora",
+    "centro": "ou"
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Cinquenta, trinta, vinte: quanto do seu salário vai para o futuro hoje? Comenta a sua porcentagem.",
+   "leg": "50, 30, 20: quanto do seu salário vai para o futuro hoje? Comenta a sua porcentagem.",
+   "dados": {
+    "linhas": [
+     "Quanto do seu salário",
+     "vai para o futuro?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Regra 50/30/20: o erro é investir o que sobra",
+   "texto": "A regra 50/30/20 divide o salário líquido: 50% essencial, 30% desejos, 20% futuro. O segredo é a ordem: os 20% saem primeiro.\n\nCom R$ 4.000: R$ 2.000 + R$ 1.200 + R$ 800.\nR$ 800 por mês a 0,8% ao mês (taxa ilustrativa) viram cerca de R$ 160 mil em 10 anos, com R$ 96 mil aportados.\n\nDá para adaptar: 60/20/20, 70/20/10.\n\nValores ilustrativos, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #organizacaofinanceira #dinheiro #investimentos #shorts"
+  },
+  "instagram": {
+   "texto": "50, 30, 20. O erro é investir o que sobra.\n\nCom R$ 4.000 líquidos:\n• 50% essencial → R$ 2.000\n• 30% desejos → R$ 1.200\n• 20% futuro → R$ 800, separados primeiro\n\nR$ 800 por mês viram uns R$ 160 mil em 10 anos.\n\nQuanto do seu salário vai para o futuro? 👇\n\nValores ilustrativos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #organizacaofinanceira #dinheiro #investimentos #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "50, 30, 20: o erro é investir o que sobra. Com R$ 4.000, R$ 800 vão para o futuro primeiro. Valores ilustrativos. Narração por IA. #educacaofinanceira #organizacaofinanceira #dinheiro #investimentos"
+  }
+ }
+}

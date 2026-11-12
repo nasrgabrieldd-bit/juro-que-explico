@@ -1,0 +1,284 @@
+{
+ "id": "JQE-S025",
+ "titulo": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — taxas ilustrativas, sem produto",
+ "refeito_de": "JQE-S016",
+ "tipo_gancho": "pergunta com número",
+ "formato_narrativo": "explicador",
+ "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos",
+ "parametros": {
+  "capital": 1000000,
+  "taxa_mes": 0.008,
+  "inflacao_mes": 0.004
+ },
+ "calculos": {
+  "renda": "1000000 * 0.008",
+  "real": "((1.008 / 1.004) - 1) * 1000000",
+  "infl_mes": "1000000 * 0.004",
+  "taxa_ano": "(1.008 ** 12 - 1) * 100",
+  "infl_ano": "(1.004 ** 12 - 1) * 100",
+  "capital_10_gasta_tudo": "1000000 / 1.004 ** 120",
+  "capital_10_mil": "capital_10_gasta_tudo / 1000",
+  "fator": "1 + 0.008",
+  "fator_inf": "1 + 0.004",
+  "metade": "8000 / 2"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: renda nominal = capital × taxa; ganho real = (1 + taxa) / (1 + inflação) − 1; poder de compra = capital / (1 + inflação)^n"
+ ],
+ "capa": {
+  "linha1": "Rende quanto",
+  "linha2": "por mês?",
+  "destaque": "e quanto dá para gastar"
+ },
+ "ganchos_alternativos": [
+  "R$ 8.000 por mês. Mas só metade é sua de verdade.",
+  "Viver de renda com R$ 1 milhão: a conta que ninguém faz."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Um milhão de reais investidos rende quanto por mês? E quanto dá para gastar sem empobrecer?",
+   "leg": "R$ 1 milhão investido rende quanto por mês? E quanto dá para gastar sem empobrecer?",
+   "dados": {
+    "valor": "R$ 1 milhão",
+    "linhas": [
+     "rende quanto",
+     "por mês?"
+    ]
+   }
+  },
+  {
+   "id": "rende",
+   "tipo": "formula",
+   "tts": "Com um rendimento ilustrativo de zero vírgula oito por cento ao mês, cerca de dez por cento ao ano, o milhão rende oito mil por mês.",
+   "leg": "Com rendimento ilustrativo de 0,8% ao mês, cerca de 10% ao ano, o milhão rende R$ 8.000 por mês.",
+   "dados": {
+    "titulo": "Rendimento do mês",
+    "linha1": "R$ 1 milhão × 0,8%",
+    "resultado": "R$ 8.000",
+    "nota": "por mês, antes da inflação"
+   }
+  },
+  {
+   "id": "detalhe",
+   "tipo": "titulo",
+   "tts": "Parece dar para gastar tudo. Mas tem um detalhe que quase ninguém coloca na conta.",
+   "leg": "Parece dar para gastar tudo. Mas tem um detalhe que quase ninguém coloca na conta.",
+   "dados": {
+    "titulo": [
+     "O detalhe",
+     "que ninguém conta"
+    ],
+    "subtitulo": "a inflação trabalha todo mês"
+   }
+  },
+  {
+   "id": "inflacao",
+   "tipo": "versus",
+   "tts": "A inflação. Com zero vírgula quatro por cento ao mês, uns cinco por cento ao ano, metade desses oito mil só repõe o poder de compra do milhão.",
+   "leg": "A inflação. Com 0,4% ao mês, uns 5% ao ano, metade dos R$ 8.000 só repõe o poder de compra do milhão.",
+   "dados": {
+    "a": "R$ 4.000",
+    "b": "R$ 4.000",
+    "rotulo_a": "repõe a inflação",
+    "rotulo_b": "ganho real",
+    "centro": "= R$ 8.000"
+   }
+  },
+  {
+   "id": "grafico",
+   "tipo": "linhas",
+   "tts": "Se você gasta os oito mil todo mês, o extrato continua mostrando um milhão. Mas, em dez anos, ele compra o que hoje compram uns seiscentos e vinte mil.",
+   "leg": "Gastando os R$ 8.000 todo mês, o extrato segue em R$ 1 milhão. Mas, em 10 anos, compra o que hoje compram uns R$ 620 mil.",
+   "dados": {
+    "titulo": "Poder de compra de R$ 1 milhão",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10
+    ],
+    "ymax": 1100000,
+    "ymin": 0,
+    "y_passo": 250000,
+    "y_fmt": "brl",
+    "series": [
+     {
+      "nome": "reinvestindo a inflação",
+      "velocidade": 0.6,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 1 milhão",
+      "pontos": [
+       [
+        0,
+        1000000
+       ],
+       [
+        1,
+        1000000
+       ],
+       [
+        2,
+        1000000
+       ],
+       [
+        3,
+        1000000
+       ],
+       [
+        4,
+        1000000
+       ],
+       [
+        5,
+        1000000
+       ],
+       [
+        6,
+        1000000
+       ],
+       [
+        7,
+        1000000
+       ],
+       [
+        8,
+        1000000
+       ],
+       [
+        9,
+        1000000
+       ],
+       [
+        10,
+        1000000
+       ]
+      ]
+     },
+     {
+      "nome": "gastando tudo",
+      "destaque": true,
+      "velocidade": 0.6,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 620 mil",
+      "pontos": [
+       [
+        0,
+        1000000.0
+       ],
+       [
+        1,
+        953225.05
+       ],
+       [
+        2,
+        908637.99
+       ],
+       [
+        3,
+        866136.5
+       ],
+       [
+        4,
+        825623.0
+       ],
+       [
+        5,
+        787004.53
+       ],
+       [
+        6,
+        750192.43
+       ],
+       [
+        7,
+        715102.22
+       ],
+       [
+        8,
+        681653.35
+       ],
+       [
+        9,
+        649769.04
+       ],
+       [
+        10,
+        619376.13
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "real",
+   "tipo": "formula",
+   "tts": "A conta certa usa o ganho real: um vírgula zero zero oito, dividido por um vírgula zero zero quatro, menos um. Dá uns três mil novecentos e oitenta e quatro por mês.",
+   "leg": "A conta certa usa o ganho real: 1,008 ÷ 1,004 − 1. Dá uns R$ 3.984 por mês.",
+   "dados": {
+    "titulo": "Ganho real do mês",
+    "linha1": "1,008 ÷ 1,004 − 1",
+    "resultado": "≈ R$ 3.984",
+    "nota": "o que dá para gastar sem empobrecer"
+   }
+  },
+  {
+   "id": "regra",
+   "tipo": "lista",
+   "tts": "Para viver de renda sem empobrecer: gaste só o ganho real, deixe a parte da inflação reinvestida e revise os números todo ano.",
+   "leg": "Para viver de renda sem empobrecer: gaste só o ganho real, reinvista a parte da inflação e revise todo ano.",
+   "dados": {
+    "titulo": [
+     "Para viver de renda"
+    ],
+    "itens": [
+     "use o ganho real",
+     "reinvista a inflação",
+     "revise todo ano"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Um milhão rendendo uns quatro mil de verdade por mês. Quanto você precisaria para viver de renda? Comenta aqui.",
+   "leg": "R$ 1 milhão rendendo uns R$ 4.000 de verdade por mês. Quanto você precisaria para viver de renda? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Quanto você precisa",
+     "por mês?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar",
+   "texto": "Com rendimento ilustrativo de 0,8% ao mês (cerca de 10% ao ano), R$ 1 milhão rende R$ 8.000 por mês.\nCom inflação de 0,4% ao mês (cerca de 5% ao ano), uns R$ 4.000 só repõem o poder de compra.\nGanho real: 1,008 ÷ 1,004 − 1 ≈ R$ 3.984 por mês.\n\nGastando os R$ 8.000 todo mês, em 10 anos o milhão compra o que hoje compram uns R$ 620 mil.\n\nTaxas hipotéticas, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #rendapassiva #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar?\n\n• rendimento de 0,8% ao mês → R$ 8.000\n• inflação de 0,4% ao mês → uns R$ 4.000 só repõem\n• ganho real → cerca de R$ 3.984\n\nGastando tudo, em 10 anos o milhão vale uns R$ 620 mil de hoje.\n\nQuanto você precisaria por mês? 👇\n\nTaxas hipotéticas.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #rendapassiva #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "R$ 1 milhão rende R$ 8.000 por mês, mas só uns R$ 4.000 são ganho real. Taxas hipotéticas. Narração por IA. #educacaofinanceira #investimentos #rendapassiva #dinheiro"
+  }
+ }
+}

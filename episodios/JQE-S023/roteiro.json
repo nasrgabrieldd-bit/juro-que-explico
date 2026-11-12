@@ -1,0 +1,240 @@
+{
+ "id": "JQE-S023",
+ "titulo": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — taxa ilustrativa, sem ativos citados; Bazin com fonte",
+ "refeito_de": "JQE-L001-P2",
+ "tipo_gancho": "contradição",
+ "formato_narrativo": "explicador",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos nem inflação",
+ "parametros": {
+  "aporte": 500,
+  "taxa_mes": 0.008,
+  "anos": 30,
+  "anos_seguintes": 20,
+  "dy": 0.08,
+  "dy_baixo": 0.06,
+  "dy_alto": 0.1,
+  "renda_mes": 1000,
+  "dividendo_acao": 3,
+  "preco_baixo": 40,
+  "preco_alto": 60,
+  "mes_juros_passam_aportes": 159
+ },
+ "calculos": {
+  "taxa_ano": "(1.008 ** 12 - 1) * 100",
+  "juros_mes1": "500 * 0.008",
+  "saldo_virada": "500 / 0.008",
+  "mes_virada": "log(2) / log(1.008)",
+  "juros_120": "0.008 * 500 * (1.008 ** 120 - 1) / 0.008",
+  "fv_159": "500 * (1.008 ** 159 - 1) / 0.008",
+  "aportado_159": "500 * 159",
+  "juros_159": "fv_159 - aportado_159",
+  "fv_158": "500 * (1.008 ** 158 - 1) / 0.008",
+  "juros_158": "fv_158 - 500 * 158",
+  "anos_159": "floor(159 / 12)",
+  "fv30": "500 * (1.008 ** 360 - 1) / 0.008",
+  "fv30_mi": "fv30 / 1000000",
+  "aportado30_mil": "500 * 360 / 1000",
+  "juros30_mil": "(fv30 - 180000) / 1000",
+  "prim10_mil": "500 * (1.008 ** 360 - 1.008 ** 240) / 0.008 / 1000",
+  "ult20_mil": "500 * (1.008 ** 240 - 1) / 0.008 / 1000",
+  "aporte10_mil": "500 * 120 / 1000",
+  "aporte20_mil": "500 * 240 / 1000",
+  "aporte_ano": "500 * 12",
+  "ano1_mil": "500 * (1.008 ** 360 - 1.008 ** 348) / 0.008 / 1000",
+  "ano10_mil": "500 * (1.008 ** 252 - 1.008 ** 240) / 0.008 / 1000",
+  "ano20_mil": "500 * (1.008 ** 132 - 1.008 ** 120) / 0.008 / 1000",
+  "ano30": "500 * (1.008 ** 12 - 1) / 0.008",
+  "renda_ano": "1000 * 12",
+  "capital_8_mil": "12000 / 0.08 / 1000",
+  "capital_6_mil": "12000 / 0.06 / 1000",
+  "capital_10_mil": "12000 / 0.10 / 1000",
+  "tempo_8": "log(1 + 150000 * 0.008 / 500) / log(1.008)",
+  "tempo_8_anos": "tempo_8 / 12",
+  "teto": "3 / 0.06",
+  "dy_40": "3 / 40 * 100",
+  "dy_60": "3 / 60 * 100"
+ },
+ "numeros_livres": [
+  100
+ ],
+ "numeros_fonte": [
+  {
+   "descricao": "Décio Bazin publicou 'Faça Fortuna com Ações Antes que seja Tarde' em 1992",
+   "valor": 1992,
+   "url": "https://investidor10.com.br/conteudo/estrategia-de-decio-bazin/",
+   "data_referencia": "2026-08-05"
+  },
+  {
+   "descricao": "Critério de Bazin: dividend yield mínimo de 6% ao ano; preço-teto = proventos ÷ 0,06",
+   "valor": 6,
+   "url": "https://www.infomoney.com.br/?p=1982816",
+   "data_referencia": "2023"
+  }
+ ],
+ "fontes": [
+  "Cálculo próprio: VF = A × ((1 + i)^n − 1) / i; ponto de virada n = ln 2 / ln(1 + i); capital = renda anual ÷ DY",
+  "Método Bazin: InfoMoney e Investidor10 (links em numeros_fonte)"
+ ],
+ "capa": {
+  "linha1": "Os primeiros anos",
+  "linha2": "valem mais",
+  "destaque": "que os 20 seguintes"
+ },
+ "ganchos_alternativos": [
+  "Metade do dinheiro, quase o dobro do resultado.",
+  "R$ 60 mil viraram R$ 677 mil. R$ 120 mil, só R$ 360 mil."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Seus primeiros dez anos investindo valem mais que os vinte seguintes. Juntos.",
+   "leg": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes. Juntos.",
+   "dados": {
+    "valor": "10 > 20",
+    "linhas": [
+     "os 10 primeiros anos",
+     "valem mais que os 20 seguintes"
+    ]
+   }
+  },
+  {
+   "id": "estranho",
+   "tipo": "titulo",
+   "tts": "Parece errado, porque nos vinte anos você aporta o dobro. Mas o tempo de cada aporte muda tudo.",
+   "leg": "Parece errado, porque nos 20 anos você aporta o dobro. Mas o tempo de cada aporte muda tudo.",
+   "dados": {
+    "titulo": [
+     "Metade do dinheiro,",
+     "mais resultado"
+    ],
+    "subtitulo": "o segredo é o tempo de cada aporte"
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "formula",
+   "tts": "O exemplo: quinhentos reais por mês, a zero vírgula oito por cento, por trinta anos. Você aporta cento e oitenta mil e termina com cerca de um vírgula zero quatro milhão.",
+   "leg": "O exemplo: R$ 500 por mês, a 0,8%, por 30 anos. Você aporta R$ 180 mil e termina com cerca de R$ 1,04 milhão.",
+   "dados": {
+    "titulo": "Em 30 anos",
+    "linha1": "R$ 180 mil aportados",
+    "resultado": "R$ 1,04 mi",
+    "nota": "R$ 500 por mês a 0,8% ao mês"
+   }
+  },
+  {
+   "id": "separa",
+   "tipo": "versus",
+   "tts": "Agora separe. Os aportes dos dez primeiros anos, sessenta mil, viram seiscentos e setenta e sete mil. Os dos vinte seguintes, cento e vinte mil, viram só trezentos e sessenta.",
+   "leg": "Separando: os aportes dos 10 primeiros anos, R$ 60 mil, viram R$ 677 mil. Os dos 20 seguintes, R$ 120 mil, viram só R$ 360 mil.",
+   "dados": {
+    "a": "R$ 360 mil",
+    "b": "R$ 677 mil",
+    "rotulo_a": "R$ 120 mil · anos 11 a 30",
+    "rotulo_b": "R$ 60 mil · anos 1 a 10",
+    "centro": "<"
+   }
+  },
+  {
+   "id": "anoaano",
+   "tipo": "barras",
+   "tts": "Ano a ano fica mais claro. Os seis mil do primeiro ano viram cem mil. Os do décimo, quarenta e dois mil. Os do último, seis mil e duzentos.",
+   "leg": "Ano a ano: os R$ 6.000 do 1º ano viram R$ 100 mil. Os do 10º, R$ 42 mil. Os do último, R$ 6.271.",
+   "dados": {
+    "titulo": [
+     "R$ 6.000 aportados",
+     "em cada ano viram"
+    ],
+    "itens": [
+     {
+      "rotulo": "ano 1",
+      "valor": 100372,
+      "texto": "R$ 100 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "ano 10",
+      "valor": 42450,
+      "texto": "R$ 42 mil"
+     },
+     {
+      "rotulo": "ano 20",
+      "valor": 16316,
+      "texto": "R$ 16 mil"
+     },
+     {
+      "rotulo": "ano 30",
+      "valor": 6271,
+      "texto": "R$ 6.271"
+     }
+    ],
+    "nota": "valor de cada ano no fim do ano 30"
+   }
+  },
+  {
+   "id": "tempo",
+   "tipo": "titulo",
+   "tts": "Cada real aportado no começo tem trinta anos para render. O do último ano, só alguns meses.",
+   "leg": "Cada real aportado no começo tem 30 anos para render. O do último ano, só alguns meses.",
+   "dados": {
+    "titulo": [
+     "Tempo é",
+     "o multiplicador"
+    ],
+    "subtitulo": "o aporte do 1º ano rende por 30 anos"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Por isso o começo importa tanto. Os primeiros aportes parecem pequenos, mas são os que mais trabalham.",
+   "leg": "Por isso o começo importa tanto. Os primeiros aportes parecem pequenos, mas são os que mais trabalham.",
+   "dados": {
+    "titulo": [
+     "Por que começar cedo"
+    ],
+    "itens": [
+     "o tempo multiplica",
+     "o começo é a base",
+     "atrasar custa caro"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Você está nos seus primeiros dez anos, ou já passou deles? Comenta aqui.",
+   "leg": "Você está nos seus primeiros 10 anos, ou já passou deles? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Em quais dos seus",
+     "10 anos você está?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes",
+   "texto": "R$ 500 por mês a 0,8% ao mês (taxa ilustrativa), por 30 anos: R$ 180 mil aportados, cerca de R$ 1,04 milhão no final.\n\nAportes dos anos 1 a 10 (R$ 60 mil) → R$ 677 mil\nAportes dos anos 11 a 30 (R$ 120 mil) → R$ 360 mil\n\nOs R$ 6.000 do 1º ano viram R$ 100 mil; os do último ano, R$ 6.271.\n\nTaxa hipotética, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #jurocomposto #investimentos #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes.\n\nR$ 500 por mês a 0,8% ao mês, por 30 anos:\n• anos 1 a 10 (R$ 60 mil) → R$ 677 mil\n• anos 11 a 30 (R$ 120 mil) → R$ 360 mil\n\nOs primeiros aportes são os que ficam mais tempo rendendo.\n\nEm quais dos seus 10 anos você está? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #jurocomposto #investimentos #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes: R$ 677 mil contra R$ 360 mil. Taxa hipotética. Narração por IA. #educacaofinanceira #jurocomposto #investimentos #dinheiro"
+  }
+ }
+}

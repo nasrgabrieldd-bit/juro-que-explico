@@ -1,0 +1,181 @@
+{
+ "id": "JQE-S020",
+ "titulo": "Rendeu 10%? Quase todo mundo calcula o ganho errado",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / passo a passo",
+ "risco": "baixo — fórmula de Fisher, taxas ilustrativas",
+ "refeito_de": "JQE-S005",
+ "tipo_gancho": "erro comum",
+ "formato_narrativo": "passo a passo",
+ "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos",
+ "parametros": {
+  "nominal": 0.1,
+  "inflacao": 0.045,
+  "valor": 1000,
+  "nominal_baixo": 0.04,
+  "nominal_alto": 0.2,
+  "inflacao_alta": 0.1
+ },
+ "calculos": {
+  "fator_nom": "1 + 0.10",
+  "fator_inf": "1 + 0.045",
+  "fator_baixo": "1 + 0.04",
+  "montante": "1000 * 1.10",
+  "preco_corrigido": "1000 * 1.045",
+  "poder": "1100 / 1.045",
+  "real": "(1.10 / 1.045 - 1) * 100",
+  "atalho": "10 - 4.5",
+  "perda_real": "(1 - 1.04 / 1.045) * 100",
+  "real_alto": "(1.20 / 1.10 - 1) * 100",
+  "atalho_alto": "20 - 10"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: rentabilidade real = (1 + nominal) / (1 + inflação) − 1 (equação de Fisher)"
+ ],
+ "capa": {
+  "linha1": "Rendeu no ano?",
+  "linha2": "Quanto você ganhou",
+  "destaque": "a conta certa"
+ },
+ "ganchos_alternativos": [
+  "10% menos 4,5% não dá 5,5%.",
+  "O extrato diz 10%. O seu bolso diz outra coisa."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Rendeu dez por cento no ano? Quase todo mundo faz a conta do ganho errado.",
+   "leg": "Rendeu 10% no ano? Quase todo mundo faz a conta do ganho errado.",
+   "dados": {
+    "valor": "10%",
+    "linhas": [
+     "rendeu no ano.",
+     "Quanto você ganhou?"
+    ]
+   }
+  },
+  {
+   "id": "conceito",
+   "tipo": "titulo",
+   "tts": "O ganho de verdade é a rentabilidade real: o que sobra depois da inflação. Ela mostra se o seu poder de compra cresceu.",
+   "leg": "O ganho de verdade é a rentabilidade real: o que sobra depois da inflação. Mostra se o seu poder de compra cresceu.",
+   "dados": {
+    "titulo": [
+     "Rentabilidade",
+     "real"
+    ],
+    "subtitulo": "o que sobra depois da inflação"
+   }
+  },
+  {
+   "id": "erro",
+   "tipo": "versus",
+   "tts": "A conta que quase todo mundo faz: dez menos a inflação de quatro e meio. Dá cinco e meio por cento. Parece certo, mas não é.",
+   "leg": "A conta que quase todo mundo faz: 10 menos a inflação de 4,5. Dá 5,5%. Parece certo, mas não é.",
+   "dados": {
+    "a": "5,5%",
+    "b": "?",
+    "rotulo_a": "atalho: 10 − 4,5",
+    "rotulo_b": "conta certa",
+    "centro": "≠"
+   }
+  },
+  {
+   "id": "passos",
+   "tipo": "formula",
+   "tts": "Passo um: você aplicou mil e terminou com mil e cem. Passo dois: com a inflação, o que custava mil agora custa mil e quarenta e cinco.",
+   "leg": "Passo 1: você aplicou R$ 1.000 e terminou com R$ 1.100. Passo 2: com a inflação, o que custava R$ 1.000 agora custa R$ 1.045.",
+   "dados": {
+    "titulo": "Passo a passo",
+    "linha1": "R$ 1.000 viraram R$ 1.100",
+    "resultado": "R$ 1.045",
+    "nota": "é o novo preço do que custava R$ 1.000"
+   }
+  },
+  {
+   "id": "certa",
+   "tipo": "formula",
+   "tts": "Passo três: divida. Um vírgula dez, dividido por um vírgula zero quatro cinco, menos um. O ganho real foi de cinco vírgula vinte e seis por cento.",
+   "leg": "Passo 3: divida. 1,10 dividido por 1,045, menos 1. O ganho real foi de 5,26%.",
+   "dados": {
+    "titulo": "A conta certa",
+    "linha1": "1,10 ÷ 1,045 − 1",
+    "resultado": "= 5,26%",
+    "nota": "ganho real no ano"
+   }
+  },
+  {
+   "id": "maior",
+   "tipo": "barras",
+   "tts": "Com taxas baixas, o atalho chega perto. Mas se rendeu vinte por cento, com inflação de dez, o ganho real é nove vírgula zero nove, e não dez.",
+   "leg": "Com taxas baixas, o atalho chega perto. Mas se rendeu 20%, com inflação de 10%, o ganho real é 9,09%, e não 10%.",
+   "dados": {
+    "titulo": [
+     "Rendeu 20%,",
+     "inflação de 10%"
+    ],
+    "itens": [
+     {
+      "rotulo": "atalho",
+      "valor": 10,
+      "texto": "10%"
+     },
+     {
+      "rotulo": "conta certa",
+      "valor": 9.09,
+      "texto": "9,09%",
+      "destaque": true
+     }
+    ],
+    "nota": "quanto maiores as taxas, maior o erro"
+   }
+  },
+  {
+   "id": "negativo",
+   "tipo": "formula",
+   "tts": "E se tivesse rendido só quatro por cento? O saldo sobe, mas o ganho real fica negativo: menos zero vírgula quarenta e oito por cento.",
+   "leg": "E se tivesse rendido só 4%? O saldo sobe, mas o ganho real fica negativo: −0,48%.",
+   "dados": {
+    "titulo": "E se rendesse 4%?",
+    "linha1": "1,04 ÷ 1,045 − 1",
+    "resultado": "−0,48%",
+    "nota": "perdeu poder de compra"
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Lembra dos dez por cento do começo? Faz essa conta com o seu rendimento e comenta se ganhou da inflação.",
+   "leg": "Lembra dos 10% do começo? Faz essa conta com o seu rendimento e comenta se ganhou da inflação.",
+   "dados": {
+    "linhas": [
+     "Seu rendimento",
+     "ganhou da inflação?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Rendeu 10%? Quase todo mundo calcula o ganho real errado",
+   "texto": "Rentabilidade real é o rendimento descontada a inflação. A conta certa é dividir, não subtrair.\n\nRendeu 10% com inflação de 4,5%: 1,10 ÷ 1,045 − 1 = 5,26% (e não 5,5%).\nRendeu 20% com inflação de 10%: ganho real de 9,09% (e não 10%).\nRendeu 4% com inflação de 4,5%: ganho real negativo, −0,48%.\n\nTaxas ilustrativas, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #inflacao #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Rendeu 10% no ano? Quase todo mundo calcula o ganho errado.\n\nCom inflação de 4,5%:\n• atalho: 10 − 4,5 = 5,5%\n• conta certa: 1,10 ÷ 1,045 − 1 = 5,26%\n• rendeu 20% com inflação de 10%? Ganho real de 9,09%\n\nDivida, não subtraia.\n\nSeu dinheiro ganhou da inflação este ano? 👇\n\nTaxas ilustrativas.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #inflacao #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Rendeu 10% com inflação de 4,5%? O ganho real é 5,26%, não 5,5%. A conta certa em 3 passos. Taxas ilustrativas. Narração por IA. #educacaofinanceira #investimentos #inflacao #dinheiro"
+  }
+ }
+}

@@ -1,0 +1,288 @@
+{
+ "id": "JQE-S026",
+ "titulo": "R$ 100 guardados por 10 anos valem R$ 61",
+ "formato": "vertical 9:16",
+ "pilar": "Economia",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — inflação ilustrativa, sem dado oficial",
+ "refeito_de": "JQE-S004",
+ "tipo_gancho": "contradição",
+ "formato_narrativo": "explicador",
+ "nota_tela": "Exemplo ilustrativo · inflação hipotética constante",
+ "parametros": {
+  "inflacao": 0.05,
+  "valor": 100,
+  "anos": 10,
+  "anos_longo": 20,
+  "inflacao_baixa": 0.03,
+  "inflacao_alta": 0.08
+ },
+ "calculos": {
+  "poder_10": "100 / 1.05 ** 10",
+  "preco_10": "100 * 1.05 ** 10",
+  "poder_5": "100 / 1.05 ** 5",
+  "poder_20": "100 / 1.05 ** 20",
+  "poder_10_3": "100 / 1.03 ** 10",
+  "poder_10_8": "100 / 1.08 ** 10"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: poder de compra = valor / (1 + inflação)^anos; preço futuro = preço × (1 + inflação)^anos"
+ ],
+ "capa": {
+  "linha1": "R$ 100 guardados",
+  "linha2": "por 10 anos",
+  "destaque": "valem quanto?"
+ },
+ "ganchos_alternativos": [
+  "O dinheiro da gaveta não some. Ele encolhe.",
+  "Algo de R$ 100 hoje vai custar R$ 162,89 em 10 anos."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Cem reais guardados por dez anos continuam sendo cem. E valem sessenta e um.",
+   "leg": "R$ 100 guardados por 10 anos continuam sendo R$ 100. E valem R$ 61.",
+   "dados": {
+    "a": "R$ 100",
+    "b": "R$ 61",
+    "rotulo_a": "na gaveta, hoje",
+    "rotulo_b": "o que compram em 10 anos",
+    "centro": "="
+   }
+  },
+  {
+   "id": "explica",
+   "tipo": "titulo",
+   "tts": "Não é pegadinha. O número da nota fica igual, mas os preços sobem, e cada alta vem em cima da anterior.",
+   "leg": "Não é pegadinha. O número da nota fica igual, mas os preços sobem, e cada alta vem em cima da anterior.",
+   "dados": {
+    "titulo": [
+     "Juro composto",
+     "ao contrário"
+    ],
+    "subtitulo": "o dinheiro fica igual, os preços sobem"
+   }
+  },
+  {
+   "id": "preco",
+   "tipo": "formula",
+   "tts": "Com inflação de cinco por cento ao ano, algo que custa cem reais hoje vai custar cento e sessenta e dois e oitenta e nove daqui a dez anos.",
+   "leg": "Com inflação de 5% ao ano, algo que custa R$ 100 hoje vai custar R$ 162,89 daqui a 10 anos.",
+   "dados": {
+    "titulo": "O preço que sobe",
+    "linha1": "R$ 100 a 5% ao ano",
+    "resultado": "R$ 162,89",
+    "nota": "daqui a 10 anos"
+   }
+  },
+  {
+   "id": "poder",
+   "tipo": "linhas",
+   "tts": "Do outro lado, o poder de compra da nota. Em cinco anos, setenta e oito reais. Em dez, sessenta e um. Em vinte, menos de trinta e oito.",
+   "leg": "Do outro lado, o poder de compra da nota. Em 5 anos, R$ 78. Em 10, R$ 61. Em 20, menos de R$ 38.",
+   "dados": {
+    "titulo": "Poder de compra de R$ 100",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "ymax": 120,
+    "ymin": 0,
+    "y_passo": 25,
+    "series": [
+     {
+      "nome": "inflação de 5% ao ano",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.4,
+      "rotulo_final": "R$ 37,69",
+      "pontos": [
+       [
+        0,
+        100.0
+       ],
+       [
+        1,
+        95.24
+       ],
+       [
+        2,
+        90.7
+       ],
+       [
+        3,
+        86.38
+       ],
+       [
+        4,
+        82.27
+       ],
+       [
+        5,
+        78.35
+       ],
+       [
+        6,
+        74.62
+       ],
+       [
+        7,
+        71.07
+       ],
+       [
+        8,
+        67.68
+       ],
+       [
+        9,
+        64.46
+       ],
+       [
+        10,
+        61.39
+       ],
+       [
+        11,
+        58.47
+       ],
+       [
+        12,
+        55.68
+       ],
+       [
+        13,
+        53.03
+       ],
+       [
+        14,
+        50.51
+       ],
+       [
+        15,
+        48.1
+       ],
+       [
+        16,
+        45.81
+       ],
+       [
+        17,
+        43.63
+       ],
+       [
+        18,
+        41.55
+       ],
+       [
+        19,
+        39.57
+       ],
+       [
+        20,
+        37.69
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "taxa",
+   "tipo": "barras",
+   "tts": "E a taxa muda tudo. Com três por cento ao ano, os cem valem setenta e quatro. Com oito, menos de quarenta e sete.",
+   "leg": "E a taxa muda tudo. Com 3% ao ano, os R$ 100 valem R$ 74. Com 8%, menos de R$ 47.",
+   "dados": {
+    "titulo": [
+     "R$ 100 em 10 anos",
+     "depende da inflação"
+    ],
+    "itens": [
+     {
+      "rotulo": "3% a.a.",
+      "valor": 74.41,
+      "texto": "R$ 74,41"
+     },
+     {
+      "rotulo": "5% a.a.",
+      "valor": 61.39,
+      "texto": "R$ 61,39",
+      "destaque": true
+     },
+     {
+      "rotulo": "8% a.a.",
+      "valor": 46.32,
+      "texto": "R$ 46,32"
+     }
+    ],
+    "nota": "poder de compra depois de 10 anos"
+   }
+  },
+  {
+   "id": "parado",
+   "tipo": "titulo",
+   "tts": "Por isso dinheiro parado perde valor, mesmo quando o saldo não muda. O que importa é render acima da inflação.",
+   "leg": "Dinheiro parado perde valor, mesmo quando o saldo não muda. O que importa é render acima da inflação.",
+   "dados": {
+    "titulo": [
+     "Parado",
+     "também perde"
+    ],
+    "subtitulo": "o que importa é o ganho real"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Na prática: compare qualquer rendimento com a inflação do mesmo período, desconfie de dinheiro parado e olhe o ganho real.",
+   "leg": "Na prática: compare qualquer rendimento com a inflação do período, desconfie de dinheiro parado e olhe o ganho real.",
+   "dados": {
+    "titulo": [
+     "Na prática"
+    ],
+    "itens": [
+     "compare com a inflação",
+     "dinheiro parado perde",
+     "olhe o ganho real"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "E os seus cem reais de dez anos atrás, compravam o quê? Comenta aqui.",
+   "leg": "E os seus R$ 100 de 10 anos atrás, compravam o quê? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "O que R$ 100",
+     "compravam há 10 anos?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 100 guardados por 10 anos valem R$ 61. A inflação explica",
+   "texto": "Com inflação de 5% ao ano, R$ 100 guardados compram o equivalente a R$ 61,39 de hoje depois de 10 anos. E algo que custa R$ 100 hoje vai custar R$ 162,89.\n\nCom 3% ao ano: R$ 74,41. Com 8%: R$ 46,32.\n\nInflação hipotética e constante, só para ilustrar.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #inflacao #economia #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "R$ 100 guardados por 10 anos continuam sendo R$ 100. E valem R$ 61.\n\nCom inflação de 5% ao ano:\n• em 5 anos → R$ 78\n• em 10 anos → R$ 61\n• em 20 anos → menos de R$ 38\n\nDinheiro parado perde valor. O que importa é o ganho real.\n\nO que R$ 100 compravam há 10 anos? 👇\n\nInflação hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #inflacao #economia #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "R$ 100 guardados por 10 anos continuam sendo R$ 100, mas valem R$ 61 com inflação de 5% ao ano. Exemplo ilustrativo. Narração por IA. #educacaofinanceira #inflacao #economia #dinheiro"
+  }
+ }
+}

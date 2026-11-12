@@ -1,0 +1,386 @@
+{
+ "id": "JQE-S030",
+ "titulo": "Uma taxa de 1% ao ano pode levar R$ 56 mil em 20 anos",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / versus",
+ "risco": "baixo — taxas ilustrativas, sem produto",
+ "refeito_de": "JQE-S014",
+ "tipo_gancho": "custo escondido",
+ "formato_narrativo": "versus",
+ "nota_tela": "Exemplo ilustrativo · rendimento hipotético, sem impostos",
+ "parametros": {
+  "capital": 50000,
+  "bruto": 0.1,
+  "taxa": 0.01,
+  "taxa_alta": 0.02,
+  "anos": 20
+ },
+ "calculos": {
+  "sem": "50000 * 1.10 ** 20",
+  "com1": "50000 * 1.09 ** 20",
+  "com2": "50000 * 1.08 ** 20",
+  "dif1": "sem - com1",
+  "dif2": "sem - com2",
+  "sem_mil": "sem / 1000",
+  "com1_mil": "com1 / 1000",
+  "com2_mil": "com2 / 1000",
+  "dif1_mil": "dif1 / 1000",
+  "dif2_mil": "dif2 / 1000",
+  "liq1": "(0.10 - 0.01) * 100",
+  "liq2": "(0.10 - 0.02) * 100",
+  "capital_mil": "50000 / 1000"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: taxa anual descontada do rendimento, capital × (1 + rendimento − taxa)^anos (aproximação)"
+ ],
+ "capa": {
+  "linha1": "Taxa de 1% ao ano",
+  "linha2": "parece pouco?",
+  "destaque": "em 20 anos"
+ },
+ "ganchos_alternativos": [
+  "1% parece pouco. Em 20 anos, é mais que o dinheiro que você colocou.",
+  "Quanto 1% de taxa come do seu investimento?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "formula",
+   "tts": "Uma taxa de um por cento ao ano parece pouco. Em vinte anos, pode levar cinquenta e seis mil.",
+   "leg": "Uma taxa de 1% ao ano parece pouco. Em 20 anos, pode levar R$ 56 mil.",
+   "dados": {
+    "titulo": "Taxa de 1% ao ano",
+    "linha1": "R$ 50 mil por 20 anos",
+    "resultado": "R$ 56 mil",
+    "nota": "é o que ela pode levar"
+   }
+  },
+  {
+   "id": "exemplo",
+   "tipo": "titulo",
+   "tts": "O exemplo: cinquenta mil reais, rendendo dez por cento ao ano antes da taxa, por vinte anos, sem novos aportes.",
+   "leg": "O exemplo: R$ 50 mil, rendendo 10% ao ano antes da taxa, por 20 anos, sem novos aportes.",
+   "dados": {
+    "titulo": [
+     "Mesmo dinheiro,",
+     "taxas diferentes"
+    ],
+    "subtitulo": "R$ 50 mil a 10% ao ano, por 20 anos"
+   }
+  },
+  {
+   "id": "grafico",
+   "tipo": "linhas",
+   "tts": "Sem taxa, os cinquenta mil viram trezentos e trinta e seis mil. Com um por cento ao ano, o rendimento cai para nove, e o resultado para duzentos e oitenta mil.",
+   "leg": "Sem taxa, R$ 50 mil viram R$ 336 mil. Com 1% ao ano, o rendimento cai para 9%, e o resultado para R$ 280 mil.",
+   "dados": {
+    "titulo": "R$ 50 mil em 20 anos",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     5,
+     10,
+     15,
+     20
+    ],
+    "ymax": 380000,
+    "ymin": 0,
+    "y_passo": 100000,
+    "series": [
+     {
+      "nome": "sem taxa",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 336 mil",
+      "pontos": [
+       [
+        0,
+        50000.0
+       ],
+       [
+        1,
+        55000.0
+       ],
+       [
+        2,
+        60500.0
+       ],
+       [
+        3,
+        66550.0
+       ],
+       [
+        4,
+        73205.0
+       ],
+       [
+        5,
+        80525.5
+       ],
+       [
+        6,
+        88578.05
+       ],
+       [
+        7,
+        97435.86
+       ],
+       [
+        8,
+        107179.44
+       ],
+       [
+        9,
+        117897.38
+       ],
+       [
+        10,
+        129687.12
+       ],
+       [
+        11,
+        142655.84
+       ],
+       [
+        12,
+        156921.42
+       ],
+       [
+        13,
+        172613.56
+       ],
+       [
+        14,
+        189874.92
+       ],
+       [
+        15,
+        208862.41
+       ],
+       [
+        16,
+        229748.65
+       ],
+       [
+        17,
+        252723.51
+       ],
+       [
+        18,
+        277995.87
+       ],
+       [
+        19,
+        305795.45
+       ],
+       [
+        20,
+        336375.0
+       ]
+      ]
+     },
+     {
+      "nome": "com 1% ao ano",
+      "velocidade": 0.7,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 280 mil",
+      "pontos": [
+       [
+        0,
+        50000.0
+       ],
+       [
+        1,
+        54500.0
+       ],
+       [
+        2,
+        59405.0
+       ],
+       [
+        3,
+        64751.45
+       ],
+       [
+        4,
+        70579.08
+       ],
+       [
+        5,
+        76931.2
+       ],
+       [
+        6,
+        83855.01
+       ],
+       [
+        7,
+        91401.96
+       ],
+       [
+        8,
+        99628.13
+       ],
+       [
+        9,
+        108594.66
+       ],
+       [
+        10,
+        118368.18
+       ],
+       [
+        11,
+        129021.32
+       ],
+       [
+        12,
+        140633.24
+       ],
+       [
+        13,
+        153290.23
+       ],
+       [
+        14,
+        167086.35
+       ],
+       [
+        15,
+        182124.12
+       ],
+       [
+        16,
+        198515.29
+       ],
+       [
+        17,
+        216381.67
+       ],
+       [
+        18,
+        235856.02
+       ],
+       [
+        19,
+        257083.06
+       ],
+       [
+        20,
+        280220.54
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "diferenca",
+   "tipo": "numero_grande",
+   "tts": "São cinquenta e seis mil a menos. Mais do que todo o dinheiro que você colocou no começo.",
+   "leg": "São R$ 56 mil a menos. Mais do que todo o dinheiro que você colocou no começo.",
+   "dados": {
+    "valor": "R$ 56 mil",
+    "linhas": [
+     "a menos: mais que",
+     "os R$ 50 mil iniciais"
+    ]
+   }
+  },
+  {
+   "id": "porque",
+   "tipo": "titulo",
+   "tts": "É o juro composto ao contrário. A taxa leva o dinheiro de hoje e também tudo o que ele renderia nos anos seguintes.",
+   "leg": "É o juro composto ao contrário: a taxa leva o dinheiro de hoje e tudo o que ele renderia nos anos seguintes.",
+   "dados": {
+    "titulo": [
+     "Juro composto",
+     "ao contrário"
+    ],
+    "subtitulo": "a taxa leva o dinheiro e o que ele renderia"
+   }
+  },
+  {
+   "id": "dois",
+   "tipo": "barras",
+   "tts": "E com dois por cento de taxa? O resultado cai para duzentos e trinta e três mil. Cada ponto pesa mais quanto maior o prazo.",
+   "leg": "E com 2% de taxa? O resultado cai para R$ 233 mil. Cada ponto pesa mais quanto maior o prazo.",
+   "dados": {
+    "titulo": [
+     "R$ 50 mil em 20 anos",
+     "com cada taxa"
+    ],
+    "itens": [
+     {
+      "rotulo": "sem taxa",
+      "valor": 336375,
+      "texto": "R$ 336 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "1% a.a.",
+      "valor": 280221,
+      "texto": "R$ 280 mil"
+     },
+     {
+      "rotulo": "2% a.a.",
+      "valor": 233048,
+      "texto": "R$ 233 mil"
+     }
+    ],
+    "nota": "rendimento de 10% ao ano antes da taxa"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Antes de investir, procure a taxa e compare o rendimento líquido. Taxa só vale se o resultado depois dela compensar.",
+   "leg": "Antes de investir, procure a taxa e compare o rendimento líquido. Taxa só vale se o resultado depois dela compensar.",
+   "dados": {
+    "titulo": [
+     "Antes de investir"
+    ],
+    "itens": [
+     "procure a taxa",
+     "compare o líquido",
+     "pense no prazo longo"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Um por cento parece pouco? Você sabe quanto paga de taxa nos seus investimentos? Comenta aqui.",
+   "leg": "1% parece pouco? Você sabe quanto paga de taxa nos seus investimentos? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Você sabe quanto",
+     "paga de taxa?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Uma taxa de 1% ao ano pode levar R$ 56 mil em 20 anos",
+   "texto": "R$ 50 mil rendendo 10% ao ano antes da taxa, por 20 anos (ilustrativo):\nSem taxa → cerca de R$ 336 mil\nCom 1% ao ano → cerca de R$ 280 mil\nCom 2% ao ano → cerca de R$ 233 mil\n\n1% de taxa leva R$ 56 mil, mais que os R$ 50 mil iniciais. Compare sempre o rendimento líquido.\n\nRendimento hipotético, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Uma taxa de 1% ao ano parece pouco. Em 20 anos, pode levar R$ 56 mil.\n\nR$ 50 mil a 10% ao ano:\n• sem taxa → R$ 336 mil\n• com 1% → R$ 280 mil\n• com 2% → R$ 233 mil\n\nÉ o juro composto ao contrário.\n\nVocê sabe quanto paga de taxa? 👇\n\nRendimento hipotético.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Uma taxa de 1% ao ano pode levar R$ 56 mil em 20 anos, mais que os R$ 50 mil investidos. Rendimento hipotético. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro"
+  }
+ }
+}

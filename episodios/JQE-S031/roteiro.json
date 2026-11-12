@@ -1,0 +1,476 @@
+{
+ "id": "JQE-S031",
+ "titulo": "R$ 100 a mais por mês ou rendimento maior: qual vence?",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / versus",
+ "risco": "baixo — taxas ilustrativas",
+ "refeito_de": "JQE-S015",
+ "tipo_gancho": "escolha",
+ "formato_narrativo": "versus",
+ "nota_tela": "Exemplo ilustrativo · taxas hipotéticas, sem impostos nem inflação",
+ "parametros": {
+  "aporte_base": 500,
+  "aporte_maior": 600,
+  "taxa_base": 0.008,
+  "taxa_maior": 0.01,
+  "anos": 30,
+  "anos_curto": 5,
+  "mes_cruzamento": 152
+ },
+ "calculos": {
+  "a5": "600 * (1.008 ** 60 - 1) / 0.008",
+  "t5": "500 * (1.01 ** 60 - 1) / 0.01",
+  "a30": "600 * (1.008 ** 360 - 1) / 0.008",
+  "t30": "500 * (1.01 ** 360 - 1) / 0.01",
+  "a30_mi": "a30 / 1000000",
+  "t30_mi": "t30 / 1000000",
+  "a5_mil": "a5 / 1000",
+  "t5_mil": "t5 / 1000",
+  "a152": "600 * (1.008 ** 152 - 1) / 0.008",
+  "t152": "500 * (1.01 ** 152 - 1) / 0.01",
+  "a151": "600 * (1.008 ** 151 - 1) / 0.008",
+  "t151": "500 * (1.01 ** 151 - 1) / 0.01",
+  "anos_cruz": "floor(152 / 12)",
+  "meses_cruz": "152 - 12 * floor(152 / 12)",
+  "extra": "600 - 500"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor futuro de aportes mensais; cruzamento verificado nos meses 151 e 152"
+ ],
+ "capa": {
+  "linha1": "Aportar mais",
+  "linha2": "ou render mais?",
+  "destaque": "as curvas se cruzam"
+ },
+ "ganchos_alternativos": [
+  "Um ganha no começo, o outro no fim.",
+  "Mês 152: o dia em que a taxa passa o aporte."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Cem reais a mais por mês, ou um rendimento um pouco maior: qual vence? Depende de quando você olha.",
+   "leg": "R$ 100 a mais por mês, ou um rendimento um pouco maior: qual vence? Depende de quando você olha.",
+   "dados": {
+    "a": "+R$ 100/mês",
+    "b": "1% ao mês",
+    "rotulo_a": "R$ 600 a 0,8% ao mês",
+    "rotulo_b": "R$ 500 a 1% ao mês",
+    "centro": "?"
+   }
+  },
+  {
+   "id": "pessoas",
+   "tipo": "titulo",
+   "tts": "Pessoa A aporta seiscentos por mês, a zero vírgula oito por cento. Pessoa B aporta quinhentos, mas a um por cento ao mês.",
+   "leg": "Pessoa A aporta R$ 600 por mês, a 0,8%. Pessoa B aporta R$ 500, mas a 1% ao mês.",
+   "dados": {
+    "titulo": [
+     "Duas pessoas,",
+     "duas estratégias"
+    ],
+    "subtitulo": "A aporta mais · B rende mais"
+   }
+  },
+  {
+   "id": "cinco",
+   "tipo": "barras",
+   "tts": "Em cinco anos, quem aporta mais está na frente: quarenta e seis mil contra quarenta e um. No começo, o aporte manda.",
+   "leg": "Em 5 anos, quem aporta mais está na frente: R$ 46 mil contra R$ 41 mil. No começo, o aporte manda.",
+   "dados": {
+    "titulo": [
+     "Depois de 5 anos"
+    ],
+    "itens": [
+     {
+      "rotulo": "A: aporte",
+      "valor": 45974,
+      "texto": "R$ 46 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "B: taxa",
+      "valor": 40835,
+      "texto": "R$ 41 mil"
+     }
+    ],
+    "nota": "no começo, o dinheiro novo pesa mais"
+   }
+  },
+  {
+   "id": "cruza",
+   "tipo": "numero_grande",
+   "tts": "Só que as curvas se cruzam no mês cento e cinquenta e dois, com doze anos e oito meses.",
+   "leg": "Só que as curvas se cruzam no mês 152, com 12 anos e 8 meses.",
+   "dados": {
+    "valor": "Mês 152",
+    "linhas": [
+     "as curvas",
+     "se cruzam"
+    ]
+   }
+  },
+  {
+   "id": "grafico",
+   "tipo": "linhas",
+   "tts": "Daí em diante, quem rende mais dispara. A distância só aumenta.",
+   "leg": "Daí em diante, quem rende mais dispara. A distância só aumenta.",
+   "dados": {
+    "titulo": "Aporte maior × rendimento maior",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     10,
+     20,
+     30
+    ],
+    "ymax": 1900000,
+    "ymin": 0,
+    "y_passo": 500000,
+    "series": [
+     {
+      "nome": "B: R$ 500 a 1%",
+      "destaque": true,
+      "velocidade": 0.7,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 1,75 mi",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        6341.25
+       ],
+       [
+        2,
+        13486.73
+       ],
+       [
+        3,
+        21538.44
+       ],
+       [
+        4,
+        30611.3
+       ],
+       [
+        5,
+        40834.83
+       ],
+       [
+        6,
+        52354.97
+       ],
+       [
+        7,
+        65336.14
+       ],
+       [
+        8,
+        79963.65
+       ],
+       [
+        9,
+        96446.29
+       ],
+       [
+        10,
+        115019.34
+       ],
+       [
+        11,
+        135947.93
+       ],
+       [
+        12,
+        159530.78
+       ],
+       [
+        13,
+        186104.53
+       ],
+       [
+        14,
+        216048.49
+       ],
+       [
+        15,
+        249790.1
+       ],
+       [
+        16,
+        287810.99
+       ],
+       [
+        17,
+        330653.88
+       ],
+       [
+        18,
+        378930.31
+       ],
+       [
+        19,
+        433329.42
+       ],
+       [
+        20,
+        494627.68
+       ],
+       [
+        21,
+        563700.1
+       ],
+       [
+        22,
+        641532.64
+       ],
+       [
+        23,
+        729236.29
+       ],
+       [
+        24,
+        828062.95
+       ],
+       [
+        25,
+        939423.31
+       ],
+       [
+        26,
+        1064906.95
+       ],
+       [
+        27,
+        1206305.06
+       ],
+       [
+        28,
+        1365635.99
+       ],
+       [
+        29,
+        1545174.07
+       ],
+       [
+        30,
+        1747482.07
+       ]
+      ]
+     },
+     {
+      "nome": "A: R$ 600 a 0,8%",
+      "velocidade": 0.7,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 1,25 mi",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        7525.4
+       ],
+       [
+        2,
+        15805.89
+       ],
+       [
+        3,
+        24917.24
+       ],
+       [
+        4,
+        34942.8
+       ],
+       [
+        5,
+        45974.32
+       ],
+       [
+        6,
+        58112.73
+       ],
+       [
+        7,
+        71469.08
+       ],
+       [
+        8,
+        86165.6
+       ],
+       [
+        9,
+        102336.74
+       ],
+       [
+        10,
+        120130.48
+       ],
+       [
+        11,
+        139709.62
+       ],
+       [
+        12,
+        161253.3
+       ],
+       [
+        13,
+        184958.65
+       ],
+       [
+        14,
+        211042.56
+       ],
+       [
+        15,
+        239743.7
+       ],
+       [
+        16,
+        271324.67
+       ],
+       [
+        17,
+        306074.43
+       ],
+       [
+        18,
+        344310.95
+       ],
+       [
+        19,
+        386384.06
+       ],
+       [
+        20,
+        432678.73
+       ],
+       [
+        21,
+        483618.55
+       ],
+       [
+        22,
+        539669.61
+       ],
+       [
+        23,
+        601344.75
+       ],
+       [
+        24,
+        669208.3
+       ],
+       [
+        25,
+        743881.19
+       ],
+       [
+        26,
+        826046.66
+       ],
+       [
+        27,
+        916456.51
+       ],
+       [
+        28,
+        1015937.96
+       ],
+       [
+        29,
+        1125401.25
+       ],
+       [
+        30,
+        1245847.94
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "trinta",
+   "tipo": "formula",
+   "tts": "Em trinta anos: quem rende mais termina com cerca de um vírgula setenta e cinco milhão. Quem aporta mais, com um vírgula vinte e cinco.",
+   "leg": "Em 30 anos: quem rende mais termina com cerca de R$ 1,75 milhão. Quem aporta mais, com R$ 1,25 milhão.",
+   "dados": {
+    "titulo": "Depois de 30 anos",
+    "linha1": "R$ 1,25 mi × R$ 1,75 mi",
+    "resultado": "a taxa vence",
+    "nota": "no longo prazo, o rendimento pesa mais"
+   }
+  },
+  {
+   "id": "porque",
+   "tipo": "titulo",
+   "tts": "No começo, o patrimônio é quase todo aporte. Com os anos, ele fica grande, e cada décimo de taxa age sobre uma base enorme.",
+   "leg": "No começo, o patrimônio é quase todo aporte. Com os anos, cada décimo de taxa age sobre uma base enorme.",
+   "dados": {
+    "titulo": [
+     "Por que",
+     "as curvas se cruzam"
+    ],
+    "subtitulo": "a taxa age sobre um patrimônio cada vez maior"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "No começo, aumentar o aporte é o que mais acelera. Com o tempo, rendimento melhor, com risco que você entende, pesa cada vez mais.",
+   "leg": "No começo, aumentar o aporte acelera. Com o tempo, rendimento melhor, com risco que você entende, pesa mais.",
+   "dados": {
+    "titulo": [
+     "O que isso ensina"
+    ],
+    "itens": [
+     "começo: aumente o aporte",
+     "longo prazo: olhe a taxa",
+     "risco que você entende"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Cem reais a mais ou um rendimento maior: no que você está focando agora? Comenta aqui.",
+   "leg": "R$ 100 a mais ou um rendimento maior: no que você está focando agora? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Aportar mais",
+     "ou render mais?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 100 a mais por mês ou rendimento maior: qual vence?",
+   "texto": "A: R$ 600 por mês a 0,8% ao mês. B: R$ 500 por mês a 1% ao mês (taxas ilustrativas).\n\nEm 5 anos: A tem R$ 46 mil, B tem R$ 41 mil.\nAs curvas se cruzam no mês 152 (12 anos e 8 meses).\nEm 30 anos: B chega a cerca de R$ 1,75 milhão; A, a R$ 1,25 milhão.\n\nNo começo, o aporte pesa mais; no longo prazo, a taxa.\n\nTaxas hipotéticas, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "R$ 100 a mais por mês ou um rendimento maior: qual vence?\n\n• 5 anos → quem aporta mais: R$ 46 mil × R$ 41 mil\n• mês 152 → as curvas se cruzam\n• 30 anos → quem rende mais: R$ 1,75 mi × R$ 1,25 mi\n\nNo começo, o aporte manda. Depois, a taxa.\n\nNo que você está focando agora? 👇\n\nTaxas hipotéticas.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "R$ 100 a mais por mês ou um rendimento maior? Um ganha no começo, o outro no fim. As curvas se cruzam no mês 152. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro"
+  }
+ }
+}

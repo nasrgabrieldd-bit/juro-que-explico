@@ -1,6 +1,6 @@
 # Manual da produção diária — Juro que Explico
 
-Este arquivo é a fonte de verdade da rotina automática. Cada execução diária lê este manual, produz **um** vídeo vertical e agenda a publicação para o dia seguinte.
+Este arquivo é a fonte de verdade da rotina automática. Cada execução diária lê este manual, cuida da fila do Buffer e, quando o estoque está baixo, produz vídeos de segurança. A produção normal é em lotes de 15 dias (30 vídeos, 2 por dia).
 
 ## Marca
 Nome, inicial, tagline, assinatura e cores ficam em `marca/marca.json`. O render lê esse arquivo: trocar a marca = editar o JSON e renderizar de novo. Nunca escreva o nome da marca direto no código ou no roteiro (exceto a cena de assinatura, que copia `assinatura_tts`).
@@ -11,7 +11,7 @@ Nome, inicial, tagline, assinatura e cores ficam em `marca/marca.json`. O render
 - Todo vídeo leva a marca d'água (o render já aplica).
 - Duração: mais de 61 s e menos de 175 s (alvo: 65 a 90 s). Regra do TikTok Creator Rewards.
 - Textos adaptados por plataforma (YouTube, Instagram, TikTok).
-- Um vídeo por dia nas três redes.
+- **Dois vídeos por dia nas três redes, às 12:00 e às 16:00** (decisão do fundador em 12/11/2026, vale a partir de 13/11). Cada vídeo sai no YouTube (hh:00), no Instagram (hh:05) e no TikTok (hh:10).
 - Narração por IA declarada nos textos e marcada como `isAiGenerated` no Buffer.
 
 ## Linha editorial da rotina automática
@@ -19,6 +19,7 @@ Nome, inicial, tagline, assinatura e cores ficam em `marca/marca.json`. O render
 - Proibido: notícia do dia, previsão de mercado, recomendação de ativo, corretora, banco ou produto específico, promessa de ganho, conteúdo político.
 - Números: preferir exemplos ilustrativos calculados (taxas hipotéticas, avisadas em `nota_tela`). Dado oficial (Selic, IPCA, etc.) só se buscado na hora com WebFetch na fonte oficial e registrado em `numeros_fonte` com `url` e `data_referencia`.
 - Não repetir pauta já feita (ver `PAUTAS.md`).
+- **Fonte na legenda (pedido do fundador, 12/11/2026):** todo dado ou fato que vem de fonte confiável (oficial: Banco Central, IBGE, Receita, CVM, B3, Tesouro, Planalto; ou veículo das referências: InfoMoney, Valor, Exame etc.) leva o nome da fonte no texto dos três posts ("Fonte: Banco Central, dado de DD/MM/AAAA") e na tela, na `nota` da cena onde o número aparece. Conta ilustrativa não tem fonte: segue avisada como "exemplo ilustrativo"/"taxa hipotética".
 - Tom: didático, direto, segunda pessoa, frases curtas. Abertura com pergunta ou número forte nos primeiros 3 s. Fechamento com pergunta para comentar e a assinatura da marca (`marca/marca.json` → `assinatura_tts`).
 
 ## Retenção nos primeiros segundos (obrigatório a partir do JQE-S010)
@@ -38,7 +39,7 @@ O gancho decide se a pessoa fica. Regras:
 O `checa.py` reprova: primeira frase com mais de 16 palavras, cena 1 sem número/comparação/conta, saudação no gancho e cena 2 depois de 8 s.
 
 ## Formato do roteiro (`episodios/<ID>/roteiro.json`)
-Use `episodios/JQE-S002/roteiro.json` como modelo. Campos:
+Use `lotes/refeitos_2026-11-13.py` (JQE-S017 a S032) como modelo de roteiro. Campos:
 - `id` (JQE-S###, sequencial), `titulo`, `formato` ("vertical 9:16"), `pilar`, `tipo`, `risco`.
 - `nota_tela`: aviso fixo pequeno no topo (ex.: "Exemplo ilustrativo · taxas hipotéticas, sem impostos").
 - `parametros`: valores de entrada do exemplo.
@@ -80,20 +81,24 @@ Se a duração ficar abaixo de 61 s, acrescente conteúdo útil (outro exemplo, 
 Apague os `frame_*.png` antes do commit.
 
 ## Publicação (Buffer, organização "My organization")
-- YouTube `6af240c662b70b94b0d6dc1b`: 12:00, `metadata.youtube` = {title, categoryId "27", privacy "public", isAiGenerated true, madeForKids false}.
-- Instagram `6af2406162b70b94b0d6d913`: 12:05, `metadata.instagram` = {type "reel", shouldShareToFeed true, isAiGenerated true}.
-- TikTok `6af240ab62b70b94b0d6db65`: 12:10, `metadata.tiktok` = {isAiGenerated true}, vídeo `<ID>_ig.mp4` com `thumbnailOffset` (capa).
+- YouTube `6af240c662b70b94b0d6dc1b`: 12:00 e 16:00, `metadata.youtube` = {title, categoryId "27", privacy "public", isAiGenerated true, madeForKids false}.
+- Instagram `6af2406162b70b94b0d6d913`: 12:05 e 16:05, `metadata.instagram` = {type "reel", shouldShareToFeed true, isAiGenerated true}.
+- TikTok `6af240ab62b70b94b0d6db65`: 12:10 e 16:10, `metadata.tiktok` = {isAiGenerated true}, vídeo `<ID>_ig.mp4` com `thumbnailOffset` (capa).
 - `mode` customScheduled, `schedulingType` automatic, `dueAt` com offset -03:00 (America/Sao_Paulo).
 - Vídeo: `https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/<ID>/<ID>.mp4` (confirmar HTTP 200 depois do push).
 - Plano gratuito: no máximo 10 posts agendados por canal. Antes de agendar, liste os agendados; se já houver post para a data, não duplique.
 
 ## Data de publicação
-A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente.json`**: são posts já produzidos (vídeo no GitHub) que esperam vaga no Buffer. Para cada item, na ordem, se o canal tiver menos de 10 agendados, crie o post com os dados do item, confirme `scheduled` e tire o item da lista; se o `dueAt` já passou, mova para o primeiro dia livre daquele canal no mesmo horário. Só produza vídeo novo quando a lista estiver vazia e nenhum canal tiver 9 ou mais agendados. A data do vídeo novo é o primeiro dia, a partir de amanhã, sem post das 12:00 no YouTube (depois de tudo que está na lista e no Buffer). Registre a data em `PAUTAS.md`.
+A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente.json`**: são posts já produzidos (vídeo no GitHub) que esperam vaga no Buffer. Para cada item, na ordem, se o canal tiver menos de 10 agendados, crie o post com os dados do item, confirme `scheduled` e tire o item da lista; se o `dueAt` já passou, mova para o primeiro dia livre daquele canal no mesmo horário. Vídeo novo fora do lote só sai como produção de segurança (estoque com menos de 4 dias, regra da rotina diária). O horário do vídeo novo é o primeiro horário livre (12:00 ou 16:00), a partir de amanhã, sem post no YouTube (depois de tudo que está na lista e no Buffer). Use `python3 lotes/gera_agenda.py <ID>:<AAAA-MM-DD>:<HH>:00`. Registre data e hora em `PAUTAS.md`. Com 2 por dia, o limite de 10 agendados por canal cobre só 5 dias: o resto espera em `agenda_pendente.json` e a rotina diária vai repondo.
 
 ## Formato longo (YouTube 16:9) + cortes
 - Roteiro com `formato: "horizontal 16:9"`; o render recompõe as cenas num quadro 1920x1080. Alvo de 4 a 6 minutos (`checa.py` exige ≥ 4 min).
 - O longo é dividido em 3 blocos; cada bloco começa com cena de gancho e vira um corte vertical (`<ID>-P1..P3`), cada um com mais de 61 s, CTA para a próxima parte e assinatura.
 - Modelo: `lotes/longo_L001.py`. Publicação: longo no YouTube; cortes no Instagram e TikTok em dias seguidos, às 18:00.
+
+## Capas por rede
+- Instagram e TikTok: vídeo `<ID>_ig.mp4` com `thumbnailOffset` (capa do `capa_ig.py`). Desde 12/11 o TikTok também usa a capa.
+- YouTube Shorts: a API não permite escolher capa de Short (só o app do YouTube, à mão). Por isso o quadro 0 já é o gancho completo, com o número grande: ele faz o papel de capa.
 
 ## Margem de segurança (obrigatória do S017 e do L002 em diante)
 A interface dos apps cobre parte da tela. Valores usados (1080×1920, união conservadora de TikTok, Reels e Shorts, conferidos em 10/11/2026): topo ~250 px, base ~480–670 px (descrição e legenda do app), direita ~140–190 px (botões), esquerda ~60 px. O `render.py` agora desenha toda a camada de conteúdo (marca, nota, cena, legenda, selo) reduzida dentro da caixa segura x 92–930, y 260–1400; só a grade de fundo e a barra de progresso vão de ponta a ponta. No horizontal (YouTube longo), marca e selo descem para y 100 e a legenda sobe para y 918, longe do título e dos controles do player. Episódios antigos têm `"margem_segura": false` no roteiro para não mudarem se forem renderizados de novo; roteiro novo não precisa do campo (padrão = true). Antes do render completo, rode `python3 pipeline/margens.py episodios/<ID> 0 t1 t2 ...` e olhe a imagem: nenhum texto pode cair na área vermelha.

@@ -1,0 +1,438 @@
+{
+ "id": "JQE-S019",
+ "titulo": "Esperar 5 anos para investir pode custar R$ 250 mil",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / versus",
+ "risco": "baixo — juro composto com taxa ilustrativa, sem produto",
+ "refeito_de": "JQE-S008",
+ "tipo_gancho": "custo escondido",
+ "formato_narrativo": "versus",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos nem inflação",
+ "parametros": {
+  "aporte": 300,
+  "taxa_mes": 0.008,
+  "anos_a": 30,
+  "anos_b": 25,
+  "atraso": 5
+ },
+ "calculos": {
+  "fv30": "300 * (1.008 ** 360 - 1) / 0.008",
+  "fv25": "300 * (1.008 ** 300 - 1) / 0.008",
+  "dif": "fv30 - fv25",
+  "fv30_mil": "fv30 / 1000",
+  "fv25_mil": "fv25 / 1000",
+  "dif_mil": "dif / 1000",
+  "aportado30_mil": "300 * 360 / 1000",
+  "aportado25_mil": "300 * 300 / 1000",
+  "extra_mil": "300 * 60 / 1000",
+  "vezes": "dif / 18000"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor futuro de aportes mensais, VF = A × ((1 + i)^n − 1) / i"
+ ],
+ "capa": {
+  "linha1": "O preço de esperar",
+  "linha2": "5 anos para investir",
+  "destaque": "com R$ 300 por mês"
+ },
+ "ganchos_alternativos": [
+  "R$ 18 mil a menos de aportes. R$ 251 mil a menos no final.",
+  "Ana e Bruno guardam o mesmo valor. Um termina com R$ 251 mil a mais."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "formula",
+   "tts": "Esperar cinco anos para investir pode custar duzentos e cinquenta mil reais.",
+   "leg": "Esperar 5 anos para investir pode custar R$ 250 mil.",
+   "dados": {
+    "titulo": "Esperar 5 anos",
+    "linha1": "para começar a investir",
+    "resultado": "R$ 250 mil",
+    "nota": "pode ser o custo"
+   }
+  },
+  {
+   "id": "pessoas",
+   "tipo": "versus",
+   "tts": "Duas pessoas. Ana começa agora, com trezentos reais por mês. Bruno espera cinco anos e começa com os mesmos trezentos. Os dois param na mesma data.",
+   "leg": "Ana começa agora, com R$ 300 por mês. Bruno espera 5 anos e começa com os mesmos R$ 300. Os dois param na mesma data.",
+   "dados": {
+    "a": "agora",
+    "b": "daqui a 5 anos",
+    "rotulo_a": "Ana: R$ 300 por mês",
+    "rotulo_b": "Bruno: R$ 300 por mês",
+    "centro": "×"
+   }
+  },
+  {
+   "id": "bolso",
+   "tipo": "barras",
+   "tts": "Do próprio bolso, a diferença é pequena. Ana coloca cento e oito mil. Bruno, noventa mil. Só dezoito mil a menos.",
+   "leg": "Do próprio bolso, a diferença é pequena. Ana coloca R$ 108 mil. Bruno, R$ 90 mil. Só R$ 18 mil a menos.",
+   "dados": {
+    "titulo": [
+     "Quanto cada um",
+     "tirou do bolso"
+    ],
+    "itens": [
+     {
+      "rotulo": "Ana",
+      "valor": 108000,
+      "texto": "R$ 108 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "Bruno",
+      "valor": 90000,
+      "texto": "R$ 90 mil"
+     }
+    ],
+    "nota": "R$ 300 por mês a 0,8% ao mês"
+   }
+  },
+  {
+   "id": "final",
+   "tipo": "linhas",
+   "tts": "Agora o saldo final, rendendo zero vírgula oito por cento ao mês. Ana chega a uns seiscentos e vinte e três mil. Bruno, a trezentos e setenta e dois mil.",
+   "leg": "Agora o saldo final, rendendo 0,8% ao mês. Ana chega a uns R$ 623 mil. Bruno, a R$ 372 mil.",
+   "dados": {
+    "titulo": "R$ 300 por mês a 0,8% ao mês",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     10,
+     20,
+     30
+    ],
+    "ymax": 720000,
+    "ymin": 0,
+    "y_passo": 100000,
+    "y_fmt": "brl",
+    "series": [
+     {
+      "nome": "começa agora",
+      "destaque": true,
+      "velocidade": 0.55,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 623 mil",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        3762.7
+       ],
+       [
+        2,
+        7902.95
+       ],
+       [
+        3,
+        12458.62
+       ],
+       [
+        4,
+        17471.4
+       ],
+       [
+        5,
+        22987.16
+       ],
+       [
+        6,
+        29056.36
+       ],
+       [
+        7,
+        35734.54
+       ],
+       [
+        8,
+        43082.8
+       ],
+       [
+        9,
+        51168.37
+       ],
+       [
+        10,
+        60065.24
+       ],
+       [
+        11,
+        69854.81
+       ],
+       [
+        12,
+        80626.65
+       ],
+       [
+        13,
+        92479.32
+       ],
+       [
+        14,
+        105521.28
+       ],
+       [
+        15,
+        119871.85
+       ],
+       [
+        16,
+        135662.33
+       ],
+       [
+        17,
+        153037.22
+       ],
+       [
+        18,
+        172155.47
+       ],
+       [
+        19,
+        193192.03
+       ],
+       [
+        20,
+        216339.37
+       ],
+       [
+        21,
+        241809.28
+       ],
+       [
+        22,
+        269834.8
+       ],
+       [
+        23,
+        300672.38
+       ],
+       [
+        24,
+        334604.15
+       ],
+       [
+        25,
+        371940.6
+       ],
+       [
+        26,
+        413023.33
+       ],
+       [
+        27,
+        458228.25
+       ],
+       [
+        28,
+        507968.98
+       ],
+       [
+        29,
+        562700.62
+       ],
+       [
+        30,
+        622923.97
+       ]
+      ]
+     },
+     {
+      "nome": "começa 5 anos depois",
+      "velocidade": 0.55,
+      "inicio": 1.2,
+      "rotulo_final": "R$ 372 mil",
+      "pontos": [
+       [
+        5,
+        0.0
+       ],
+       [
+        6,
+        3762.7
+       ],
+       [
+        7,
+        7902.95
+       ],
+       [
+        8,
+        12458.62
+       ],
+       [
+        9,
+        17471.4
+       ],
+       [
+        10,
+        22987.16
+       ],
+       [
+        11,
+        29056.36
+       ],
+       [
+        12,
+        35734.54
+       ],
+       [
+        13,
+        43082.8
+       ],
+       [
+        14,
+        51168.37
+       ],
+       [
+        15,
+        60065.24
+       ],
+       [
+        16,
+        69854.81
+       ],
+       [
+        17,
+        80626.65
+       ],
+       [
+        18,
+        92479.32
+       ],
+       [
+        19,
+        105521.28
+       ],
+       [
+        20,
+        119871.85
+       ],
+       [
+        21,
+        135662.33
+       ],
+       [
+        22,
+        153037.22
+       ],
+       [
+        23,
+        172155.47
+       ],
+       [
+        24,
+        193192.03
+       ],
+       [
+        25,
+        216339.37
+       ],
+       [
+        26,
+        241809.28
+       ],
+       [
+        27,
+        269834.8
+       ],
+       [
+        28,
+        300672.38
+       ],
+       [
+        29,
+        334604.15
+       ],
+       [
+        30,
+        371940.6
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "diferenca",
+   "tipo": "numero_grande",
+   "tts": "São duzentos e cinquenta e um mil reais de diferença. Quase catorze vezes os dezoito mil que Bruno deixou de aportar.",
+   "leg": "São R$ 251 mil de diferença. Quase 14 vezes os R$ 18 mil que Bruno deixou de aportar.",
+   "dados": {
+    "valor": "R$ 251 mil",
+    "linhas": [
+     "de diferença por",
+     "R$ 18 mil de aportes"
+    ]
+   }
+  },
+  {
+   "id": "porque",
+   "tipo": "titulo",
+   "tts": "O motivo: os primeiros aportes de Ana ficam trinta anos rendendo. São justamente os que Bruno não fez.",
+   "leg": "O motivo: os primeiros aportes de Ana ficam 30 anos rendendo. São justamente os que Bruno não fez.",
+   "dados": {
+    "titulo": [
+     "Os primeiros aportes",
+     "rendem por mais tempo"
+    ],
+    "subtitulo": "e são eles que faltam a quem espera"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Por isso começar pequeno conta, o tempo pesa muito, e a constância vale mais que o valor do aporte.",
+   "leg": "Começar pequeno conta, o tempo pesa muito, e a constância vale mais que o valor do aporte.",
+   "dados": {
+    "titulo": [
+     "O que levar daqui"
+    ],
+    "itens": [
+     "começar pequeno conta",
+     "o tempo pesa muito",
+     "constância vale mais"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Se cinco anos valem duzentos e cinquenta mil, com quantos anos você começou? Comenta aqui.",
+   "leg": "Se 5 anos valem R$ 250 mil, com quantos anos você começou? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Com quantos anos",
+     "você começou?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Esperar 5 anos para investir pode custar R$ 250 mil",
+   "texto": "R$ 300 por mês, com rendimento ilustrativo de 0,8% ao mês:\nAna, 30 anos investindo → cerca de R$ 623 mil (R$ 108 mil aportados)\nBruno, 25 anos → cerca de R$ 372 mil (R$ 90 mil aportados)\n\nSó R$ 18 mil a menos de aportes e R$ 251 mil a menos no final. Os primeiros aportes são os que ficam mais tempo rendendo.\n\nTaxa hipotética, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Esperar 5 anos para investir pode custar mais de R$ 250 mil.\n\nR$ 300 por mês a 0,8% ao mês:\n• Ana, 30 anos → R$ 623 mil\n• Bruno, 25 anos → R$ 372 mil\n• diferença de aportes: só R$ 18 mil\n\nOs primeiros aportes são os que mais rendem.\n\nCom quantos anos você começou? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Esperar 5 anos para investir custou R$ 251 mil nesse exemplo, com só R$ 18 mil a menos de aportes. Taxa hipotética. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro"
+  }
+ }
+}

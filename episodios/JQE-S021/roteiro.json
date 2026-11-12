@@ -1,0 +1,243 @@
+{
+ "id": "JQE-S021",
+ "titulo": "Quanto investir para receber R$ 1.000 por mês em dividendos",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen / passo a passo",
+ "risco": "baixo — taxa ilustrativa, sem ativos citados; Bazin com fonte",
+ "refeito_de": "JQE-L001-P3",
+ "tipo_gancho": "pergunta com número",
+ "formato_narrativo": "passo a passo",
+ "nota_tela": "Exemplo ilustrativo · yields hipotéticos, sem impostos",
+ "parametros": {
+  "aporte": 500,
+  "taxa_mes": 0.008,
+  "anos": 30,
+  "anos_seguintes": 20,
+  "dy": 0.08,
+  "dy_baixo": 0.06,
+  "dy_alto": 0.1,
+  "renda_mes": 1000,
+  "dividendo_acao": 3,
+  "preco_baixo": 40,
+  "preco_alto": 60,
+  "mes_juros_passam_aportes": 159
+ },
+ "calculos": {
+  "taxa_ano": "(1.008 ** 12 - 1) * 100",
+  "juros_mes1": "500 * 0.008",
+  "saldo_virada": "500 / 0.008",
+  "mes_virada": "log(2) / log(1.008)",
+  "juros_120": "0.008 * 500 * (1.008 ** 120 - 1) / 0.008",
+  "fv_159": "500 * (1.008 ** 159 - 1) / 0.008",
+  "aportado_159": "500 * 159",
+  "juros_159": "fv_159 - aportado_159",
+  "fv_158": "500 * (1.008 ** 158 - 1) / 0.008",
+  "juros_158": "fv_158 - 500 * 158",
+  "anos_159": "floor(159 / 12)",
+  "fv30": "500 * (1.008 ** 360 - 1) / 0.008",
+  "fv30_mi": "fv30 / 1000000",
+  "aportado30_mil": "500 * 360 / 1000",
+  "juros30_mil": "(fv30 - 180000) / 1000",
+  "prim10_mil": "500 * (1.008 ** 360 - 1.008 ** 240) / 0.008 / 1000",
+  "ult20_mil": "500 * (1.008 ** 240 - 1) / 0.008 / 1000",
+  "aporte10_mil": "500 * 120 / 1000",
+  "aporte20_mil": "500 * 240 / 1000",
+  "aporte_ano": "500 * 12",
+  "ano1_mil": "500 * (1.008 ** 360 - 1.008 ** 348) / 0.008 / 1000",
+  "ano10_mil": "500 * (1.008 ** 252 - 1.008 ** 240) / 0.008 / 1000",
+  "ano20_mil": "500 * (1.008 ** 132 - 1.008 ** 120) / 0.008 / 1000",
+  "ano30": "500 * (1.008 ** 12 - 1) / 0.008",
+  "renda_ano": "1000 * 12",
+  "capital_8_mil": "12000 / 0.08 / 1000",
+  "capital_6_mil": "12000 / 0.06 / 1000",
+  "capital_10_mil": "12000 / 0.10 / 1000",
+  "tempo_8": "log(1 + 150000 * 0.008 / 500) / log(1.008)",
+  "tempo_8_anos": "tempo_8 / 12",
+  "teto": "3 / 0.06",
+  "dy_40": "3 / 40 * 100",
+  "dy_60": "3 / 60 * 100"
+ },
+ "numeros_livres": [
+  100
+ ],
+ "numeros_fonte": [
+  {
+   "descricao": "Décio Bazin publicou 'Faça Fortuna com Ações Antes que seja Tarde' em 1992",
+   "valor": 1992,
+   "url": "https://investidor10.com.br/conteudo/estrategia-de-decio-bazin/",
+   "data_referencia": "2026-08-05"
+  },
+  {
+   "descricao": "Critério de Bazin: dividend yield mínimo de 6% ao ano; preço-teto = proventos ÷ 0,06",
+   "valor": 6,
+   "url": "https://www.infomoney.com.br/?p=1982816",
+   "data_referencia": "2023"
+  }
+ ],
+ "fontes": [
+  "Cálculo próprio: VF = A × ((1 + i)^n − 1) / i; ponto de virada n = ln 2 / ln(1 + i); capital = renda anual ÷ DY",
+  "Método Bazin: InfoMoney e Investidor10 (links em numeros_fonte)"
+ ],
+ "capa": {
+  "linha1": "R$ 1.000 por mês",
+  "linha2": "em dividendos",
+  "destaque": "quanto investir?"
+ },
+ "ganchos_alternativos": [
+  "R$ 1.000 por mês em dividendos começa com uma divisão.",
+  "Quanto dinheiro paga uma conta de R$ 1.000 todo mês?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Mil reais por mês em dividendos: precisa de cento e vinte ou duzentos mil? Depende de um número só.",
+   "leg": "R$ 1.000 por mês em dividendos: precisa de R$ 120 mil ou R$ 200 mil? Depende de um número só.",
+   "dados": {
+    "a": "R$ 120 mil",
+    "b": "R$ 200 mil",
+    "rotulo_a": "para R$ 1.000 por mês?",
+    "rotulo_b": "para R$ 1.000 por mês?",
+    "centro": "ou"
+   }
+  },
+  {
+   "id": "dy",
+   "tipo": "formula",
+   "tts": "Esse número é o dividend yield: os dividendos do ano divididos pelo valor investido. Oito por cento paga oito reais por ano a cada cem.",
+   "leg": "Esse número é o dividend yield: dividendos do ano divididos pelo valor investido. 8% paga R$ 8 por ano a cada R$ 100.",
+   "dados": {
+    "titulo": "Dividend yield (DY)",
+    "linha1": "dividendos do ano ÷ investido",
+    "resultado": "8% ao ano",
+    "nota": "R$ 8 por ano a cada R$ 100"
+   }
+  },
+  {
+   "id": "regra",
+   "tipo": "titulo",
+   "tts": "A conta da renda é uma divisão só: a renda que você quer no ano, dividida pelo yield.",
+   "leg": "A conta da renda é uma divisão só: a renda que você quer no ano, dividida pelo yield.",
+   "dados": {
+    "titulo": [
+     "Capital =",
+     "renda anual ÷ DY"
+    ],
+    "subtitulo": "a conta inteira cabe em uma linha"
+   }
+  },
+  {
+   "id": "conta",
+   "tipo": "formula",
+   "tts": "Mil reais por mês são doze mil por ano. Doze mil dividido por oito por cento dá cento e cinquenta mil reais investidos.",
+   "leg": "R$ 1.000 por mês são R$ 12.000 por ano. R$ 12.000 dividido por 8% dá R$ 150 mil investidos.",
+   "dados": {
+    "titulo": "Para R$ 1.000 por mês",
+    "linha1": "R$ 12.000 ÷ 8%",
+    "resultado": "= R$ 150 mil",
+    "nota": "capital = renda anual ÷ DY"
+   }
+  },
+  {
+   "id": "faixas",
+   "tipo": "barras",
+   "tts": "Por isso a pergunta do começo tem duas respostas. Com yield de dez por cento, cento e vinte mil. Com seis, duzentos mil.",
+   "leg": "Por isso a pergunta do começo tem duas respostas. Com yield de 10%, R$ 120 mil. Com 6%, R$ 200 mil.",
+   "dados": {
+    "titulo": [
+     "Capital para",
+     "R$ 1.000 por mês"
+    ],
+    "itens": [
+     {
+      "rotulo": "DY 6%",
+      "valor": 200000,
+      "texto": "R$ 200 mil"
+     },
+     {
+      "rotulo": "DY 8%",
+      "valor": 150000,
+      "texto": "R$ 150 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "DY 10%",
+      "valor": 120000,
+      "texto": "R$ 120 mil"
+     }
+    ],
+    "nota": "dividendos variam e não têm garantia"
+   }
+  },
+  {
+   "id": "cuidado",
+   "tipo": "titulo",
+   "tts": "Mas cuidado: dividendo varia e pode ser cortado, e yield alto demais pode ser sinal de problema. A conta é uma régua, não uma promessa.",
+   "leg": "Cuidado: dividendo varia e pode ser cortado, e yield alto demais pode ser sinal de problema. A conta é uma régua, não uma promessa.",
+   "dados": {
+    "titulo": [
+     "Régua,",
+     "não promessa"
+    ],
+    "subtitulo": "dividendos variam e podem ser cortados"
+   }
+  },
+  {
+   "id": "bazin",
+   "tipo": "formula",
+   "tts": "Essa conta está por trás do método Bazin. Em mil novecentos e noventa e dois, Décio Bazin usava seis por cento como piso. Preço-teto é o dividendo dividido por seis por cento.",
+   "leg": "Essa conta está por trás do método Bazin. Em 1992, Décio Bazin usava 6% como piso. Preço-teto = dividendo ÷ 6%.",
+   "dados": {
+    "titulo": "O método Bazin",
+    "linha1": "dividendo anual ÷ 6%",
+    "resultado": "= preço-teto",
+    "nota": "Décio Bazin, 1992 · fonte: InfoMoney"
+   }
+  },
+  {
+   "id": "teto",
+   "tipo": "versus",
+   "tts": "Empresa fictícia que paga três reais por ação no ano: teto de cinquenta. A quarenta, o yield é sete e meio por cento. A sessenta, só cinco.",
+   "leg": "Empresa fictícia que paga R$ 3 por ação no ano: teto de R$ 50. A R$ 40, o yield é 7,5%. A R$ 60, só 5%.",
+   "dados": {
+    "a": "R$ 40",
+    "b": "R$ 60",
+    "rotulo_a": "DY 7,5% · abaixo do teto",
+    "rotulo_b": "DY 5% · acima do teto",
+    "centro": "teto R$ 50"
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Mil reais por mês é a sua meta, ou é outra? Comenta o seu número.",
+   "leg": "R$ 1.000 por mês é a sua meta, ou é outra? Comenta o seu número.",
+   "dados": {
+    "linhas": [
+     "Quanto você quer",
+     "receber por mês?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Quanto investir para receber R$ 1.000 por mês em dividendos?",
+   "texto": "Capital = renda anual ÷ dividend yield.\n\nR$ 1.000 por mês = R$ 12.000 por ano.\n• DY 6% → R$ 200 mil\n• DY 8% → R$ 150 mil\n• DY 10% → R$ 120 mil\n\nMétodo Bazin (1992): preço-teto = dividendo anual ÷ 6%. Exemplo fictício: R$ 3 por ação → teto de R$ 50.\n\nFontes sobre o método Bazin: InfoMoney (infomoney.com.br) e Investidor10 (investidor10.com.br).\nDividendos variam e não têm garantia. Exemplo ilustrativo, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #shorts"
+  },
+  "instagram": {
+   "texto": "R$ 1.000 por mês em dividendos: precisa de R$ 120 mil ou R$ 200 mil?\n\nCapital = renda anual ÷ dividend yield\n• DY 6% → R$ 200 mil\n• DY 8% → R$ 150 mil\n• DY 10% → R$ 120 mil\n\nE o método Bazin: preço-teto = dividendo ÷ 6%.\nDividendos variam e não têm garantia.\n\nQuanto você quer receber por mês? 👇\n\nFonte (Bazin): InfoMoney e Investidor10. Exemplo ilustrativo.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "R$ 1.000 por mês em dividendos: R$ 120 mil ou R$ 200 mil? Depende do yield. E o método Bazin explicado. Fonte (Bazin): InfoMoney. Narração por IA. #educacaofinanceira #dividendos #investimentos #rendapassiva"
+  }
+ }
+}

@@ -1,0 +1,336 @@
+{
+ "id": "JQE-S022",
+ "titulo": "Seu hábito de R$ 15 por dia pode valer R$ 90 mil",
+ "formato": "vertical 9:16",
+ "pilar": "Finanças pessoais",
+ "tipo": "evergreen / explicador",
+ "risco": "baixo — conta de hábito com taxa ilustrativa",
+ "refeito_de": "JQE-S009",
+ "tipo_gancho": "custo escondido",
+ "formato_narrativo": "explicador",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética, sem impostos",
+ "parametros": {
+  "gasto_dia": 15,
+  "dias_mes": 30,
+  "taxa_mes": 0.008,
+  "anos": 10,
+  "dia_baixo": 5,
+  "dia_alto": 30,
+  "assinatura_mes": 40
+ },
+ "calculos": {
+  "mes": "15 * 30",
+  "ano": "450 * 12",
+  "dez_anos": "5400 * 10",
+  "dez_anos_mil": "dez_anos / 1000",
+  "investido": "450 * (1.008 ** 120 - 1) / 0.008",
+  "investido_mil": "investido / 1000",
+  "inv_5": "150 * (1.008 ** 120 - 1) / 0.008",
+  "inv_5_mil": "inv_5 / 1000",
+  "inv_30": "900 * (1.008 ** 120 - 1) / 0.008",
+  "inv_30_mil": "inv_30 / 1000",
+  "assin_10": "40 * 12 * 10",
+  "assin_inv": "40 * (1.008 ** 120 - 1) / 0.008",
+  "juros_mil": "(investido - 54000) / 1000"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: gasto diário × 30 dias; valor futuro de aportes mensais, VF = A × ((1 + i)^n − 1) / i"
+ ],
+ "capa": {
+  "linha1": "Um hábito de",
+  "linha2": "R$ 15 por dia",
+  "destaque": "em 10 anos"
+ },
+ "ganchos_alternativos": [
+  "R$ 15 por dia. Um café, um lanche. Quanto vira em 10 anos?",
+  "O hábito mais caro é o que você nem percebe."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "formula",
+   "tts": "Seu café de quinze reais por dia pode estar valendo noventa mil reais. Olha a conta.",
+   "leg": "Seu café de R$ 15 por dia pode estar valendo R$ 90 mil. Olha a conta.",
+   "dados": {
+    "titulo": "R$ 15 por dia",
+    "linha1": "café · lanche · entrega",
+    "resultado": "R$ 90 mil?",
+    "nota": "em 10 anos"
+   }
+  },
+  {
+   "id": "tamanho",
+   "tipo": "titulo",
+   "tts": "Não é sobre o café. É sobre o tamanho de um hábito, uma conta que quase ninguém faz.",
+   "leg": "Não é sobre o café. É sobre o tamanho de um hábito, uma conta que quase ninguém faz.",
+   "dados": {
+    "titulo": [
+     "O tamanho",
+     "de um hábito"
+    ],
+    "subtitulo": "a conta que quase ninguém faz"
+   }
+  },
+  {
+   "id": "soma",
+   "tipo": "barras",
+   "tts": "Quinze reais vezes trinta dias são quatrocentos e cinquenta por mês. Em um ano, cinco mil e quatrocentos. Em dez anos, cinquenta e quatro mil, sem render nada.",
+   "leg": "R$ 15 × 30 dias = R$ 450 por mês. Em um ano, R$ 5.400. Em 10 anos, R$ 54.000, sem render nada.",
+   "dados": {
+    "titulo": [
+     "R$ 15 por dia,",
+     "sem rendimento"
+    ],
+    "itens": [
+     {
+      "rotulo": "por mês",
+      "valor": 450,
+      "texto": "R$ 450"
+     },
+     {
+      "rotulo": "por ano",
+      "valor": 5400,
+      "texto": "R$ 5.400"
+     },
+     {
+      "rotulo": "em 10 anos",
+      "valor": 54000,
+      "texto": "R$ 54.000",
+      "destaque": true
+     }
+    ],
+    "nota": "30 dias por mês"
+   }
+  },
+  {
+   "id": "investido",
+   "tipo": "linhas",
+   "tts": "Agora, se esses quatrocentos e cinquenta fossem investidos todo mês, a zero vírgula oito por cento ao mês, em dez anos virariam uns noventa mil.",
+   "leg": "Se esses R$ 450 fossem investidos todo mês, a 0,8% ao mês, em 10 anos virariam uns R$ 90 mil.",
+   "dados": {
+    "titulo": "R$ 450 por mês em 10 anos",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     5,
+     10
+    ],
+    "ymax": 105000,
+    "ymin": 0,
+    "y_passo": 25000,
+    "series": [
+     {
+      "nome": "investido a 0,8% ao mês",
+      "destaque": true,
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 90 mil",
+      "pontos": [
+       [
+        0,
+        0.0
+       ],
+       [
+        1,
+        5644.05
+       ],
+       [
+        2,
+        11854.42
+       ],
+       [
+        3,
+        18687.93
+       ],
+       [
+        4,
+        26207.1
+       ],
+       [
+        5,
+        34480.74
+       ],
+       [
+        6,
+        43584.54
+       ],
+       [
+        7,
+        53601.81
+       ],
+       [
+        8,
+        64624.2
+       ],
+       [
+        9,
+        76752.56
+       ],
+       [
+        10,
+        90097.86
+       ]
+      ]
+     },
+     {
+      "nome": "só somado",
+      "velocidade": 0.6,
+      "inicio": 0.3,
+      "rotulo_final": "R$ 54 mil",
+      "pontos": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        5400
+       ],
+       [
+        2,
+        10800
+       ],
+       [
+        3,
+        16200
+       ],
+       [
+        4,
+        21600
+       ],
+       [
+        5,
+        27000
+       ],
+       [
+        6,
+        32400
+       ],
+       [
+        7,
+        37800
+       ],
+       [
+        8,
+        43200
+       ],
+       [
+        9,
+        48600
+       ],
+       [
+        10,
+        54000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "juros",
+   "tipo": "versus",
+   "tts": "Cinquenta e quatro mil gastos, contra noventa mil investidos. Os trinta e seis mil de diferença são só juros.",
+   "leg": "R$ 54 mil gastos, contra R$ 90 mil investidos. Os R$ 36 mil de diferença são só juros.",
+   "dados": {
+    "a": "R$ 54 mil",
+    "b": "R$ 90 mil",
+    "rotulo_a": "gasto em 10 anos",
+    "rotulo_b": "se fosse investido",
+    "centro": "+R$ 36 mil"
+   }
+  },
+  {
+   "id": "outros",
+   "tipo": "barras",
+   "tts": "Cinco reais por dia virariam uns trinta mil. Trinta reais por dia passariam de cento e oitenta mil.",
+   "leg": "R$ 5 por dia virariam uns R$ 30 mil. R$ 30 por dia passariam de R$ 180 mil.",
+   "dados": {
+    "titulo": [
+     "Por dia, investido",
+     "durante 10 anos"
+    ],
+    "itens": [
+     {
+      "rotulo": "R$ 5/dia",
+      "valor": 30032.62,
+      "texto": "R$ 30 mil"
+     },
+     {
+      "rotulo": "R$ 15/dia",
+      "valor": 90097.86,
+      "texto": "R$ 90 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "R$ 30/dia",
+      "valor": 180195.72,
+      "texto": "R$ 180 mil"
+     }
+    ],
+    "nota": "aportes mensais a 0,8% ao mês"
+   }
+  },
+  {
+   "id": "assinaturas",
+   "tipo": "formula",
+   "tts": "E vale para o que a gente nem lembra que paga. Uma assinatura de quarenta reais por mês soma quatro mil e oitocentos em dez anos.",
+   "leg": "Vale para o que a gente nem lembra que paga. Uma assinatura de R$ 40 por mês soma R$ 4.800 em 10 anos.",
+   "dados": {
+    "titulo": "A assinatura esquecida",
+    "linha1": "R$ 40 por mês",
+    "resultado": "R$ 4.800",
+    "nota": "em 10 anos, sem rendimento"
+   }
+  },
+  {
+   "id": "licao",
+   "tipo": "lista",
+   "tts": "Não é para cortar todo prazer. É escolher o que vale a pena e deixar o resto render.",
+   "leg": "Não é para cortar todo prazer. É escolher o que vale a pena e deixar o resto render.",
+   "dados": {
+    "titulo": [
+     "Não é cortar tudo"
+    ],
+    "itens": [
+     "saiba o tamanho do hábito",
+     "escolha o que vale a pena",
+     "o resto pode render"
+    ]
+   }
+  },
+  {
+   "id": "comenta",
+   "tipo": "cta",
+   "tts": "Qual é o seu hábito de quinze reais por dia? Comenta aqui.",
+   "leg": "Qual é o seu hábito de R$ 15 por dia? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Qual é o seu",
+     "hábito de R$ 15?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Seu hábito de R$ 15 por dia pode valer R$ 90 mil (a conta)",
+   "texto": "R$ 15 por dia = R$ 450 por mês = R$ 5.400 por ano = R$ 54.000 em 10 anos, sem rendimento.\nInvestidos todo mês a 0,8% ao mês (taxa ilustrativa), chegariam a cerca de R$ 90 mil.\n\nR$ 5 por dia: cerca de R$ 30 mil. R$ 30 por dia: mais de R$ 180 mil.\nUma assinatura de R$ 40 por mês soma R$ 4.800 em 10 anos.\n\nTaxa hipotética, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dinheiro #economia #investimentos #shorts"
+  },
+  "instagram": {
+   "texto": "Seu café de R$ 15 por dia pode estar valendo R$ 90 mil.\n\n• por mês → R$ 450\n• em 10 anos → R$ 54.000\n• investindo a 0,8% ao mês → cerca de R$ 90 mil\n\nNão é cortar todo prazer. É saber o tamanho de cada hábito.\n\nQual é o seu hábito de R$ 15 por dia? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dinheiro #economia #investimentos #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Seu café de R$ 15 por dia pode valer R$ 90 mil em 10 anos, se investido. Taxa hipotética. Narração por IA. #educacaofinanceira #dinheiro #economia #investimentos"
+  }
+ }
+}
