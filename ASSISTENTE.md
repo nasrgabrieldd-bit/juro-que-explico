@@ -44,13 +44,14 @@ Para cada linha: valor atual, quanto falta, ritmo dos últimos 15 dias e **data 
 ## 5. Diretrizes que protegem a monetização (checar todo ciclo)
 - YouTube "conteúdo inautêntico" (produzido em massa/repetitivo): variar formatos de cena, ganchos, estrutura e temas; cada vídeo com cálculo próprio e explicação, nada de modelo idêntico com troca de números; nada de persona sintética. Rótulo de conteúdo alterado/sintético ligado quando aplicável.
 - Originalidade: sem trechos de terceiros, músicas sem licença, imagens de outros canais ou de pessoas reais.
+- Linguagem simples para todas as classes sociais (ver PRODUCAO.md, "Linguagem"): conferir se algum roteiro do ciclo soou como aula ou usou jargão sem explicar.
 - Finanças: sem recomendação de ativo, promessa de ganho ou "dinheiro fácil"; aviso educativo em todos os posts.
 - TikTok: vídeos acima de 1 min, conta pessoal, sem marca d'água de outro app, nada de comprar seguidores ou engajamento.
 - Postagem diária mantida (YouTube exige atividade para ficar no YPP).
 
 ## 6. Saídas
 1. `relatorios/AAAA-MM-DD.md` com: resumo em 5 linhas, tabela de vídeos, padrões, metas e prazos, estimativa de ganho, riscos de política, **plano do próximo ciclo**.
-2. **Plano do próximo ciclo (15 dias)**: 15 pautas em ordem (14 curtos + ao menos 1 longo para o YouTube, com cortes Parte 1/2/3), com o gancho sugerido e o motivo de cada uma vir do dado. Escrever essas 15 no topo da Fila do `PAUTAS.md` e registrar as regras novas em `PRODUCAO.md`, seção "Aprendizados do último ciclo" (substituir a anterior). A rotina diária segue isso.
+2. **Plano do próximo ciclo (15 dias)**: 15 pautas de vídeos curtos em ordem + 4 vídeos longos HORIZONTAIS (2 por semana, até 4 min, para YouTube e feed do Instagram), cada longo com cortes verticais Parte 1/2/3, com o gancho sugerido e o motivo de cada uma vir do dado. Escrever essas 15 no topo da Fila do `PAUTAS.md` e registrar as regras novas em `PRODUCAO.md`, seção "Aprendizados do último ciclo" (substituir a anterior). A rotina diária segue isso.
 3. Doc do Project "NEXO — Media Company": `claude/13_RELATORIOS_QUINZENAIS.md` (acrescentar o resumo do ciclo no topo; não reescrever ciclos antigos).
 4. Commit e push.
 5. Aviso ao fundador (push): 6–8 linhas com views do ciclo, seguidores por rede, distância de cada meta, data projetada vs meta, estimativa de ganho e as 3 mudanças para o próximo ciclo.

@@ -100,6 +100,22 @@ A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente
 - Instagram e TikTok: vídeo `<ID>_ig.mp4` com `thumbnailOffset` (capa do `capa_ig.py`). Desde 12/11 o TikTok também usa a capa.
 - YouTube Shorts: a API não permite escolher capa de Short (só o app do YouTube, à mão). Por isso o quadro 0 já é o gancho completo, com o número grande: ele faz o papel de capa.
 
+## Linguagem (regra do fundador, 12/11/2026) — vale para roteiro, legenda, capa e textos dos posts
+O canal fala com **todas as classes sociais**. Não é aula: é conversa de quem quer que a pessoa entenda e comece a investir.
+- Palavras do dia a dia e frases curtas (até ~15 palavras). Fale com "você"; pode usar "a gente".
+- Termo técnico só quando precisar, e explicado na mesma frase com palavra simples: "dividend yield, que é quanto a ação paga por ano", "Selic, a taxa básica de juros".
+- Evite palavras de professor ou de banco sem explicar: rentabilidade, patrimônio, aporte, ativo, alocação, liquidez, "portanto", "ou seja" em excesso. Prefira: quanto rende, o que você juntou, o dinheiro que você coloca todo mês, investimento, tirar o dinheiro quando quiser.
+- Exemplos com valores que cabem no bolso de qualquer pessoa (R$ 50, R$ 100, R$ 200 por mês; o salário mínimo) antes dos grandes (R$ 1 milhão só como "sonho" ou comparação).
+- Mostre o primeiro passo possível ("dá para começar com R$ 30"), sem prometer ganho e sem "fique rico".
+- Sem julgamento sobre quem tem dívida ou não sobra nada no fim do mês.
+- Teste final: um parente que nunca investiu entenderia de primeira? Se não, reescreva.
+
+## Visual e movimento (do S017/L002 em diante)
+O render novo é o motor Remotion em `jqe-motion/` (ver `jqe-motion/README.md`): entradas com mola, números que contam, gráfico de linha que se desenha, barras que crescem, lista com check animado, títulos palavra por palavra, legenda estilo karaokê (palavra atual em verde), fundo com grade e brilho em movimento e whoosh discreto nas trocas de cena. Mantém a caixa segura, a marca e o selo. O `pipeline/render.py` (Pillow) fica como reserva.
+
+## Vídeos longos: 2 por semana, sempre HORIZONTAIS (16:9)
+Até 4 minutos, para o YouTube (via Composio, ver seção abaixo) e para o Instagram como vídeo de feed horizontal. Cada longo também gera cortes verticais (Parte 1/2/3, mais de 1 min cada) para Instagram Reels e TikTok.
+
 ## Margem de segurança (obrigatória do S017 e do L002 em diante)
 A interface dos apps cobre parte da tela. Valores usados (1080×1920, união conservadora de TikTok, Reels e Shorts, conferidos em 10/11/2026): topo ~250 px, base ~480–670 px (descrição e legenda do app), direita ~140–190 px (botões), esquerda ~60 px. O `render.py` agora desenha toda a camada de conteúdo (marca, nota, cena, legenda, selo) reduzida dentro da caixa segura x 92–930, y 260–1400; só a grade de fundo e a barra de progresso vão de ponta a ponta. No horizontal (YouTube longo), marca e selo descem para y 100 e a legenda sobe para y 918, longe do título e dos controles do player. Episódios antigos têm `"margem_segura": false` no roteiro para não mudarem se forem renderizados de novo; roteiro novo não precisa do campo (padrão = true). Antes do render completo, rode `python3 pipeline/margens.py episodios/<ID> 0 t1 t2 ...` e olhe a imagem: nenhum texto pode cair na área vermelha.
 

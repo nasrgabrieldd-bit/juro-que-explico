@@ -9,4 +9,6 @@ base="https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-
 [ -s "$MODELOS/voices-v1.0.bin" ]  || curl -sL -o "$MODELOS/voices-v1.0.bin"  "$base/voices-v1.0.bin"
 [ -d /usr/share/fonts/opentype/inter ] || { apt-get install -y -q fonts-inter >/dev/null 2>&1 || sudo apt-get install -y -q fonts-inter >/dev/null 2>&1 || echo "AVISO: fonte Inter ausente"; }
 command -v ffmpeg >/dev/null || { echo "ffmpeg ausente"; exit 1; }
+( cd "$(dirname "$0")/jqe-motion" && npm install --no-audit --no-fund --silent ) || echo "AVISO: npm install do jqe-motion falhou"
+[ -x /usr/bin/google-chrome ] || echo "AVISO: Google Chrome ausente (jqe-motion precisa dele)"
 echo "ok: modelos em $MODELOS"

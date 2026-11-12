@@ -22,6 +22,11 @@ LEG_BG, LEG_TX = tuple(_c["legenda_fundo"]), tuple(_c["legenda_texto"])
 FONTS = "/usr/share/fonts/opentype/inter/"
 
 rot = json.load(open(f"{EP}/roteiro.json"))
+# Roteiros novos usam o motor com movimento (jqe-motion/Remotion). Episódios antigos têm "margem_segura": false.
+if rot.get("margem_segura", True) and rot.get("motor", "remotion") == "remotion" and os.environ.get("MOTOR") != "pillow":
+    import subprocess as _sp
+    _m = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "jqe-motion", "render.py")
+    sys.exit(_sp.run([sys.executable, _m, *sys.argv[1:]]).returncode)
 HORIZONTAL = rot.get("formato", "").startswith("horizontal")
 HW, HH = 1920, 1080
 tempos = json.load(open(f"{EP}/tempos.json"))
