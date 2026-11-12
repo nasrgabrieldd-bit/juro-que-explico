@@ -82,7 +82,7 @@ Apague os `frame_*.png` antes do commit.
 ## Publicação (Buffer, organização "My organization")
 - YouTube `6af240c662b70b94b0d6dc1b`: 12:00, `metadata.youtube` = {title, categoryId "27", privacy "public", isAiGenerated true, madeForKids false}.
 - Instagram `6af2406162b70b94b0d6d913`: 12:05, `metadata.instagram` = {type "reel", shouldShareToFeed true, isAiGenerated true}.
-- TikTok `6af240ab62b70b94b0d6db65`: 12:10, `metadata.tiktok` = {isAiGenerated true}.
+- TikTok `6af240ab62b70b94b0d6db65`: 12:10, `metadata.tiktok` = {isAiGenerated true}, vídeo `<ID>_ig.mp4` com `thumbnailOffset` (capa).
 - `mode` customScheduled, `schedulingType` automatic, `dueAt` com offset -03:00 (America/Sao_Paulo).
 - Vídeo: `https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/<ID>/<ID>.mp4` (confirmar HTTP 200 depois do push).
 - Plano gratuito: no máximo 10 posts agendados por canal. Antes de agendar, liste os agendados; se já houver post para a data, não duplique.
@@ -99,7 +99,7 @@ A fila mantém cerca de uma semana agendada. **Primeiro esvazie `agenda_pendente
 A interface dos apps cobre parte da tela. Valores usados (1080×1920, união conservadora de TikTok, Reels e Shorts, conferidos em 10/11/2026): topo ~250 px, base ~480–670 px (descrição e legenda do app), direita ~140–190 px (botões), esquerda ~60 px. O `render.py` agora desenha toda a camada de conteúdo (marca, nota, cena, legenda, selo) reduzida dentro da caixa segura x 92–930, y 260–1400; só a grade de fundo e a barra de progresso vão de ponta a ponta. No horizontal (YouTube longo), marca e selo descem para y 100 e a legenda sobe para y 918, longe do título e dos controles do player. Episódios antigos têm `"margem_segura": false` no roteiro para não mudarem se forem renderizados de novo; roteiro novo não precisa do campo (padrão = true). Antes do render completo, rode `python3 pipeline/margens.py episodios/<ID> 0 t1 t2 ...` e olhe a imagem: nenhum texto pode cair na área vermelha.
 
 ## Capa do Instagram (obrigatória)
-Depois do render, rode `python3 pipeline/capa_ig.py episodios/<ID>`. Ele gera `capa_ig.png` (número do gancho gigante + título + faixa verde, tudo dentro do recorte 3:4 da grade) e `<ID>_ig.mp4` (vídeo + 1 s da capa no fim), e grava o `thumbnailOffset` em `capa_ig.json`. O post do Instagram usa o `<ID>_ig.mp4` com `assets[0].video.metadata.thumbnailOffset` desse arquivo; YouTube e TikTok continuam com o `<ID>.mp4`. O `lotes/gera_agenda.py` já monta assim. Olhe a capa antes de publicar: texto não pode repetir o número gigante nem sair da faixa central.
+Depois do render, rode `python3 pipeline/capa_ig.py episodios/<ID>`. Ele gera `capa_ig.png` (número do gancho gigante + título + faixa verde, tudo dentro do recorte 3:4 da grade) e `<ID>_ig.mp4` (vídeo + 1 s da capa no fim), e grava o `thumbnailOffset` em `capa_ig.json`. O post do Instagram usa o `<ID>_ig.mp4` com `assets[0].video.metadata.thumbnailOffset` desse arquivo; O TikTok usa o mesmo `<ID>_ig.mp4` com o mesmo `thumbnailOffset` (desde 12/11, a pedido do fundador: a capa não estava aparecendo no TikTok). Só o YouTube continua com o `<ID>.mp4`. O `lotes/gera_agenda.py` já monta assim. Olhe a capa antes de publicar: texto não pode repetir o número gigante nem sair da faixa central.
 
 ## Voz
 Padrão desde 10/11/2026: mistura 60% `pm_alex` + 40% `pm_santa`, velocidade 0,94, frase a frase com pausas naturais e tratamento de áudio (`narracao.py` sem argumentos de voz já usa isso). Com essa velocidade, mire 185–215 palavras para ficar entre 65 e 90 s.

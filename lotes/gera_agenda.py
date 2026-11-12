@@ -45,7 +45,10 @@ for arg in sys.argv[1:]:
             p.update(text=r["posts"]["instagram"]["texto"], assets=[{"video": vid}],
                      metadata={"instagram": {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": True}})
         else:
-            p.update(text=r["posts"]["tiktok"]["texto"], assets=[{"video": {"url": url}}],
+            # TikTok: mesma versão com capa do Instagram (o thumbnailOffset escolhe a capa do vídeo)
+            ci = json.load(open(f"{BASE}/episodios/{ep}/capa_ig.json"))
+            vid = {"url": f"{RAW}/{ep}/{ci['arquivo']}", "metadata": {"thumbnailOffset": ci["thumbnailOffset"]}}
+            p.update(text=r["posts"]["tiktok"]["texto"], assets=[{"video": vid}],
                      metadata={"tiktok": {"isAiGenerated": True}})
         lista.append({"episodio": ep, "canal": c, "create_post": p})
         chaves.add((ep, c))
