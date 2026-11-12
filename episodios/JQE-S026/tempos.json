@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 64.837,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.677,
+   "texto": "Cem reais guardados por dez anos continuam sendo cem. E valem sessenta e um."
+  },
+  {
+   "id": "explica",
+   "inicio": 6.227,
+   "dur": 7.149,
+   "texto": "Não é pegadinha. O número da nota fica igual, mas os preços sobem, e cada alta vem em cima da anterior."
+  },
+  {
+   "id": "preco",
+   "inicio": 13.827,
+   "dur": 8.64,
+   "texto": "Com inflação de cinco por cento ao ano, algo que custa cem reais hoje vai custar cento e sessenta e dois e oitenta e nove daqui a dez anos."
+  },
+  {
+   "id": "poder",
+   "inicio": 22.917,
+   "dur": 10.013,
+   "texto": "Do outro lado, o poder de compra da nota. Em cinco anos, setenta e oito reais. Em dez, sessenta e um. Em vinte, menos de trinta e oito."
+  },
+  {
+   "id": "taxa",
+   "inicio": 33.38,
+   "dur": 8.155,
+   "texto": "E a taxa muda tudo. Com três por cento ao ano, os cem valem setenta e quatro. Com oito, menos de quarenta e sete."
+  },
+  {
+   "id": "parado",
+   "inicio": 41.985,
+   "dur": 7.277,
+   "texto": "Por isso dinheiro parado perde valor, mesmo quando o saldo não muda. O que importa é render acima da inflação."
+  },
+  {
+   "id": "licao",
+   "inicio": 49.712,
+   "dur": 7.381,
+   "texto": "Na prática: compare qualquer rendimento com a inflação do mesmo período, desconfie de dinheiro parado e olhe o ganho real."
+  },
+  {
+   "id": "comenta",
+   "inicio": 57.543,
+   "dur": 5.071,
+   "texto": "E os seus cem reais de dez anos atrás, compravam o quê? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 63.064,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

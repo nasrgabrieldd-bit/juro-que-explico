@@ -1,0 +1,67 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 78.787,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 7.055,
+   "texto": "Mil reais por mês em dividendos: precisa de cento e vinte ou duzentos mil? Depende de um número só."
+  },
+  {
+   "id": "dy",
+   "inicio": 7.605,
+   "dur": 9.24,
+   "texto": "Esse número é o dividend yield: os dividendos do ano divididos pelo valor investido. Oito por cento paga oito reais por ano a cada cem."
+  },
+  {
+   "id": "regra",
+   "inicio": 17.295,
+   "dur": 5.44,
+   "texto": "A conta da renda é uma divisão só: a renda que você quer no ano, dividida pelo yield."
+  },
+  {
+   "id": "conta",
+   "inicio": 23.185,
+   "dur": 7.875,
+   "texto": "Mil reais por mês são doze mil por ano. Doze mil dividido por oito por cento dá cento e cinquenta mil reais investidos."
+  },
+  {
+   "id": "faixas",
+   "inicio": 31.509,
+   "dur": 8.325,
+   "texto": "Por isso a pergunta do começo tem duas respostas. Com yield de dez por cento, cento e vinte mil. Com seis, duzentos mil."
+  },
+  {
+   "id": "cuidado",
+   "inicio": 40.285,
+   "dur": 8.835,
+   "texto": "Mas cuidado: dividendo varia e pode ser cortado, e yield alto demais pode ser sinal de problema. A conta é uma régua, não uma promessa."
+  },
+  {
+   "id": "bazin",
+   "inicio": 49.569,
+   "dur": 11.931,
+   "texto": "Essa conta está por trás do método Bazin. Em mil novecentos e noventa e dois, Décio Bazin usava seis por cento como piso. Preço-teto é o dividendo dividido por seis por cento."
+  },
+  {
+   "id": "teto",
+   "inicio": 61.95,
+   "dur": 9.52,
+   "texto": "Empresa fictícia que paga três reais por ação no ano: teto de cinquenta. A quarenta, o yield é sete e meio por cento. A sessenta, só cinco."
+  },
+  {
+   "id": "comenta",
+   "inicio": 71.92,
+   "dur": 4.644,
+   "texto": "Mil reais por mês é a sua meta, ou é outra? Comenta o seu número."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 77.014,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

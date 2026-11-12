@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 70.346,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.305,
+   "texto": "Rendeu dez por cento no ano? Quase todo mundo faz a conta do ganho errado."
+  },
+  {
+   "id": "conceito",
+   "inicio": 5.855,
+   "dur": 7.896,
+   "texto": "O ganho de verdade é a rentabilidade real: o que sobra depois da inflação. Ela mostra se o seu poder de compra cresceu."
+  },
+  {
+   "id": "erro",
+   "inicio": 14.201,
+   "dur": 8.517,
+   "texto": "A conta que quase todo mundo faz: dez menos a inflação de quatro e meio. Dá cinco e meio por cento. Parece certo, mas não é."
+  },
+  {
+   "id": "passos",
+   "inicio": 23.169,
+   "dur": 8.003,
+   "texto": "Passo um: você aplicou mil e terminou com mil e cem. Passo dois: com a inflação, o que custava mil agora custa mil e quarenta e cinco."
+  },
+  {
+   "id": "certa",
+   "inicio": 31.621,
+   "dur": 9.883,
+   "texto": "Passo três: divida. Um vírgula dez, dividido por um vírgula zero quatro cinco, menos um. O ganho real foi de cinco vírgula vinte e seis por cento."
+  },
+  {
+   "id": "maior",
+   "inicio": 41.954,
+   "dur": 9.069,
+   "texto": "Com taxas baixas, o atalho chega perto. Mas se rendeu vinte por cento, com inflação de dez, o ganho real é nove vírgula zero nove, e não dez."
+  },
+  {
+   "id": "negativo",
+   "inicio": 51.473,
+   "dur": 8.975,
+   "texto": "E se tivesse rendido só quatro por cento? O saldo sobe, mas o ganho real fica negativo: menos zero vírgula quarenta e oito por cento."
+  },
+  {
+   "id": "comenta",
+   "inicio": 60.898,
+   "dur": 7.225,
+   "texto": "Lembra dos dez por cento do começo? Faz essa conta com o seu rendimento e comenta se ganhou da inflação."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 68.573,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

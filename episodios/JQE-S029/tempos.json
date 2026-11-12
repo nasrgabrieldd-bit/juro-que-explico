@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 68.242,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.485,
+   "texto": "Os primeiros cem mil levam seis anos. O quinto bloco de cem mil, menos de dois."
+  },
+  {
+   "id": "exemplo",
+   "inicio": 6.035,
+   "dur": 5.973,
+   "texto": "O exemplo: mil reais por mês, sempre o mesmo valor, rendendo zero vírgula oito por cento ao mês."
+  },
+  {
+   "id": "grafico",
+   "inicio": 12.459,
+   "dur": 6.168,
+   "texto": "Os primeiros cem mil chegam no mês setenta e quatro. Depois disso, a curva começa a empinar."
+  },
+  {
+   "id": "blocos",
+   "inicio": 19.077,
+   "dur": 11.957,
+   "texto": "Cada novo bloco fica mais rápido. O segundo leva quarenta e seis meses. O terceiro, trinta e quatro. O quarto, vinte e sete. E o quinto, só vinte e dois."
+  },
+  {
+   "id": "motivo",
+   "inicio": 31.484,
+   "dur": 9.989,
+   "texto": "O motivo: com cem mil investidos, os juros já colocam oitocentos reais por mês. Com quatrocentos mil, três mil e duzentos. Mais que o seu aporte."
+  },
+  {
+   "id": "encurtar",
+   "inicio": 41.923,
+   "dur": 8.795,
+   "texto": "Dá para encurtar o começo. Com mil e quinhentos por mês, os primeiros cem mil chegam no mês cinquenta e quatro. Vinte meses antes."
+  },
+  {
+   "id": "licao",
+   "inicio": 51.168,
+   "dur": 8.475,
+   "texto": "Por isso o começo parece lento e desanima. Mas é ele que monta a base. Quem atravessa os primeiros cem mil vê a coisa acelerar."
+  },
+  {
+   "id": "comenta",
+   "inicio": 60.093,
+   "dur": 5.927,
+   "texto": "Seis anos para os primeiros cem mil. Em qual bloco você está? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 66.469,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

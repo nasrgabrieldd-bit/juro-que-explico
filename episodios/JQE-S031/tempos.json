@@ -1,0 +1,67 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 69.691,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.863,
+   "texto": "Cem reais a mais por mês, ou um rendimento um pouco maior: qual vence? Depende de quando você olha."
+  },
+  {
+   "id": "pessoas",
+   "inicio": 7.413,
+   "dur": 7.789,
+   "texto": "Pessoa A aporta seiscentos por mês, a zero vírgula oito por cento. Pessoa B aporta quinhentos, mas a um por cento ao mês."
+  },
+  {
+   "id": "cinco",
+   "inicio": 15.652,
+   "dur": 7.661,
+   "texto": "Em cinco anos, quem aporta mais está na frente: quarenta e seis mil contra quarenta e um. No começo, o aporte manda."
+  },
+  {
+   "id": "cruza",
+   "inicio": 23.763,
+   "dur": 5.163,
+   "texto": "Só que as curvas se cruzam no mês cento e cinquenta e dois, com doze anos e oito meses."
+  },
+  {
+   "id": "grafico",
+   "inicio": 29.376,
+   "dur": 4.845,
+   "texto": "Daí em diante, quem rende mais dispara. A distância só aumenta."
+  },
+  {
+   "id": "trinta",
+   "inicio": 34.671,
+   "dur": 8.515,
+   "texto": "Em trinta anos: quem rende mais termina com cerca de um vírgula setenta e cinco milhão. Quem aporta mais, com um vírgula vinte e cinco."
+  },
+  {
+   "id": "porque",
+   "inicio": 43.636,
+   "dur": 8.152,
+   "texto": "No começo, o patrimônio é quase todo aporte. Com os anos, ele fica grande, e cada décimo de taxa age sobre uma base enorme."
+  },
+  {
+   "id": "licao",
+   "inicio": 52.238,
+   "dur": 8.557,
+   "texto": "No começo, aumentar o aporte é o que mais acelera. Com o tempo, rendimento melhor, com risco que você entende, pesa cada vez mais."
+  },
+  {
+   "id": "comenta",
+   "inicio": 61.245,
+   "dur": 6.223,
+   "texto": "Cem reais a mais ou um rendimento maior: no que você está focando agora? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 67.918,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

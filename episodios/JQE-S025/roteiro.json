@@ -108,7 +108,7 @@
      8,
      10
     ],
-    "ymax": 1100000,
+    "ymax": 1350000,
     "ymin": 0,
     "y_passo": 250000,
     "y_fmt": "brl",
@@ -117,7 +117,6 @@
       "nome": "reinvestindo a inflação",
       "velocidade": 0.6,
       "inicio": 0.2,
-      "rotulo_final": "R$ 1 milhão",
       "pontos": [
        [
         0,

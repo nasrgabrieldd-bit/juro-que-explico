@@ -5,26 +5,27 @@ A rotina diária pega a primeira pauta da fila, produz, move para "Publicadas" c
 ## Produzidas
 | ID | Pauta | Publicação |
 |---|---|---|
-| JQE-S001 | Juro composto: o mesmo dinheiro, dois resultados | 10/11/2026 |
-| JQE-S002 | Regra dos 72: em quanto tempo o dinheiro dobra | 11/11/2026 |
-| JQE-S003 | 1% ao mês não é 12% ao ano | 12/11/2026 |
-| JQE-S004 | Inflação: quanto valem R$ 100 daqui a 10 anos | 13/11/2026 |
-| JQE-S005 | Rentabilidade real | 14/11/2026 |
-| JQE-S006 | Reserva de emergência: quanto guardar | 15/11/2026 |
-| JQE-S007 | Parcelado sem juros × à vista com desconto | 16/11/2026 |
-| JQE-S008 | O custo de começar a investir 5 anos depois | 17/11/2026 |
-| JQE-S009 | R$ 15 por dia em 10 anos | 18/11/2026 |
-| JQE-L001 | Juros compostos na prática (longo, YouTube) | 15/11/2026 18:00 |
-| JQE-L001-P1 | Parte 1: o ponto de virada (Instagram/TikTok) | 15/11/2026 18:00 |
-| JQE-L001-P2 | Parte 2: por que começar cedo (Instagram/TikTok) | 16/11/2026 18:00 |
-| JQE-L001-P3 | Parte 3: R$ 1.000 em dividendos e Bazin (Instagram/TikTok) | 17/11/2026 18:00 |
-| JQE-S010 | Os primeiros R$ 100 mil são os mais difíceis | 19/11/2026 |
-| JQE-S011 | Reinvestir ou gastar os dividendos | 20/11/2026 |
-| JQE-S012 | Dividend yield alto nem sempre é bom sinal | 21/11/2026 |
-| JQE-S013 | Regra 50/30/20 | 22/11/2026 |
-| JQE-S014 | Quanto 1% de taxa come em 20 anos | 23/11/2026 |
-| JQE-S015 | Aporte maior ou rendimento maior | 24/11/2026 |
-| JQE-S016 | R$ 1 milhão rende quanto por mês | 25/11/2026 |
+| JQE-S001 | Juro composto: o mesmo dinheiro, dois resultados | 10/11/2026 (publicado) |
+| JQE-S002 | Regra dos 72: em quanto tempo o dinheiro dobra | 11/11/2026 (publicado) |
+| JQE-S003 | 1% ao mês não é 12% ao ano | 12/11/2026 12:00 |
+| JQE-S017 | Em que mês os juros passam o seu aporte (refeito de L001-P1) | 13/11/2026 12:00 |
+| JQE-S018 | Dividend yield de 16%: presente ou armadilha (refeito de S012) | 13/11/2026 16:00 |
+| JQE-S019 | Esperar 5 anos pode custar R$ 250 mil (refeito de S008) | 14/11/2026 12:00 |
+| JQE-S020 | Rendeu 10%? A conta do ganho real (refeito de S005) | 14/11/2026 16:00 |
+| JQE-S021 | R$ 1.000 por mês em dividendos + Bazin (refeito de L001-P3) | 15/11/2026 12:00 |
+| JQE-S022 | Hábito de R$ 15 por dia (refeito de S009) | 15/11/2026 16:00 |
+| JQE-S023 | 10 primeiros anos valem mais que os 20 seguintes (refeito de L001-P2) | 16/11/2026 12:00 |
+| JQE-S024 | Parcelado sem juros ou à vista (refeito de S007) | 16/11/2026 16:00 |
+| JQE-S025 | R$ 1 milhão rende quanto por mês (refeito de S016) | 17/11/2026 12:00 |
+| JQE-S026 | R$ 100 em 10 anos valem R$ 61 (refeito de S004) | 17/11/2026 16:00 |
+| JQE-S027 | Reinvestir ou gastar dividendos (refeito de S011) | 18/11/2026 12:00 |
+| JQE-S028 | Reserva de emergência (refeito de S006) | 18/11/2026 16:00 |
+| JQE-S029 | Os primeiros R$ 100 mil (refeito de S010) | 19/11/2026 12:00 |
+| JQE-S030 | 1% de taxa em 20 anos (refeito de S014) | 19/11/2026 16:00 |
+| JQE-S031 | Aporte maior ou rendimento maior (refeito de S015) | 20/11/2026 12:00 |
+| JQE-S032 | Regra 50/30/20 (refeito de S013) | 20/11/2026 16:00 |
+
+Substituídos (12/11/2026, pedido do fundador: refazer com voz nova, margem de segurança, gancho de curiosidade e capa): JQE-S004 a S016 e JQE-L001-P1..P3 não vão ao ar; os temas foram refeitos como S017–S032. O vídeo longo JQE-L001 (YouTube BWivb-y51zk) aparece como excluído no canal desde 12/11; não foi reenviado até o fundador confirmar o que houve.
 
 ## Fila (evergreen, baixo risco) — prioridade: investir, juros compostos e dividendos (pedido do fundador, 09/11)
 

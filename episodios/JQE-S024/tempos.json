@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 70.109,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 7.353,
+   "texto": "Dez vezes de cento e vinte ou mil e oitenta à vista: qual sai mais barato? A resposta depende de um detalhe."
+  },
+  {
+   "id": "gratis",
+   "inicio": 7.903,
+   "dur": 7.661,
+   "texto": "Sem juros não quer dizer de graça. Quando tem desconto à vista, o custo do parcelado é o desconto que você perde."
+  },
+  {
+   "id": "rende",
+   "inicio": 16.015,
+   "dur": 11.032,
+   "texto": "Mas parcelar tem uma vantagem: o dinheiro rende enquanto você paga. A zero vírgula oito por cento ao mês, as parcelas valem hoje cerca de mil cento e quarenta e nove."
+  },
+  {
+   "id": "compara",
+   "inicio": 27.497,
+   "dur": 6.851,
+   "texto": "Então compare: mil cento e quarenta e nove contra mil e oitenta. Com dez por cento de desconto, à vista ganha."
+  },
+  {
+   "id": "tres",
+   "inicio": 34.797,
+   "dur": 9.937,
+   "texto": "E se o desconto fosse só três por cento? À vista sairia por mil cento e sessenta e quatro. Aí parcelar, com o dinheiro rendendo, sairia mais barato."
+  },
+  {
+   "id": "virada",
+   "inicio": 45.185,
+   "dur": 9.243,
+   "texto": "O ponto de virada, nesse exemplo, é um desconto de quatro vírgula vinte e seis por cento. Acima disso, à vista. Abaixo, parcelado."
+  },
+  {
+   "id": "licao",
+   "inicio": 54.877,
+   "dur": 7.083,
+   "texto": "Antes de decidir: pergunte o preço à vista, compare em valor de hoje, e só parcele se o dinheiro ficar aplicado."
+  },
+  {
+   "id": "comenta",
+   "inicio": 62.41,
+   "dur": 5.476,
+   "texto": "Na sua última compra, você pegou as dez vezes ou o desconto? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 68.336,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

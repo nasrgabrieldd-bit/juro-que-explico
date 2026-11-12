@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 72.362,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 7.439,
+   "texto": "Quem gasta três mil por mês precisa de quanto guardado para emergências? Nove, dezoito ou trinta e seis mil?"
+  },
+  {
+   "id": "conceito",
+   "inicio": 7.989,
+   "dur": 9.968,
+   "texto": "Reserva de emergência é o dinheiro do imprevisto: perder a renda, um conserto, a saúde. Ela não existe para render muito. Existe para estar lá."
+  },
+  {
+   "id": "conta",
+   "inicio": 18.407,
+   "dur": 6.637,
+   "texto": "Passo um: some quanto você gasta por mês, e não quanto ganha. Passo dois: multiplique pelos meses de proteção."
+  },
+  {
+   "id": "meses",
+   "inicio": 25.494,
+   "dur": 11.765,
+   "texto": "Passo três: escolha os meses. Três é o mínimo. Seis, para renda estável. Doze, para renda variável. Com três mil de gasto: nove, dezoito ou trinta e seis mil."
+  },
+  {
+   "id": "variavel",
+   "inicio": 37.709,
+   "dur": 7.289,
+   "texto": "Por que doze meses para quem tem renda variável? Porque autônomo pode ficar mais tempo sem entrar dinheiro."
+  },
+  {
+   "id": "chegar",
+   "inicio": 45.449,
+   "dur": 10.449,
+   "texto": "Parece muito? Guardando quinhentos por mês, você chega a dezoito mil em trinta e seis meses, sem contar rendimento. Em dezoito meses, já tem o mínimo."
+  },
+  {
+   "id": "onde",
+   "inicio": 56.348,
+   "dur": 6.82,
+   "texto": "E onde guardar? Em algo de baixo risco, com resgate rápido, separado da conta do dia a dia."
+  },
+  {
+   "id": "comenta",
+   "inicio": 63.618,
+   "dur": 6.521,
+   "texto": "Nove, dezoito ou trinta e seis mil: quantos meses a sua reserva cobre hoje? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 70.589,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 66.927,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.699,
+   "texto": "Cinquenta, trinta, vinte. O erro é investir o que sobra, e essa regra faz o contrário."
+  },
+  {
+   "id": "divide",
+   "inicio": 6.249,
+   "dur": 7.701,
+   "texto": "A regra divide o que entra em três partes: metade para o essencial, trinta por cento para o que você gosta, vinte para o futuro."
+  },
+  {
+   "id": "exemplo",
+   "inicio": 14.4,
+   "dur": 8.411,
+   "texto": "Com quatro mil líquidos: dois mil para moradia, contas e mercado. Mil e duzentos para lazer. E oitocentos para investir."
+  },
+  {
+   "id": "ordem",
+   "inicio": 23.261,
+   "dur": 8.027,
+   "texto": "O pulo do gato é a ordem. Os vinte por cento saem primeiro, no dia em que o salário cai. O resto é para viver."
+  },
+  {
+   "id": "grafico",
+   "inicio": 31.737,
+   "dur": 9.197,
+   "texto": "Os oitocentos por mês, rendendo zero vírgula oito por cento, viram uns cento e sessenta mil em dez anos. Você aportou noventa e seis mil."
+  },
+  {
+   "id": "ajuste",
+   "inicio": 41.385,
+   "dur": 7.576,
+   "texto": "Se o essencial passa de cinquenta por cento, comece pelo que der. Cinco ou dez por cento para o futuro já criam o hábito."
+  },
+  {
+   "id": "variacoes",
+   "inicio": 49.411,
+   "dur": 8.259,
+   "texto": "Dá para adaptar: tem quem use sessenta, vinte, vinte, ou setenta, vinte, dez. O que importa é a parte do futuro existir todo mês."
+  },
+  {
+   "id": "comenta",
+   "inicio": 58.119,
+   "dur": 6.585,
+   "texto": "Cinquenta, trinta, vinte: quanto do seu salário vai para o futuro hoje? Comenta a sua porcentagem."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 65.155,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

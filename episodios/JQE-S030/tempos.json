@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 66.503,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.296,
+   "texto": "Uma taxa de um por cento ao ano parece pouco. Em vinte anos, pode levar cinquenta e seis mil."
+  },
+  {
+   "id": "exemplo",
+   "inicio": 6.846,
+   "dur": 6.869,
+   "texto": "O exemplo: cinquenta mil reais, rendendo dez por cento ao ano antes da taxa, por vinte anos, sem novos aportes."
+  },
+  {
+   "id": "grafico",
+   "inicio": 14.165,
+   "dur": 10.072,
+   "texto": "Sem taxa, os cinquenta mil viram trezentos e trinta e seis mil. Com um por cento ao ano, o rendimento cai para nove, e o resultado para duzentos e oitenta mil."
+  },
+  {
+   "id": "diferenca",
+   "inicio": 24.687,
+   "dur": 5.869,
+   "texto": "São cinquenta e seis mil a menos. Mais do que todo o dinheiro que você colocou no começo."
+  },
+  {
+   "id": "porque",
+   "inicio": 31.007,
+   "dur": 7.683,
+   "texto": "É o juro composto ao contrário. A taxa leva o dinheiro de hoje e também tudo o que ele renderia nos anos seguintes."
+  },
+  {
+   "id": "dois",
+   "inicio": 39.139,
+   "dur": 8.807,
+   "texto": "E com dois por cento de taxa? O resultado cai para duzentos e trinta e três mil. Cada ponto pesa mais quanto maior o prazo."
+  },
+  {
+   "id": "licao",
+   "inicio": 48.396,
+   "dur": 7.917,
+   "texto": "Antes de investir, procure a taxa e compare o rendimento líquido. Taxa só vale se o resultado depois dela compensar."
+  },
+  {
+   "id": "comenta",
+   "inicio": 56.763,
+   "dur": 7.517,
+   "texto": "Um por cento parece pouco? Você sabe quanto paga de taxa nos seus investimentos? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 64.731,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 73.781,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 7.024,
+   "texto": "A mesma ação rendia oito por cento em dividendos. Agora, dezesseis. Sem pagar nada a mais."
+  },
+  {
+   "id": "conceito",
+   "inicio": 7.574,
+   "dur": 11.675,
+   "texto": "O dividend yield é o dividendo dos últimos doze meses dividido pelo preço. Empresa fictícia: pagou dois reais, a ação custa vinte e cinco. Yield de oito por cento."
+  },
+  {
+   "id": "truque",
+   "inicio": 19.699,
+   "dur": 8.828,
+   "texto": "Então como ele dobrou? Repara na fórmula: o dividendo fica em cima, o preço embaixo. Se o de baixo cai, o resultado sobe."
+  },
+  {
+   "id": "queda",
+   "inicio": 28.977,
+   "dur": 9.411,
+   "texto": "A empresa teve um problema e a ação caiu pela metade, para doze e cinquenta. O dividendo antigo continua na conta, e o yield pula para dezesseis."
+  },
+  {
+   "id": "corte",
+   "inicio": 38.837,
+   "dur": 10.577,
+   "texto": "E se a empresa cortar o dividendo para um real? O yield volta para oito por cento. Mas quem comprou pelo número alto já viu a ação cair cinquenta por cento."
+  },
+  {
+   "id": "olhe",
+   "inicio": 49.865,
+   "dur": 8.256,
+   "texto": "Antes de se animar com um yield alto, olhe três coisas: por que o preço caiu, se o lucro sustenta o dividendo e o histórico de vários anos."
+  },
+  {
+   "id": "constancia",
+   "inicio": 58.571,
+   "dur": 6.336,
+   "texto": "Um yield moderado, pago com regularidade, costuma dizer mais do que um número altíssimo em um ano só."
+  },
+  {
+   "id": "comenta",
+   "inicio": 65.357,
+   "dur": 6.201,
+   "texto": "E você, já se animou com um yield de dezesseis por cento que não se sustentou? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 72.008,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

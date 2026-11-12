@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 68.106,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.571,
+   "texto": "Seus primeiros dez anos investindo valem mais que os vinte seguintes. Juntos."
+  },
+  {
+   "id": "estranho",
+   "inicio": 6.121,
+   "dur": 6.488,
+   "texto": "Parece errado, porque nos vinte anos você aporta o dobro. Mas o tempo de cada aporte muda tudo."
+  },
+  {
+   "id": "exemplo",
+   "inicio": 13.059,
+   "dur": 10.627,
+   "texto": "O exemplo: quinhentos reais por mês, a zero vírgula oito por cento, por trinta anos. Você aporta cento e oitenta mil e termina com cerca de um vírgula zero quatro milhão."
+  },
+  {
+   "id": "separa",
+   "inicio": 24.135,
+   "dur": 11.867,
+   "texto": "Agora separe. Os aportes dos dez primeiros anos, sessenta mil, viram seiscentos e setenta e sete mil. Os dos vinte seguintes, cento e vinte mil, viram só trezentos e sessenta."
+  },
+  {
+   "id": "anoaano",
+   "inicio": 36.452,
+   "dur": 9.992,
+   "texto": "Ano a ano fica mais claro. Os seis mil do primeiro ano viram cem mil. Os do décimo, quarenta e dois mil. Os do último, seis mil e duzentos."
+  },
+  {
+   "id": "tempo",
+   "inicio": 46.894,
+   "dur": 6.296,
+   "texto": "Cada real aportado no começo tem trinta anos para render. O do último ano, só alguns meses."
+  },
+  {
+   "id": "licao",
+   "inicio": 53.64,
+   "dur": 6.616,
+   "texto": "Por isso o começo importa tanto. Os primeiros aportes parecem pequenos, mas são os que mais trabalham."
+  },
+  {
+   "id": "comenta",
+   "inicio": 60.706,
+   "dur": 5.177,
+   "texto": "Você está nos seus primeiros dez anos, ou já passou deles? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 66.333,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

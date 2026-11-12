@@ -1,0 +1,67 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 72.576,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.543,
+   "texto": "Em que mês os juros passam a depositar mais que os seus quinhentos reais? A resposta surpreende."
+  },
+  {
+   "id": "inicio",
+   "inicio": 7.093,
+   "dur": 7.704,
+   "texto": "O exemplo: quinhentos reais por mês, a zero vírgula oito por cento ao mês. No primeiro mês, os juros dão quatro reais."
+  },
+  {
+   "id": "saldo",
+   "inicio": 15.247,
+   "dur": 6.272,
+   "texto": "Para os juros do mês chegarem a quinhentos, o saldo precisa bater sessenta e dois mil e quinhentos reais."
+  },
+  {
+   "id": "grafico",
+   "inicio": 21.969,
+   "dur": 7.576,
+   "texto": "E esse saldo chega no mês oitenta e sete, com sete anos e três meses. A linha verde, dos juros, cruza a do seu aporte."
+  },
+  {
+   "id": "curioso",
+   "inicio": 29.995,
+   "dur": 8.451,
+   "texto": "Agora o detalhe curioso: com essa taxa, a virada cai no mês oitenta e sete para qualquer aporte. Cem reais ou cinco mil, tanto faz."
+  },
+  {
+   "id": "taxa",
+   "inicio": 38.895,
+   "dur": 8.688,
+   "texto": "Quem muda a data é a taxa. A meio por cento ao mês, a virada só chega no mês cento e trinta e nove. A um por cento, no mês setenta."
+  },
+  {
+   "id": "marco2",
+   "inicio": 48.033,
+   "dur": 7.875,
+   "texto": "E tem um segundo marco. No mês cento e cinquenta e nove, os juros acumulados passam tudo o que você colocou do bolso."
+  },
+  {
+   "id": "licao",
+   "inicio": 56.358,
+   "dur": 7.515,
+   "texto": "No começo, quem trabalha é você. A taxa decide quando os juros assumem. E a constância leva até lá."
+  },
+  {
+   "id": "comenta",
+   "inicio": 64.323,
+   "dur": 6.031,
+   "texto": "Os juros já passam os seus quinhentos reais, ou ainda falta? Comenta o seu aporte e a taxa."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 70.803,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

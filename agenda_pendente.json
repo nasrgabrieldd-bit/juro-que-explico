@@ -1,188 +1,26 @@
 [
  {
-  "episodio": "JQE-S010",
-  "canal": "ig",
-  "create_post": {
-   "channelId": "6af2406162b70b94b0d6d913",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-19T12:05:00-03:00",
-   "text": "Os primeiros R$ 100 mil levam 6 anos. Os próximos, bem menos.\n\nR$ 1.000 por mês a 0,8% ao mês:\n• 1º R$ 100 mil → 74 meses\n• 3º → 34 meses\n• 5º → 22 meses\n\nO começo é lento, mas é ele que monta a base.\n\nVocê já passou dos primeiros R$ 100 mil? 👇\n\nTaxa hipotética. Narração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #financaspessoais #dinheiro",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S010/JQE-S010_ig.mp4",
-      "metadata": {
-       "thumbnailOffset": 70209
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "instagram": {
-     "type": "reel",
-     "shouldShareToFeed": true,
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S010",
-  "canal": "tt",
-  "create_post": {
-   "channelId": "6af240ab62b70b94b0d6db65",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-19T12:10:00-03:00",
-   "text": "Os primeiros R$ 100 mil levam 6 anos. O quinto bloco, menos de 2. Taxa hipotética, narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S010/JQE-S010_ig.mp4",
-      "metadata": {
-       "thumbnailOffset": 70209
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "tiktok": {
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S011",
-  "canal": "ig",
-  "create_post": {
-   "channelId": "6af2406162b70b94b0d6d913",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-20T12:05:00-03:00",
-   "text": "R$ 667 ou R$ 3.107 por mês? A diferença é uma escolha.\n\nR$ 100 mil com DY de 8% ao ano:\n• gastando os dividendos → R$ 667/mês para sempre\n• reinvestindo por 20 anos → ≈ R$ 466 mil, pagando ≈ R$ 3.107/mês\n\nDividendos variam e não têm garantia.\n\nVocê reinveste ou gasta? 👇\n\nExemplo ilustrativo. Narração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #dinheiro",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S011/JQE-S011_ig.mp4",
-      "metadata": {
-       "thumbnailOffset": 77374
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "instagram": {
-     "type": "reel",
-     "shouldShareToFeed": true,
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S011",
-  "canal": "tt",
-  "create_post": {
-   "channelId": "6af240ab62b70b94b0d6db65",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-20T12:10:00-03:00",
-   "text": "R$ 667 ou R$ 3.107 por mês em dividendos: a diferença é reinvestir por 20 anos. Exemplo ilustrativo, narração por IA. #educacaofinanceira #dividendos #rendapassiva",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S011/JQE-S011_ig.mp4",
-      "metadata": {
-       "thumbnailOffset": 77374
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "tiktok": {
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S012",
-  "canal": "ig",
-  "create_post": {
-   "channelId": "6af2406162b70b94b0d6d913",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-21T12:05:00-03:00",
-   "text": "Uma ação pagando 16% de dividendos. Pode ser uma armadilha.\n\nDY = dividendos de 12 meses ÷ preço\n• a R$ 25, com R$ 2 de dividendo → 8%\n• se cai para R$ 12,50 → 16%\n• se o dividendo é cortado para R$ 1 → 8% de novo, com a ação 50% menor\n\nYield alto pode ser só preço caindo.\n\nJá caiu em um yield alto demais? 👇\n\nEmpresa fictícia. Narração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #acoes #dinheiro",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S012/JQE-S012_ig.mp4",
-      "metadata": {
-       "thumbnailOffset": 78602
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "instagram": {
-     "type": "reel",
-     "shouldShareToFeed": true,
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S012",
-  "canal": "tt",
-  "create_post": {
-   "channelId": "6af240ab62b70b94b0d6db65",
-   "schedulingType": "automatic",
-   "mode": "customScheduled",
-   "dueAt": "2026-11-21T12:10:00-03:00",
-   "text": "Uma ação pagando 16% de dividendos pode ser uma armadilha: o yield sobe quando o preço cai. Empresa fictícia, narração por IA. #educacaofinanceira #dividendos #investimentos",
-   "assets": [
-    {
-     "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S012/JQE-S012_ig.mp4",
-      "metadata": {
-       "thumbnailOffset": 78602
-      }
-     }
-    }
-   ],
-   "metadata": {
-    "tiktok": {
-     "isAiGenerated": true
-    }
-   }
-  }
- },
- {
-  "episodio": "JQE-S013",
+  "episodio": "JQE-S017",
   "canal": "yt",
   "create_post": {
    "channelId": "6af240c662b70b94b0d6dc1b",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-22T12:00:00-03:00",
-   "text": "50% para o essencial, 30% para desejos, 20% para o futuro.\n\nCom R$ 4.000 líquidos: R$ 2.000 + R$ 1.200 + R$ 800.\nOs R$ 800 por mês, a 0,8% ao mês (taxa ilustrativa), viram cerca de R$ 160 mil em 10 anos (R$ 96 mil aportados).\n\nSe não fechar, comece com o que der. Valores ilustrativos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #financaspessoais #orcamento #shorts",
+   "dueAt": "2026-11-13T12:00:00-03:00",
+   "text": "Com R$ 500 por mês a 0,8% ao mês (taxa ilustrativa):\n• mês 1: R$ 4 de juros\n• mês 87: os juros do mês passam os R$ 500\n• mês 159: os juros acumulados passam tudo o que foi aportado\n\nA 0,5% ao mês, a virada vai para o mês 139. A 1%, para o mês 70. O mês da virada não depende do valor do aporte, só da taxa.\n\nTaxa hipotética, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #jurocomposto #investimentos #dinheiro #shorts",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S013/JQE-S013.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S017/JQE-S017.mp4",
       "metadata": {
-       "title": "Regra 50/30/20: o jeito simples de dividir o salário"
+       "title": "Em que mês os juros passam o seu aporte? A conta exata"
       }
      }
     }
    ],
    "metadata": {
     "youtube": {
-     "title": "Regra 50/30/20: o jeito simples de dividir o salário",
+     "title": "Em que mês os juros passam o seu aporte? A conta exata",
      "categoryId": "27",
      "privacy": "public",
      "isAiGenerated": true,
@@ -192,20 +30,20 @@
   }
  },
  {
-  "episodio": "JQE-S013",
+  "episodio": "JQE-S017",
   "canal": "ig",
   "create_post": {
    "channelId": "6af2406162b70b94b0d6d913",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-22T12:05:00-03:00",
-   "text": "50, 30, 20. Três números para saber para onde vai o seu salário.\n\nCom R$ 4.000 líquidos:\n• 50% essencial → R$ 2.000\n• 30% desejos → R$ 1.200\n• 20% futuro → R$ 800\n\nR$ 800 por mês a 0,8% ao mês viram ≈ R$ 160 mil em 10 anos.\n\nQuanto do seu salário vai para o futuro? 👇\n\nValores ilustrativos. Narração gerada por IA.\n\n#educacaofinanceira #financaspessoais #orcamento #dinheiro",
+   "dueAt": "2026-11-13T12:05:00-03:00",
+   "text": "Em que mês os juros passam a depositar mais que os seus R$ 500?\n\nA 0,8% ao mês:\n• mês 1 → R$ 4 de juros\n• mês 87 → os juros passam o aporte\n• mês 159 → os juros passam tudo o que você aportou\n\nCurioso: o mês 87 vale para qualquer aporte. Quem muda a data é a taxa.\n\nOs juros já passam o seu aporte? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #jurocomposto #investimentos #dinheiro #financaspessoais",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S013/JQE-S013_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S017/JQE-S017_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 74009
+       "thumbnailOffset": 74276
       }
      }
     }
@@ -220,20 +58,20 @@
   }
  },
  {
-  "episodio": "JQE-S013",
+  "episodio": "JQE-S017",
   "canal": "tt",
   "create_post": {
    "channelId": "6af240ab62b70b94b0d6db65",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-22T12:10:00-03:00",
-   "text": "50/30/20: a regra simples para dividir o salário. Com R$ 4.000, R$ 800 para o futuro. Valores ilustrativos, narração por IA. #educacaofinanceira #financaspessoais #orcamento",
+   "dueAt": "2026-11-13T12:10:00-03:00",
+   "text": "Em que mês os juros passam os seus R$ 500? A 0,8% ao mês, no mês 87, para qualquer aporte. Taxa hipotética. Narração por IA. #educacaofinanceira #jurocomposto #investimentos #dinheiro",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S013/JQE-S013_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S017/JQE-S017_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 74009
+       "thumbnailOffset": 74276
       }
      }
     }
@@ -246,27 +84,27 @@
   }
  },
  {
-  "episodio": "JQE-S014",
+  "episodio": "JQE-S018",
   "canal": "yt",
   "create_post": {
    "channelId": "6af240c662b70b94b0d6dc1b",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-23T12:00:00-03:00",
-   "text": "R$ 50 mil rendendo 10% ao ano antes da taxa, por 20 anos (ilustrativo):\nsem taxa → R$ 336 mil\ncom 1% ao ano → R$ 280 mil (R$ 56 mil a menos)\ncom 2% ao ano → R$ 233 mil\n\nCada ponto de taxa pesa mais quanto maior o prazo. Compare sempre o rendimento líquido.\n\nValores ilustrativos, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #taxas #shorts",
+   "dueAt": "2026-11-13T16:00:00-03:00",
+   "text": "Dividend yield = dividendos dos últimos 12 meses ÷ preço atual.\n\nEmpresa fictícia: pagou R$ 2 por ação; a R$ 25, o yield é 8%. Se a ação cai para R$ 12,50, o yield vira 16% sem a empresa pagar nada a mais. Se o dividendo for cortado para R$ 1, o yield volta para 8%, com a ação 50% mais barata.\n\nOlhe por que o preço mudou, se o lucro sustenta o dividendo e o histórico de pagamentos.\n\nExemplo ilustrativo, empresa fictícia.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #dinheiro #shorts",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S014/JQE-S014.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S018/JQE-S018.mp4",
       "metadata": {
-       "title": "Taxa de 1% ao ano parece pouco? Veja quanto ela come em 20 anos"
+       "title": "Dividend yield de 16%: presente ou armadilha? A conta mostra"
       }
      }
     }
    ],
    "metadata": {
     "youtube": {
-     "title": "Taxa de 1% ao ano parece pouco? Veja quanto ela come em 20 anos",
+     "title": "Dividend yield de 16%: presente ou armadilha? A conta mostra",
      "categoryId": "27",
      "privacy": "public",
      "isAiGenerated": true,
@@ -276,20 +114,20 @@
   }
  },
  {
-  "episodio": "JQE-S014",
+  "episodio": "JQE-S018",
   "canal": "ig",
   "create_post": {
    "channelId": "6af2406162b70b94b0d6d913",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-23T12:05:00-03:00",
-   "text": "1% de taxa ao ano parece pouco. Em 20 anos, pode levar R$ 56 mil.\n\nR$ 50 mil a 10% ao ano:\n• sem taxa → R$ 336 mil\n• com 1% → R$ 280 mil\n• com 2% → R$ 233 mil\n\nCompare sempre o rendimento líquido.\n\nVocê sabe quanto paga de taxa? 👇\n\nValores ilustrativos. Narração gerada por IA.\n\n#educacaofinanceira #investimentos #financaspessoais #dinheiro",
+   "dueAt": "2026-11-13T16:05:00-03:00",
+   "text": "A mesma ação rendia 8% em dividendos. Agora rende 16%. E a empresa não pagou nada a mais.\n\n• yield = dividendo de 12 meses ÷ preço\n• o preço caiu pela metade → o yield dobrou\n• se o dividendo for cortado, volta a 8%, com a ação 50% mais barata\n\nYield alto pode ser só preço caindo.\n\nJá se animou com um yield alto que não se sustentou? 👇\n\nExemplo ilustrativo, empresa fictícia.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #dinheiro #financaspessoais",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S014/JQE-S014_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S018/JQE-S018_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 75454
+       "thumbnailOffset": 75481
       }
      }
     }
@@ -304,20 +142,20 @@
   }
  },
  {
-  "episodio": "JQE-S014",
+  "episodio": "JQE-S018",
   "canal": "tt",
   "create_post": {
    "channelId": "6af240ab62b70b94b0d6db65",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-23T12:10:00-03:00",
-   "text": "Uma taxa de 1% ao ano pode levar R$ 56 mil em 20 anos nesse exemplo. Valores ilustrativos, narração por IA. #educacaofinanceira #investimentos #dinheiro",
+   "dueAt": "2026-11-13T16:10:00-03:00",
+   "text": "A mesma ação rendia 8% em dividendos e agora rende 16%, sem pagar nada a mais. Entenda a armadilha. Empresa fictícia. Narração por IA. #educacaofinanceira #dividendos #investimentos #dinheiro",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S014/JQE-S014_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S018/JQE-S018_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 75454
+       "thumbnailOffset": 75481
       }
      }
     }
@@ -330,27 +168,27 @@
   }
  },
  {
-  "episodio": "JQE-S015",
+  "episodio": "JQE-S019",
   "canal": "yt",
   "create_post": {
    "channelId": "6af240c662b70b94b0d6dc1b",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-24T12:00:00-03:00",
-   "text": "A: R$ 600 por mês a 0,8% ao mês. B: R$ 500 por mês a 1% ao mês (taxas ilustrativas).\n5 anos: A ≈ R$ 46 mil, B ≈ R$ 41 mil.\nAs curvas se cruzam no mês 152 (12 anos e 8 meses).\n30 anos: A ≈ R$ 1,25 milhão, B ≈ R$ 1,75 milhão.\n\nNo começo, o aporte manda; no longo prazo, o rendimento pesa mais. Taxas hipotéticas, sem impostos nem inflação. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #shorts",
+   "dueAt": "2026-11-14T12:00:00-03:00",
+   "text": "R$ 300 por mês, com rendimento ilustrativo de 0,8% ao mês:\nAna, 30 anos investindo → cerca de R$ 623 mil (R$ 108 mil aportados)\nBruno, 25 anos → cerca de R$ 372 mil (R$ 90 mil aportados)\n\nSó R$ 18 mil a menos de aportes e R$ 251 mil a menos no final. Os primeiros aportes são os que ficam mais tempo rendendo.\n\nTaxa hipotética, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S015/JQE-S015.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S019/JQE-S019.mp4",
       "metadata": {
-       "title": "Aportar mais ou render mais? A resposta depende do prazo"
+       "title": "Esperar 5 anos para investir pode custar R$ 250 mil"
       }
      }
     }
    ],
    "metadata": {
     "youtube": {
-     "title": "Aportar mais ou render mais? A resposta depende do prazo",
+     "title": "Esperar 5 anos para investir pode custar R$ 250 mil",
      "categoryId": "27",
      "privacy": "public",
      "isAiGenerated": true,
@@ -360,20 +198,20 @@
   }
  },
  {
-  "episodio": "JQE-S015",
+  "episodio": "JQE-S019",
   "canal": "ig",
   "create_post": {
    "channelId": "6af2406162b70b94b0d6d913",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-24T12:05:00-03:00",
-   "text": "R$ 100 a mais por mês ou um rendimento maior? Um ganha no começo, o outro no fim.\n\n• A: R$ 600/mês a 0,8%\n• B: R$ 500/mês a 1%\n\n5 anos → A na frente (R$ 46 mil × R$ 41 mil)\nmês 152 → as curvas se cruzam\n30 anos → B dispara (R$ 1,75 mi × R$ 1,25 mi)\n\nVocê está focado em aportar ou em render? 👇\n\nTaxas hipotéticas. Narração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro",
+   "dueAt": "2026-11-14T12:05:00-03:00",
+   "text": "Esperar 5 anos para investir pode custar mais de R$ 250 mil.\n\nR$ 300 por mês a 0,8% ao mês:\n• Ana, 30 anos → R$ 623 mil\n• Bruno, 25 anos → R$ 372 mil\n• diferença de aportes: só R$ 18 mil\n\nOs primeiros aportes são os que mais rendem.\n\nCom quantos anos você começou? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S015/JQE-S015_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S019/JQE-S019_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 73985
+       "thumbnailOffset": 69209
       }
      }
     }
@@ -388,20 +226,20 @@
   }
  },
  {
-  "episodio": "JQE-S015",
+  "episodio": "JQE-S019",
   "canal": "tt",
   "create_post": {
    "channelId": "6af240ab62b70b94b0d6db65",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-24T12:10:00-03:00",
-   "text": "Aporte maior ganha no começo, rendimento maior ganha no fim: as curvas se cruzam no mês 152. Taxas hipotéticas, narração por IA. #educacaofinanceira #investimentos #jurocomposto",
+   "dueAt": "2026-11-14T12:10:00-03:00",
+   "text": "Esperar 5 anos para investir custou R$ 251 mil nesse exemplo, com só R$ 18 mil a menos de aportes. Taxa hipotética. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S015/JQE-S015_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S019/JQE-S019_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 73985
+       "thumbnailOffset": 69209
       }
      }
     }
@@ -414,18 +252,438 @@
   }
  },
  {
-  "episodio": "JQE-S016",
+  "episodio": "JQE-S020",
   "canal": "yt",
   "create_post": {
    "channelId": "6af240c662b70b94b0d6dc1b",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-25T12:00:00-03:00",
-   "text": "Com rendimento ilustrativo de 0,8% ao mês (≈ 10% ao ano), R$ 1 milhão rende R$ 8.000 por mês.\nCom inflação de 0,4% ao mês (≈ 5% ao ano), cerca de R$ 4.000 só repõem o poder de compra.\nGastando os R$ 8.000 todo mês, em 10 anos o milhão compra o que hoje compram uns R$ 620 mil.\n\nPara viver de renda, a conta é com o ganho real. Taxas hipotéticas, sem impostos. Conteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #rendapassiva #investimentos #shorts",
+   "dueAt": "2026-11-14T16:00:00-03:00",
+   "text": "Rentabilidade real é o rendimento descontada a inflação. A conta certa é dividir, não subtrair.\n\nRendeu 10% com inflação de 4,5%: 1,10 ÷ 1,045 − 1 = 5,26% (e não 5,5%).\nRendeu 20% com inflação de 10%: ganho real de 9,09% (e não 10%).\nRendeu 4% com inflação de 4,5%: ganho real negativo, −0,48%.\n\nTaxas ilustrativas, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #inflacao #dinheiro #shorts",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S016/JQE-S016.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S020/JQE-S020.mp4",
+      "metadata": {
+       "title": "Rendeu 10%? Quase todo mundo calcula o ganho real errado"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Rendeu 10%? Quase todo mundo calcula o ganho real errado",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S020",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-14T16:05:00-03:00",
+   "text": "Rendeu 10% no ano? Quase todo mundo calcula o ganho errado.\n\nCom inflação de 4,5%:\n• atalho: 10 − 4,5 = 5,5%\n• conta certa: 1,10 ÷ 1,045 − 1 = 5,26%\n• rendeu 20% com inflação de 10%? Ganho real de 9,09%\n\nDivida, não subtraia.\n\nSeu dinheiro ganhou da inflação este ano? 👇\n\nTaxas ilustrativas.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #inflacao #dinheiro #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S020/JQE-S020_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 72046
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S020",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-14T16:10:00-03:00",
+   "text": "Rendeu 10% com inflação de 4,5%? O ganho real é 5,26%, não 5,5%. A conta certa em 3 passos. Taxas ilustrativas. Narração por IA. #educacaofinanceira #investimentos #inflacao #dinheiro",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S020/JQE-S020_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 72046
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S021",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-15T12:00:00-03:00",
+   "text": "Capital = renda anual ÷ dividend yield.\n\nR$ 1.000 por mês = R$ 12.000 por ano.\n• DY 6% → R$ 200 mil\n• DY 8% → R$ 150 mil\n• DY 10% → R$ 120 mil\n\nMétodo Bazin (1992): preço-teto = dividendo anual ÷ 6%. Exemplo fictício: R$ 3 por ação → teto de R$ 50.\n\nFontes sobre o método Bazin: InfoMoney (infomoney.com.br) e Investidor10 (investidor10.com.br).\nDividendos variam e não têm garantia. Exemplo ilustrativo, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S021/JQE-S021.mp4",
+      "metadata": {
+       "title": "Quanto investir para receber R$ 1.000 por mês em dividendos?"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Quanto investir para receber R$ 1.000 por mês em dividendos?",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S021",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-15T12:05:00-03:00",
+   "text": "R$ 1.000 por mês em dividendos: precisa de R$ 120 mil ou R$ 200 mil?\n\nCapital = renda anual ÷ dividend yield\n• DY 6% → R$ 200 mil\n• DY 8% → R$ 150 mil\n• DY 10% → R$ 120 mil\n\nE o método Bazin: preço-teto = dividendo ÷ 6%.\nDividendos variam e não têm garantia.\n\nQuanto você quer receber por mês? 👇\n\nFonte (Bazin): InfoMoney e Investidor10. Exemplo ilustrativo.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S021/JQE-S021_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 80487
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S021",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-15T12:10:00-03:00",
+   "text": "R$ 1.000 por mês em dividendos: R$ 120 mil ou R$ 200 mil? Depende do yield. E o método Bazin explicado. Fonte (Bazin): InfoMoney. Narração por IA. #educacaofinanceira #dividendos #investimentos #rendapassiva",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S021/JQE-S021_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 80487
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S022",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-15T16:00:00-03:00",
+   "text": "R$ 15 por dia = R$ 450 por mês = R$ 5.400 por ano = R$ 54.000 em 10 anos, sem rendimento.\nInvestidos todo mês a 0,8% ao mês (taxa ilustrativa), chegariam a cerca de R$ 90 mil.\n\nR$ 5 por dia: cerca de R$ 30 mil. R$ 30 por dia: mais de R$ 180 mil.\nUma assinatura de R$ 40 por mês soma R$ 4.800 em 10 anos.\n\nTaxa hipotética, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dinheiro #economia #investimentos #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S022/JQE-S022.mp4",
+      "metadata": {
+       "title": "Seu hábito de R$ 15 por dia pode valer R$ 90 mil (a conta)"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Seu hábito de R$ 15 por dia pode valer R$ 90 mil (a conta)",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S022",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-15T16:05:00-03:00",
+   "text": "Seu café de R$ 15 por dia pode estar valendo R$ 90 mil.\n\n• por mês → R$ 450\n• em 10 anos → R$ 54.000\n• investindo a 0,8% ao mês → cerca de R$ 90 mil\n\nNão é cortar todo prazer. É saber o tamanho de cada hábito.\n\nQual é o seu hábito de R$ 15 por dia? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dinheiro #economia #investimentos #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S022/JQE-S022_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 70016
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S022",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-15T16:10:00-03:00",
+   "text": "Seu café de R$ 15 por dia pode valer R$ 90 mil em 10 anos, se investido. Taxa hipotética. Narração por IA. #educacaofinanceira #dinheiro #economia #investimentos",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S022/JQE-S022_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 70016
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S023",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-16T12:00:00-03:00",
+   "text": "R$ 500 por mês a 0,8% ao mês (taxa ilustrativa), por 30 anos: R$ 180 mil aportados, cerca de R$ 1,04 milhão no final.\n\nAportes dos anos 1 a 10 (R$ 60 mil) → R$ 677 mil\nAportes dos anos 11 a 30 (R$ 120 mil) → R$ 360 mil\n\nOs R$ 6.000 do 1º ano viram R$ 100 mil; os do último ano, R$ 6.271.\n\nTaxa hipotética, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #jurocomposto #investimentos #dinheiro #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S023/JQE-S023.mp4",
+      "metadata": {
+       "title": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S023",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-16T12:05:00-03:00",
+   "text": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes.\n\nR$ 500 por mês a 0,8% ao mês, por 30 anos:\n• anos 1 a 10 (R$ 60 mil) → R$ 677 mil\n• anos 11 a 30 (R$ 120 mil) → R$ 360 mil\n\nOs primeiros aportes são os que ficam mais tempo rendendo.\n\nEm quais dos seus 10 anos você está? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #jurocomposto #investimentos #dinheiro #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S023/JQE-S023_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 69806
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S023",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-16T12:10:00-03:00",
+   "text": "Seus primeiros 10 anos investindo valem mais que os 20 seguintes: R$ 677 mil contra R$ 360 mil. Taxa hipotética. Narração por IA. #educacaofinanceira #jurocomposto #investimentos #dinheiro",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S023/JQE-S023_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 69806
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S024",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-16T16:00:00-03:00",
+   "text": "R$ 1.200 em 10× sem juros ou R$ 1.080 à vista?\n\nCom rendimento ilustrativo de 0,8% ao mês, as parcelas valem hoje cerca de R$ 1.148,85. À vista (10% de desconto) sai mais barato.\nCom desconto de só 3% (R$ 1.164), o parcelado sairia mais barato, se o dinheiro ficar aplicado.\nO ponto de virada nesse exemplo é um desconto de 4,26%.\n\nValores ilustrativos, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dinheiro #economia #compras #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S024/JQE-S024.mp4",
+      "metadata": {
+       "title": "Parcelado sem juros ou à vista com desconto? A conta certa"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Parcelado sem juros ou à vista com desconto? A conta certa",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S024",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-16T16:05:00-03:00",
+   "text": "10× de R$ 120 ou R$ 1.080 à vista: qual sai mais barato?\n\n• parcelas em valor de hoje (0,8% ao mês) → R$ 1.149\n• à vista → R$ 1.080 ✅\n• com desconto de 3% (R$ 1.164), parcelar venceria\n• virada: desconto de 4,26%\n\nSem juros não é de graça.\n\nVocê pega as 10 vezes ou o desconto? 👇\n\nValores ilustrativos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dinheiro #economia #compras #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S024/JQE-S024_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 71809
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S024",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-16T16:10:00-03:00",
+   "text": "10× de R$ 120 ou R$ 1.080 à vista? Em valor de hoje, à vista ganha. Com 3% de desconto, não. Valores ilustrativos. Narração por IA. #educacaofinanceira #dinheiro #economia #compras",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S024/JQE-S024_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 71809
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S025",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-17T12:00:00-03:00",
+   "text": "Com rendimento ilustrativo de 0,8% ao mês (cerca de 10% ao ano), R$ 1 milhão rende R$ 8.000 por mês.\nCom inflação de 0,4% ao mês (cerca de 5% ao ano), uns R$ 4.000 só repõem o poder de compra.\nGanho real: 1,008 ÷ 1,004 − 1 ≈ R$ 3.984 por mês.\n\nGastando os R$ 8.000 todo mês, em 10 anos o milhão compra o que hoje compram uns R$ 620 mil.\n\nTaxas hipotéticas, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #rendapassiva #dinheiro #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S025/JQE-S025.mp4",
       "metadata": {
        "title": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar"
       }
@@ -444,20 +702,20 @@
   }
  },
  {
-  "episodio": "JQE-S016",
+  "episodio": "JQE-S025",
   "canal": "ig",
   "create_post": {
    "channelId": "6af2406162b70b94b0d6d913",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-25T12:05:00-03:00",
-   "text": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar?\n\nA 0,8% ao mês → R$ 8.000\nCom inflação de 0,4% ao mês:\n• ≈ R$ 4.000 repõem a inflação\n• ≈ R$ 4.000 são ganho real\n\nGastando tudo, em 10 anos o milhão vale uns R$ 620 mil de hoje.\n\nQuanto você precisaria por mês? 👇\n\nTaxas hipotéticas. Narração gerada por IA.\n\n#educacaofinanceira #rendapassiva #investimentos #dinheiro",
+   "dueAt": "2026-11-17T12:05:00-03:00",
+   "text": "R$ 1 milhão rende quanto por mês? E quanto dá para gastar?\n\n• rendimento de 0,8% ao mês → R$ 8.000\n• inflação de 0,4% ao mês → uns R$ 4.000 só repõem\n• ganho real → cerca de R$ 3.984\n\nGastando tudo, em 10 anos o milhão vale uns R$ 620 mil de hoje.\n\nQuanto você precisaria por mês? 👇\n\nTaxas hipotéticas.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #rendapassiva #dinheiro #financaspessoais",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S016/JQE-S016_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S025/JQE-S025_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 71061
+       "thumbnailOffset": 72261
       }
      }
     }
@@ -472,20 +730,608 @@
   }
  },
  {
-  "episodio": "JQE-S016",
+  "episodio": "JQE-S025",
   "canal": "tt",
   "create_post": {
    "channelId": "6af240ab62b70b94b0d6db65",
    "schedulingType": "automatic",
    "mode": "customScheduled",
-   "dueAt": "2026-11-25T12:10:00-03:00",
-   "text": "R$ 1 milhão rende R$ 8 mil por mês nesse exemplo, mas só uns R$ 4 mil são ganho real. Taxas hipotéticas, narração por IA. #educacaofinanceira #rendapassiva #investimentos",
+   "dueAt": "2026-11-17T12:10:00-03:00",
+   "text": "R$ 1 milhão rende R$ 8.000 por mês, mas só uns R$ 4.000 são ganho real. Taxas hipotéticas. Narração por IA. #educacaofinanceira #investimentos #rendapassiva #dinheiro",
    "assets": [
     {
      "video": {
-      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S016/JQE-S016_ig.mp4",
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S025/JQE-S025_ig.mp4",
       "metadata": {
-       "thumbnailOffset": 71061
+       "thumbnailOffset": 72261
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S026",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-17T16:00:00-03:00",
+   "text": "Com inflação de 5% ao ano, R$ 100 guardados compram o equivalente a R$ 61,39 de hoje depois de 10 anos. E algo que custa R$ 100 hoje vai custar R$ 162,89.\n\nCom 3% ao ano: R$ 74,41. Com 8%: R$ 46,32.\n\nInflação hipotética e constante, só para ilustrar.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #inflacao #economia #dinheiro #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S026/JQE-S026.mp4",
+      "metadata": {
+       "title": "R$ 100 guardados por 10 anos valem R$ 61. A inflação explica"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "R$ 100 guardados por 10 anos valem R$ 61. A inflação explica",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S026",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-17T16:05:00-03:00",
+   "text": "R$ 100 guardados por 10 anos continuam sendo R$ 100. E valem R$ 61.\n\nCom inflação de 5% ao ano:\n• em 5 anos → R$ 78\n• em 10 anos → R$ 61\n• em 20 anos → menos de R$ 38\n\nDinheiro parado perde valor. O que importa é o ganho real.\n\nO que R$ 100 compravam há 10 anos? 👇\n\nInflação hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #inflacao #economia #dinheiro #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S026/JQE-S026_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 66537
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S026",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-17T16:10:00-03:00",
+   "text": "R$ 100 guardados por 10 anos continuam sendo R$ 100, mas valem R$ 61 com inflação de 5% ao ano. Exemplo ilustrativo. Narração por IA. #educacaofinanceira #inflacao #economia #dinheiro",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S026/JQE-S026_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 66537
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S027",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-18T12:00:00-03:00",
+   "text": "R$ 100 mil com dividend yield de 8% ao ano (ilustrativo):\nGastando: R$ 8.000 por ano (≈ R$ 667/mês) para sempre; patrimônio parado em R$ 100 mil.\nReinvestindo por 20 anos: cerca de R$ 466 mil, pagando ≈ R$ 3.107 por mês, 4,7 vezes mais.\n\nDY e preço constantes, sem impostos. Dividendos variam e não têm garantia.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S027/JQE-S027.mp4",
+      "metadata": {
+       "title": "Reinvestir ou gastar os dividendos? Quase 5× mais renda em 20 anos"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Reinvestir ou gastar os dividendos? Quase 5× mais renda em 20 anos",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S027",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-18T12:05:00-03:00",
+   "text": "Mesmos R$ 100 mil, mesmos dividendos. Uma escolha deixa a renda quase 5 vezes maior.\n\nDY de 8% ao ano:\n• gastando → R$ 667 por mês, para sempre\n• reinvestindo 20 anos → R$ 3.107 por mês\n\nA bola de neve demora, mas cresce.\n\nVocê reinveste ou gasta os dividendos? 👇\n\nExemplo ilustrativo. Dividendos variam.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #rendapassiva #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S027/JQE-S027_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 69139
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S027",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-18T12:10:00-03:00",
+   "text": "Mesmos R$ 100 mil, mesmos dividendos: gastando, R$ 667 por mês; reinvestindo 20 anos, R$ 3.107. Exemplo ilustrativo. Narração por IA. #educacaofinanceira #dividendos #investimentos #rendapassiva",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S027/JQE-S027_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 69139
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S028",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-18T16:00:00-03:00",
+   "text": "Reserva de emergência = custo de vida mensal × meses de proteção.\n\nCom gasto de R$ 3.000 por mês:\n3 meses (mínimo): R$ 9.000\n6 meses (renda estável): R$ 18.000\n12 meses (renda variável): R$ 36.000\n\nGuardando R$ 500 por mês, chega a R$ 18.000 em 36 meses, sem contar rendimento.\n\nValores ilustrativos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #reservadeemergencia #dinheiro #organizacaofinanceira #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S028/JQE-S028.mp4",
+      "metadata": {
+       "title": "Reserva de emergência: R$ 9 mil, R$ 18 mil ou R$ 36 mil? Faça a conta"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Reserva de emergência: R$ 9 mil, R$ 18 mil ou R$ 36 mil? Faça a conta",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S028",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-18T16:05:00-03:00",
+   "text": "Quem gasta R$ 3.000 por mês precisa de quanto para emergências?\n\nCusto de vida × meses de proteção:\n• 3 meses → R$ 9.000\n• 6 meses → R$ 18.000\n• 12 meses → R$ 36.000\n\nOnde deixar: baixo risco, resgate rápido e longe da conta do dia a dia.\n\nQuantos meses a sua reserva cobre? 👇\n\nValores ilustrativos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #reservadeemergencia #dinheiro #organizacaofinanceira #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S028/JQE-S028_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 74062
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S028",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-18T16:10:00-03:00",
+   "text": "Gasta R$ 3.000 por mês? Sua reserva de emergência vai de R$ 9 mil a R$ 36 mil. A conta em 3 passos. Narração por IA. #educacaofinanceira #reservadeemergencia #dinheiro #organizacaofinanceira",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S028/JQE-S028_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 74062
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S029",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-19T12:00:00-03:00",
+   "text": "R$ 1.000 por mês a 0,8% ao mês (taxa ilustrativa):\n1º R$ 100 mil → 74 meses\n2º → 46 meses\n3º → 34 meses\n4º → 27 meses\n5º → 22 meses\n\nCom R$ 100 mil investidos, os juros já colocam R$ 800 por mês. Com R$ 1.500 por mês de aporte, os primeiros R$ 100 mil chegam no mês 54.\n\nTaxa hipotética, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S029/JQE-S029.mp4",
+      "metadata": {
+       "title": "Os primeiros R$ 100 mil levam 6 anos. O quinto, menos de 2"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Os primeiros R$ 100 mil levam 6 anos. O quinto, menos de 2",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S029",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-19T12:05:00-03:00",
+   "text": "Os primeiros R$ 100 mil levam 6 anos. O quinto bloco, menos de 2.\n\nR$ 1.000 por mês a 0,8% ao mês:\n• 1º R$ 100 mil → 74 meses\n• 3º → 34 meses\n• 5º → 22 meses\n\nO começo é lento, mas é ele que monta a base.\n\nEm qual bloco de R$ 100 mil você está? 👇\n\nTaxa hipotética.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S029/JQE-S029_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 69942
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S029",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-19T12:10:00-03:00",
+   "text": "Os primeiros R$ 100 mil levam 6 anos. O quinto bloco, menos de 2. Taxa hipotética. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S029/JQE-S029_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 69942
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S030",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-19T16:00:00-03:00",
+   "text": "R$ 50 mil rendendo 10% ao ano antes da taxa, por 20 anos (ilustrativo):\nSem taxa → cerca de R$ 336 mil\nCom 1% ao ano → cerca de R$ 280 mil\nCom 2% ao ano → cerca de R$ 233 mil\n\n1% de taxa leva R$ 56 mil, mais que os R$ 50 mil iniciais. Compare sempre o rendimento líquido.\n\nRendimento hipotético, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S030/JQE-S030.mp4",
+      "metadata": {
+       "title": "Uma taxa de 1% ao ano pode levar R$ 56 mil em 20 anos"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Uma taxa de 1% ao ano pode levar R$ 56 mil em 20 anos",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S030",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-19T16:05:00-03:00",
+   "text": "Uma taxa de 1% ao ano parece pouco. Em 20 anos, pode levar R$ 56 mil.\n\nR$ 50 mil a 10% ao ano:\n• sem taxa → R$ 336 mil\n• com 1% → R$ 280 mil\n• com 2% → R$ 233 mil\n\nÉ o juro composto ao contrário.\n\nVocê sabe quanto paga de taxa? 👇\n\nRendimento hipotético.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S030/JQE-S030_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 68203
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S030",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-19T16:10:00-03:00",
+   "text": "Uma taxa de 1% ao ano pode levar R$ 56 mil em 20 anos, mais que os R$ 50 mil investidos. Rendimento hipotético. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S030/JQE-S030_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 68203
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S031",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-20T12:00:00-03:00",
+   "text": "A: R$ 600 por mês a 0,8% ao mês. B: R$ 500 por mês a 1% ao mês (taxas ilustrativas).\n\nEm 5 anos: A tem R$ 46 mil, B tem R$ 41 mil.\nAs curvas se cruzam no mês 152 (12 anos e 8 meses).\nEm 30 anos: B chega a cerca de R$ 1,75 milhão; A, a R$ 1,25 milhão.\n\nNo começo, o aporte pesa mais; no longo prazo, a taxa.\n\nTaxas hipotéticas, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S031/JQE-S031.mp4",
+      "metadata": {
+       "title": "R$ 100 a mais por mês ou rendimento maior: qual vence?"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "R$ 100 a mais por mês ou rendimento maior: qual vence?",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S031",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-20T12:05:00-03:00",
+   "text": "R$ 100 a mais por mês ou um rendimento maior: qual vence?\n\n• 5 anos → quem aporta mais: R$ 46 mil × R$ 41 mil\n• mês 152 → as curvas se cruzam\n• 30 anos → quem rende mais: R$ 1,75 mi × R$ 1,25 mi\n\nNo começo, o aporte manda. Depois, a taxa.\n\nNo que você está focando agora? 👇\n\nTaxas hipotéticas.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S031/JQE-S031_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 71391
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S031",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-20T12:10:00-03:00",
+   "text": "R$ 100 a mais por mês ou um rendimento maior? Um ganha no começo, o outro no fim. As curvas se cruzam no mês 152. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S031/JQE-S031_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 71391
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "tiktok": {
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S032",
+  "canal": "yt",
+  "create_post": {
+   "channelId": "6af240c662b70b94b0d6dc1b",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-20T16:00:00-03:00",
+   "text": "A regra 50/30/20 divide o salário líquido: 50% essencial, 30% desejos, 20% futuro. O segredo é a ordem: os 20% saem primeiro.\n\nCom R$ 4.000: R$ 2.000 + R$ 1.200 + R$ 800.\nR$ 800 por mês a 0,8% ao mês (taxa ilustrativa) viram cerca de R$ 160 mil em 10 anos, com R$ 96 mil aportados.\n\nDá para adaptar: 60/20/20, 70/20/10.\n\nValores ilustrativos, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #organizacaofinanceira #dinheiro #investimentos #shorts",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S032/JQE-S032.mp4",
+      "metadata": {
+       "title": "Regra 50/30/20: o erro é investir o que sobra"
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "youtube": {
+     "title": "Regra 50/30/20: o erro é investir o que sobra",
+     "categoryId": "27",
+     "privacy": "public",
+     "isAiGenerated": true,
+     "madeForKids": false
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S032",
+  "canal": "ig",
+  "create_post": {
+   "channelId": "6af2406162b70b94b0d6d913",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-20T16:05:00-03:00",
+   "text": "50, 30, 20. O erro é investir o que sobra.\n\nCom R$ 4.000 líquidos:\n• 50% essencial → R$ 2.000\n• 30% desejos → R$ 1.200\n• 20% futuro → R$ 800, separados primeiro\n\nR$ 800 por mês viram uns R$ 160 mil em 10 anos.\n\nQuanto do seu salário vai para o futuro? 👇\n\nValores ilustrativos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #organizacaofinanceira #dinheiro #investimentos #financaspessoais",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S032/JQE-S032_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 68627
+      }
+     }
+    }
+   ],
+   "metadata": {
+    "instagram": {
+     "type": "reel",
+     "shouldShareToFeed": true,
+     "isAiGenerated": true
+    }
+   }
+  }
+ },
+ {
+  "episodio": "JQE-S032",
+  "canal": "tt",
+  "create_post": {
+   "channelId": "6af240ab62b70b94b0d6db65",
+   "schedulingType": "automatic",
+   "mode": "customScheduled",
+   "dueAt": "2026-11-20T16:10:00-03:00",
+   "text": "50, 30, 20: o erro é investir o que sobra. Com R$ 4.000, R$ 800 vão para o futuro primeiro. Valores ilustrativos. Narração por IA. #educacaofinanceira #organizacaofinanceira #dinheiro #investimentos",
+   "assets": [
+    {
+     "video": {
+      "url": "https://raw.githubusercontent.com/nasrgabrieldd-bit/juro-que-explico/main/episodios/JQE-S032/JQE-S032_ig.mp4",
+      "metadata": {
+       "thumbnailOffset": 68627
       }
      }
     }

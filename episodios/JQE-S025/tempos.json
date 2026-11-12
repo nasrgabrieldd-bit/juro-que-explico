@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 70.561,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.457,
+   "texto": "Um milhão de reais investidos rende quanto por mês? E quanto dá para gastar sem empobrecer?"
+  },
+  {
+   "id": "rende",
+   "inicio": 7.007,
+   "dur": 8.363,
+   "texto": "Com um rendimento ilustrativo de zero vírgula oito por cento ao mês, cerca de dez por cento ao ano, o milhão rende oito mil por mês."
+  },
+  {
+   "id": "detalhe",
+   "inicio": 15.82,
+   "dur": 5.613,
+   "texto": "Parece dar para gastar tudo. Mas tem um detalhe que quase ninguém coloca na conta."
+  },
+  {
+   "id": "inflacao",
+   "inicio": 21.883,
+   "dur": 9.069,
+   "texto": "A inflação. Com zero vírgula quatro por cento ao mês, uns cinco por cento ao ano, metade desses oito mil só repõe o poder de compra do milhão."
+  },
+  {
+   "id": "grafico",
+   "inicio": 31.403,
+   "dur": 9.261,
+   "texto": "Se você gasta os oito mil todo mês, o extrato continua mostrando um milhão. Mas, em dez anos, ele compra o que hoje compram uns seiscentos e vinte mil."
+  },
+  {
+   "id": "real",
+   "inicio": 41.114,
+   "dur": 10.435,
+   "texto": "A conta certa usa o ganho real: um vírgula zero zero oito, dividido por um vírgula zero zero quatro, menos um. Dá uns três mil novecentos e oitenta e quatro por mês."
+  },
+  {
+   "id": "regra",
+   "inicio": 51.999,
+   "dur": 7.829,
+   "texto": "Para viver de renda sem empobrecer: gaste só o ganho real, deixe a parte da inflação reinvestida e revise os números todo ano."
+  },
+  {
+   "id": "comenta",
+   "inicio": 60.278,
+   "dur": 8.06,
+   "texto": "Um milhão rendendo uns quatro mil de verdade por mês. Quanto você precisaria para viver de renda? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 68.788,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

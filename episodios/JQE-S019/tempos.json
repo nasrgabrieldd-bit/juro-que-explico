@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 67.509,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.971,
+   "texto": "Esperar cinco anos para investir pode custar duzentos e cinquenta mil reais."
+  },
+  {
+   "id": "pessoas",
+   "inicio": 5.521,
+   "dur": 10.696,
+   "texto": "Duas pessoas. Ana começa agora, com trezentos reais por mês. Bruno espera cinco anos e começa com os mesmos trezentos. Os dois param na mesma data."
+  },
+  {
+   "id": "bolso",
+   "inicio": 16.667,
+   "dur": 8.627,
+   "texto": "Do próprio bolso, a diferença é pequena. Ana coloca cento e oito mil. Bruno, noventa mil. Só dezoito mil a menos."
+  },
+  {
+   "id": "final",
+   "inicio": 25.743,
+   "dur": 10.416,
+   "texto": "Agora o saldo final, rendendo zero vírgula oito por cento ao mês. Ana chega a uns seiscentos e vinte e três mil. Bruno, a trezentos e setenta e dois mil."
+  },
+  {
+   "id": "diferenca",
+   "inicio": 36.609,
+   "dur": 7.725,
+   "texto": "São duzentos e cinquenta e um mil reais de diferença. Quase catorze vezes os dezoito mil que Bruno deixou de aportar."
+  },
+  {
+   "id": "porque",
+   "inicio": 44.785,
+   "dur": 7.043,
+   "texto": "O motivo: os primeiros aportes de Ana ficam trinta anos rendendo. São justamente os que Bruno não fez."
+  },
+  {
+   "id": "licao",
+   "inicio": 52.277,
+   "dur": 6.059,
+   "texto": "Por isso começar pequeno conta, o tempo pesa muito, e a constância vale mais que o valor do aporte."
+  },
+  {
+   "id": "comenta",
+   "inicio": 58.786,
+   "dur": 6.5,
+   "texto": "Se cinco anos valem duzentos e cinquenta mil, com quantos anos você começou? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 65.736,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 67.439,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.083,
+   "texto": "Mesmos cem mil, mesmos dividendos. Uma escolha deixa a sua renda quase cinco vezes maior."
+  },
+  {
+   "id": "exemplo",
+   "inicio": 6.633,
+   "dur": 8.408,
+   "texto": "O exemplo: cem mil reais pagando oito por cento ao ano em dividendos. São oito mil por ano, uns seiscentos e sessenta e sete por mês."
+  },
+  {
+   "id": "escolha",
+   "inicio": 15.491,
+   "dur": 5.355,
+   "texto": "A escolha: gastar tudo o que cai na conta, ou usar os dividendos para comprar mais cotas."
+  },
+  {
+   "id": "gastar",
+   "inicio": 21.295,
+   "dur": 8.067,
+   "texto": "Gastando, o patrimônio fica parado em cem mil. Em vinte anos você recebe cento e sessenta mil, mas a renda nunca cresce."
+  },
+  {
+   "id": "grafico",
+   "inicio": 29.812,
+   "dur": 9.155,
+   "texto": "Reinvestindo, cada dividendo compra cotas que pagam mais dividendos. Em vinte anos, os cem mil viram uns quatrocentos e sessenta e seis mil."
+  },
+  {
+   "id": "renda",
+   "inicio": 39.417,
+   "dur": 9.733,
+   "texto": "E a renda acompanha. No ano vinte, quem reinvestiu recebe uns três mil cento e sete por mês. Quem gastou segue nos seiscentos e sessenta e sete."
+  },
+  {
+   "id": "paciencia",
+   "inicio": 49.6,
+   "dur": 8.109,
+   "texto": "O detalhe: nos primeiros anos a diferença é pequena. Ela só explode depois de uma década, e é aí que muita gente desiste."
+  },
+  {
+   "id": "comenta",
+   "inicio": 58.159,
+   "dur": 7.057,
+   "texto": "Quase cinco vezes mais renda. Você reinveste ou gasta os seus dividendos? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 65.667,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

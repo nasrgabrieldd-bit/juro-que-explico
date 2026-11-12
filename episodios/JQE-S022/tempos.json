@@ -1,0 +1,67 @@
+{
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 68.316,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.827,
+   "texto": "Seu café de quinze reais por dia pode estar valendo noventa mil reais. Olha a conta."
+  },
+  {
+   "id": "tamanho",
+   "inicio": 6.377,
+   "dur": 5.421,
+   "texto": "Não é sobre o café. É sobre o tamanho de um hábito, uma conta que quase ninguém faz."
+  },
+  {
+   "id": "soma",
+   "inicio": 12.248,
+   "dur": 10.544,
+   "texto": "Quinze reais vezes trinta dias são quatrocentos e cinquenta por mês. Em um ano, cinco mil e quatrocentos. Em dez anos, cinquenta e quatro mil, sem render nada."
+  },
+  {
+   "id": "investido",
+   "inicio": 23.242,
+   "dur": 8.768,
+   "texto": "Agora, se esses quatrocentos e cinquenta fossem investidos todo mês, a zero vírgula oito por cento ao mês, em dez anos virariam uns noventa mil."
+  },
+  {
+   "id": "juros",
+   "inicio": 32.46,
+   "dur": 7.32,
+   "texto": "Cinquenta e quatro mil gastos, contra noventa mil investidos. Os trinta e seis mil de diferença são só juros."
+  },
+  {
+   "id": "outros",
+   "inicio": 40.23,
+   "dur": 6.381,
+   "texto": "Cinco reais por dia virariam uns trinta mil. Trinta reais por dia passariam de cento e oitenta mil."
+  },
+  {
+   "id": "assinaturas",
+   "inicio": 47.061,
+   "dur": 8.088,
+   "texto": "E vale para o que a gente nem lembra que paga. Uma assinatura de quarenta reais por mês soma quatro mil e oitocentos em dez anos."
+  },
+  {
+   "id": "licao",
+   "inicio": 55.599,
+   "dur": 5.613,
+   "texto": "Não é para cortar todo prazer. É escolher o que vale a pena e deixar o resto render."
+  },
+  {
+   "id": "comenta",
+   "inicio": 61.663,
+   "dur": 4.431,
+   "texto": "Qual é o seu hábito de quinze reais por dia? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 66.543,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}
