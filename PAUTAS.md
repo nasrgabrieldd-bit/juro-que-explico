@@ -27,6 +27,8 @@ A rotina diária pega a primeira pauta da fila, produz, move para "Publicadas" c
 
 Substituídos (12/11/2026, pedido do fundador: refazer com voz nova, margem de segurança, gancho de curiosidade e capa): JQE-S004 a S016 e JQE-L001-P1..P3 não vão ao ar; os temas foram refeitos como S017–S032. O vídeo longo JQE-L001 (YouTube BWivb-y51zk) aparece como excluído no canal desde 12/11; não foi reenviado até o fundador confirmar o que houve.
 
+Aviso de lote enviado em 13/11 para o estoque até 20/11 (S019 a S032 agendados ou em agenda_pendente.json; 7 dias).
+
 ## Fila (evergreen, baixo risco) — prioridade: investir, juros compostos e dividendos (pedido do fundador, 09/11)
 
 ### Ciclo 26/11–10/12/2026 (relatório quinzenal de 10/11; justificativas em relatorios/2026-11-10.md)
