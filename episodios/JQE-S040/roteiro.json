@@ -1,0 +1,167 @@
+{
+ "id": "JQE-S040",
+ "titulo": "3 erros de quem está começando a investir",
+ "formato": "vertical 9:16",
+ "pilar": "Comportamento",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "erro comum",
+ "formato_narrativo": "lista + personagens (loop)",
+ "nota_tela": "Exemplo ilustrativo · valores hipotéticos, sem citar investimento",
+ "parametros": {
+  "perda": 8
+ },
+ "calculos": {
+  "saldo": "100 - perda",
+  "ano": "(1.1 ** 12 - 1) * 100"
+ },
+ "numeros_livres": [
+  10,
+  100,
+  92,
+  200
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Conceitos gerais de finanças comportamentais e planejamento",
+  "10% ao mês composto por 12 meses: (1,10^12 − 1) × 100 ≈ 214%",
+  "Exemplo ilustrativo"
+ ],
+ "capa": {
+  "linha1": "3 erros de quem",
+  "linha2": "está começando",
+  "destaque": "a investir"
+ },
+ "ganchos_alternativos": [
+  "Três erros atrapalham quem está começando a investir.",
+  "Os 3 erros que mais assustam quem começa."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Três erros atrapalham quem está começando a investir.",
+   "leg": "Três erros atrapalham quem está começando a investir.",
+   "dados": {
+    "valor": "3 erros",
+    "linhas": [
+     "atrapalham quem está",
+     "começando a investir"
+    ]
+   }
+  },
+  {
+   "id": "leo",
+   "tipo": "personagem_queda",
+   "tts": "Todo mundo já sentiu isso. O primeiro: vender no susto. O Léo colocou cem reais, olhou o saldo e viu oito reais a menos. Entrou em pânico e vendeu. Só que oscilar faz parte, e vender na queda transforma a oscilação em prejuízo de verdade.",
+   "leg": "Todo mundo já sentiu isso. O primeiro: vender no susto. O Léo colocou R$ 100, olhou o saldo e viu R$ 8 a menos. Entrou em pânico e vendeu. Só que oscilar faz parte, e vender na queda transforma a oscilação em prejuízo de verdade.",
+   "dados": {
+    "antes": 100,
+    "depois": 92,
+    "fala_antes": "Meus R$ 100!",
+    "fala_depois": "Caiu... vendo tudo!",
+    "badge": "−8%"
+   }
+  },
+  {
+   "id": "promessa",
+   "tipo": "versus",
+   "tts": "O segundo: acreditar em ganho fácil. Esse golpe é antigo e funciona porque dá esperança. Se alguém garante dez por cento ao mês, está prometendo mais de duzentos por cento ao ano. Papo reto: se parece bom demais, desconfie.",
+   "leg": "O segundo: acreditar em ganho fácil. Esse golpe é antigo e funciona porque dá esperança. Se alguém garante 10% ao mês, está prometendo mais de 200% ao ano. Papo reto: se parece bom demais, desconfie.",
+   "dados": {
+    "a": "10% ao mês",
+    "b": "214% ao ano",
+    "rotulo_a": "a promessa",
+    "rotulo_b": "a conta",
+    "centro": "desconfie"
+   }
+  },
+  {
+   "id": "reserva",
+   "tipo": "fluxo_setas",
+   "tts": "O terceiro: investir sem ter reserva. Aí vem um imprevisto, o carro quebra, a geladeira pifa, e você precisa tirar o dinheiro justo no dia em que ele está valendo menos. A reserva existe pra isso.",
+   "leg": "O terceiro: investir sem ter reserva. Aí vem um imprevisto, o carro quebra, a geladeira pifa, e você precisa tirar o dinheiro justo no dia em que ele está valendo menos. A reserva existe pra isso.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "sem reserva",
+      "tom": "neutro"
+     },
+     {
+      "texto": "vem o imprevisto",
+      "tom": "cinza"
+     },
+     {
+      "texto": "vende no prejuízo",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "e então",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "no dia ruim",
+      "tom": "erro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "plano",
+   "tipo": "titulo",
+   "tts": "A boa notícia: todos esses erros têm cura, e ela se chama plano. Escreva, antes de a queda chegar, o que você vai fazer se ela vier. Quem já decidiu antes não decide no desespero.",
+   "leg": "A boa notícia: todos esses erros têm cura, e ela se chama plano. Escreva, antes de a queda chegar, o que você vai fazer se ela vier. Quem já decidiu antes não decide no desespero.",
+   "dados": {
+    "titulo": [
+     "Plano escrito",
+     "antes da queda"
+    ],
+    "subtitulo": "decidir com calma vale mais que decidir com medo"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Então guarda: não venda no susto, desconfie de ganho fácil e monte uma reserva antes de investir. Ninguém acerta tudo, mas esses três evitam muita dor de cabeça.",
+   "leg": "Então guarda: não venda no susto, desconfie de ganho fácil e monte uma reserva antes de investir. Ninguém acerta tudo, mas esses três evitam muita dor de cabeça.",
+   "dados": {
+    "titulo": [
+     "Para lembrar"
+    ],
+    "itens": [
+     "não venda no susto",
+     "desconfie de ganho fácil",
+     "reserva antes de investir"
+    ]
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "numero_grande",
+   "tts": "Então, antes de colocar o primeiro real, guarda isso:",
+   "leg": "Então, antes de colocar o primeiro real, guarda isso:",
+   "dados": {
+    "valor": "3 erros",
+    "linhas": [
+     "atrapalham quem está",
+     "começando a investir"
+    ]
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "3 erros de quem está começando a investir",
+   "texto": "Três erros atrapalham quem está começando a investir.\n\n1. Vender no susto da primeira queda\n2. Acreditar em ganho fácil (10% ao mês = 214% ao ano)\n3. Investir sem ter reserva\nPlano escrito antes da queda ajuda a decidir com calma.\n\nExemplo ilustrativo. Não é recomendação de investimento.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #comecar #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Três erros atrapalham quem está começando a investir.\n\n• 1. Vender no susto da primeira queda\n• 2. Acreditar em ganho fácil (10% ao mês = 214% ao ano)\n• 3. Investir sem ter reserva\n• Plano escrito antes da queda ajuda a decidir com calma.\n\nQual desses erros você já cometeu? 👇\n\nExemplo ilustrativo. Não é recomendação de investimento.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #comecar #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "3 erros de quem está começando a investir. O Léo já cometeu os três. Exemplo ilustrativo. Não é recomendação de investimento. Narração por IA. #educacaofinanceira #investimentos #comecar #dinheiro"
+  }
+ },
+ "loop": true
+}

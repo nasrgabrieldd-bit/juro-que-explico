@@ -1,0 +1,168 @@
+{
+ "id": "JQE-S034",
+ "titulo": "3 perguntas antes de escolher onde investir",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "erro comum",
+ "formato_narrativo": "passo a passo (conselho de amigo)",
+ "nota_tela": "Conteúdo educativo · exemplo ilustrativo, sem citar investimento",
+ "parametros": {
+  "valor": 1000,
+  "queda_pct": 0.1
+ },
+ "calculos": {
+  "queda": "1000 * (1 - 0.1)"
+ },
+ "numeros_livres": [
+  3,
+  20
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Conceitos gerais de planejamento financeiro (objetivo, prazo e tolerância a risco)",
+  "Exemplo ilustrativo: R$ 1.000 − 10% = R$ 900"
+ ],
+ "capa": {
+  "linha1": "3 perguntas antes",
+  "linha2": "de investir",
+  "destaque": "objetivo · prazo · risco"
+ },
+ "ganchos_alternativos": [
+  "3 perguntas antes de escolher onde investir.",
+  "Antes de escolher o investimento, responda isto."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Quase todo mundo escolhe onde investir antes de responder três perguntas. Papo reto: isso dá dor de cabeça.",
+   "leg": "Quase todo mundo escolhe onde investir antes de responder três perguntas. Papo reto: isso dá dor de cabeça.",
+   "dados": {
+    "valor": "3",
+    "linhas": [
+     "perguntas antes de",
+     "escolher onde investir"
+    ]
+   }
+  },
+  {
+   "id": "p1",
+   "tipo": "titulo",
+   "tts": "A primeira: pra quê é esse dinheiro? Viagem, reserva, casa, aposentadoria. Sem objetivo, qualquer investimento parece bom, e a gente acaba escolhendo pelo que o amigo falou. Cada objetivo pede um tipo de investimento diferente.",
+   "leg": "A primeira: pra quê é esse dinheiro? Viagem, reserva, casa, aposentadoria. Sem objetivo, qualquer investimento parece bom, e a gente acaba escolhendo pelo que o amigo falou. Cada objetivo pede um tipo de investimento diferente.",
+   "dados": {
+    "titulo": [
+     "1. Pra quê",
+     "é esse dinheiro?"
+    ],
+    "subtitulo": "viagem · reserva · casa · aposentadoria"
+   }
+  },
+  {
+   "id": "p2",
+   "tipo": "versus",
+   "tts": "A segunda: quando você vai precisar dele? Se é em seis meses, o dinheiro não pode ficar balançando, porque você pode precisar tirar justo num dia ruim. Se é em vinte anos, dá tempo de passar por altos e baixos.",
+   "leg": "A segunda: quando você vai precisar dele? Se é em seis meses, o dinheiro não pode ficar balançando, porque você pode precisar tirar justo num dia ruim. Se é em vinte anos, dá tempo de passar por altos e baixos.",
+   "dados": {
+    "a": "6 meses",
+    "b": "20 anos",
+    "rotulo_a": "precisa de segurança",
+    "rotulo_b": "aguenta oscilar",
+    "centro": "prazo"
+   }
+  },
+  {
+   "id": "p3",
+   "tipo": "formula",
+   "tts": "A terceira: você dorme bem se o saldo cair? Imagina mil reais virando novecentos. Se isso tira o seu sono, tudo bem: é só um sinal para escolher um risco menor.",
+   "leg": "Imagina R$ 1.000 virando R$ 900. Se isso tira o seu sono, tudo bem: é só um sinal para escolher um risco menor.",
+   "dados": {
+    "titulo": "O teste do sono",
+    "linha1": "R$ 1.000 − 10%",
+    "resultado": "R$ 900",
+    "nota": "você aguentaria?"
+   }
+  },
+  {
+   "id": "resumo",
+   "tipo": "fluxo_setas",
+   "tts": "Objetivo, prazo e risco, nessa ordem. Depois disso, a escolha do investimento fica bem mais fácil, e você para de se comparar com o resultado dos outros. Não existe o investimento perfeito, existe o que combina com você.",
+   "leg": "Objetivo, prazo e risco, nessa ordem. Depois disso, a escolha do investimento fica bem mais fácil, e você para de se comparar com o resultado dos outros. Não existe o investimento perfeito, existe o que combina com você.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "Objetivo",
+      "tom": "neutro"
+     },
+     {
+      "texto": "Prazo",
+      "tom": "cinza"
+     },
+     {
+      "texto": "Risco",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "define",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "define",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "hoje",
+   "tipo": "lista",
+   "tts": "Então faz hoje: escreve o objetivo, define o prazo dele e vê que risco você aguenta. Leva dez minutos e evita muito arrependimento.",
+   "leg": "Então faz hoje: escreve o objetivo, define o prazo dele e vê que risco você aguenta. Leva dez minutos e evita muito arrependimento.",
+   "dados": {
+    "titulo": [
+     "Faça hoje"
+    ],
+    "itens": [
+     "escreva o seu objetivo",
+     "defina o prazo dele",
+     "veja o risco que aguenta"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Qual é o seu objetivo agora? Conta aqui nos comentários.",
+   "leg": "Qual é o seu objetivo agora? Conta aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Qual é o seu",
+     "objetivo agora?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "3 perguntas antes de escolher onde investir",
+   "texto": "Quase todo mundo escolhe onde investir antes de responder 3 perguntas.\n\n1. Pra quê é esse dinheiro?\n2. Quando você vai precisar dele?\n3. Você dorme bem se o saldo cair?\nObjetivo, prazo e risco: nessa ordem.\n\nExemplo ilustrativo. Não é recomendação de investimento.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #comecar #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Quase todo mundo escolhe onde investir antes de responder 3 perguntas.\n\n• 1. Pra quê é esse dinheiro?\n• 2. Quando você vai precisar dele?\n• 3. Você dorme bem se o saldo cair?\n• Objetivo, prazo e risco: nessa ordem.\n\nQual é o seu objetivo agora? 👇\n\nExemplo ilustrativo. Não é recomendação de investimento.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #comecar #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "3 perguntas antes de escolher onde investir: objetivo, prazo e risco. Exemplo ilustrativo. Não é recomendação de investimento. Narração por IA. #educacaofinanceira #investimentos #comecar #dinheiro"
+  }
+ }
+}

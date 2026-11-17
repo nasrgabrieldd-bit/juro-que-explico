@@ -1,0 +1,50 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 76.845,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 3.456,
+   "texto": "Três erros atrapalham quem está começando a investir."
+  },
+  {
+   "id": "leo",
+   "inicio": 4.006,
+   "dur": 16.693,
+   "texto": "Todo mundo já sentiu isso. O primeiro: vender no susto. O Léo colocou cem reais, olhou o saldo e viu oito reais a menos. Entrou em pânico e vendeu. Só que oscilar faz parte, e vender na queda transforma a oscilação em prejuízo de verdade."
+  },
+  {
+   "id": "promessa",
+   "inicio": 21.149,
+   "dur": 14.877,
+   "texto": "O segundo: acreditar em ganho fácil. Esse golpe é antigo e funciona porque dá esperança. Se alguém garante dez por cento ao mês, está prometendo mais de duzentos por cento ao ano. Papo reto: se parece bom demais, desconfie."
+  },
+  {
+   "id": "reserva",
+   "inicio": 36.477,
+   "dur": 13.232,
+   "texto": "O terceiro: investir sem ter reserva. Aí vem um imprevisto, o carro quebra, a geladeira pifa, e você precisa tirar o dinheiro justo no dia em que ele está valendo menos. A reserva existe pra isso."
+  },
+  {
+   "id": "plano",
+   "inicio": 50.159,
+   "dur": 11.824,
+   "texto": "A boa notícia: todos esses erros têm cura, e ela se chama plano. Escreva, antes de a queda chegar, o que você vai fazer se ela vier. Quem já decidiu antes não decide no desespero."
+  },
+  {
+   "id": "lista",
+   "inicio": 62.433,
+   "dur": 10.563,
+   "texto": "Então guarda: não venda no susto, desconfie de ganho fácil e monte uma reserva antes de investir. Ninguém acerta tudo, mas esses três evitam muita dor de cabeça."
+  },
+  {
+   "id": "volta",
+   "inicio": 73.445,
+   "dur": 3.349,
+   "texto": "Então, antes de colocar o primeiro real, guarda isso:"
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "id": "JQE-S039",
+ "titulo": "Inflação: 5% + 5% não é 10%",
+ "formato": "vertical 9:16",
+ "pilar": "Inflação",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "contradição",
+ "formato_narrativo": "passo a passo + setas",
+ "nota_tela": "Exemplo ilustrativo · inflação hipotética e constante de 5% ao ano",
+ "parametros": {
+  "fator": 1.05,
+  "inflacao": 0.05
+ },
+ "calculos": {
+  "acum2": "(fator ** 2 - 1) * 100",
+  "acum1": "(fator - 1) * 100",
+  "a5": "(fator ** 5 - 1) * 100",
+  "a10": "(fator ** 10 - 1) * 100",
+  "p1": "100 * fator",
+  "p2": "100 * fator ** 2",
+  "f2": "fator * fator"
+ },
+ "numeros_livres": [
+  10,
+  100
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: inflação acumulada = (1 + i)^n − 1",
+  "Exemplo ilustrativo, taxa hipotética"
+ ],
+ "capa": {
+  "linha1": "5% + 5%",
+  "linha2": "não é 10%",
+  "destaque": "a conta da inflação"
+ },
+ "ganchos_alternativos": [
+  "Dois anos de inflação de 5% não somam 10%.",
+  "Inflação acumulada: por que soma não funciona."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Dois anos de inflação de cinco por cento não somam dez. Somam mais.",
+   "leg": "Dois anos de inflação de cinco por cento não somam dez. Somam mais.",
+   "dados": {
+    "valor": "10,25%",
+    "linhas": [
+     "não são 10%:",
+     "a conta fecha"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Pensa comigo. Uma coisa custa cem reais hoje. Com cinco por cento de inflação, no ano seguinte ela custa cento e cinco. No outro ano, mais cinco por cento, mas agora em cima dos cento e cinco. Dá cento e dez reais e vinte e cinco centavos.",
+   "leg": "Pensa comigo. Uma coisa custa R$ 100 hoje. Com 5% de inflação, no ano seguinte ela custa R$ 105. No outro ano, mais 5%, mas agora em cima dos R$ 105. Dá R$ 110,25.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "hoje: R$ 100",
+      "tom": "neutro"
+     },
+     {
+      "texto": "ano 1: R$ 105,00",
+      "tom": "cinza"
+     },
+     {
+      "texto": "ano 2: R$ 110,25",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "+5%",
+      "tom": "erro"
+     },
+     {
+      "rotulo": "+5% sobre R$ 105",
+      "tom": "erro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "formula",
+   "tipo": "formula",
+   "tts": "A conta é multiplicar, não somar. Um vírgula zero cinco vezes um vírgula zero cinco dá um vírgula um zero dois cinco. Ou seja, dez vírgula vinte e cinco por cento.",
+   "leg": "A conta é multiplicar, não somar. 1,05 × 1,05 = 1,1025. Ou seja, 10,25%.",
+   "dados": {
+    "titulo": "Multiplica, não soma",
+    "linha1": "1,05 × 1,05",
+    "resultado": "1,1",
+    "nota": "= +10,25%"
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "E o efeito vai crescendo. Em cinco anos, a inflação acumulada passa de vinte e oito por cento. Em dez anos, chega perto de sessenta e três por cento. Por isso o preço das coisas parece sempre subir mais do que a gente lembra.",
+   "leg": "E o efeito vai crescendo. Em cinco anos, a inflação acumulada passa de 28%. Em dez anos, chega perto de 63%. Por isso o preço das coisas parece sempre subir mais do que a gente lembra.",
+   "dados": {
+    "titulo": [
+     "Inflação acumulada",
+     "com 5% ao ano"
+    ],
+    "itens": [
+     {
+      "rotulo": "1 ano",
+      "valor": 5.000000000000004,
+      "texto": "5%"
+     },
+     {
+      "rotulo": "2 anos",
+      "valor": 10.250000000000004,
+      "texto": "10,25%"
+     },
+     {
+      "rotulo": "5 anos",
+      "valor": 27.628156250000035,
+      "texto": "28%"
+     },
+     {
+      "rotulo": "10 anos",
+      "valor": 62.8894626777442,
+      "texto": "63%",
+      "destaque": true
+     }
+    ],
+    "nota": "inflação hipotética e constante"
+   }
+  },
+  {
+   "id": "porque",
+   "tipo": "titulo",
+   "tts": "Por que isso importa? Porque o seu salário e o seu dinheiro guardado precisam acompanhar essa conta, e não a soma simples. Se o reajuste ou o rendimento ficar abaixo da inflação, você perde poder de compra sem perceber.",
+   "leg": "Por que isso importa? Porque o seu salário e o seu dinheiro guardado precisam acompanhar essa conta, e não a soma simples. Se o reajuste ou o rendimento ficar abaixo da inflação, você perde poder de compra sem perceber.",
+   "dados": {
+    "titulo": [
+     "Salário e dinheiro",
+     "precisam acompanhar"
+    ],
+    "subtitulo": "senão, o poder de compra cai sem aviso"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Três atitudes ajudam: olhar a inflação acumulada, comparar com o seu reajuste e comparar com o rendimento do que você guarda.",
+   "leg": "Três atitudes ajudam: olhar a inflação acumulada, comparar com o seu reajuste e comparar com o rendimento do que você guarda.",
+   "dados": {
+    "titulo": [
+     "Três atitudes"
+    ],
+    "itens": [
+     "veja a inflação acumulada",
+     "compare com o seu reajuste",
+     "compare com o rendimento"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Seu último reajuste passou da inflação? Conta aqui nos comentários.",
+   "leg": "Seu último reajuste passou da inflação? Conta aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Seu reajuste passou",
+     "da inflação?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Inflação: 5% + 5% não é 10% (a conta)",
+   "texto": "Dois anos de inflação de 5% não somam 10%. Somam 10,25%.\n\nR$ 100 → R$ 105,00 → R$ 110,25\n5 anos → 28% acumulados\n10 anos → 63% acumulados\nA conta é multiplicar, não somar.\n\nExemplo ilustrativo, inflação hipotética e constante de 5% ao ano.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #inflacao #economia #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Dois anos de inflação de 5% não somam 10%. Somam 10,25%.\n\n• R$ 100 → R$ 105,00 → R$ 110,25\n• 5 anos → 28% acumulados\n• 10 anos → 63% acumulados\n• A conta é multiplicar, não somar.\n\nSeu último reajuste passou da inflação? 👇\n\nExemplo ilustrativo, inflação hipotética e constante de 5% ao ano.\n\nNarração gerada por IA.\n\n#educacaofinanceira #inflacao #economia #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Dois anos de inflação de 5% somam 10,25%, não 10%. Entenda a conta. Exemplo ilustrativo, inflação hipotética e constante de 5% ao ano. Narração por IA. #educacaofinanceira #inflacao #economia #dinheiro"
+  }
+ }
+}

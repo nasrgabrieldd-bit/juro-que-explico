@@ -27,9 +27,10 @@ def ok(cond, msg):
 SEGURO = {k: getattr(math, k) for k in ("log", "log10", "exp", "sqrt", "floor", "ceil")}
 SEGURO.update({"round": round, "min": min, "max": max, "abs": abs})
 calc = {}
+PAR = {k: v for k, v in rot.get("parametros", {}).items() if isinstance(v, (int, float))}  # parâmetros declarados entram nas contas
 for nome, expr in rot.get("calculos", {}).items():
     ok(re.fullmatch(r"[\w\s\.\+\-\*/\(\),%]+", expr) is not None, f"expressão segura: {nome}")
-    calc[nome] = eval(expr, {"__builtins__": {}}, {**SEGURO, **calc})
+    calc[nome] = eval(expr, {"__builtins__": {}}, {**SEGURO, **PAR, **calc})
     print(f"      {nome} = {calc[nome]:.4f}")
 
 permitidos = list(calc.values())

@@ -1,0 +1,50 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 67.538,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.224,
+   "texto": "Seis mil reais uma vez por ano ou quinhentos todo mês: qual rende mais?"
+  },
+  {
+   "id": "mesmo",
+   "inicio": 4.774,
+   "dur": 11.035,
+   "texto": "Em dez anos, nos dois jeitos, você coloca a mesma coisa: sessenta mil reais. Seis mil por ano é igual a quinhentos por mês. A única diferença é quando o dinheiro entra."
+  },
+  {
+   "id": "duo",
+   "inicio": 16.259,
+   "dur": 11.891,
+   "texto": "Olha o Léo e a Bia. O Léo deixa o dinheiro na gaveta e investe tudo no fim do ano, quando cai o décimo terceiro. A Bia investe quinhentos reais todo mês. Quem chega na frente?"
+  },
+  {
+   "id": "barras",
+   "inicio": 28.599,
+   "dur": 12.269,
+   "texto": "A Bia, mas por pouco: cem mil reais contra noventa e seis mil reais, porque o dinheiro dela começa a render mais cedo. E se o Léo investisse os seis mil em janeiro, ele ganharia: cento e cinco mil reais."
+  },
+  {
+   "id": "moral",
+   "inicio": 41.319,
+   "dur": 13.725,
+   "texto": "Ou seja, não existe jeito certo. Existe o que você consegue manter. Quem guarda todo mês cria um hábito e não depende de sobrar dinheiro no fim do ano. Quanto antes o dinheiro entra, mais ele trabalha."
+  },
+  {
+   "id": "lista",
+   "inicio": 55.494,
+   "dur": 8.536,
+   "texto": "Resumindo: invista assim que o dinheiro entrar, escolha um ritmo que caiba no bolso e mantenha por anos. Sem pressa e sem promessa de ganho."
+  },
+  {
+   "id": "volta",
+   "inicio": 64.48,
+   "dur": 3.008,
+   "texto": "E quando bater a dúvida de como guardar, pergunta:"
+  }
+ ]
+}

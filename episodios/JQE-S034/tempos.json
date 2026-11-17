@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 80.217,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 7.256,
+   "texto": "Quase todo mundo escolhe onde investir antes de responder três perguntas. Papo reto: isso dá dor de cabeça."
+  },
+  {
+   "id": "p1",
+   "inicio": 7.806,
+   "dur": 15.785,
+   "texto": "A primeira: pra quê é esse dinheiro? Viagem, reserva, casa, aposentadoria. Sem objetivo, qualquer investimento parece bom, e a gente acaba escolhendo pelo que o amigo falou. Cada objetivo pede um tipo de investimento diferente."
+  },
+  {
+   "id": "p2",
+   "inicio": 24.041,
+   "dur": 13.948,
+   "texto": "A segunda: quando você vai precisar dele? Se é em seis meses, o dinheiro não pode ficar balançando, porque você pode precisar tirar justo num dia ruim. Se é em vinte anos, dá tempo de passar por altos e baixos."
+  },
+  {
+   "id": "p3",
+   "inicio": 38.439,
+   "dur": 10.748,
+   "texto": "A terceira: você dorme bem se o saldo cair? Imagina mil reais virando novecentos. Se isso tira o seu sono, tudo bem: é só um sinal para escolher um risco menor."
+  },
+  {
+   "id": "resumo",
+   "inicio": 49.637,
+   "dur": 14.619,
+   "texto": "Objetivo, prazo e risco, nessa ordem. Depois disso, a escolha do investimento fica bem mais fácil, e você para de se comparar com o resultado dos outros. Não existe o investimento perfeito, existe o que combina com você."
+  },
+  {
+   "id": "hoje",
+   "inicio": 64.706,
+   "dur": 8.515,
+   "texto": "Então faz hoje: escreve o objetivo, define o prazo dele e vê que risco você aguenta. Leva dez minutos e evita muito arrependimento."
+  },
+  {
+   "id": "cta",
+   "inicio": 73.671,
+   "dur": 4.324,
+   "texto": "Qual é o seu objetivo agora? Conta aqui nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 78.445,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

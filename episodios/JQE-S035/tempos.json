@@ -1,0 +1,50 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 73.162,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.845,
+   "texto": "Dá para começar a investir com trinta reais por mês. Sem enrolação."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 5.395,
+   "dur": 12.893,
+   "texto": "Eu sei: trinta reais parece pouco. Mas olha. Trinta reais por mês, durante dez anos, são só três mil e seiscentos reais saindo do seu bolso. Com os juros hipotéticos, viram seis mil reais."
+  },
+  {
+   "id": "barras",
+   "inicio": 18.739,
+   "dur": 12.125,
+   "texto": "E o tempo faz o resto. Em dez anos, seis mil reais. Em vinte, vinte e dois mil reais. Em trinta anos, sessenta e dois mil reais, sempre com os mesmos trinta reais por mês."
+  },
+  {
+   "id": "duo",
+   "inicio": 31.314,
+   "dur": 15.011,
+   "texto": "Olha a Bia e o Léo. O Léo disse: vou esperar sobrar mais dinheiro pra começar. Só que sempre aparece uma conta nova. A Bia começou com trinta reais. Dez anos depois, um tem zero. A outra tem seis mil reais."
+  },
+  {
+   "id": "habito",
+   "inicio": 46.775,
+   "dur": 12.08,
+   "texto": "O valor é o de menos. O que pesa é o hábito: guardar todo mês, sem falhar, mesmo nos meses apertados. Depois, quando der, você aumenta, e ninguém precisa saber o quanto você guarda."
+  },
+  {
+   "id": "passos",
+   "inicio": 59.305,
+   "dur": 8.899,
+   "texto": "O primeiro passo é simples: escolhe um valor que não aperta, programa pra sair todo mês e aumenta quando puder. Sem promessa de ganho, só método."
+  },
+  {
+   "id": "volta",
+   "inicio": 68.653,
+   "dur": 4.459,
+   "texto": "Então, se alguém disser que precisa de muito dinheiro pra começar, lembra:"
+  }
+ ]
+}

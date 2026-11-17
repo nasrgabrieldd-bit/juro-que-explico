@@ -1,0 +1,304 @@
+{
+ "id": "JQE-S037",
+ "titulo": "Dívida a 10% ao mês dobra em menos de 8 meses",
+ "formato": "vertical 9:16",
+ "pilar": "Dívidas",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "custo escondido",
+ "formato_narrativo": "explicador + setas",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética de 10% ao mês, sem tarifas",
+ "parametros": {
+  "divida": 1000,
+  "taxa": 0.1
+ },
+ "calculos": {
+  "m4": "divida * (1 + taxa) ** 4",
+  "m8": "divida * (1 + taxa) ** 8",
+  "m7": "divida * (1 + taxa) ** 7",
+  "m12": "divida * (1 + taxa) ** 12",
+  "simples12": "divida * (1 + taxa * 12)",
+  "regra72": "72 / 10",
+  "m12_mil": "m12 / 1000"
+ },
+ "numeros_livres": [
+  72
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: M = P × (1 + i)^n",
+  "Regra dos 72: tempo ≈ 72 ÷ taxa (%)",
+  "Exemplo ilustrativo, taxa hipotética"
+ ],
+ "capa": {
+  "linha1": "Dívida a 10%",
+  "linha2": "ao mês dobra",
+  "destaque": "em menos de 8 meses"
+ },
+ "ganchos_alternativos": [
+  "Mil reais de dívida a 10% ao mês passam de dois mil em oito meses.",
+  "Quanto uma dívida cresce em um ano?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Mil reais de dívida a dez por cento ao mês dobram em menos de oito meses.",
+   "leg": "Mil reais de dívida a dez por cento ao mês dobram em menos de oito meses.",
+   "dados": {
+    "de": "R$ 1.000",
+    "valor": "R$ 2.000",
+    "linhas": [
+     "em menos de",
+     "8 meses"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Sem julgamento: acontece com muita gente. É que os juros incidem sobre os juros. No quarto mês, a dívida já é mil e quatrocentos e sessenta e quatro reais. No oitavo, dois mil e cento e quarenta e quatro reais.",
+   "leg": "Sem julgamento: acontece com muita gente. É que os juros incidem sobre os juros. No quarto mês, a dívida já é R$ 1.464. No oitavo, R$ 2.144.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "hoje: R$ 1.000",
+      "tom": "neutro"
+     },
+     {
+      "texto": "mês 4: R$ 1.464",
+      "tom": "cinza"
+     },
+     {
+      "texto": "mês 8: R$ 2.144",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "+10% ao mês",
+      "tom": "erro"
+     },
+     {
+      "rotulo": "+10% ao mês",
+      "tom": "erro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "linhas",
+   "tipo": "linhas",
+   "tts": "Olha a curva. A linha reta seria se os juros incidissem só sobre os mil reais iniciais. Mas eles incidem sobre tudo o que já foi somado, e em um ano a dívida passa de três mil reais. É por isso que ela foge do controle.",
+   "leg": "Olha a curva. A linha reta seria se os juros incidissem só sobre os mil reais iniciais. Mas eles incidem sobre tudo o que já foi somado, e em um ano a dívida passa de R$ 3 mil. É por isso que ela foge do controle.",
+   "dados": {
+    "titulo": "Dívida de R$ 1.000 a 10% ao mês",
+    "x_rotulo": "meses",
+    "x_ticks": [
+     0,
+     4,
+     8,
+     12
+    ],
+    "ymax": 3400,
+    "ymin": 0,
+    "y_passo": 1000,
+    "y_fmt": "brl",
+    "series": [
+     {
+      "nome": "juros simples",
+      "pontos": [
+       [
+        0,
+        1000.0
+       ],
+       [
+        1,
+        1100.0
+       ],
+       [
+        2,
+        1200.0
+       ],
+       [
+        3,
+        1300.0
+       ],
+       [
+        4,
+        1400.0
+       ],
+       [
+        5,
+        1500.0
+       ],
+       [
+        6,
+        1600.0
+       ],
+       [
+        7,
+        1700.0
+       ],
+       [
+        8,
+        1800.0
+       ],
+       [
+        9,
+        1900.0
+       ],
+       [
+        10,
+        2000.0
+       ],
+       [
+        11,
+        2100.0
+       ],
+       [
+        12,
+        2200.0
+       ]
+      ],
+      "velocidade": 0.8,
+      "inicio": 0.2
+     },
+     {
+      "nome": "juros compostos",
+      "destaque": true,
+      "pontos": [
+       [
+        0,
+        1000.0
+       ],
+       [
+        1,
+        1100.0
+       ],
+       [
+        2,
+        1210.0
+       ],
+       [
+        3,
+        1331.0
+       ],
+       [
+        4,
+        1464.1
+       ],
+       [
+        5,
+        1610.51
+       ],
+       [
+        6,
+        1771.56
+       ],
+       [
+        7,
+        1948.72
+       ],
+       [
+        8,
+        2143.59
+       ],
+       [
+        9,
+        2357.95
+       ],
+       [
+        10,
+        2593.74
+       ],
+       [
+        11,
+        2853.12
+       ],
+       [
+        12,
+        3138.43
+       ]
+      ],
+      "velocidade": 0.8,
+      "inicio": 0.4,
+      "rotulo_final": "R$ 3 mil"
+     }
+    ]
+   }
+  },
+  {
+   "id": "regra",
+   "tipo": "formula",
+   "tts": "E tem um atalho de cabeça: divide setenta e dois pela taxa. Setenta e dois dividido por dez dá sete vírgula dois meses pra dívida dobrar.",
+   "leg": "E tem um atalho de cabeça: divide 72 pela taxa. 72 ÷ 10 = 7,2 meses pra dívida dobrar.",
+   "dados": {
+    "titulo": "A regra dos 72",
+    "linha1": "72 ÷ 10",
+    "resultado": "7,2 meses",
+    "nota": "tempo para a dívida dobrar"
+   }
+  },
+  {
+   "id": "sem_julgar",
+   "tipo": "titulo",
+   "tts": "A boa notícia: quanto antes você mexe, menor o estrago. Conversar com o credor e trocar a dívida cara por uma mais barata pode parar essa curva.",
+   "leg": "A boa notícia: quanto antes você mexe, menor o estrago. Conversar com o credor e trocar a dívida cara por uma mais barata pode parar essa curva.",
+   "dados": {
+    "titulo": [
+     "Quanto antes,",
+     "menor o estrago"
+    ],
+    "subtitulo": "conversar com o credor já ajuda"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Três coisas ajudam: negociar a taxa, trocar a dívida cara por uma mais barata e evitar pagar só o mínimo, que deixa os juros crescerem.",
+   "leg": "Três coisas ajudam: negociar a taxa, trocar a dívida cara por uma mais barata e evitar pagar só o mínimo, que deixa os juros crescerem.",
+   "dados": {
+    "titulo": [
+     "O que ajuda"
+    ],
+    "itens": [
+     "negociar a taxa",
+     "trocar por dívida mais barata",
+     "evitar pagar só o mínimo"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Já passou por isso? Conta nos comentários, sem vergonha.",
+   "leg": "Já passou por isso? Conta nos comentários, sem vergonha.",
+   "dados": {
+    "linhas": [
+     "Já passou por isso?",
+     "Sem vergonha."
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Dívida a 10% ao mês dobra em menos de 8 meses",
+   "texto": "Mil reais de dívida a 10% ao mês passam de dois mil em oito meses.\n\nMês 4 → R$ 1.464\nMês 8 → R$ 2.144\nEm 1 ano → R$ 3 mil\nRegra dos 72: 72 ÷ 10 = 7,2 meses para dobrar.\n\nExemplo ilustrativo, taxa hipotética de 10% ao mês.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividas #juros #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Mil reais de dívida a 10% ao mês passam de dois mil em oito meses.\n\n• Mês 4 → R$ 1.464\n• Mês 8 → R$ 2.144\n• Em 1 ano → R$ 3 mil\n• Regra dos 72: 72 ÷ 10 = 7,2 meses para dobrar.\n\nVocê já passou por isso? 👇\n\nExemplo ilustrativo, taxa hipotética de 10% ao mês.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividas #juros #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Mil reais a 10% ao mês passam de dois mil em oito meses. Entenda a conta. Exemplo ilustrativo, taxa hipotética de 10% ao mês. Narração por IA. #educacaofinanceira #dividas #juros #dinheiro"
+  }
+ }
+}

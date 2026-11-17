@@ -1,0 +1,65 @@
+$ python3 pipeline/checa.py episodios/JQE-S034
+OK    expressão segura: queda
+      queda = 900.0000
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (11)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S034/roteiro.json episodios/JQE-S034
+hook 7.26 s
+p1 15.79 s
+p2 13.95 s
+p3 10.75 s
+resumo 14.62 s
+hoje 8.51 s
+cta 4.32 s
+assinatura 1.32 s
+total 80.22 s
+
+$ python3 pipeline/checa.py episodios/JQE-S034
+OK    expressão segura: queda
+      queda = 900.0000
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (11)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (7.8 s)
+OK    duração 81.4 s > 61 s (TikTok Creator Rewards)
+OK    duração 81.4 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S034
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S034
+master: -14.0 LUFS; pico -1.4 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S034/JQE-S034.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S034
+ok episodios/JQE-S034/JQE-S034_ig.mp4 thumbnailOffset 81400
+
+ffprobe duracao=80.9s tamanho=25.0MB tempo_de_producao=7.3min

@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 79.876,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.867,
+   "texto": "Dois anos de inflação de cinco por cento não somam dez. Somam mais."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 5.417,
+   "dur": 16.629,
+   "texto": "Pensa comigo. Uma coisa custa cem reais hoje. Com cinco por cento de inflação, no ano seguinte ela custa cento e cinco. No outro ano, mais cinco por cento, mas agora em cima dos cento e cinco. Dá cento e dez reais e vinte e cinco centavos."
+  },
+  {
+   "id": "formula",
+   "inicio": 22.496,
+   "dur": 10.821,
+   "texto": "A conta é multiplicar, não somar. Um vírgula zero cinco vezes um vírgula zero cinco dá um vírgula um zero dois cinco. Ou seja, dez vírgula vinte e cinco por cento."
+  },
+  {
+   "id": "barras",
+   "inicio": 33.767,
+   "dur": 15.219,
+   "texto": "E o efeito vai crescendo. Em cinco anos, a inflação acumulada passa de vinte e oito por cento. Em dez anos, chega perto de sessenta e três por cento. Por isso o preço das coisas parece sempre subir mais do que a gente lembra."
+  },
+  {
+   "id": "porque",
+   "inicio": 49.436,
+   "dur": 14.417,
+   "texto": "Por que isso importa? Porque o seu salário e o seu dinheiro guardado precisam acompanhar essa conta, e não a soma simples. Se o reajuste ou o rendimento ficar abaixo da inflação, você perde poder de compra sem perceber."
+  },
+  {
+   "id": "lista",
+   "inicio": 64.303,
+   "dur": 7.979,
+   "texto": "Três atitudes ajudam: olhar a inflação acumulada, comparar com o seu reajuste e comparar com o rendimento do que você guarda."
+  },
+  {
+   "id": "cta",
+   "inicio": 72.732,
+   "dur": 4.921,
+   "texto": "Seu último reajuste passou da inflação? Conta aqui nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 78.103,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

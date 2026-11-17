@@ -1,0 +1,197 @@
+{
+ "id": "JQE-S035",
+ "titulo": "Dá para começar a investir com R$ 30 por mês",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "contradição",
+ "formato_narrativo": "explicador + personagens (loop)",
+ "nota_tela": "Exemplo ilustrativo · juros hipotéticos, sem impostos nem inflação",
+ "parametros": {
+  "aporte": 30,
+  "taxa_mes": 0.008
+ },
+ "calculos": {
+  "f10": "aporte * (((1 + taxa_mes) ** 120 - 1) / taxa_mes)",
+  "f20": "aporte * (((1 + taxa_mes) ** 240 - 1) / taxa_mes)",
+  "f30": "aporte * (((1 + taxa_mes) ** 360 - 1) / taxa_mes)",
+  "dado10": "aporte * 120",
+  "bia": "10",
+  "f10_mil": "f10 / 1000",
+  "f20_mil": "f20 / 1000",
+  "f30_mil": "f30 / 1000"
+ },
+ "numeros_livres": [
+  10,
+  20,
+  30
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor futuro de aportes mensais, VF = A × ((1 + i)^n − 1) ÷ i, com i = 0,8% ao mês",
+  "Exemplo ilustrativo com taxa hipotética"
+ ],
+ "capa": {
+  "linha1": "Dá para começar",
+  "linha2": "com R$ 30",
+  "destaque": "por mês"
+ },
+ "ganchos_alternativos": [
+  "Dá para começar a investir com R$ 30 por mês.",
+  "R$ 30 por mês ainda vale a pena?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Dá para começar a investir com trinta reais por mês. Sem enrolação.",
+   "leg": "Dá para começar a investir com trinta reais por mês. Sem enrolação.",
+   "dados": {
+    "valor": "R$ 30",
+    "linhas": [
+     "por mês já é",
+     "um começo de verdade"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Eu sei: trinta reais parece pouco. Mas olha. Trinta reais por mês, durante dez anos, são só três mil e seiscentos reais saindo do seu bolso. Com os juros hipotéticos, viram seis mil reais.",
+   "leg": "Eu sei: trinta reais parece pouco. Mas olha. Trinta reais por mês, durante dez anos, são só R$ 3.600 saindo do seu bolso. Com os juros hipotéticos, viram R$ 6 mil.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "R$ 30 por mês",
+      "tom": "neutro"
+     },
+     {
+      "texto": "10 anos",
+      "tom": "cinza"
+     },
+     {
+      "texto": "R$ 6 mil",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "todo mês",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "juros hipotéticos",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "E o tempo faz o resto. Em dez anos, seis mil reais. Em vinte, vinte e dois mil reais. Em trinta anos, sessenta e dois mil reais, sempre com os mesmos trinta reais por mês.",
+   "leg": "E o tempo faz o resto. Em dez anos, R$ 6 mil. Em vinte, R$ 22 mil. Em trinta anos, R$ 62 mil, sempre com os mesmos trinta reais por mês.",
+   "dados": {
+    "titulo": [
+     "R$ 30 por mês,",
+     "sem aumentar nada"
+    ],
+    "itens": [
+     {
+      "rotulo": "10 anos",
+      "valor": 6006.524082297501,
+      "texto": "R$ 6 mil"
+     },
+     {
+      "rotulo": "20 anos",
+      "valor": 21633.936578253626,
+      "texto": "R$ 22 mil"
+     },
+     {
+      "rotulo": "30 anos",
+      "valor": 62292.39694113171,
+      "texto": "R$ 62 mil",
+      "destaque": true
+     }
+    ],
+    "nota": "juros hipotéticos de 0,8% ao mês, sem impostos"
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Olha a Bia e o Léo. O Léo disse: vou esperar sobrar mais dinheiro pra começar. Só que sempre aparece uma conta nova. A Bia começou com trinta reais. Dez anos depois, um tem zero. A outra tem seis mil reais.",
+   "leg": "Olha a Bia e o Léo. O Léo disse: vou esperar sobrar mais dinheiro pra começar. Só que sempre aparece uma conta nova. A Bia começou com trinta reais. Dez anos depois, um tem zero. A outra tem R$ 6 mil.",
+   "dados": {
+    "leo": {
+     "fala": "Espero sobrar mais",
+     "rotulo": "esperou",
+     "valor": 6,
+     "texto": "R$ 0"
+    },
+    "bia": {
+     "fala": "Começo com R$ 30",
+     "rotulo": "começou",
+     "valor": 100,
+     "texto": "R$ 6 mil"
+    }
+   }
+  },
+  {
+   "id": "habito",
+   "tipo": "titulo",
+   "tts": "O valor é o de menos. O que pesa é o hábito: guardar todo mês, sem falhar, mesmo nos meses apertados. Depois, quando der, você aumenta, e ninguém precisa saber o quanto você guarda.",
+   "leg": "O valor é o de menos. O que pesa é o hábito: guardar todo mês, sem falhar, mesmo nos meses apertados. Depois, quando der, você aumenta, e ninguém precisa saber o quanto você guarda.",
+   "dados": {
+    "titulo": [
+     "O hábito pesa",
+     "mais que o valor"
+    ],
+    "subtitulo": "comece pequeno, aumente depois"
+   }
+  },
+  {
+   "id": "passos",
+   "tipo": "lista",
+   "tts": "O primeiro passo é simples: escolhe um valor que não aperta, programa pra sair todo mês e aumenta quando puder. Sem promessa de ganho, só método.",
+   "leg": "O primeiro passo é simples: escolhe um valor que não aperta, programa pra sair todo mês e aumenta quando puder. Sem promessa de ganho, só método.",
+   "dados": {
+    "titulo": [
+     "O primeiro passo"
+    ],
+    "itens": [
+     "escolha um valor leve",
+     "automatize todo mês",
+     "aumente quando puder"
+    ]
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "numero_grande",
+   "tts": "Então, se alguém disser que precisa de muito dinheiro pra começar, lembra:",
+   "leg": "Então, se alguém disser que precisa de muito dinheiro pra começar, lembra:",
+   "dados": {
+    "valor": "R$ 30",
+    "linhas": [
+     "por mês já é",
+     "um começo de verdade"
+    ]
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Dá para começar a investir com R$ 30 por mês",
+   "texto": "Dá para começar a investir com R$ 30 por mês. Sem enrolação.\n\n10 anos → R$ 6 mil (você coloca R$ 3.600)\n20 anos → R$ 22 mil\n30 anos → R$ 62 mil\nO hábito pesa mais que o valor.\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #comecar #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Dá para começar a investir com R$ 30 por mês. Sem enrolação.\n\n• 10 anos → R$ 6 mil (você coloca R$ 3.600)\n• 20 anos → R$ 22 mil\n• 30 anos → R$ 62 mil\n• O hábito pesa mais que o valor.\n\nCom quanto você começaria? 👇\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #comecar #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Dá para começar a investir com R$ 30 por mês. A conta com a Bia e o Léo. Exemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos. Narração por IA. #educacaofinanceira #investimentos #comecar #dinheiro"
+  }
+ },
+ "loop": true
+}

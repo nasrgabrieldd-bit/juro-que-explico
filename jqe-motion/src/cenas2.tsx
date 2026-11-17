@@ -62,7 +62,7 @@ const Dinheiro: React.FC<{ valor: number; texto: string; max?: number; cor?: str
   return (
     <div style={{ width: largura, height: h, borderRadius: 26, background: cor === C.lime ? "rgba(182,242,59,.16)" : "rgba(170,179,170,.14)", border: `4px solid ${cor}`,
       display: "flex", alignItems: "center", justifyContent: "center", boxShadow: cor === C.lime ? "0 0 40px rgba(182,242,59,.2)" : "none" }}>
-      <Texto size={50} display weight={900} color={cor}>{texto}</Texto>
+      <Texto size={Math.max(30, Math.min(50, Math.floor((largura - 36) / (String(texto).length * 0.58))))} display weight={900} color={cor} style={{ whiteSpace: "nowrap" }}>{texto}</Texto>
     </div>
   );
 };
@@ -128,7 +128,7 @@ export const FluxoSetas: React.FC<{ d: any; dur: number }> = ({ d }) => {
         return (
           <div key={i} style={{ position: "absolute", left: 160, top: i * (A + G), width: 518, height: A, borderRadius: 30, opacity: p, scale: String(0.85 + 0.15 * p),
             background: C.card, border: `4px solid ${cor}`, display: "flex", alignItems: "center", justifyContent: "center", gap: 20 }}>
-            <Texto size={74} display weight={900} color={cor}>{c.texto}</Texto>
+            <Texto size={Math.max(34, Math.min(74, Math.floor(470 / (String(c.texto).length * 0.56))))} display weight={900} color={cor} style={{ whiteSpace: "nowrap" }}>{c.texto}</Texto>
             {c.selo && <div style={{ position: "absolute", right: -40, top: -30, width: 84, height: 84, borderRadius: 42, background: cor, display: "flex", alignItems: "center", justifyContent: "center", scale: String(useEntrada(ini(i) + 14, 8)) }}>
               <Texto size={54} weight={900} color="#080b09">{c.selo}</Texto></div>}
           </div>
@@ -140,7 +140,7 @@ export const FluxoSetas: React.FC<{ d: any; dur: number }> = ({ d }) => {
           const y1 = (i + 1) * A + i * G + 10, y2 = (i + 1) * (A + G) - 10;
           const cor = s.tom === "erro" ? C.text : s.tom === "cinza" ? C.gray : C.lime;
           return (<g key={i}><Seta x1={419} y1={y1} x2={419} y2={y2} p={p} cor={cor} />
-            <text x={470} y={(y1 + y2) / 2 + 16} fontFamily="InterDisplay, Inter" fontWeight={900} fontSize={56} fill={cor} opacity={p}>{s.rotulo}</text></g>);
+            <text x={470} y={(y1 + y2) / 2 + 16} fontFamily="InterDisplay, Inter" fontWeight={900} fontSize={Math.max(30, Math.min(56, Math.floor(368 / (String(s.rotulo).length * 0.54))))} fill={cor} opacity={p}>{s.rotulo}</text></g>);
         })}
       </svg>
     </div>

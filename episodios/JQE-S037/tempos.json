@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 70.104,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.672,
+   "texto": "Mil reais de dívida a dez por cento ao mês dobram em menos de oito meses."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 5.222,
+   "dur": 14.365,
+   "texto": "Sem julgamento: acontece com muita gente. É que os juros incidem sobre os juros. No quarto mês, a dívida já é mil e quatrocentos e sessenta e quatro reais. No oitavo, dois mil e cento e quarenta e quatro reais."
+  },
+  {
+   "id": "linhas",
+   "inicio": 20.037,
+   "dur": 14.813,
+   "texto": "Olha a curva. A linha reta seria se os juros incidissem só sobre os mil reais iniciais. Mas eles incidem sobre tudo o que já foi somado, e em um ano a dívida passa de três mil reais. É por isso que ela foge do controle."
+  },
+  {
+   "id": "regra",
+   "inicio": 35.301,
+   "dur": 9.432,
+   "texto": "E tem um atalho de cabeça: divide setenta e dois pela taxa. Setenta e dois dividido por dez dá sete vírgula dois meses pra dívida dobrar."
+  },
+  {
+   "id": "sem_julgar",
+   "inicio": 45.183,
+   "dur": 9.304,
+   "texto": "A boa notícia: quanto antes você mexe, menor o estrago. Conversar com o credor e trocar a dívida cara por uma mais barata pode parar essa curva."
+  },
+  {
+   "id": "lista",
+   "inicio": 54.937,
+   "dur": 8.277,
+   "texto": "Três coisas ajudam: negociar a taxa, trocar a dívida cara por uma mais barata e evitar pagar só o mínimo, que deixa os juros crescerem."
+  },
+  {
+   "id": "cta",
+   "inicio": 63.664,
+   "dur": 4.217,
+   "texto": "Já passou por isso? Conta nos comentários, sem vergonha."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 68.331,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

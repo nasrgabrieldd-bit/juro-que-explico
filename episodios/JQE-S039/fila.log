@@ -1,0 +1,89 @@
+$ python3 pipeline/checa.py episodios/JQE-S039
+OK    expressão segura: acum2
+      acum2 = 10.2500
+OK    expressão segura: acum1
+      acum1 = 5.0000
+OK    expressão segura: a5
+      a5 = 27.6282
+OK    expressão segura: a10
+      a10 = 62.8895
+OK    expressão segura: p1
+      p1 = 105.0000
+OK    expressão segura: p2
+      p2 = 110.2500
+OK    expressão segura: f2
+      f2 = 1.1025
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (11)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S039/roteiro.json episodios/JQE-S039
+hook 4.87 s
+fluxo 16.63 s
+formula 10.82 s
+barras 15.22 s
+porque 14.42 s
+lista 7.98 s
+cta 4.92 s
+assinatura 1.32 s
+total 79.88 s
+
+$ python3 pipeline/checa.py episodios/JQE-S039
+OK    expressão segura: acum2
+      acum2 = 10.2500
+OK    expressão segura: acum1
+      acum1 = 5.0000
+OK    expressão segura: a5
+      a5 = 27.6282
+OK    expressão segura: a10
+      a10 = 62.8895
+OK    expressão segura: p1
+      p1 = 105.0000
+OK    expressão segura: p2
+      p2 = 110.2500
+OK    expressão segura: f2
+      f2 = 1.1025
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (11)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (5.4 s)
+OK    duração 81.1 s > 61 s (TikTok Creator Rewards)
+OK    duração 81.1 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S039
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S039
+master: -14.0 LUFS; pico -1.5 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S039/JQE-S039.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S039
+ok episodios/JQE-S039/JQE-S039_ig.mp4 thumbnailOffset 81100
+
+ffprobe duracao=80.6s tamanho=25.6MB tempo_de_producao=7.0min

@@ -1,0 +1,179 @@
+{
+ "id": "JQE-S038",
+ "titulo": "R$ 6 mil por ano ou R$ 500 por mês: qual rende mais?",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "escolha",
+ "formato_narrativo": "versus + personagens (loop)",
+ "nota_tela": "Exemplo ilustrativo · juros hipotéticos, sem impostos nem inflação",
+ "parametros": {
+  "taxa_mes": 0.008,
+  "mensal": 500,
+  "anual": 6000
+ },
+ "calculos": {
+  "fvM": "500 * (((1 + taxa_mes) ** 120 - 1) / taxa_mes)",
+  "fvAfim": "6000 * (((1 + taxa_mes) ** 120 - 1) / ((1 + taxa_mes) ** 12 - 1))",
+  "fvAini": "fvAfim * (1 + taxa_mes) ** 12",
+  "total": "500 * 120",
+  "dif": "fvM - fvAfim",
+  "balM": "fvM / fvAini * 100",
+  "balA": "fvAfim / fvAini * 100",
+  "total_mil": "total / 1000",
+  "fvAfim_mil": "fvAfim / 1000",
+  "fvM_mil": "fvM / 1000",
+  "fvAini_mil": "fvAini / 1000"
+ },
+ "numeros_livres": [
+  60
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor futuro de aportes mensais e anuais, juros hipotéticos de 0,8% ao mês",
+  "Exemplo ilustrativo"
+ ],
+ "capa": {
+  "linha1": "R$ 6 mil por ano",
+  "linha2": "ou R$ 500 por mês?",
+  "destaque": "qual rende mais"
+ },
+ "ganchos_alternativos": [
+  "R$ 6 mil por ano ou R$ 500 por mês?",
+  "Aportar todo mês ou uma vez por ano?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Seis mil reais uma vez por ano ou quinhentos todo mês: qual rende mais?",
+   "leg": "Seis mil reais uma vez por ano ou quinhentos todo mês: qual rende mais?",
+   "dados": {
+    "a": "R$ 6 mil",
+    "b": "R$ 500",
+    "rotulo_a": "uma vez por ano",
+    "rotulo_b": "todo mês",
+    "centro": "qual rende mais?"
+   }
+  },
+  {
+   "id": "mesmo",
+   "tipo": "numero_grande",
+   "tts": "Em dez anos, nos dois jeitos, você coloca a mesma coisa: sessenta mil reais. Seis mil por ano é igual a quinhentos por mês. A única diferença é quando o dinheiro entra.",
+   "leg": "Em dez anos, nos dois jeitos, você coloca a mesma coisa: R$ 60 mil. Seis mil por ano é igual a quinhentos por mês. A única diferença é quando o dinheiro entra.",
+   "dados": {
+    "valor": "R$ 60 mil",
+    "linhas": [
+     "é o que você coloca",
+     "nos dois jeitos"
+    ]
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Olha o Léo e a Bia. O Léo deixa o dinheiro na gaveta e investe tudo no fim do ano, quando cai o décimo terceiro. A Bia investe quinhentos reais todo mês. Quem chega na frente?",
+   "leg": "Olha o Léo e a Bia. O Léo deixa o dinheiro na gaveta e investe tudo no fim do ano, quando cai o décimo terceiro. A Bia investe quinhentos reais todo mês. Quem chega na frente?",
+   "dados": {
+    "leo": {
+     "fala": "Invisto no fim do ano",
+     "rotulo": "1× por ano, no fim",
+     "valor": 90.88110830881763,
+     "texto": "R$ 96 mil"
+    },
+    "bia": {
+     "fala": "Invisto todo mês",
+     "rotulo": "todo mês",
+     "valor": 94.98845511648307,
+     "texto": "R$ 100 mil"
+    }
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "A Bia, mas por pouco: cem mil reais contra noventa e seis mil reais, porque o dinheiro dela começa a render mais cedo. E se o Léo investisse os seis mil em janeiro, ele ganharia: cento e cinco mil reais.",
+   "leg": "A Bia, mas por pouco: R$ 100 mil contra R$ 96 mil, porque o dinheiro dela começa a render mais cedo. E se o Léo investisse os seis mil em janeiro, ele ganharia: R$ 105 mil.",
+   "dados": {
+    "titulo": [
+     "Depois de 10 anos"
+    ],
+    "itens": [
+     {
+      "rotulo": "6 mil no fim do ano",
+      "valor": 95779.98452783829,
+      "texto": "R$ 96 mil"
+     },
+     {
+      "rotulo": "500 por mês",
+      "valor": 100108.73470495835,
+      "texto": "R$ 100 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "6 mil em janeiro",
+      "valor": 105390.42305951429,
+      "texto": "R$ 105 mil"
+     }
+    ],
+    "nota": "juros hipotéticos de 0,8% ao mês, sem impostos"
+   }
+  },
+  {
+   "id": "moral",
+   "tipo": "titulo",
+   "tts": "Ou seja, não existe jeito certo. Existe o que você consegue manter. Quem guarda todo mês cria um hábito e não depende de sobrar dinheiro no fim do ano. Quanto antes o dinheiro entra, mais ele trabalha.",
+   "leg": "Ou seja, não existe jeito certo. Existe o que você consegue manter. Quem guarda todo mês cria um hábito e não depende de sobrar dinheiro no fim do ano. Quanto antes o dinheiro entra, mais ele trabalha.",
+   "dados": {
+    "titulo": [
+     "Quanto antes entra,",
+     "mais ele trabalha"
+    ],
+    "subtitulo": "o melhor jeito é o que você mantém"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Resumindo: invista assim que o dinheiro entrar, escolha um ritmo que caiba no bolso e mantenha por anos. Sem pressa e sem promessa de ganho.",
+   "leg": "Resumindo: invista assim que o dinheiro entrar, escolha um ritmo que caiba no bolso e mantenha por anos. Sem pressa e sem promessa de ganho.",
+   "dados": {
+    "titulo": [
+     "O resumo"
+    ],
+    "itens": [
+     "invista logo que entrar",
+     "ritmo que cabe no bolso",
+     "mantenha por anos"
+    ]
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "versus",
+   "tts": "E quando bater a dúvida de como guardar, pergunta:",
+   "leg": "E quando bater a dúvida de como guardar, pergunta:",
+   "dados": {
+    "a": "R$ 6 mil",
+    "b": "R$ 500",
+    "rotulo_a": "uma vez por ano",
+    "rotulo_b": "todo mês",
+    "centro": "qual rende mais?"
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 6 mil por ano ou R$ 500 por mês: qual rende mais?",
+   "texto": "Seis mil reais uma vez por ano ou quinhentos todo mês: qual rende mais?\n\nEm 10 anos você coloca R$ 60 mil nos dois jeitos\nR$ 500 por mês → R$ 100 mil\nR$ 6 mil no fim do ano → R$ 96 mil\nR$ 6 mil em janeiro → R$ 105 mil\nQuanto antes o dinheiro entra, mais ele trabalha.\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #aporte #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Seis mil reais uma vez por ano ou quinhentos todo mês: qual rende mais?\n\n• Em 10 anos você coloca R$ 60 mil nos dois jeitos\n• R$ 500 por mês → R$ 100 mil\n• R$ 6 mil no fim do ano → R$ 96 mil\n• R$ 6 mil em janeiro → R$ 105 mil\n• Quanto antes o dinheiro entra, mais ele trabalha.\n\nComo você guarda: todo mês ou de uma vez? 👇\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #aporte #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "R$ 6 mil por ano ou R$ 500 por mês? A conta com o Léo e a Bia. Exemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos. Narração por IA. #educacaofinanceira #investimentos #aporte #dinheiro"
+  }
+ },
+ "loop": true
+}
