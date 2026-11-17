@@ -56,18 +56,18 @@ Aviso de lote enviado em 13/11 para o estoque até 20/11 (S019 a S032 agendados 
 ### Ciclo 26/11–10/12/2026 (relatório quinzenal de 10/11; justificativas em relatorios/2026-11-10.md)
 Registre no roteiro `tipo_gancho` e `formato_narrativo` indicados entre parênteses.
 1. Assimetria das perdas: cair 50% exige subir 100% — gancho: "Se seu investimento cai 50%, ele precisa subir 100% para voltar." (contradição; formula + barras)
-2. Quanto investir por mês para chegar a R$ 1 milhão — gancho: "Quanto por mês vira R$ 1 milhão em 25 anos?" (pergunta com número; linhas)
+2. Quanto investir por mês para chegar a R$ 1 milhão — gancho: "Quanto por mês vira R$ 1 milhão em 25 anos?" (pergunta com número; linhas) ✔ produzida: JQE-S033
 3. Juros do cartão: rotativo × parcelamento da fatura (teto de 100% da Lei 14.690/2023, conferir no Planalto; taxas hipotéticas) — gancho: "No rotativo, R$ 1.000 de dívida podem virar R$ 2.000." (custo escondido; versus)
-4. Regra dos 114 e dos 144: triplicar e quadruplicar o dinheiro (série "conta de cabeça", parte 2 do S002) — gancho: "Divida 114 pela taxa e descubra quando seu dinheiro triplica." (pergunta com número; lista)
-5. Preço × valor: por que ação "barata" não é pechincha (exemplo hipotético com P/L, sem citar ativo) — gancho: "Uma ação de R$ 2 pode ser mais cara que uma de R$ 50." (contradição; versus)
-6. Aporte mensal × aporte anual — gancho: "Investir R$ 6 mil uma vez por ano ou R$ 500 todo mês: qual rende mais?" (escolha; barras)
-7. Inflação acumulada: por que 5% + 5% não é 10% — gancho: "2 anos de 5% de inflação não somam 10%." (contradição; passo a passo)
+4. Regra dos 114 e dos 144: triplicar e quadruplicar o dinheiro (série "conta de cabeça", parte 2 do S002) — gancho: "Divida 114 pela taxa e descubra quando seu dinheiro triplica." (pergunta com número; lista) ✔ produzida: JQE-S050
+5. Preço × valor: por que ação "barata" não é pechincha (exemplo hipotético com P/L, sem citar ativo) — gancho: "Uma ação de R$ 2 pode ser mais cara que uma de R$ 50." (contradição; versus) ✔ produzida: JQE-S036
+6. Aporte mensal × aporte anual — gancho: "Investir R$ 6 mil uma vez por ano ou R$ 500 todo mês: qual rende mais?" (escolha; barras) ✔ produzida: JQE-S038
+7. Inflação acumulada: por que 5% + 5% não é 10% — gancho: "2 anos de 5% de inflação não somam 10%." (contradição; passo a passo) ✔ produzida: JQE-S039
 8. [LONGO] JQE-L002 — Renda fixa sem complicação: CDI, imposto e liquidez (16:9, 4–6 min, modelo lotes/longo_L001.py) + cortes P1 "100% do CDI não é 100% de ganho", P2 "Esperar um dia pode baixar seu imposto" (tabela regressiva vigente conferida na Receita Federal), P3 "Seguro, rende muito e resgata na hora: escolha dois" — gancho do longo: "100% do CDI não quer dizer que você ganhou tudo isso." (contradição; longo em 3 blocos)
-9. Yield on cost: o dividend yield sobre o preço que você pagou — gancho: "Como um dividend yield de 6% vira 15% sobre o que você pagou." (pergunta com número; linhas)
-10. Financiamento: Price × SAC, quem paga mais juros — gancho: "Financiamento de R$ 200 mil, mesma taxa: qual sistema cobra mais juros?" (escolha; barras)
-11. Valor presente: quanto vale hoje R$ 1.000 daqui a 5 anos — gancho: "R$ 1.000 daqui a 5 anos valem quanto hoje?" (pergunta com número; formula)
-12. CET: o custo efetivo total de um empréstimo (taxas hipotéticas) — gancho: "Taxa de 1,99% ao mês, custo de verdade bem maior." (custo escondido; passo a passo)
-13. Diversificação explicada com uma conta simples — gancho: "Ter 10 investimentos não quer dizer que você diversificou." (erro comum; lista)
+9. Yield on cost: o dividend yield sobre o preço que você pagou — gancho: "Como um dividend yield de 6% vira 15% sobre o que você pagou." (pergunta com número; linhas) ✔ produzida: JQE-S041
+10. Financiamento: Price × SAC, quem paga mais juros — gancho: "Financiamento de R$ 200 mil, mesma taxa: qual sistema cobra mais juros?" (escolha; barras) ✔ produzida: JQE-S042
+11. Valor presente: quanto vale hoje R$ 1.000 daqui a 5 anos — gancho: "R$ 1.000 daqui a 5 anos valem quanto hoje?" (pergunta com número; formula) ✔ produzida: JQE-S043
+12. CET: o custo efetivo total de um empréstimo (taxas hipotéticas) — gancho: "Taxa de 1,99% ao mês, custo de verdade bem maior." (custo escondido; passo a passo) ✔ produzida: JQE-S044
+13. Diversificação explicada com uma conta simples — gancho: "Ter 10 investimentos não quer dizer que você diversificou." (erro comum; lista) ✔ produzida: JQE-S045
 14. O que é a Selic e como ela mexe com o seu bolso (valor atual só se buscado no Banco Central) — gancho: "Quando a Selic sobe 1 ponto, o que muda no seu bolso?" (pergunta com número; dado oficial)
 15. Luiz Barsi: a história do investidor conhecido pelos dividendos (regras de histórias abaixo; gancho com um número confirmado na fonte) (história; narrativa)
 

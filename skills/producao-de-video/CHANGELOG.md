@@ -1,5 +1,13 @@
 # Changelog da skill de produção de vídeo
 
+## 2.3 — 17/11/2026
+- **Produção em lote**: `lotes/_lib.py` (fala, legenda, dados de cena e posts saem da MESMA conta, marcadores `[[nome|tipo]]`; números por extenso na voz, algarismos na tela) e `lotes/fila.py` (checa → narração → checa → leitura → render → capas, um ID por vez, status em `FILA_STATUS`). Usados para produzir 20 vídeos (JQE-S033 a S052) de uma vez, 8 deles em loop.
+- `pipeline/checa.py` aceita nomes de `parametros` dentro de `calculos`.
+- Componentes com **auto-escala de fonte** (`cenas2.tsx`: caixas do fluxo, rótulos de seta; `cenas.tsx`: Versus com texto em maiúsculas). Corrige estouro de caixa visto no S033/S046.
+- Tom: honesto E inspirador, como um amigo que aconselha sobre investir (Investidor Sardinha como referência de inspiração, nunca de cópia).
+- Armadilhas registradas: gancho que começa com "Oitocentos" dispara a regra de saudação ("oi"); aritmética visível precisa bater com o resultado mostrado (1,05 × 1,05 = 1,1025; usar R2 e "≈" quando houver arredondamento); nada de dígitos, "R$" ou "P/L" no texto falado.
+- Buffer grátis: máximo de 10 posts agendados por canal. O excedente fica em `agenda_pendente.json` e a rotina diária o move conforme abrem vagas.
+
 ## 2.2 — 17/11/2026
 - Integrada a skill **/watch** (bradautomates/claude-video, MIT, commit 03ceb42, 25/09/2026): permite ao Claude assistir vídeos (quadros + legenda/transcrição). Registrada em `REGISTRO.json`; `atualizar_skills.sh` aprendeu o tipo `git-clone` (clona ou atualiza a última versão e instala o yt-dlp). Testada aqui em arquivo local (6 quadros do JQE-X001). **YouTube é bloqueado na nuvem**: uso em redes sociais só no computador do fundador; limitação documentada, sem contorno.
 - Nova seção "Pesquisa por vídeo" com protocolo de estudo de referências (sem copiar).
