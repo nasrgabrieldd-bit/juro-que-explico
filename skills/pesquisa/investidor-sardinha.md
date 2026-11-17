@@ -15,3 +15,7 @@
 
 ## Regra
 Só aprendizado de jeito. Roteiro, frases, bordões, exemplos e edição característica do canal não entram nos nossos vídeos.
+
+## Orientação do fundador (17/11/2026, a partir do vídeo https://youtu.be/Kj3zr_zzMrY)
+O fundador assistiu ao vídeo e o descreveu como Sardinha falando **de forma honesta com a audiência**. Direção de tom para o Juro que Explico: **honesto e inspirador ao mesmo tempo, com conselho, como um amigo que ensina sobre investimentos.** Esse é o tom-alvo; ainda não li esse vídeo (YouTube bloqueado na nuvem; falta transcrição). O fundador vai mandar mais links, que alimentam estas notas.
+Regras que continuam valendo: honestidade não vira recomendação de ativo nem promessa de ganho; conselho é de comportamento (reserva, disciplina, prazo, risco), não "compre X".
