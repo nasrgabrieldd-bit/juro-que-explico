@@ -1,0 +1,255 @@
+{
+ "id": "JQE-S049",
+ "titulo": "Carro de R$ 80 mil: o custo escondido em 5 anos",
+ "formato": "vertical 9:16",
+ "pilar": "Consumo",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "custo escondido",
+ "formato_narrativo": "explicador + setas",
+ "nota_tela": "Exemplo hipotético · depreciação de 10% ao ano; juros de 0,8% ao mês; sem impostos",
+ "parametros": {
+  "preco": 80000,
+  "dep": 0.1,
+  "taxa_mes": 0.008
+ },
+ "calculos": {
+  "v5": "preco * (1 - dep) ** 5",
+  "perda": "preco - v5",
+  "inv5": "preco * (1 + taxa_mes) ** 60",
+  "ganho": "inv5 - preco",
+  "dif": "inv5 - v5",
+  "preco_mil": "preco / 1000",
+  "dif_mil": "dif / 1000",
+  "v5_mil": "v5 / 1000",
+  "perda_mil": "perda / 1000",
+  "inv5_mil": "inv5 / 1000",
+  "ganho_mil": "ganho / 1000"
+ },
+ "numeros_livres": [
+  80
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor após n anos = preço × (1 − depreciação)^n; investido = preço × (1 + i)^n",
+  "Valores e taxas hipotéticos"
+ ],
+ "capa": {
+  "linha1": "Carro de R$ 80 mil",
+  "linha2": "custa mais que isso",
+  "destaque": "em 5 anos"
+ },
+ "ganchos_alternativos": [
+  "Um carro de R$ 80 mil pode custar mais de R$ 80 mil em 5 anos.",
+  "O custo de oportunidade de um carro."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Um carro de oitenta mil reais pode custar mais de oitenta mil em cinco anos.",
+   "leg": "Um carro de oitenta mil reais pode custar mais de oitenta mil em cinco anos.",
+   "dados": {
+    "valor": "R$ 82 mil",
+    "linhas": [
+     "de custo escondido",
+     "em 5 anos"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Exemplo hipotético. O carro de oitenta mil perde dez por cento do valor por ano. Em cinco anos, ele vale quarenta e sete mil reais. Só de valor que sumiu, são trinta e três mil reais.",
+   "leg": "Exemplo hipotético. O carro de R$ 80 mil perde 10% do valor por ano. Em 5 anos, ele vale R$ 47 mil. Só de valor que sumiu, são R$ 33 mil.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "carro: R$ 80 mil",
+      "tom": "neutro"
+     },
+     {
+      "texto": "−10% ao ano",
+      "tom": "cinza"
+     },
+     {
+      "texto": "vale R$ 47 mil",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "5 anos",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "perda de valor",
+      "tom": "erro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "linhas",
+   "tipo": "linhas",
+   "tts": "Agora o outro lado. Se esses mesmos oitenta mil estivessem investidos, com juros hipotéticos de zero vírgula oito por cento ao mês, viriam cento e vinte e nove mil reais em cinco anos. Uma linha desce, a outra sobe.",
+   "leg": "Agora o outro lado. Se esses mesmos R$ 80 mil estivessem investidos, com juros hipotéticos de 0,8% ao mês, viriam R$ 129 mil em 5 anos. Uma linha desce, a outra sobe.",
+   "dados": {
+    "titulo": "R$ 80 mil: carro × investido",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "ymax": 140000,
+    "ymin": 0,
+    "y_passo": 35000,
+    "y_fmt": "brl",
+    "series": [
+     {
+      "nome": "valor do carro",
+      "pontos": [
+       [
+        0,
+        80000
+       ],
+       [
+        1,
+        72000
+       ],
+       [
+        2,
+        64800
+       ],
+       [
+        3,
+        58320
+       ],
+       [
+        4,
+        52488
+       ],
+       [
+        5,
+        47239
+       ]
+      ],
+      "velocidade": 0.8,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 47 mil"
+     },
+     {
+      "nome": "dinheiro investido",
+      "destaque": true,
+      "pontos": [
+       [
+        0,
+        80000
+       ],
+       [
+        1,
+        88027
+       ],
+       [
+        2,
+        96860
+       ],
+       [
+        3,
+        106578
+       ],
+       [
+        4,
+        117272
+       ],
+       [
+        5,
+        129039
+       ]
+      ],
+      "velocidade": 0.8,
+      "inicio": 0.4,
+      "rotulo_final": "R$ 129 mil"
+     }
+    ]
+   }
+  },
+  {
+   "id": "versus",
+   "tipo": "versus",
+   "tts": "Somando o valor que o carro perdeu e o ganho que o dinheiro deixou de ter, a diferença passa de oitenta e dois mil reais. Esse é o custo de oportunidade.",
+   "leg": "Somando o valor que o carro perdeu e o ganho que o dinheiro deixou de ter, a diferença passa de R$ 82 mil. Esse é o custo de oportunidade.",
+   "dados": {
+    "a": "R$ 33 mil",
+    "b": "R$ 49 mil",
+    "rotulo_a": "perdeu de valor",
+    "rotulo_b": "deixou de render",
+    "centro": "somados: R$ 82 mil"
+   }
+  },
+  {
+   "id": "ressalva",
+   "tipo": "titulo",
+   "tts": "Isso não quer dizer que carro é erro. Pra muita gente, ele é trabalho, família e tempo. O ponto é decidir sabendo o tamanho da conta, e não só olhando a parcela.",
+   "leg": "Isso não quer dizer que carro é erro. Pra muita gente, ele é trabalho, família e tempo. O ponto é decidir sabendo o tamanho da conta, e não só olhando a parcela.",
+   "dados": {
+    "titulo": [
+     "Decidir sabendo",
+     "o tamanho da conta"
+    ],
+    "subtitulo": "carro tem valor de uso, mas também tem custo"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Antes de comprar, pergunta: eu preciso mesmo dele agora? A parcela cabe com folga? E existe uma opção mais barata que resolva o mesmo problema?",
+   "leg": "Antes de comprar, pergunta: eu preciso mesmo dele agora? A parcela cabe com folga? E existe uma opção mais barata que resolva o mesmo problema?",
+   "dados": {
+    "titulo": [
+     "Antes de comprar"
+    ],
+    "itens": [
+     "preciso dele agora?",
+     "a parcela cabe com folga?",
+     "há opção mais barata?"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Você já fez essa conta do seu carro? Conta aqui nos comentários.",
+   "leg": "Você já fez essa conta do seu carro? Conta aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Você já fez essa",
+     "conta do seu carro?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Carro de R$ 80 mil: o custo escondido em 5 anos",
+   "texto": "Um carro de R$ 80 mil pode custar mais de R$ 80 mil em 5 anos.\n\nValor do carro em 5 anos (−10% ao ano): R$ 47 mil\nOs mesmos R$ 80 mil investidos: R$ 129 mil\nDiferença: mais de R$ 82 mil\nCarro tem valor de uso: só decida sabendo a conta.\n\nExemplo hipotético; depreciação e rendimento hipotéticos, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #carro #investimentos #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Um carro de R$ 80 mil pode custar mais de R$ 80 mil em 5 anos.\n\n• Valor do carro em 5 anos (−10% ao ano): R$ 47 mil\n• Os mesmos R$ 80 mil investidos: R$ 129 mil\n• Diferença: mais de R$ 82 mil\n• Carro tem valor de uso: só decida sabendo a conta.\n\nVocê já fez essa conta do seu carro? 👇\n\nExemplo hipotético; depreciação e rendimento hipotéticos, sem impostos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #carro #investimentos #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Um carro de R$ 80 mil pode custar mais de R$ 80 mil em 5 anos. Veja a conta. Exemplo hipotético; depreciação e rendimento hipotéticos, sem impostos. Narração por IA. #educacaofinanceira #carro #investimentos #dinheiro"
+  }
+ }
+}

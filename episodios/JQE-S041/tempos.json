@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 75.093,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.288,
+   "texto": "Um yield de seis por cento pode passar de quinze sobre o preço pago."
+  },
+  {
+   "id": "formula",
+   "inicio": 4.838,
+   "dur": 12.763,
+   "texto": "Dividend yield é quanto a ação paga por ano em relação ao preço. Exemplo inventado: você paga dez reais e recebe sessenta centavos por ano. Sessenta centavos sobre dez reais dá seis por cento."
+  },
+  {
+   "id": "linhas",
+   "inicio": 18.051,
+   "dur": 14.829,
+   "texto": "Agora imagina que a empresa aumente o dividendo em dez por cento ao ano. Depois de dez anos, aquele dividendo de sessenta centavos vira um real e cinquenta e seis centavos por ação, sobre as mesmas ações que você comprou lá atrás."
+  },
+  {
+   "id": "versus",
+   "inicio": 33.33,
+   "dur": 14.213,
+   "texto": "Sobre os dez reais que você pagou, são quinze vírgula cinquenta e seis por cento. Esse é o yield on cost. Só que olha o outro lado: se o preço também subiu junto, o yield sobre o preço de hoje continua em seis por cento."
+  },
+  {
+   "id": "ressalva",
+   "inicio": 47.993,
+   "dur": 11.355,
+   "texto": "Então é só uma lente. Ela mostra como o seu dinheiro antigo está rendendo, mas não prova que foi uma boa compra. Dividendos variam, podem cair e não têm garantia nenhuma."
+  },
+  {
+   "id": "lista",
+   "inicio": 59.798,
+   "dur": 8.085,
+   "texto": "Para não se enganar: compare sempre com o preço de hoje, olhe vários anos de dividendos e lembre que isso é exemplo, não recomendação."
+  },
+  {
+   "id": "cta",
+   "inicio": 68.333,
+   "dur": 4.537,
+   "texto": "Você olha o yield sobre o preço pago ou o de hoje? Comenta."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 73.321,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

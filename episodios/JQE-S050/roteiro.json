@@ -1,0 +1,193 @@
+{
+ "id": "JQE-S050",
+ "titulo": "Regra do 114 e do 144: quando o dinheiro triplica",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "pergunta com número",
+ "formato_narrativo": "explicador (conta de cabeça)",
+ "nota_tela": "Regra de bolso · taxa hipotética de 12% ao ano, valores aproximados",
+ "parametros": {
+  "taxa": 12
+ },
+ "calculos": {
+  "dobra": "72 / taxa",
+  "triplica": "114 / taxa",
+  "quadruplica": "144 / taxa",
+  "exato3": "log(3) / log(1 + taxa / 100)",
+  "v6": "1000 * (1 + taxa / 100) ** 6",
+  "v12": "1000 * (1 + taxa / 100) ** 12"
+ },
+ "numeros_livres": [
+  72,
+  114,
+  144,
+  1000
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Regras de bolso: tempo ≈ 72 ÷ taxa (dobrar), 114 ÷ taxa (triplicar), 144 ÷ taxa (quadruplicar)",
+  "Conta exata: n = ln(3) ÷ ln(1 + i)"
+ ],
+ "capa": {
+  "linha1": "Quando o dinheiro",
+  "linha2": "triplica?",
+  "destaque": "regra do 114"
+ },
+ "ganchos_alternativos": [
+  "Divida 114 pela taxa e descubra quando seu dinheiro triplica.",
+  "Conta de cabeça: dobrar, triplicar, quadruplicar."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Divida cento e catorze pela taxa e descubra quando seu dinheiro triplica.",
+   "leg": "Divida cento e catorze pela taxa e descubra quando seu dinheiro triplica.",
+   "dados": {
+    "valor": "114 ÷ taxa",
+    "linhas": [
+     "em quantos anos",
+     "o dinheiro triplica"
+    ]
+   }
+  },
+  {
+   "id": "formula",
+   "tipo": "formula",
+   "tts": "Exemplo com taxa hipotética de doze por cento ao ano. Cento e catorze dividido por doze dá nove vírgula cinco. Em uns nove anos e meio, o dinheiro vira o triplo.",
+   "leg": "Exemplo com taxa hipotética de 12% ao ano. 114 ÷ 12 = 9,5. Em uns 9 anos e meio, o dinheiro vira o triplo.",
+   "dados": {
+    "titulo": "Regra do 114",
+    "linha1": "114 ÷ 12",
+    "resultado": "9,5 anos",
+    "nota": "para triplicar, a 12% ao ano"
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "A mesma ideia vale para dobrar e quadruplicar. Pra dobrar, divide setenta e dois: dá seis anos. Pra triplicar, cento e catorze: nove e meio. Pra quadruplicar, cento e quarenta e quatro: doze anos.",
+   "leg": "A mesma ideia vale para dobrar e quadruplicar. Pra dobrar, divide setenta e dois: dá seis anos. Pra triplicar, cento e catorze: nove e meio. Pra quadruplicar, cento e quarenta e quatro: doze anos.",
+   "dados": {
+    "titulo": [
+     "Anos para multiplicar",
+     "a 12% ao ano"
+    ],
+    "itens": [
+     {
+      "rotulo": "dobrar: 72 ÷ 12",
+      "valor": 6.0,
+      "texto": "6 anos"
+     },
+     {
+      "rotulo": "triplicar: 114 ÷ 12",
+      "valor": 9.5,
+      "texto": "9,5 anos",
+      "destaque": true
+     },
+     {
+      "rotulo": "quadruplicar: 144 ÷ 12",
+      "valor": 12.0,
+      "texto": "12 anos"
+     }
+    ],
+    "nota": "regras de bolso, valores aproximados"
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Dá pra ver na prática. Mil reais, a doze por cento ao ano, viram quase dois mil em seis anos e quase quatro mil em doze. É dobrar, e dobrar de novo.",
+   "leg": "Dá pra ver na prática. R$ 1.000, a 12% ao ano, viram R$ 1.974 em 6 anos e R$ 3.896 em 12. É dobrar, e dobrar de novo.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "hoje: R$ 1.000",
+      "tom": "neutro"
+     },
+     {
+      "texto": "6 anos: R$ 1.974",
+      "tom": "cinza"
+     },
+     {
+      "texto": "12 anos: R$ 3.896",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "dobra",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "dobra de novo",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "versus",
+   "tipo": "versus",
+   "tts": "É exato? Não. Com a conta completa, o triplo leva uns nove vírgula sete anos, e a regra deu nove vírgula cinco. Fica bem perto, e isso basta pra ter uma noção de cabeça.",
+   "leg": "É exato? Não. Com a conta completa, o triplo leva uns 9,69 anos, e a regra deu 9,5. Fica bem perto, e isso basta pra ter uma noção de cabeça.",
+   "dados": {
+    "a": "9,5",
+    "b": "9,69",
+    "rotulo_a": "regra do 114",
+    "rotulo_b": "conta exata",
+    "centro": "bem perto"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Guarda estes três números: setenta e dois para dobrar, cento e catorze para triplicar e cento e quarenta e quatro para quadruplicar. E lembra: a taxa aqui é só exemplo.",
+   "leg": "Guarda estes três números: 72 para dobrar, 114 para triplicar e 144 para quadruplicar. E lembra: a taxa aqui é só exemplo.",
+   "dados": {
+    "titulo": [
+     "Três números",
+     "para guardar"
+    ],
+    "itens": [
+     "72 para dobrar",
+     "114 para triplicar",
+     "144 para quadruplicar"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Que taxa você usaria na sua conta de cabeça? Comenta aqui.",
+   "leg": "Que taxa você usaria na sua conta de cabeça? Comenta aqui.",
+   "dados": {
+    "linhas": [
+     "Qual taxa você",
+     "usaria na conta?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Regra do 114 e do 144: quando o dinheiro triplica",
+   "texto": "Divida 114 pela taxa e descubra quando seu dinheiro triplica.\n\n72 ÷ taxa → dobrar (6 anos a 12%)\n114 ÷ taxa → triplicar (9,5 anos a 12%)\n144 ÷ taxa → quadruplicar (12 anos a 12%)\nRegras de bolso, valores aproximados.\n\nRegra de bolso com taxa hipotética de 12% ao ano. Valores aproximados.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Divida 114 pela taxa e descubra quando seu dinheiro triplica.\n\n• 72 ÷ taxa → dobrar (6 anos a 12%)\n• 114 ÷ taxa → triplicar (9,5 anos a 12%)\n• 144 ÷ taxa → quadruplicar (12 anos a 12%)\n• Regras de bolso, valores aproximados.\n\nQue taxa você usaria na sua conta de cabeça? 👇\n\nRegra de bolso com taxa hipotética de 12% ao ano. Valores aproximados.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Divida 114 pela taxa e descubra quando seu dinheiro triplica. Regra de bolso com taxa hipotética de 12% ao ano. Valores aproximados. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro"
+  }
+ }
+}

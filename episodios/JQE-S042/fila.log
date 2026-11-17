@@ -1,0 +1,105 @@
+$ python3 pipeline/checa.py episodios/JQE-S042
+OK    expressão segura: pmt_price
+      pmt_price = 2202.1723
+OK    expressão segura: tot_price
+      tot_price = 528521.3441
+OK    expressão segura: jur_price
+      jur_price = 328521.3441
+OK    expressão segura: amort
+      amort = 833.3333
+OK    expressão segura: pmt_sac1
+      pmt_sac1 = 2833.3333
+OK    expressão segura: pmt_sacN
+      pmt_sacN = 841.6667
+OK    expressão segura: jur_sac
+      jur_sac = 241000.0000
+OK    expressão segura: dif
+      dif = 87521.3441
+OK    expressão segura: jur_price_mil
+      jur_price_mil = 328.5213
+OK    expressão segura: jur_sac_mil
+      jur_sac_mil = 241.0000
+OK    expressão segura: dif_mil
+      dif_mil = 87.5213
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (15)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S042/roteiro.json episodios/JQE-S042
+hook 6.02 s
+fluxo 14.6 s
+formula 13.91 s
+linhas 13.98 s
+barras 11.85 s
+tradeoff 12.72 s
+cta 4.96 s
+assinatura 1.32 s
+total 83.06 s
+
+$ python3 pipeline/checa.py episodios/JQE-S042
+OK    expressão segura: pmt_price
+      pmt_price = 2202.1723
+OK    expressão segura: tot_price
+      tot_price = 528521.3441
+OK    expressão segura: jur_price
+      jur_price = 328521.3441
+OK    expressão segura: amort
+      amort = 833.3333
+OK    expressão segura: pmt_sac1
+      pmt_sac1 = 2833.3333
+OK    expressão segura: pmt_sacN
+      pmt_sacN = 841.6667
+OK    expressão segura: jur_sac
+      jur_sac = 241000.0000
+OK    expressão segura: dif
+      dif = 87521.3441
+OK    expressão segura: jur_price_mil
+      jur_price_mil = 328.5213
+OK    expressão segura: jur_sac_mil
+      jur_sac_mil = 241.0000
+OK    expressão segura: dif_mil
+      dif_mil = 87.5213
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (15)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (6.6 s)
+OK    duração 84.3 s > 61 s (TikTok Creator Rewards)
+OK    duração 84.3 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S042
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S042
+master: -14.0 LUFS; pico -1.1 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S042/JQE-S042.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S042
+ok episodios/JQE-S042/JQE-S042_ig.mp4 thumbnailOffset 84200
+
+ffprobe duracao=83.7s tamanho=26.5MB tempo_de_producao=7.8min

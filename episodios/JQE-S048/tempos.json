@@ -1,0 +1,44 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 70.801,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.476,
+   "texto": "Ganhou trezentos reais de aumento? Separa metade antes de se acostumar."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 6.026,
+   "dur": 15.496,
+   "texto": "Papo reto: o aumento sempre parece pouco, e some. A gente se acostuma rápido com o que é melhor. Primeiro vem um jantar melhor, depois uma assinatura, depois uma parcela nova. No fim do mês, o salário subiu, mas a sobra continua igual."
+  },
+  {
+   "id": "duo",
+   "inicio": 21.972,
+   "dur": 14.328,
+   "texto": "Agora olha a Bia e o Léo. Os dois ganharam o mesmo aumento. O Léo gastou tudo. A Bia separou cento e cinquenta reais por mês. Depois de dez anos, o Léo tem zero. A Bia tem trinta mil reais."
+  },
+  {
+   "id": "barras",
+   "inicio": 36.75,
+   "dur": 12.573,
+   "texto": "E olha que a Bia nem passou aperto: continuou com cento e cinquenta reais a mais por mês. Em cinco anos, onze mil reais. Em dez, trinta mil reais. Em vinte, cento e oito mil reais."
+  },
+  {
+   "id": "moral",
+   "inicio": 49.773,
+   "dur": 17.456,
+   "texto": "A ideia é simples: o dinheiro que você nunca viu chegar na conta não faz falta. Separar metade do aumento no mesmo dia, de forma automática, deixa você melhorar de vida e ainda guardar. Você aproveita o aumento e constrói o seu futuro ao mesmo tempo, sem sacrifício enorme."
+  },
+  {
+   "id": "volta",
+   "inicio": 67.679,
+   "dur": 3.072,
+   "texto": "Então, no dia em que o seu salário aumentar, lembra:"
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "id": "JQE-S041",
+ "titulo": "Yield on cost: 6% que viram mais de 15%",
+ "formato": "vertical 9:16",
+ "pilar": "Dividendos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "pergunta com número",
+ "formato_narrativo": "explicador (exemplo hipotético)",
+ "nota_tela": "Exemplo hipotético · sem citar empresa; dividendos variam e não têm garantia",
+ "parametros": {
+  "preco": 10,
+  "dividendo": 0.6,
+  "cresc": 0.1,
+  "anos": 10
+ },
+ "calculos": {
+  "dy": "dividendo / preco * 100",
+  "div10": "dividendo * (1 + cresc) ** anos",
+  "yoc": "div10 / preco * 100",
+  "preco10": "preco * (1 + cresc) ** anos",
+  "dy_hoje": "div10 / preco10 * 100"
+ },
+ "numeros_livres": [],
+ "numeros_fonte": [],
+ "fontes": [
+  "Definição: yield on cost = dividendo atual por ação ÷ preço pago",
+  "Exemplo hipotético com crescimento de 10% ao ano do dividendo"
+ ],
+ "capa": {
+  "linha1": "Yield de 6% vira",
+  "linha2": "mais de 15%?",
+  "destaque": "yield on cost"
+ },
+ "ganchos_alternativos": [
+  "Um dividend yield de 6% pode virar mais de 15% sobre o que você pagou.",
+  "O que é yield on cost?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Um yield de seis por cento pode passar de quinze sobre o preço pago.",
+   "leg": "Um yield de seis por cento pode passar de quinze sobre o preço pago.",
+   "dados": {
+    "de": "6%",
+    "valor": "15,56%",
+    "linhas": [
+     "sobre o que",
+     "você pagou"
+    ]
+   }
+  },
+  {
+   "id": "formula",
+   "tipo": "formula",
+   "tts": "Dividend yield é quanto a ação paga por ano em relação ao preço. Exemplo inventado: você paga dez reais e recebe sessenta centavos por ano. Sessenta centavos sobre dez reais dá seis por cento.",
+   "leg": "Dividend yield é quanto a ação paga por ano em relação ao preço. Exemplo inventado: você paga R$ 10 e recebe R$ 0,60 por ano. R$ 0,60 sobre R$ 10 dá 6%.",
+   "dados": {
+    "titulo": "Dividend yield",
+    "linha1": "R$ 0,60 ÷ R$ 10",
+    "resultado": "6%",
+    "nota": "por ano, sobre o preço pago"
+   }
+  },
+  {
+   "id": "linhas",
+   "tipo": "linhas",
+   "tts": "Agora imagina que a empresa aumente o dividendo em dez por cento ao ano. Depois de dez anos, aquele dividendo de sessenta centavos vira um real e cinquenta e seis centavos por ação, sobre as mesmas ações que você comprou lá atrás.",
+   "leg": "Agora imagina que a empresa aumente o dividendo em dez por cento ao ano. Depois de dez anos, aquele dividendo de sessenta centavos vira R$ 1,56 por ação, sobre as mesmas ações que você comprou lá atrás.",
+   "dados": {
+    "titulo": "Dividendo por ação, +10% ao ano",
+    "x_rotulo": "anos",
+    "x_ticks": [
+     0,
+     5,
+     10
+    ],
+    "ymax": 1.8,
+    "ymin": 0,
+    "y_passo": 0.6,
+    "y_fmt": "brl",
+    "series": [
+     {
+      "nome": "dividendo por ação",
+      "destaque": true,
+      "pontos": [
+       [
+        0,
+        0.6
+       ],
+       [
+        1,
+        0.66
+       ],
+       [
+        2,
+        0.726
+       ],
+       [
+        3,
+        0.799
+       ],
+       [
+        4,
+        0.878
+       ],
+       [
+        5,
+        0.966
+       ],
+       [
+        6,
+        1.063
+       ],
+       [
+        7,
+        1.169
+       ],
+       [
+        8,
+        1.286
+       ],
+       [
+        9,
+        1.415
+       ],
+       [
+        10,
+        1.556
+       ]
+      ],
+      "velocidade": 0.8,
+      "inicio": 0.2,
+      "rotulo_final": "R$ 1,56"
+     }
+    ]
+   }
+  },
+  {
+   "id": "versus",
+   "tipo": "versus",
+   "tts": "Sobre os dez reais que você pagou, são quinze vírgula cinquenta e seis por cento. Esse é o yield on cost. Só que olha o outro lado: se o preço também subiu junto, o yield sobre o preço de hoje continua em seis por cento.",
+   "leg": "Sobre os dez reais que você pagou, são 15,56%. Esse é o yield on cost. Só que olha o outro lado: se o preço também subiu junto, o yield sobre o preço de hoje continua em 6%.",
+   "dados": {
+    "a": "15,56%",
+    "b": "6%",
+    "rotulo_a": "sobre o que você pagou",
+    "rotulo_b": "sobre o preço de hoje",
+    "centro": "mesmo dividendo"
+   }
+  },
+  {
+   "id": "ressalva",
+   "tipo": "titulo",
+   "tts": "Então é só uma lente. Ela mostra como o seu dinheiro antigo está rendendo, mas não prova que foi uma boa compra. Dividendos variam, podem cair e não têm garantia nenhuma.",
+   "leg": "Então é só uma lente. Ela mostra como o seu dinheiro antigo está rendendo, mas não prova que foi uma boa compra. Dividendos variam, podem cair e não têm garantia nenhuma.",
+   "dados": {
+    "titulo": [
+     "Uma lente,",
+     "não uma garantia"
+    ],
+    "subtitulo": "dividendos variam e podem cair"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Para não se enganar: compare sempre com o preço de hoje, olhe vários anos de dividendos e lembre que isso é exemplo, não recomendação.",
+   "leg": "Para não se enganar: compare sempre com o preço de hoje, olhe vários anos de dividendos e lembre que isso é exemplo, não recomendação.",
+   "dados": {
+    "titulo": [
+     "Para não se enganar"
+    ],
+    "itens": [
+     "compare com o preço de hoje",
+     "olhe vários anos",
+     "exemplo não é recomendação"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Você olha o yield sobre o preço pago ou o de hoje? Comenta.",
+   "leg": "Você olha o yield sobre o preço pago ou o de hoje? Comenta.",
+   "dados": {
+    "linhas": [
+     "Yield sobre o preço",
+     "pago ou o de hoje?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Yield on cost: de 6% para mais de 15% (a conta)",
+   "texto": "Um dividend yield de 6% pode virar mais de 15% sobre o que você pagou.\n\nCompra a R$ 10, dividendo de R$ 0,60 → 6%\nDividendo +10% ao ano por 10 anos → R$ 1,56\nSobre o que você pagou: 15,56%\nSobre o preço de hoje: 6%\n\nExemplo hipotético, sem citar empresa. Dividendos variam e não têm garantia. Não é recomendação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #investimentos #bolsa #shorts"
+  },
+  "instagram": {
+   "texto": "Um dividend yield de 6% pode virar mais de 15% sobre o que você pagou.\n\n• Compra a R$ 10, dividendo de R$ 0,60 → 6%\n• Dividendo +10% ao ano por 10 anos → R$ 1,56\n• Sobre o que você pagou: 15,56%\n• Sobre o preço de hoje: 6%\n\nVocê olha o yield sobre o preço pago ou o de hoje? 👇\n\nExemplo hipotético, sem citar empresa. Dividendos variam e não têm garantia. Não é recomendação.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividendos #investimentos #bolsa #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Um dividend yield de 6% pode virar mais de 15% sobre o que você pagou. É o yield on cost. Exemplo hipotético, sem citar empresa. Dividendos variam e não têm garantia. Não é recomendação. Narração por IA. #educacaofinanceira #dividendos #investimentos #bolsa"
+  }
+ }
+}

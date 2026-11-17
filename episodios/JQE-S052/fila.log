@@ -1,0 +1,97 @@
+$ python3 pipeline/checa.py episodios/JQE-S052
+OK    expressão segura: A
+      A = 379.6053
+OK    expressão segura: sem
+      sem = 416.6667
+OK    expressão segura: dif
+      dif = 37.0614
+OK    expressão segura: aportado
+      aportado = 9110.5260
+OK    expressão segura: juros
+      juros = 889.4740
+OK    expressão segura: fvLeo
+      fvLeo = 8590.0562
+OK    expressão segura: fvBia
+      fvBia = 10010.3989
+OK    expressão segura: balLeo
+      balLeo = 85.8113
+OK    expressão segura: aportado_mil
+      aportado_mil = 9.1105
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (14)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S052/roteiro.json episodios/JQE-S052
+hook 4.48 s
+fluxo 16.65 s
+barras 11.82 s
+duo 16.5 s
+moral 13.72 s
+lista 9.18 s
+cta 4.47 s
+assinatura 1.32 s
+total 81.84 s
+
+$ python3 pipeline/checa.py episodios/JQE-S052
+OK    expressão segura: A
+      A = 379.6053
+OK    expressão segura: sem
+      sem = 416.6667
+OK    expressão segura: dif
+      dif = 37.0614
+OK    expressão segura: aportado
+      aportado = 9110.5260
+OK    expressão segura: juros
+      juros = 889.4740
+OK    expressão segura: fvLeo
+      fvLeo = 8590.0562
+OK    expressão segura: fvBia
+      fvBia = 10010.3989
+OK    expressão segura: balLeo
+      balLeo = 85.8113
+OK    expressão segura: aportado_mil
+      aportado_mil = 9.1105
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (14)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (5.0 s)
+OK    duração 83.0 s > 61 s (TikTok Creator Rewards)
+OK    duração 83.0 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S052
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S052
+master: -14.0 LUFS; pico -1.4 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S052/JQE-S052.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S052
+ok episodios/JQE-S052/JQE-S052_ig.mp4 thumbnailOffset 83000
+
+ffprobe duracao=82.5s tamanho=27.4MB tempo_de_producao=7.5min

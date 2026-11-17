@@ -1,0 +1,180 @@
+{
+ "id": "JQE-S043",
+ "titulo": "R$ 800 hoje ou R$ 1.000 em 5 anos: o que vale mais?",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "escolha",
+ "formato_narrativo": "versus + personagens",
+ "nota_tela": "Exemplo ilustrativo · taxa hipotética de 10% ao ano, sem impostos",
+ "parametros": {
+  "taxa": 0.1
+ },
+ "calculos": {
+  "vp": "1000 / (1 + taxa) ** 5",
+  "fv800": "800 * (1 + taxa) ** 5",
+  "vp3": "1000 / (1.03) ** 5",
+  "dif": "fv800 - 1000",
+  "balvp": "vp / 800 * 100"
+ },
+ "numeros_livres": [
+  800,
+  1000,
+  3,
+  1.1
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor presente = VF ÷ (1 + i)^n; valor futuro = VP × (1 + i)^n",
+  "Exemplo ilustrativo com taxas hipotéticas"
+ ],
+ "capa": {
+  "linha1": "R$ 800 hoje ou",
+  "linha2": "R$ 1.000 em 5 anos",
+  "destaque": "valor presente"
+ },
+ "ganchos_alternativos": [
+  "R$ 800 hoje ou R$ 1.000 daqui a 5 anos?",
+  "Quanto vale hoje o dinheiro do futuro?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Mil reais daqui a cinco anos ou oitocentos reais hoje: o que vale mais?",
+   "leg": "Mil reais daqui a cinco anos ou oitocentos reais hoje: o que vale mais?",
+   "dados": {
+    "a": "R$ 800",
+    "b": "R$ 1.000",
+    "rotulo_a": "hoje",
+    "rotulo_b": "daqui a 5 anos",
+    "centro": "o que vale mais?"
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Parece óbvio: mil é mais que oitocentos. Mas o dinheiro tem um ingrediente escondido: o tempo. Se você investe os oitocentos a dez por cento ao ano, que é uma taxa hipotética, em cinco anos eles viram mil e duzentos e oitenta e oito reais.",
+   "leg": "Parece óbvio: mil é mais que oitocentos. Mas o dinheiro tem um ingrediente escondido: o tempo. Se você investe os oitocentos a dez por cento ao ano, que é uma taxa hipotética, em cinco anos eles viram R$ 1.288.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "hoje: R$ 800",
+      "tom": "neutro"
+     },
+     {
+      "texto": "investe 5 anos",
+      "tom": "cinza"
+     },
+     {
+      "texto": "R$ 1.288",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "10% ao ano",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "juros compostos",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "formula",
+   "tipo": "formula",
+   "tts": "O caminho inverso também funciona. Pra saber quanto vale hoje o mil que só chega daqui a cinco anos, você divide por um vírgula um elevado a cinco. O resultado é seiscentos e vinte e um reais.",
+   "leg": "O caminho inverso também funciona. Pra saber quanto vale hoje os R$ 1.000 que só chegam daqui a 5 anos, você divide por 1,1 elevado a 5. O resultado é R$ 621.",
+   "dados": {
+    "titulo": "Valor presente",
+    "linha1": "R$ 1.000 ÷ 1,1⁵",
+    "resultado": "R$ 621",
+    "nota": "é o que o R$ 1.000 vale hoje"
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Olha o Léo e a Bia. O Léo escolheu esperar pelos mil reais. A Bia pegou os oitocentos e investiu. No fim, a Bia ficou com mil e duzentos e oitenta e oito reais, mais que os mil do Léo.",
+   "leg": "Olha o Léo e a Bia. O Léo escolheu esperar pelos mil reais. A Bia pegou os oitocentos e investiu. No fim, a Bia ficou com R$ 1.288, mais que os mil do Léo.",
+   "dados": {
+    "leo": {
+     "fala": "Prefiro os R$ 1.000",
+     "rotulo": "esperou 5 anos",
+     "valor": 78,
+     "texto": "R$ 1.000"
+    },
+    "bia": {
+     "fala": "Levo R$ 800 hoje",
+     "rotulo": "investiu os R$ 800",
+     "valor": 100,
+     "texto": "R$ 1.288"
+    }
+   }
+  },
+  {
+   "id": "depende",
+   "tipo": "titulo",
+   "tts": "Mas atenção, isso depende da taxa. Se o seu dinheiro rende só três por cento ao ano, os mil reais futuros valem oitocentos e sessenta e três reais hoje, e aí esperar compensa. O tempo tem preço, e o preço é a taxa.",
+   "leg": "Mas atenção, isso depende da taxa. Se o seu dinheiro rende só três por cento ao ano, os mil reais futuros valem R$ 863 hoje, e aí esperar compensa. O tempo tem preço, e o preço é a taxa.",
+   "dados": {
+    "titulo": [
+     "O tempo tem preço,",
+     "e o preço é a taxa"
+    ],
+    "subtitulo": "com taxa menor, esperar pode compensar"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Então, antes de aceitar um dinheiro futuro, pergunta: quanto eu conseguiria ganhar com ele hoje, o quanto eu confio em quem vai pagar e se eu preciso dele agora.",
+   "leg": "Então, antes de aceitar um dinheiro futuro, pergunta: quanto eu conseguiria ganhar com ele hoje, o quanto eu confio em quem vai pagar e se eu preciso dele agora.",
+   "dados": {
+    "titulo": [
+     "Pergunte antes"
+    ],
+    "itens": [
+     "quanto renderia hoje?",
+     "confio em quem vai pagar?",
+     "preciso dele agora?"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Você prefere o dinheiro hoje ou depois? Responde nos comentários.",
+   "leg": "Você prefere o dinheiro hoje ou depois? Responde nos comentários.",
+   "dados": {
+    "linhas": [
+     "Dinheiro hoje",
+     "ou depois?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 800 hoje ou R$ 1.000 em 5 anos: o que vale mais?",
+   "texto": "Mil reais daqui a cinco anos ou oitocentos reais hoje: o que vale mais?\n\nR$ 800 investidos a 10% ao ano → R$ 1.288 em 5 anos\nR$ 1.000 em 5 anos valem R$ 621 hoje (a 10% ao ano)\nCom taxa de 3% ao ano, valem R$ 863 hoje\nO tempo tem preço, e o preço é a taxa.\n\nExemplo ilustrativo, taxas hipotéticas, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #valorpresente #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Mil reais daqui a cinco anos ou oitocentos reais hoje: o que vale mais?\n\n• R$ 800 investidos a 10% ao ano → R$ 1.288 em 5 anos\n• R$ 1.000 em 5 anos valem R$ 621 hoje (a 10% ao ano)\n• Com taxa de 3% ao ano, valem R$ 863 hoje\n• O tempo tem preço, e o preço é a taxa.\n\nDinheiro hoje ou depois: o que você escolhe? 👇\n\nExemplo ilustrativo, taxas hipotéticas, sem impostos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #valorpresente #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "R$ 800 hoje ou R$ 1.000 em 5 anos? A conta do valor presente. Exemplo ilustrativo, taxas hipotéticas, sem impostos. Narração por IA. #educacaofinanceira #investimentos #valorpresente #dinheiro"
+  }
+ }
+}

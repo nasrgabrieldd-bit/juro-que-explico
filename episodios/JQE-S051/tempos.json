@@ -1,0 +1,50 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 69.077,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 3.264,
+   "texto": "Duas dívidas e um dinheiro extra: qual pagar primeiro?"
+  },
+  {
+   "id": "fluxo",
+   "inicio": 3.814,
+   "dur": 13.384,
+   "texto": "Exemplo hipotético. Você deve três mil reais nas duas dívidas, uma com juros de doze por cento ao mês e outra com dois por cento. De repente, sobram quinhentos reais. Pra onde eles vão?"
+  },
+  {
+   "id": "barras",
+   "inicio": 17.648,
+   "dur": 12.211,
+   "texto": "A conta é direta. Os quinhentos na dívida de doze por cento evitam sessenta reais de juros por mês. Na de dois por cento, só dez reais. A diferença é de seis vezes."
+  },
+  {
+   "id": "duo",
+   "inicio": 30.309,
+   "dur": 12.552,
+   "texto": "Olha o Léo e a Bia. O Léo pagou a dívida mais baixa, porque tinha pressa de ver uma delas acabar. A Bia atacou a de juros mais altos. No fim do mês, a Bia economizou seis vezes mais."
+  },
+  {
+   "id": "honesto",
+   "inicio": 43.311,
+   "dur": 12.997,
+   "texto": "Sem julgamento: se zerar a menor dívida primeiro te dá ânimo pra continuar, isso também funciona. O mais importante é não parar. Mas, pela matemática, a de juros mais altos custa mais caro."
+  },
+  {
+   "id": "lista",
+   "inicio": 56.758,
+   "dur": 7.979,
+   "texto": "Um roteiro simples: anote todas as dívidas e as taxas, pague o mínimo de todas e coloque o dinheiro extra na de juros mais altos."
+  },
+  {
+   "id": "volta",
+   "inicio": 65.187,
+   "dur": 3.84,
+   "texto": "Então, quando tiver duas dívidas e um dinheiro extra, pergunta:"
+  }
+ ]
+}

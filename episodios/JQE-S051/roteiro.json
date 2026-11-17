@@ -1,0 +1,190 @@
+{
+ "id": "JQE-S051",
+ "titulo": "Duas dívidas e um dinheiro extra: qual pagar primeiro?",
+ "formato": "vertical 9:16",
+ "pilar": "Dívidas",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "escolha",
+ "formato_narrativo": "versus + personagens (loop)",
+ "nota_tela": "Exemplo hipotético · taxas inventadas; as taxas reais variam",
+ "parametros": {
+  "valor": 3000,
+  "tA": 0.12,
+  "tB": 0.02,
+  "extra": 500
+ },
+ "calculos": {
+  "jA": "valor * tA",
+  "jB": "valor * tB",
+  "ecoA": "extra * tA",
+  "ecoB": "extra * tB",
+  "razao": "ecoA / ecoB",
+  "balB": "ecoB / ecoA * 100"
+ },
+ "numeros_livres": [
+  12
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: juros evitados por mês = valor amortizado × taxa mensal",
+  "Exemplo hipotético"
+ ],
+ "capa": {
+  "linha1": "Duas dívidas,",
+  "linha2": "um dinheiro extra",
+  "destaque": "qual pagar primeiro?"
+ },
+ "ganchos_alternativos": [
+  "Duas dívidas e um dinheiro extra: qual pagar primeiro?",
+  "Qual dívida pagar primeiro?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Duas dívidas e um dinheiro extra: qual pagar primeiro?",
+   "leg": "Duas dívidas e um dinheiro extra: qual pagar primeiro?",
+   "dados": {
+    "a": "12% ao mês",
+    "b": "2% ao mês",
+    "rotulo_a": "dívida A",
+    "rotulo_b": "dívida B",
+    "centro": "qual pagar primeiro?"
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Exemplo hipotético. Você deve três mil reais nas duas dívidas, uma com juros de doze por cento ao mês e outra com dois por cento. De repente, sobram quinhentos reais. Pra onde eles vão?",
+   "leg": "Exemplo hipotético. Você deve R$ 3.000 em cada uma das duas dívidas, uma com juros de 12% ao mês e outra com 2%. De repente, sobram R$ 500. Pra onde eles vão?",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "A: R$ 3.000 a 12%",
+      "tom": "erro"
+     },
+     {
+      "texto": "B: R$ 3.000 a 2%",
+      "tom": "cinza"
+     },
+     {
+      "texto": "sobram R$ 500",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "juros de R$ 360/mês",
+      "tom": "erro"
+     },
+     {
+      "rotulo": "juros de R$ 60/mês",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "A conta é direta. Os quinhentos na dívida de doze por cento evitam sessenta reais de juros por mês. Na de dois por cento, só dez reais. A diferença é de seis vezes.",
+   "leg": "A conta é direta. Os quinhentos na dívida de doze por cento evitam R$ 60 de juros por mês. Na de dois por cento, só R$ 10. A diferença é de seis vezes.",
+   "dados": {
+    "titulo": [
+     "Juros evitados",
+     "por mês"
+    ],
+    "itens": [
+     {
+      "rotulo": "pagar a de 12%",
+      "valor": 60.0,
+      "texto": "R$ 60",
+      "destaque": true
+     },
+     {
+      "rotulo": "pagar a de 2%",
+      "valor": 10.0,
+      "texto": "R$ 10"
+     }
+    ],
+    "nota": "juros hipotéticos sobre R$ 500 amortizados"
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Olha o Léo e a Bia. O Léo pagou a dívida mais baixa, porque tinha pressa de ver uma delas acabar. A Bia atacou a de juros mais altos. No fim do mês, a Bia economizou seis vezes mais.",
+   "leg": "Olha o Léo e a Bia. O Léo pagou a dívida mais baixa, porque tinha pressa de ver uma delas acabar. A Bia atacou a de juros mais altos. No fim do mês, a Bia economizou seis vezes mais.",
+   "dados": {
+    "leo": {
+     "fala": "Paguei a de 2%",
+     "rotulo": "juros evitados",
+     "valor": 16.666666666666664,
+     "texto": "R$ 10/mês"
+    },
+    "bia": {
+     "fala": "Paguei a de 12%",
+     "rotulo": "juros evitados",
+     "valor": 100,
+     "texto": "R$ 60/mês"
+    }
+   }
+  },
+  {
+   "id": "honesto",
+   "tipo": "titulo",
+   "tts": "Sem julgamento: se zerar a menor dívida primeiro te dá ânimo pra continuar, isso também funciona. O mais importante é não parar. Mas, pela matemática, a de juros mais altos custa mais caro.",
+   "leg": "Sem julgamento: se zerar a menor dívida primeiro te dá ânimo pra continuar, isso também funciona. O mais importante é não parar. Mas, pela matemática, a de juros mais altos custa mais caro.",
+   "dados": {
+    "titulo": [
+     "Pela conta, a mais",
+     "cara vem primeiro"
+    ],
+    "subtitulo": "mas o que importa é não desistir"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Um roteiro simples: anote todas as dívidas e as taxas, pague o mínimo de todas e coloque o dinheiro extra na de juros mais altos.",
+   "leg": "Um roteiro simples: anote todas as dívidas e as taxas, pague o mínimo de todas e coloque o dinheiro extra na de juros mais altos.",
+   "dados": {
+    "titulo": [
+     "Roteiro simples"
+    ],
+    "itens": [
+     "anote dívidas e taxas",
+     "pague o mínimo de todas",
+     "extra na taxa mais alta"
+    ]
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "versus",
+   "tts": "Então, quando tiver duas dívidas e um dinheiro extra, pergunta:",
+   "leg": "Então, quando tiver duas dívidas e um dinheiro extra, pergunta:",
+   "dados": {
+    "a": "12% ao mês",
+    "b": "2% ao mês",
+    "rotulo_a": "dívida A",
+    "rotulo_b": "dívida B",
+    "centro": "qual pagar primeiro?"
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Duas dívidas e um dinheiro extra: qual pagar primeiro?",
+   "texto": "Duas dívidas e um dinheiro extra: qual pagar primeiro?\n\nR$ 500 na dívida de 12% ao mês → R$ 60 de juros evitados por mês\nR$ 500 na dívida de 2% ao mês → R$ 10 por mês\nPela matemática, a de juros mais altos vem primeiro\nSe zerar a menor te motiva, isso também funciona: o importante é não parar\n\nExemplo hipotético, taxas inventadas. Não é recomendação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividas #juros #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Duas dívidas e um dinheiro extra: qual pagar primeiro?\n\n• R$ 500 na dívida de 12% ao mês → R$ 60 de juros evitados por mês\n• R$ 500 na dívida de 2% ao mês → R$ 10 por mês\n• Pela matemática, a de juros mais altos vem primeiro\n• Se zerar a menor te motiva, isso também funciona: o importante é não parar\n\nQual dívida você pagaria primeiro? 👇\n\nExemplo hipotético, taxas inventadas. Não é recomendação.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividas #juros #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Duas dívidas e um dinheiro extra: qual pagar primeiro? A conta com o Léo e a Bia. Exemplo hipotético, taxas inventadas. Não é recomendação. Narração por IA. #educacaofinanceira #dividas #juros #dinheiro"
+  }
+ },
+ "loop": true
+}

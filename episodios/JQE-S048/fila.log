@@ -1,0 +1,100 @@
+$ python3 pipeline/checa.py episodios/JQE-S048
+OK    expressão segura: guarda
+      guarda = 150.0000
+OK    expressão segura: f5
+      f5 = 11493.5800
+OK    expressão segura: f10
+      f10 = 30032.6204
+OK    expressão segura: f20
+      f20 = 108169.6829
+OK    expressão segura: coloca10
+      coloca10 = 18000.0000
+OK    expressão segura: f10_mil
+      f10_mil = 30.0326
+OK    expressão segura: f5_mil
+      f5_mil = 11.4936
+OK    expressão segura: f20_mil
+      f20_mil = 108.1697
+OK    expressão segura: coloca10_mil
+      coloca10_mil = 18.0000
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    loop: última cena repete visualmente a primeira
+OK    loop: última frase fica aberta (termina em ':' ou ',') e fecha no gancho
+OK    loop: gancho serve de continuação
+OK    gancho: primeira frase com até 16 palavras (5)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S048/roteiro.json episodios/JQE-S048
+hook 5.48 s
+fluxo 15.5 s
+duo 14.33 s
+barras 12.57 s
+moral 17.46 s
+volta 3.07 s
+total 70.8 s
+
+$ python3 pipeline/checa.py episodios/JQE-S048
+OK    expressão segura: guarda
+      guarda = 150.0000
+OK    expressão segura: f5
+      f5 = 11493.5800
+OK    expressão segura: f10
+      f10 = 30032.6204
+OK    expressão segura: f20
+      f20 = 108169.6829
+OK    expressão segura: coloca10
+      coloca10 = 18000.0000
+OK    expressão segura: f10_mil
+      f10_mil = 30.0326
+OK    expressão segura: f5_mil
+      f5_mil = 11.4936
+OK    expressão segura: f20_mil
+      f20_mil = 108.1697
+OK    expressão segura: coloca10_mil
+      coloca10_mil = 18.0000
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    loop: última cena repete visualmente a primeira
+OK    loop: última frase fica aberta (termina em ':' ou ',') e fecha no gancho
+OK    loop: gancho serve de continuação
+OK    gancho: primeira frase com até 16 palavras (5)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (6.0 s)
+OK    duração 72.0 s > 61 s (TikTok Creator Rewards)
+OK    duração 72.0 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S048
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S048
+master: -14.0 LUFS; pico -1.4 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S048/JQE-S048.mp4
+
+$ python3 pipeline/emenda.py episodios/JQE-S048
+diferença média por pixel (0-255), fora da legenda: 1.99; pixels com diferença > 40: 1.04%
+áudio: nível do último 0,1 s = -180.0 dBFS; do primeiro 0,1 s = -128.0 dBFS; duração 71.00 s
+
+ffprobe duracao=71.0s tamanho=18.2MB tempo_de_producao=5.9min

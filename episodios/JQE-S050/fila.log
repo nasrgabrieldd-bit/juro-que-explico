@@ -1,0 +1,85 @@
+$ python3 pipeline/checa.py episodios/JQE-S050
+OK    expressão segura: dobra
+      dobra = 6.0000
+OK    expressão segura: triplica
+      triplica = 9.5000
+OK    expressão segura: quadruplica
+      quadruplica = 12.0000
+OK    expressão segura: exato3
+      exato3 = 9.6940
+OK    expressão segura: v6
+      v6 = 1973.8227
+OK    expressão segura: v12
+      v12 = 3895.9760
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (12)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S050/roteiro.json episodios/JQE-S050
+hook 4.63 s
+formula 10.97 s
+barras 13.11 s
+fluxo 10.03 s
+versus 12.63 s
+lista 10.5 s
+cta 4.71 s
+assinatura 1.32 s
+total 71.6 s
+
+$ python3 pipeline/checa.py episodios/JQE-S050
+OK    expressão segura: dobra
+      dobra = 6.0000
+OK    expressão segura: triplica
+      triplica = 9.5000
+OK    expressão segura: quadruplica
+      quadruplica = 12.0000
+OK    expressão segura: exato3
+      exato3 = 9.6940
+OK    expressão segura: v6
+      v6 = 1973.8227
+OK    expressão segura: v12
+      v12 = 3895.9760
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (12)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (5.2 s)
+OK    duração 72.8 s > 61 s (TikTok Creator Rewards)
+OK    duração 72.8 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S050
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S050
+master: -14.0 LUFS; pico -1.4 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S050/JQE-S050.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S050
+ok episodios/JQE-S050/JQE-S050_ig.mp4 thumbnailOffset 72800
+
+ffprobe duracao=72.3s tamanho=23.0MB tempo_de_producao=7.1min

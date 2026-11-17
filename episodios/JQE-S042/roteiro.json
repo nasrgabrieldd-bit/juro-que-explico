@@ -1,0 +1,256 @@
+{
+ "id": "JQE-S042",
+ "titulo": "Financiamento: Price ou SAC, qual cobra mais juros?",
+ "formato": "vertical 9:16",
+ "pilar": "Crédito",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "escolha",
+ "formato_narrativo": "versus + explicador",
+ "nota_tela": "Exemplo hipotético · 1% ao mês, 20 anos, sem seguros nem tarifas",
+ "parametros": {
+  "valor": 200000,
+  "taxa": 0.01,
+  "meses": 240
+ },
+ "calculos": {
+  "pmt_price": "valor * taxa / (1 - (1 + taxa) ** (-meses))",
+  "tot_price": "pmt_price * meses",
+  "jur_price": "tot_price - valor",
+  "amort": "valor / meses",
+  "pmt_sac1": "amort + valor * taxa",
+  "pmt_sacN": "amort * (1 + taxa)",
+  "jur_sac": "valor * taxa * (meses + 1) / 2",
+  "dif": "jur_price - jur_sac",
+  "jur_price_mil": "jur_price / 1000",
+  "jur_sac_mil": "jur_sac / 1000",
+  "dif_mil": "dif / 1000"
+ },
+ "numeros_livres": [
+  20,
+  200
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Price: PMT = VP × i ÷ (1 − (1 + i)^−n)",
+  "SAC: amortização = VP ÷ n; juros totais = VP × i × (n + 1) ÷ 2",
+  "Exemplo hipotético; as taxas reais variam"
+ ],
+ "capa": {
+  "linha1": "Price ou SAC:",
+  "linha2": "quem cobra mais",
+  "destaque": "juros?"
+ },
+ "ganchos_alternativos": [
+  "Financiamento de R$ 200 mil, mesma taxa: qual cobra mais juros?",
+  "Price × SAC em 1 minuto."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Financiamento de duzentos mil reais, mesma taxa: qual sistema cobra mais juros, Price ou SAC?",
+   "leg": "Financiamento de duzentos mil reais, mesma taxa: qual sistema cobra mais juros, Price ou SAC?",
+   "dados": {
+    "a": "Price",
+    "b": "SAC",
+    "rotulo_a": "parcela fixa",
+    "rotulo_b": "parcela que cai",
+    "centro": "quem cobra mais juros?"
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Exemplo hipotético: duzentos mil, vinte anos, juros de um por cento ao mês. Na Price, a parcela é igual do começo ao fim, mas no começo ela é quase só juros. Por isso o saldo devedor demora a cair, e você paga juros por mais tempo.",
+   "leg": "Exemplo hipotético: duzentos mil, vinte anos, juros de um por cento ao mês. Na Price, a parcela é igual do começo ao fim, mas no começo ela é quase só juros. Por isso o saldo devedor demora a cair, e você paga juros por mais tempo.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "Price: parcela fixa",
+      "tom": "neutro"
+     },
+     {
+      "texto": "começa quase só juros",
+      "tom": "cinza"
+     },
+     {
+      "texto": "paga mais juros no total",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "no começo",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "resultado",
+      "tom": "erro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "formula",
+   "tipo": "formula",
+   "tts": "Na SAC, você amortiza sempre o mesmo valor. Duzentos mil dividido por duzentos e quarenta meses dá oitocentos e trinta e três reais por mês. Em cima disso entram os juros, que diminuem a cada parcela.",
+   "leg": "Na SAC, você amortiza sempre o mesmo valor. R$ 200 mil ÷ 240 meses = R$ 833 por mês. Em cima disso entram os juros, que diminuem a cada parcela.",
+   "dados": {
+    "titulo": "SAC: amortização fixa",
+    "linha1": "R$ 200 mil ÷ 240",
+    "resultado": "R$ 833",
+    "nota": "por mês, mais os juros do saldo"
+   }
+  },
+  {
+   "id": "linhas",
+   "tipo": "linhas",
+   "tts": "Olha as parcelas. A Price fica em dois mil e duzentos e dois reais o tempo todo. A SAC começa em dois mil e oitocentos e trinta e três reais, mais pesada, mas cai até oitocentos e quarenta e dois reais no fim.",
+   "leg": "Olha as parcelas. A Price fica em R$ 2.202 o tempo todo. A SAC começa em R$ 2.833, mais pesada, mas cai até R$ 842 no fim.",
+   "dados": {
+    "titulo": "Parcela ao longo dos 240 meses",
+    "x_rotulo": "meses",
+    "x_ticks": [
+     0,
+     60,
+     120,
+     180,
+     240
+    ],
+    "ymax": 3000,
+    "ymin": 0,
+    "y_passo": 1000,
+    "y_fmt": "brl",
+    "series": [
+     {
+      "nome": "Price",
+      "pontos": [
+       [
+        0,
+        2202.17
+       ],
+       [
+        60,
+        2202.17
+       ],
+       [
+        120,
+        2202.17
+       ],
+       [
+        180,
+        2202.17
+       ],
+       [
+        240,
+        2202.17
+       ]
+      ],
+      "velocidade": 0.8,
+      "inicio": 0.2
+     },
+     {
+      "nome": "SAC",
+      "destaque": true,
+      "pontos": [
+       [
+        0,
+        2833.33
+       ],
+       [
+        60,
+        2333.33
+       ],
+       [
+        120,
+        1833.33
+       ],
+       [
+        180,
+        1333.33
+       ],
+       [
+        240,
+        833.33
+       ]
+      ],
+      "velocidade": 0.8,
+      "inicio": 0.4,
+      "rotulo_final": "R$ 842"
+     }
+    ]
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "E a conta final dos juros: na Price, trezentos e vinte e nove mil reais. Na SAC, duzentos e quarenta e um mil reais. A SAC custa uns oitenta e oito mil reais a menos de juros.",
+   "leg": "E a conta final dos juros: na Price, R$ 329 mil. Na SAC, R$ 241 mil. A SAC custa uns R$ 88 mil a menos de juros.",
+   "dados": {
+    "titulo": [
+     "Juros pagos",
+     "no total"
+    ],
+    "itens": [
+     {
+      "rotulo": "Price",
+      "valor": 328521.34411341266,
+      "texto": "R$ 329 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "SAC",
+      "valor": 241000.0,
+      "texto": "R$ 241 mil"
+     }
+    ],
+    "nota": "taxa hipotética, sem seguros e tarifas"
+   }
+  },
+  {
+   "id": "tradeoff",
+   "tipo": "titulo",
+   "tts": "Mas atenção: a SAC pede uma parcela maior no começo. Se ela não cabe no seu orçamento, a mais barata no total pode ser a pior pra você. O melhor sistema é o que você consegue pagar até o fim.",
+   "leg": "Mas atenção: a SAC pede uma parcela maior no começo. Se ela não cabe no seu orçamento, a mais barata no total pode ser a pior pra você. O melhor sistema é o que você consegue pagar até o fim.",
+   "dados": {
+    "titulo": [
+     "O melhor é o que",
+     "você paga até o fim"
+    ],
+    "subtitulo": "parcela maior hoje × juros menores no total"
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Você prefere parcela menor agora ou menos juros no fim? Comenta.",
+   "leg": "Você prefere parcela menor agora ou menos juros no fim? Comenta.",
+   "dados": {
+    "linhas": [
+     "Parcela menor agora",
+     "ou menos juros?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Financiamento: Price ou SAC, qual cobra mais juros?",
+   "texto": "Financiamento de R$ 200 mil, mesma taxa: qual sistema cobra mais juros?\n\nPrice: parcela fixa de R$ 2.202, juros totais de R$ 329 mil\nSAC: parcela de R$ 2.833 caindo até R$ 842, juros de R$ 241 mil\nA SAC custa uns R$ 88 mil a menos de juros\nMas pede parcela maior no começo.\n\nExemplo hipotético, 1% ao mês por 20 anos, sem seguros nem tarifas. Taxas reais variam.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #financiamento #juros #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Financiamento de R$ 200 mil, mesma taxa: qual sistema cobra mais juros?\n\n• Price: parcela fixa de R$ 2.202, juros totais de R$ 329 mil\n• SAC: parcela de R$ 2.833 caindo até R$ 842, juros de R$ 241 mil\n• A SAC custa uns R$ 88 mil a menos de juros\n• Mas pede parcela maior no começo.\n\nParcela menor agora ou menos juros no fim? 👇\n\nExemplo hipotético, 1% ao mês por 20 anos, sem seguros nem tarifas. Taxas reais variam.\n\nNarração gerada por IA.\n\n#educacaofinanceira #financiamento #juros #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Price ou SAC: qual cobra mais juros num financiamento de R$ 200 mil? A conta. Exemplo hipotético, 1% ao mês por 20 anos, sem seguros nem tarifas. Taxas reais variam. Narração por IA. #educacaofinanceira #financiamento #juros #dinheiro"
+  }
+ }
+}

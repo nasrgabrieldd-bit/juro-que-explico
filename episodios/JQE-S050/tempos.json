@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 71.596,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.629,
+   "texto": "Divida cento e catorze pela taxa e descubra quando seu dinheiro triplica."
+  },
+  {
+   "id": "formula",
+   "inicio": 5.179,
+   "dur": 10.971,
+   "texto": "Exemplo com taxa hipotética de doze por cento ao ano. Cento e catorze dividido por doze dá nove vírgula cinco. Em uns nove anos e meio, o dinheiro vira o triplo."
+  },
+  {
+   "id": "barras",
+   "inicio": 16.6,
+   "dur": 13.107,
+   "texto": "A mesma ideia vale para dobrar e quadruplicar. Pra dobrar, divide setenta e dois: dá seis anos. Pra triplicar, cento e catorze: nove e meio. Pra quadruplicar, cento e quarenta e quatro: doze anos."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 30.157,
+   "dur": 10.032,
+   "texto": "Dá pra ver na prática. Mil reais, a doze por cento ao ano, viram quase dois mil em seis anos e quase quatro mil em doze. É dobrar, e dobrar de novo."
+  },
+  {
+   "id": "versus",
+   "inicio": 40.639,
+   "dur": 12.628,
+   "texto": "É exato? Não. Com a conta completa, o triplo leva uns nove vírgula sete anos, e a regra deu nove vírgula cinco. Fica bem perto, e isso basta pra ter uma noção de cabeça."
+  },
+  {
+   "id": "lista",
+   "inicio": 53.717,
+   "dur": 10.499,
+   "texto": "Guarda estes três números: setenta e dois para dobrar, cento e catorze para triplicar e cento e quarenta e quatro para quadruplicar. E lembra: a taxa aqui é só exemplo."
+  },
+  {
+   "id": "cta",
+   "inicio": 64.665,
+   "dur": 4.708,
+   "texto": "Que taxa você usaria na sua conta de cabeça? Comenta aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 69.823,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

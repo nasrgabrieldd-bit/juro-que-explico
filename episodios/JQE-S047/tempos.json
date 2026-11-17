@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 77.295,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.736,
+   "texto": "Quanto investir para os dividendos pagarem uma conta de luz de duzentos reais?"
+  },
+  {
+   "id": "fluxo",
+   "inicio": 5.286,
+   "dur": 13.296,
+   "texto": "A conta é simples. Duzentos reais por mês são dois mil e quatrocentos reais por ano. Se o investimento pagasse seis por cento ao ano em dividendos, taxa hipotética, você precisaria de quarenta mil reais."
+  },
+  {
+   "id": "barras",
+   "inicio": 19.032,
+   "dur": 13.877,
+   "texto": "E vale para qualquer conta. Para pagar cem reais por mês, uns vinte mil reais. Para duzentos, quarenta mil reais. Para quinhentos, cem mil reais. É só multiplicar a conta por doze e dividir pela taxa."
+  },
+  {
+   "id": "caminho",
+   "inicio": 33.359,
+   "dur": 14.228,
+   "texto": "Parece muito? Dá para chegar aos poucos. Guardando quinhentos e vinte e dois reais por mês durante cinco anos, com juros hipotéticos, você junta essa base. Depois, é só deixar os dividendos pagarem a conta."
+  },
+  {
+   "id": "ressalva",
+   "inicio": 48.037,
+   "dur": 11.611,
+   "texto": "Mas papo reto: dividendos variam, podem diminuir e não têm garantia nenhuma. Seis por cento é só um exemplo. Esse cálculo serve para dar tamanho à meta, não para prometer renda."
+  },
+  {
+   "id": "lista",
+   "inicio": 60.098,
+   "dur": 9.453,
+   "texto": "Para começar: escolha uma conta que você quer pagar, faça a conta da base e comece pelo que couber no bolso. Uma meta com nome é mais fácil de manter."
+  },
+  {
+   "id": "cta",
+   "inicio": 70.001,
+   "dur": 5.071,
+   "texto": "Qual conta você gostaria de ver paga pelos dividendos? Comenta."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 75.522,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+$ python3 pipeline/checa.py episodios/JQE-S043
+OK    expressão segura: vp
+      vp = 620.9213
+OK    expressão segura: fv800
+      fv800 = 1288.4080
+OK    expressão segura: vp3
+      vp3 = 862.6088
+OK    expressão segura: dif
+      dif = 288.4080
+OK    expressão segura: balvp
+      balvp = 77.6152
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (14)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S043/roteiro.json episodios/JQE-S043
+hook 4.33 s
+fluxo 15.41 s
+formula 12.36 s
+duo 12.06 s
+depende 14.6 s
+lista 9.22 s
+cta 5.03 s
+assinatura 1.32 s
+total 78.02 s
+
+$ python3 pipeline/checa.py episodios/JQE-S043
+OK    expressão segura: vp
+      vp = 620.9213
+OK    expressão segura: fv800
+      fv800 = 1288.4080
+OK    expressão segura: vp3
+      vp3 = 862.6088
+OK    expressão segura: dif
+      dif = 288.4080
+OK    expressão segura: balvp
+      balvp = 77.6152
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (14)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (4.9 s)
+OK    duração 79.2 s > 61 s (TikTok Creator Rewards)
+OK    duração 79.2 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S043
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S043
+master: -14.0 LUFS; pico -1.5 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S043/JQE-S043.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S043
+ok episodios/JQE-S043/JQE-S043_ig.mp4 thumbnailOffset 79200
+
+ffprobe duracao=78.7s tamanho=25.9MB tempo_de_producao=8.1min

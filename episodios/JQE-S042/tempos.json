@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 83.059,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.016,
+   "texto": "Financiamento de duzentos mil reais, mesma taxa: qual sistema cobra mais juros, Price ou SAC?"
+  },
+  {
+   "id": "fluxo",
+   "inicio": 6.566,
+   "dur": 14.597,
+   "texto": "Exemplo hipotético: duzentos mil, vinte anos, juros de um por cento ao mês. Na Price, a parcela é igual do começo ao fim, mas no começo ela é quase só juros. Por isso o saldo devedor demora a cair, e você paga juros por mais tempo."
+  },
+  {
+   "id": "formula",
+   "inicio": 21.613,
+   "dur": 13.915,
+   "texto": "Na SAC, você amortiza sempre o mesmo valor. Duzentos mil dividido por duzentos e quarenta meses dá oitocentos e trinta e três reais por mês. Em cima disso entram os juros, que diminuem a cada parcela."
+  },
+  {
+   "id": "linhas",
+   "inicio": 35.978,
+   "dur": 13.979,
+   "texto": "Olha as parcelas. A Price fica em dois mil e duzentos e dois reais o tempo todo. A SAC começa em dois mil e oitocentos e trinta e três reais, mais pesada, mas cai até oitocentos e quarenta e dois reais no fim."
+  },
+  {
+   "id": "barras",
+   "inicio": 50.407,
+   "dur": 11.845,
+   "texto": "E a conta final dos juros: na Price, trezentos e vinte e nove mil reais. Na SAC, duzentos e quarenta e um mil reais. A SAC custa uns oitenta e oito mil reais a menos de juros."
+  },
+  {
+   "id": "tradeoff",
+   "inicio": 62.702,
+   "dur": 12.72,
+   "texto": "Mas atenção: a SAC pede uma parcela maior no começo. Se ela não cabe no seu orçamento, a mais barata no total pode ser a pior pra você. O melhor sistema é o que você consegue pagar até o fim."
+  },
+  {
+   "id": "cta",
+   "inicio": 75.872,
+   "dur": 4.964,
+   "texto": "Você prefere parcela menor agora ou menos juros no fim? Comenta."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 81.286,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

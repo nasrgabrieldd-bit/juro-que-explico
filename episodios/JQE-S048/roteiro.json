@@ -1,0 +1,181 @@
+{
+ "id": "JQE-S048",
+ "titulo": "Aumento de salário: separe metade antes de se acostumar",
+ "formato": "vertical 9:16",
+ "pilar": "Comportamento",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "história",
+ "formato_narrativo": "personagens + passo a passo (loop)",
+ "nota_tela": "Exemplo ilustrativo · juros hipotéticos de 0,8% ao mês, sem impostos",
+ "parametros": {
+  "aumento": 300,
+  "taxa_mes": 0.008
+ },
+ "calculos": {
+  "guarda": "aumento / 2",
+  "f5": "guarda * (((1 + taxa_mes) ** 60 - 1) / taxa_mes)",
+  "f10": "guarda * (((1 + taxa_mes) ** 120 - 1) / taxa_mes)",
+  "f20": "guarda * (((1 + taxa_mes) ** 240 - 1) / taxa_mes)",
+  "coloca10": "guarda * 120",
+  "f10_mil": "f10 / 1000",
+  "f5_mil": "f5 / 1000",
+  "f20_mil": "f20 / 1000",
+  "coloca10_mil": "coloca10 / 1000"
+ },
+ "numeros_livres": [
+  10,
+  20
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor futuro de aportes mensais, VF = A × ((1 + i)^n − 1) ÷ i",
+  "Exemplo ilustrativo"
+ ],
+ "capa": {
+  "linha1": "Ganhou aumento?",
+  "linha2": "Separe metade",
+  "destaque": "antes de gastar"
+ },
+ "ganchos_alternativos": [
+  "Ganhou R$ 300 de aumento? Separa metade antes de se acostumar.",
+  "O que fazer com o aumento de salário."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Ganhou trezentos reais de aumento? Separa metade antes de se acostumar.",
+   "leg": "Ganhou trezentos reais de aumento? Separa metade antes de se acostumar.",
+   "dados": {
+    "valor": "+R$ 300",
+    "linhas": [
+     "de aumento: separa",
+     "metade antes de gastar"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Papo reto: o aumento sempre parece pouco, e some. A gente se acostuma rápido com o que é melhor. Primeiro vem um jantar melhor, depois uma assinatura, depois uma parcela nova. No fim do mês, o salário subiu, mas a sobra continua igual.",
+   "leg": "Papo reto: o aumento sempre parece pouco, e some. A gente se acostuma rápido com o que é melhor. Primeiro vem um jantar melhor, depois uma assinatura, depois uma parcela nova. No fim do mês, o salário subiu, mas a sobra continua igual.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "salário sobe R$ 300",
+      "tom": "neutro"
+     },
+     {
+      "texto": "o gasto sobe junto",
+      "tom": "cinza"
+     },
+     {
+      "texto": "sobra igual",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "sem perceber",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "no fim do mês",
+      "tom": "erro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Agora olha a Bia e o Léo. Os dois ganharam o mesmo aumento. O Léo gastou tudo. A Bia separou cento e cinquenta reais por mês. Depois de dez anos, o Léo tem zero. A Bia tem trinta mil reais.",
+   "leg": "Agora olha a Bia e o Léo. Os dois ganharam o mesmo aumento. O Léo gastou tudo. A Bia separou R$ 150 por mês. Depois de 10 anos, o Léo tem zero. A Bia tem R$ 30 mil.",
+   "dados": {
+    "leo": {
+     "fala": "Gastei tudo",
+     "rotulo": "gastou o aumento",
+     "valor": 6,
+     "texto": "R$ 0"
+    },
+    "bia": {
+     "fala": "Separei metade",
+     "rotulo": "guardou R$ 150/mês",
+     "valor": 100,
+     "texto": "R$ 30 mil"
+    }
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "E olha que a Bia nem passou aperto: continuou com cento e cinquenta reais a mais por mês. Em cinco anos, onze mil reais. Em dez, trinta mil reais. Em vinte, cento e oito mil reais.",
+   "leg": "E olha que a Bia nem passou aperto: continuou com cento e cinquenta reais a mais por mês. Em cinco anos, R$ 11 mil. Em dez, R$ 30 mil. Em vinte, R$ 108 mil.",
+   "dados": {
+    "titulo": [
+     "R$ 150 por mês,",
+     "só do aumento"
+    ],
+    "itens": [
+     {
+      "rotulo": "5 anos",
+      "valor": 11493.580024781964,
+      "texto": "R$ 11 mil"
+     },
+     {
+      "rotulo": "10 anos",
+      "valor": 30032.620411487507,
+      "texto": "R$ 30 mil"
+     },
+     {
+      "rotulo": "20 anos",
+      "valor": 108169.68289126814,
+      "texto": "R$ 108 mil",
+      "destaque": true
+     }
+    ],
+    "nota": "juros hipotéticos de 0,8% ao mês, sem impostos"
+   }
+  },
+  {
+   "id": "moral",
+   "tipo": "titulo",
+   "tts": "A ideia é simples: o dinheiro que você nunca viu chegar na conta não faz falta. Separar metade do aumento no mesmo dia, de forma automática, deixa você melhorar de vida e ainda guardar. Você aproveita o aumento e constrói o seu futuro ao mesmo tempo, sem sacrifício enorme.",
+   "leg": "A ideia é simples: o dinheiro que você nunca viu chegar na conta não faz falta. Separar metade do aumento no mesmo dia, de forma automática, deixa você melhorar de vida e ainda guardar. Você aproveita o aumento e constrói o seu futuro ao mesmo tempo, sem sacrifício enorme.",
+   "dados": {
+    "titulo": [
+     "Metade pro futuro,",
+     "metade pra viver"
+    ],
+    "subtitulo": "o aumento melhora o hoje e o amanhã"
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "numero_grande",
+   "tts": "Então, no dia em que o seu salário aumentar, lembra:",
+   "leg": "Então, no dia em que o seu salário aumentar, lembra:",
+   "dados": {
+    "valor": "+R$ 300",
+    "linhas": [
+     "de aumento: separa",
+     "metade antes de gastar"
+    ]
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Aumento de salário: separe metade antes de se acostumar",
+   "texto": "Ganhou R$ 300 de aumento? Separa metade antes de se acostumar.\n\nR$ 150 por mês durante 10 anos → R$ 30 mil (você coloca R$ 18 mil)\n5 anos → R$ 11 mil\n20 anos → R$ 108 mil\nMetade pro futuro, metade pra viver.\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #salario #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Ganhou R$ 300 de aumento? Separa metade antes de se acostumar.\n\n• R$ 150 por mês durante 10 anos → R$ 30 mil (você coloca R$ 18 mil)\n• 5 anos → R$ 11 mil\n• 20 anos → R$ 108 mil\n• Metade pro futuro, metade pra viver.\n\nO que você faz quando o salário aumenta? 👇\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #salario #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Ganhou aumento? Separa metade antes de se acostumar. A conta com o Léo e a Bia. Exemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos. Narração por IA. #educacaofinanceira #investimentos #salario #dinheiro"
+  }
+ },
+ "loop": true
+}

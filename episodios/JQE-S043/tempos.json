@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 78.021,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.331,
+   "texto": "Mil reais daqui a cinco anos ou oitocentos reais hoje: o que vale mais?"
+  },
+  {
+   "id": "fluxo",
+   "inicio": 4.881,
+   "dur": 15.408,
+   "texto": "Parece óbvio: mil é mais que oitocentos. Mas o dinheiro tem um ingrediente escondido: o tempo. Se você investe os oitocentos a dez por cento ao ano, que é uma taxa hipotética, em cinco anos eles viram mil e duzentos e oitenta e oito reais."
+  },
+  {
+   "id": "formula",
+   "inicio": 20.739,
+   "dur": 12.357,
+   "texto": "O caminho inverso também funciona. Pra saber quanto vale hoje o mil que só chega daqui a cinco anos, você divide por um vírgula um elevado a cinco. O resultado é seiscentos e vinte e um reais."
+  },
+  {
+   "id": "duo",
+   "inicio": 33.546,
+   "dur": 12.061,
+   "texto": "Olha o Léo e a Bia. O Léo escolheu esperar pelos mil reais. A Bia pegou os oitocentos e investiu. No fim, a Bia ficou com mil e duzentos e oitenta e oito reais, mais que os mil do Léo."
+  },
+  {
+   "id": "depende",
+   "inicio": 46.057,
+   "dur": 14.597,
+   "texto": "Mas atenção, isso depende da taxa. Se o seu dinheiro rende só três por cento ao ano, os mil reais futuros valem oitocentos e sessenta e três reais hoje, e aí esperar compensa. O tempo tem preço, e o preço é a taxa."
+  },
+  {
+   "id": "lista",
+   "inicio": 61.105,
+   "dur": 9.216,
+   "texto": "Então, antes de aceitar um dinheiro futuro, pergunta: quanto eu conseguiria ganhar com ele hoje, o quanto eu confio em quem vai pagar e se eu preciso dele agora."
+  },
+  {
+   "id": "cta",
+   "inicio": 70.771,
+   "dur": 5.028,
+   "texto": "Você prefere o dinheiro hoje ou depois? Responde nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 76.249,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

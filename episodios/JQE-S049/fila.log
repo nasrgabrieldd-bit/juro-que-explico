@@ -1,0 +1,105 @@
+$ python3 pipeline/checa.py episodios/JQE-S049
+OK    expressão segura: v5
+      v5 = 47239.2000
+OK    expressão segura: perda
+      perda = 32760.8000
+OK    expressão segura: inv5
+      inv5 = 129039.2748
+OK    expressão segura: ganho
+      ganho = 49039.2748
+OK    expressão segura: dif
+      dif = 81800.0748
+OK    expressão segura: preco_mil
+      preco_mil = 80.0000
+OK    expressão segura: dif_mil
+      dif_mil = 81.8001
+OK    expressão segura: v5_mil
+      v5_mil = 47.2392
+OK    expressão segura: perda_mil
+      perda_mil = 32.7608
+OK    expressão segura: inv5_mil
+      inv5_mil = 129.0393
+OK    expressão segura: ganho_mil
+      ganho_mil = 49.0393
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (15)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S049/roteiro.json episodios/JQE-S049
+hook 4.78 s
+fluxo 12.55 s
+linhas 14.34 s
+versus 9.6 s
+ressalva 10.33 s
+lista 10.01 s
+cta 4.79 s
+assinatura 1.32 s
+total 71.43 s
+
+$ python3 pipeline/checa.py episodios/JQE-S049
+OK    expressão segura: v5
+      v5 = 47239.2000
+OK    expressão segura: perda
+      perda = 32760.8000
+OK    expressão segura: inv5
+      inv5 = 129039.2748
+OK    expressão segura: ganho
+      ganho = 49039.2748
+OK    expressão segura: dif
+      dif = 81800.0748
+OK    expressão segura: preco_mil
+      preco_mil = 80.0000
+OK    expressão segura: dif_mil
+      dif_mil = 81.8001
+OK    expressão segura: v5_mil
+      v5_mil = 47.2392
+OK    expressão segura: perda_mil
+      perda_mil = 32.7608
+OK    expressão segura: inv5_mil
+      inv5_mil = 129.0393
+OK    expressão segura: ganho_mil
+      ganho_mil = 49.0393
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (15)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (5.3 s)
+OK    duração 72.6 s > 61 s (TikTok Creator Rewards)
+OK    duração 72.6 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S049
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S049
+master: -14.0 LUFS; pico -1.5 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S049/JQE-S049.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S049
+ok episodios/JQE-S049/JQE-S049_ig.mp4 thumbnailOffset 72600
+
+ffprobe duracao=72.1s tamanho=24.0MB tempo_de_producao=6.9min

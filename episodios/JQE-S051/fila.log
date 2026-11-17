@@ -1,0 +1,89 @@
+$ python3 pipeline/checa.py episodios/JQE-S051
+OK    expressão segura: jA
+      jA = 360.0000
+OK    expressão segura: jB
+      jB = 60.0000
+OK    expressão segura: ecoA
+      ecoA = 60.0000
+OK    expressão segura: ecoB
+      ecoB = 10.0000
+OK    expressão segura: razao
+      razao = 6.0000
+OK    expressão segura: balB
+      balB = 16.6667
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    loop: última cena repete visualmente a primeira
+OK    loop: última frase fica aberta (termina em ':' ou ',') e fecha no gancho
+OK    loop: gancho serve de continuação
+OK    gancho: primeira frase com até 16 palavras (9)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S051/roteiro.json episodios/JQE-S051
+hook 3.26 s
+fluxo 13.38 s
+barras 12.21 s
+duo 12.55 s
+honesto 13.0 s
+lista 7.98 s
+volta 3.84 s
+total 69.08 s
+
+$ python3 pipeline/checa.py episodios/JQE-S051
+OK    expressão segura: jA
+      jA = 360.0000
+OK    expressão segura: jB
+      jB = 60.0000
+OK    expressão segura: ecoA
+      ecoA = 60.0000
+OK    expressão segura: ecoB
+      ecoB = 10.0000
+OK    expressão segura: razao
+      razao = 6.0000
+OK    expressão segura: balB
+      balB = 16.6667
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    loop: última cena repete visualmente a primeira
+OK    loop: última frase fica aberta (termina em ':' ou ',') e fecha no gancho
+OK    loop: gancho serve de continuação
+OK    gancho: primeira frase com até 16 palavras (9)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (3.8 s)
+OK    duração 70.3 s > 61 s (TikTok Creator Rewards)
+OK    duração 70.3 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S051
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S051
+master: -14.0 LUFS; pico -1.4 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S051/JQE-S051.mp4
+
+$ python3 pipeline/emenda.py episodios/JQE-S051
+diferença média por pixel (0-255), fora da legenda: 13.58; pixels com diferença > 40: 7.73%
+áudio: nível do último 0,1 s = -180.0 dBFS; do primeiro 0,1 s = -125.8 dBFS; duração 69.30 s
+
+ffprobe duracao=69.3s tamanho=17.6MB tempo_de_producao=5.9min

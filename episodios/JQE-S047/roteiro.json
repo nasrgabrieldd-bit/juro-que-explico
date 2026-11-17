@@ -1,0 +1,195 @@
+{
+ "id": "JQE-S047",
+ "titulo": "Quanto investir para os dividendos pagarem a conta de luz",
+ "formato": "vertical 9:16",
+ "pilar": "Dividendos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "pergunta com número",
+ "formato_narrativo": "passo a passo (exemplo hipotético)",
+ "nota_tela": "Exemplo hipotético · dividend yield de 6% ao ano; dividendos variam e não têm garantia",
+ "parametros": {
+  "conta": 200,
+  "dy": 0.06,
+  "taxa_mes": 0.008
+ },
+ "calculos": {
+  "ano": "conta * 12",
+  "base": "ano / dy",
+  "base100": "100 * 12 / dy",
+  "base500": "500 * 12 / dy",
+  "aporte": "base * taxa_mes / ((1 + taxa_mes) ** 60 - 1)",
+  "base_mil": "base / 1000",
+  "base100_mil": "base100 / 1000",
+  "base500_mil": "base500 / 1000"
+ },
+ "numeros_livres": [
+  100,
+  500,
+  5
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: base = conta × 12 ÷ dividend yield",
+  "Aporte mensal para juntar a base em 5 anos com juros de 0,8% ao mês"
+ ],
+ "capa": {
+  "linha1": "Dividendos pagando",
+  "linha2": "a conta de luz",
+  "destaque": "quanto investir?"
+ },
+ "ganchos_alternativos": [
+  "Quanto investir para os dividendos pagarem uma conta de luz de R$ 200?",
+  "Quanto precisa para pagar uma conta com dividendos?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Quanto investir para os dividendos pagarem uma conta de luz de duzentos reais?",
+   "leg": "Quanto investir para os dividendos pagarem uma conta de luz de duzentos reais?",
+   "dados": {
+    "valor": "R$ 40 mil",
+    "linhas": [
+     "pagam R$ 200",
+     "por mês, em exemplo"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "A conta é simples. Duzentos reais por mês são dois mil e quatrocentos reais por ano. Se o investimento pagasse seis por cento ao ano em dividendos, taxa hipotética, você precisaria de quarenta mil reais.",
+   "leg": "A conta é simples. R$ 200 por mês são R$ 2.400 por ano. Se o investimento pagasse 6% ao ano em dividendos, taxa hipotética, você precisaria de R$ 40 mil.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "R$ 200 × 12 = R$ 2.400",
+      "tom": "neutro"
+     },
+     {
+      "texto": "÷ 6% ao ano",
+      "tom": "cinza"
+     },
+     {
+      "texto": "R$ 40 mil",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "por ano",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "dividendo hipotético",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "E vale para qualquer conta. Para pagar cem reais por mês, uns vinte mil reais. Para duzentos, quarenta mil reais. Para quinhentos, cem mil reais. É só multiplicar a conta por doze e dividir pela taxa.",
+   "leg": "E vale para qualquer conta. Para pagar cem reais por mês, uns R$ 20 mil. Para duzentos, R$ 40 mil. Para quinhentos, R$ 100 mil. É só multiplicar a conta por doze e dividir pela taxa.",
+   "dados": {
+    "titulo": [
+     "Quanto precisa para",
+     "pagar cada conta"
+    ],
+    "itens": [
+     {
+      "rotulo": "R$ 100 por mês",
+      "valor": 20000.0,
+      "texto": "R$ 20 mil"
+     },
+     {
+      "rotulo": "R$ 200 por mês",
+      "valor": 40000.0,
+      "texto": "R$ 40 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "R$ 500 por mês",
+      "valor": 100000.0,
+      "texto": "R$ 100 mil"
+     }
+    ],
+    "nota": "dividend yield hipotético de 6% ao ano"
+   }
+  },
+  {
+   "id": "caminho",
+   "tipo": "formula",
+   "tts": "Parece muito? Dá para chegar aos poucos. Guardando quinhentos e vinte e dois reais por mês durante cinco anos, com juros hipotéticos, você junta essa base. Depois, é só deixar os dividendos pagarem a conta.",
+   "leg": "Parece muito? Dá para chegar aos poucos. Guardando R$ 522 por mês durante 5 anos, com juros hipotéticos, você junta essa base. Depois, é só deixar os dividendos pagarem a conta.",
+   "dados": {
+    "titulo": "O caminho",
+    "linha1": "R$ 522 por mês, 5 anos",
+    "resultado": "R$ 40 mil",
+    "nota": "juros hipotéticos de 0,8% ao mês"
+   }
+  },
+  {
+   "id": "ressalva",
+   "tipo": "titulo",
+   "tts": "Mas papo reto: dividendos variam, podem diminuir e não têm garantia nenhuma. Seis por cento é só um exemplo. Esse cálculo serve para dar tamanho à meta, não para prometer renda.",
+   "leg": "Mas papo reto: dividendos variam, podem diminuir e não têm garantia nenhuma. Seis por cento é só um exemplo. Esse cálculo serve para dar tamanho à meta, não para prometer renda.",
+   "dados": {
+    "titulo": [
+     "Dividendos variam",
+     "e não têm garantia"
+    ],
+    "subtitulo": "a meta serve de norte, não de promessa"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Para começar: escolha uma conta que você quer pagar, faça a conta da base e comece pelo que couber no bolso. Uma meta com nome é mais fácil de manter.",
+   "leg": "Para começar: escolha uma conta que você quer pagar, faça a conta da base e comece pelo que couber no bolso. Uma meta com nome é mais fácil de manter.",
+   "dados": {
+    "titulo": [
+     "Para começar"
+    ],
+    "itens": [
+     "escolha uma conta",
+     "calcule a base",
+     "comece pelo que couber"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Qual conta você gostaria de ver paga pelos dividendos? Comenta.",
+   "leg": "Qual conta você gostaria de ver paga pelos dividendos? Comenta.",
+   "dados": {
+    "linhas": [
+     "Qual conta você",
+     "quer ver paga?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Quanto investir para os dividendos pagarem a conta de luz",
+   "texto": "Quanto investir para os dividendos pagarem uma conta de luz de R$ 200?\n\nR$ 200 × 12 = R$ 2.400 por ano\n÷ 6% ao ano (hipotético) → R$ 40 mil\nPara R$ 100 por mês: R$ 20 mil; para R$ 500: R$ 100 mil\nPara juntar em 5 anos: R$ 522 por mês (juros hipotéticos)\n\nExemplo hipotético; dividendos variam e não têm garantia. Não é recomendação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #dividendos #rendapassiva #bolsa #shorts"
+  },
+  "instagram": {
+   "texto": "Quanto investir para os dividendos pagarem uma conta de luz de R$ 200?\n\n• R$ 200 × 12 = R$ 2.400 por ano\n• ÷ 6% ao ano (hipotético) → R$ 40 mil\n• Para R$ 100 por mês: R$ 20 mil; para R$ 500: R$ 100 mil\n• Para juntar em 5 anos: R$ 522 por mês (juros hipotéticos)\n\nQual conta você quer ver paga pelos dividendos? 👇\n\nExemplo hipotético; dividendos variam e não têm garantia. Não é recomendação.\n\nNarração gerada por IA.\n\n#educacaofinanceira #dividendos #rendapassiva #bolsa #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Quanto investir para os dividendos pagarem uma conta de luz de R$ 200? A conta. Exemplo hipotético; dividendos variam e não têm garantia. Não é recomendação. Narração por IA. #educacaofinanceira #dividendos #rendapassiva #bolsa"
+  }
+ }
+}

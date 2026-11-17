@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 71.435,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.779,
+   "texto": "Um carro de oitenta mil reais pode custar mais de oitenta mil em cinco anos."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 5.329,
+   "dur": 12.552,
+   "texto": "Exemplo hipotético. O carro de oitenta mil perde dez por cento do valor por ano. Em cinco anos, ele vale quarenta e sete mil reais. Só de valor que sumiu, são trinta e três mil reais."
+  },
+  {
+   "id": "linhas",
+   "inicio": 18.331,
+   "dur": 14.341,
+   "texto": "Agora o outro lado. Se esses mesmos oitenta mil estivessem investidos, com juros hipotéticos de zero vírgula oito por cento ao mês, viriam cento e vinte e nove mil reais em cinco anos. Uma linha desce, a outra sobe."
+  },
+  {
+   "id": "versus",
+   "inicio": 33.122,
+   "dur": 9.603,
+   "texto": "Somando o valor que o carro perdeu e o ganho que o dinheiro deixou de ter, a diferença passa de oitenta e dois mil reais. Esse é o custo de oportunidade."
+  },
+  {
+   "id": "ressalva",
+   "inicio": 43.175,
+   "dur": 10.331,
+   "texto": "Isso não quer dizer que carro é erro. Pra muita gente, ele é trabalho, família e tempo. O ponto é decidir sabendo o tamanho da conta, e não só olhando a parcela."
+  },
+  {
+   "id": "lista",
+   "inicio": 53.955,
+   "dur": 10.013,
+   "texto": "Antes de comprar, pergunta: eu preciso mesmo dele agora? A parcela cabe com folga? E existe uma opção mais barata que resolva o mesmo problema?"
+  },
+  {
+   "id": "cta",
+   "inicio": 64.419,
+   "dur": 4.793,
+   "texto": "Você já fez essa conta do seu carro? Conta aqui nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 69.662,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

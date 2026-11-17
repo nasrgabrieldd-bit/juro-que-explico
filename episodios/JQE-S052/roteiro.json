@@ -1,0 +1,199 @@
+{
+ "id": "JQE-S052",
+ "titulo": "R$ 10 mil em 2 anos: guardar mais ou render mais?",
+ "formato": "vertical 9:16",
+ "pilar": "Metas",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "escolha",
+ "formato_narrativo": "versus + personagens",
+ "nota_tela": "Exemplo ilustrativo · juros hipotéticos, sem impostos nem inflação",
+ "parametros": {
+  "meta": 10000,
+  "taxa": 0.008,
+  "alta": 0.015
+ },
+ "calculos": {
+  "A": "meta * taxa / ((1 + taxa) ** 24 - 1)",
+  "sem": "meta / 24",
+  "dif": "sem - A",
+  "aportado": "A * 24",
+  "juros": "meta - aportado",
+  "fvLeo": "300 * (((1 + alta) ** 24 - 1) / alta)",
+  "fvBia": "380 * (((1 + taxa) ** 24 - 1) / taxa)",
+  "balLeo": "fvLeo / fvBia * 100",
+  "aportado_mil": "aportado / 1000"
+ },
+ "numeros_livres": [
+  300,
+  380,
+  24
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: aporte = meta × i ÷ ((1 + i)^n − 1), com i = 0,8% ao mês e n = 24",
+  "Exemplo ilustrativo com taxas hipotéticas (1,5% ao mês para o Léo)"
+ ],
+ "capa": {
+  "linha1": "R$ 10 mil em",
+  "linha2": "2 anos:",
+  "destaque": "guardar ou render?"
+ },
+ "ganchos_alternativos": [
+  "Juntar R$ 10 mil em 2 anos: o que pesa mais, guardar ou render?",
+  "Meta de 2 anos: quanto guardar por mês?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Juntar dez mil reais em dois anos: o que pesa mais, guardar ou render?",
+   "leg": "Juntar dez mil reais em dois anos: o que pesa mais, guardar ou render?",
+   "dados": {
+    "a": "R$ 417",
+    "b": "R$ 380",
+    "rotulo_a": "só guardando",
+    "rotulo_b": "com rendimento",
+    "centro": "por mês, em 24 meses"
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Sem rendimento nenhum, dez mil dividido por vinte e quatro meses dá quatrocentos e dezessete reais por mês. Com juros hipotéticos de zero vírgula oito por cento ao mês, cai para trezentos e oitenta reais. A diferença é de uns trinta e sete reais.",
+   "leg": "Sem rendimento nenhum, R$ 10 mil ÷ 24 meses dá R$ 417 por mês. Com juros hipotéticos de 0,8% ao mês, cai para R$ 380. A diferença é de uns R$ 37.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "R$ 10 mil ÷ 24",
+      "tom": "neutro"
+     },
+     {
+      "texto": "só guardando: R$ 417",
+      "tom": "cinza"
+     },
+     {
+      "texto": "com juros: R$ 380",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "24 meses",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "juros ajudam",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "Olha de onde vem o dinheiro. Dos dez mil, nove mil reais saem do seu bolso e só oitocentos e oitenta e nove reais vêm dos juros. No prazo curto, quem faz o trabalho pesado é você.",
+   "leg": "Olha de onde vem o dinheiro. Dos dez mil, R$ 9 mil saem do seu bolso e só R$ 889 vêm dos juros. No prazo curto, quem faz o trabalho pesado é você.",
+   "dados": {
+    "titulo": [
+     "De onde vêm",
+     "os R$ 10 mil"
+    ],
+    "itens": [
+     {
+      "rotulo": "do seu bolso",
+      "valor": 9110.526016631022,
+      "texto": "R$ 9 mil",
+      "destaque": true
+     },
+     {
+      "rotulo": "dos juros",
+      "valor": 889.4739833689782,
+      "texto": "R$ 889"
+     }
+    ],
+    "nota": "juros hipotéticos de 0,8% ao mês, sem impostos"
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Olha a Bia e o Léo. O Léo guarda trezentos reais por mês e corre atrás de um rendimento bem maior. A Bia guarda trezentos e oitenta com um rendimento normal. Em dois anos, a Bia chega nos dez mil, e o Léo, só em oito mil e quinhentos e noventa reais.",
+   "leg": "Olha a Bia e o Léo. O Léo guarda R$ 300 por mês e corre atrás de um rendimento bem maior. A Bia guarda R$ 380 com um rendimento normal. Em 2 anos, a Bia chega nos R$ 10 mil, e o Léo, só em R$ 8.590.",
+   "dados": {
+    "leo": {
+     "fala": "Quero render mais",
+     "rotulo": "R$ 300 por mês",
+     "valor": 85.81132768191961,
+     "texto": "R$ 8.590"
+    },
+    "bia": {
+     "fala": "Guardo mais",
+     "rotulo": "R$ 380 por mês",
+     "valor": 100,
+     "texto": "R$ 10.010"
+    }
+   }
+  },
+  {
+   "id": "moral",
+   "tipo": "titulo",
+   "tts": "No curto prazo, o que manda é quanto você guarda, e não a busca pelo melhor rendimento. Rendimento alto costuma vir com risco alto, e você pode precisar do dinheiro numa data certa. Com o tempo, a história muda.",
+   "leg": "No curto prazo, o que manda é quanto você guarda, e não a busca pelo melhor rendimento. Rendimento alto costuma vir com risco alto, e você pode precisar do dinheiro numa data certa. Com o tempo, a história muda.",
+   "dados": {
+    "titulo": [
+     "No curto prazo,",
+     "manda o quanto guarda"
+    ],
+    "subtitulo": "o rendimento ajuda mais com o passar dos anos"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Para uma meta de dois anos: defina o valor e a data, divida por mês e escolha uma opção segura, com resgate fácil. Depois, é manter o hábito.",
+   "leg": "Para uma meta de dois anos: defina o valor e a data, divida por mês e escolha uma opção segura, com resgate fácil. Depois, é manter o hábito.",
+   "dados": {
+    "titulo": [
+     "Meta de 2 anos"
+    ],
+    "itens": [
+     "valor e data definidos",
+     "divida pelos meses",
+     "opção segura e líquida"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Qual é a sua meta de dois anos? Conta aqui nos comentários.",
+   "leg": "Qual é a sua meta de dois anos? Conta aqui nos comentários.",
+   "dados": {
+    "linhas": [
+     "Qual é a sua",
+     "meta de 2 anos?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "R$ 10 mil em 2 anos: guardar mais ou render mais?",
+   "texto": "Juntar R$ 10 mil em 2 anos: o que pesa mais, guardar ou render?\n\nSó guardando: R$ 417 por mês\nCom juros hipotéticos de 0,8% ao mês: R$ 380 por mês\nDos R$ 10 mil, só R$ 889 vêm dos juros\nNo curto prazo, manda o quanto você guarda.\n\nExemplo ilustrativo, juros hipotéticos, sem impostos nem inflação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #metas #investimentos #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Juntar R$ 10 mil em 2 anos: o que pesa mais, guardar ou render?\n\n• Só guardando: R$ 417 por mês\n• Com juros hipotéticos de 0,8% ao mês: R$ 380 por mês\n• Dos R$ 10 mil, só R$ 889 vêm dos juros\n• No curto prazo, manda o quanto você guarda.\n\nQual é a sua meta de dois anos? 👇\n\nExemplo ilustrativo, juros hipotéticos, sem impostos nem inflação.\n\nNarração gerada por IA.\n\n#educacaofinanceira #metas #investimentos #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Juntar R$ 10 mil em 2 anos: guardar mais ou render mais? A conta. Exemplo ilustrativo, juros hipotéticos, sem impostos nem inflação. Narração por IA. #educacaofinanceira #metas #investimentos #dinheiro"
+  }
+ }
+}

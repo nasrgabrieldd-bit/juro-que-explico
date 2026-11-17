@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 81.843,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.48,
+   "texto": "Juntar dez mil reais em dois anos: o que pesa mais, guardar ou render?"
+  },
+  {
+   "id": "fluxo",
+   "inicio": 5.03,
+   "dur": 16.645,
+   "texto": "Sem rendimento nenhum, dez mil dividido por vinte e quatro meses dá quatrocentos e dezessete reais por mês. Com juros hipotéticos de zero vírgula oito por cento ao mês, cai para trezentos e oitenta reais. A diferença é de uns trinta e sete reais."
+  },
+  {
+   "id": "barras",
+   "inicio": 22.125,
+   "dur": 11.824,
+   "texto": "Olha de onde vem o dinheiro. Dos dez mil, nove mil reais saem do seu bolso e só oitocentos e oitenta e nove reais vêm dos juros. No prazo curto, quem faz o trabalho pesado é você."
+  },
+  {
+   "id": "duo",
+   "inicio": 34.399,
+   "dur": 16.499,
+   "texto": "Olha a Bia e o Léo. O Léo guarda trezentos reais por mês e corre atrás de um rendimento bem maior. A Bia guarda trezentos e oitenta com um rendimento normal. Em dois anos, a Bia chega nos dez mil, e o Léo, só em oito mil e quinhentos e noventa reais."
+  },
+  {
+   "id": "moral",
+   "inicio": 51.348,
+   "dur": 13.723,
+   "texto": "No curto prazo, o que manda é quanto você guarda, e não a busca pelo melhor rendimento. Rendimento alto costuma vir com risco alto, e você pode precisar do dinheiro numa data certa. Com o tempo, a história muda."
+  },
+  {
+   "id": "lista",
+   "inicio": 65.521,
+   "dur": 9.176,
+   "texto": "Para uma meta de dois anos: defina o valor e a data, divida por mês e escolha uma opção segura, com resgate fácil. Depois, é manter o hábito."
+  },
+  {
+   "id": "cta",
+   "inicio": 75.147,
+   "dur": 4.473,
+   "texto": "Qual é a sua meta de dois anos? Conta aqui nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 80.07,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}
