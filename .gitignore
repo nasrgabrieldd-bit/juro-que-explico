@@ -5,3 +5,4 @@ __pycache__/
 episodios/*/frame_*.png
 episodios/*/qa*.png
 episodios/*/contato*.png
+skills/.bin/

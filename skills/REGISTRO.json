@@ -1,0 +1,22 @@
+{
+ "descricao": "Skills e referências externas que a skill de produção de vídeo usa. skills/atualizar_skills.sh baixa/atualiza tudo daqui e grava o commit usado em versoes.json.",
+ "fontes": [
+  {
+   "id": "lemo-opuscar",
+   "tipo": "git-plugin",
+   "repo": "https://github.com/lemomo-ai/lemo-opuscar.git",
+   "branch": "main",
+   "setup": "plugin/skills/lemo-opuscar/scripts/setup.sh",
+   "instalar_deps": "deps",
+   "pasta_local": "~/lemo-opuscar",
+   "recebida_em": "2026-11-16",
+   "origem_da_indicacao": "Fundador, link plugueia.com.br/isca-estilo (autor: Pedro Barros, @pedrobarros.ia)",
+   "licenca": "Código MIT. Guias em Markdown e prompts: CC BY-NC 4.0 (permissão extra do autor para filmes de clientes e equipe). Filmes demo CC BY 4.0. Narrações de demo e ativos de terceiros têm termos próprios. Uso comercial além disso: licença por e-mail ao autor.",
+   "regras_de_uso": [
+    "Não copiar guias/prompts da biblioteca para este repositório público: baixar em tempo de execução para ~/lemo-opuscar.",
+    "Requer Node 20+, ffmpeg 7+ (o 6.x do Ubuntu reprova no mux) e Python 3.11+.",
+    "Estilos marcados com a estrela precisam de gerador de imagens externo."
+   ]
+  }
+ ]
+}

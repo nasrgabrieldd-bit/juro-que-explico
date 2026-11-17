@@ -2,6 +2,9 @@
 
 Este arquivo é a fonte de verdade da rotina automática. Cada execução diária lê este manual, cuida da fila do Buffer e, quando o estoque está baixo, produz vídeos de segurança. A produção normal é em lotes de 15 dias (30 vídeos, 2 por dia).
 
+## LEI DA SKILL ATUALIZADA (D25, 16/11/2026) — vale antes de qualquer outra regra
+Antes de produzir QUALQUER vídeo (rotina diária, lote, longo ou pedido avulso): (1) `git pull`; (2) `sh skills/atualizar_skills.sh` (atualiza as skills externas, hoje a Lemo-Opuscar, e garante ffmpeg 7+); (3) ler `skills/producao-de-video/SKILL.md` e as últimas entradas do `skills/producao-de-video/CHANGELOG.md`. A versão em vigor é sempre a da branch main. O fundador manda skills, links e referências a qualquer momento: cada um é registrado em `skills/REFERENCIAS.md`, avaliado, integrado na SKILL.md, versionado no CHANGELOG e enviado ao GitHub. Mudança que altere a cara dos vídeos (estilo, voz, formato) entra como opção e só vira padrão com decisão do fundador. A rotina diária continua com o motor atual (pipeline/ e jqe-motion/), sem trocar de estilo por conta própria. Material de licença restrita não é copiado para este repositório público.
+
 ## Marca
 Nome, inicial, tagline, assinatura e cores ficam em `marca/marca.json`. O render lê esse arquivo: trocar a marca = editar o JSON e renderizar de novo. Nunca escreva o nome da marca direto no código ou no roteiro (exceto a cena de assinatura, que copia `assinatura_tts`).
 
