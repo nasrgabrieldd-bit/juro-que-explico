@@ -1,0 +1,77 @@
+$ python3 pipeline/checa.py episodios/JQE-S036
+OK    expressão segura: pl_a
+      pl_a = 20.0000
+OK    expressão segura: pl_b
+      pl_b = 5.0000
+OK    expressão segura: lucro_a
+      lucro_a = 0.1000
+OK    expressão segura: lucro_b
+      lucro_b = 10.0000
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (14)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S036/roteiro.json episodios/JQE-S036
+hook 4.37 s
+fluxoa 14.92 s
+formulab 11.67 s
+barras 11.97 s
+ressalva 12.87 s
+perguntas 7.86 s
+cta 3.75 s
+assinatura 1.32 s
+total 72.44 s
+
+$ python3 pipeline/checa.py episodios/JQE-S036
+OK    expressão segura: pl_a
+      pl_a = 20.0000
+OK    expressão segura: pl_b
+      pl_b = 5.0000
+OK    expressão segura: lucro_a
+      lucro_a = 0.1000
+OK    expressão segura: lucro_b
+      lucro_b = 10.0000
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    termina com a assinatura
+OK    gancho: primeira frase com até 16 palavras (14)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (4.9 s)
+OK    duração 73.6 s > 61 s (TikTok Creator Rewards)
+OK    duração 73.6 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S036
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S036
+master: -14.0 LUFS; pico -1.4 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S036/JQE-S036.mp4
+
+$ python3 pipeline/capa_ig.py episodios/JQE-S036
+ok episodios/JQE-S036/JQE-S036_ig.mp4 thumbnailOffset 73600
+
+ffprobe duracao=73.1s tamanho=23.1MB tempo_de_producao=6.4min

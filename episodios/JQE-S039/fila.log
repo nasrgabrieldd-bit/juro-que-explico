@@ -28,6 +28,9 @@ OK    termina com a assinatura
 OK    gancho: primeira frase com até 16 palavras (11)
 OK    gancho: cena 1 mostra número, comparação ou conta
 OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (5.4 s)
+OK    duração 81.1 s > 61 s (TikTok Creator Rewards)
+OK    duração 81.1 s < 3 min (Shorts)
 APROVADO
 
 $ python3 pipeline/narracao.py episodios/JQE-S039/roteiro.json episodios/JQE-S039
@@ -86,4 +89,4 @@ ok /home/claude/juro-que-explico/episodios/JQE-S039/JQE-S039.mp4
 $ python3 pipeline/capa_ig.py episodios/JQE-S039
 ok episodios/JQE-S039/JQE-S039_ig.mp4 thumbnailOffset 81100
 
-ffprobe duracao=80.6s tamanho=25.6MB tempo_de_producao=7.0min
+ffprobe duracao=80.6s tamanho=25.7MB tempo_de_producao=7.1min

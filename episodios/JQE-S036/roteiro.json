@@ -1,0 +1,184 @@
+{
+ "id": "JQE-S036",
+ "titulo": "Ação de R$ 2 pode ser mais cara que uma de R$ 50",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "contradição",
+ "formato_narrativo": "versus (exemplo hipotético)",
+ "nota_tela": "Exemplo hipotético · sem citar empresa nem recomendar compra",
+ "parametros": {
+  "preco_a": 2,
+  "preco_b": 50
+ },
+ "calculos": {
+  "pl_a": "2 / 0.1",
+  "pl_b": "50 / 10",
+  "lucro_a": "0.1",
+  "lucro_b": "10"
+ },
+ "numeros_livres": [
+  20
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Definição de P/L: preço ÷ lucro por ação",
+  "Exemplo hipotético com empresas inventadas"
+ ],
+ "capa": {
+  "linha1": "R$ 2 pode ser",
+  "linha2": "mais cara que R$ 50",
+  "destaque": "preço ≠ valor"
+ },
+ "ganchos_alternativos": [
+  "Uma ação de R$ 2 pode ser mais cara que uma de R$ 50.",
+  "Ação barata é pechincha? Depende da conta."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Uma ação de dois reais pode ser mais cara que uma de cinquenta reais.",
+   "leg": "Uma ação de R$ 2 pode ser mais cara que uma de R$ 50.",
+   "dados": {
+    "a": "R$ 2",
+    "b": "R$ 50",
+    "rotulo_a": "ação A",
+    "rotulo_b": "ação B",
+    "centro": "qual é mais cara?"
+   }
+  },
+  {
+   "id": "fluxoa",
+   "tipo": "fluxo_setas",
+   "tts": "Exemplo inventado, sem citar nenhuma empresa. A ação A custa dois reais e a empresa lucra dez centavos por ação ao ano. Dividindo o preço pelo lucro, dá vinte. É o P sobre L: quantos anos de lucro o preço representa.",
+   "leg": "Exemplo inventado. A ação A custa R$ 2 e a empresa lucra R$ 0,10 por ação ao ano. Dividindo o preço pelo lucro, dá 20. É o P/L: quantos anos de lucro o preço representa.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "preço R$ 2",
+      "tom": "neutro"
+     },
+     {
+      "texto": "lucro R$ 0,10",
+      "tom": "cinza"
+     },
+     {
+      "texto": "P/L = 20",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "÷ lucro por ação",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "anos de lucro",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "formulab",
+   "tipo": "formula",
+   "tts": "Já a ação B custa cinquenta reais, mas a empresa lucra dez reais por ação ao ano. Cinquenta dividido por dez dá cinco. Ou seja, o preço dela se paga com cinco anos de lucro.",
+   "leg": "Já a ação B custa R$ 50, mas a empresa lucra R$ 10 por ação. R$ 50 ÷ R$ 10 = 5.",
+   "dados": {
+    "titulo": "A ação B",
+    "linha1": "R$ 50 ÷ R$ 10",
+    "resultado": "P/L = 5",
+    "nota": "5 anos de lucro"
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "Pelo preço, a A parece barata. Pelo lucro que ela entrega, é quatro vezes mais cara. Preço de etiqueta não diz se é pechincha, assim como o preço de um carro não diz se ele é um bom negócio.",
+   "leg": "Pelo preço, a A parece barata. Pelo lucro que ela entrega, é quatro vezes mais cara. Preço de etiqueta não diz se é pechincha, assim como o preço de um carro não diz se ele é um bom negócio.",
+   "dados": {
+    "titulo": [
+     "Anos de lucro para",
+     "pagar o preço"
+    ],
+    "itens": [
+     {
+      "rotulo": "ação A (R$ 2)",
+      "valor": 20.0,
+      "texto": "20 anos",
+      "destaque": true
+     },
+     {
+      "rotulo": "ação B (R$ 50)",
+      "valor": 5.0,
+      "texto": "5 anos"
+     }
+    ],
+    "nota": "exemplo hipotético, sem citar empresa"
+   }
+  },
+  {
+   "id": "ressalva",
+   "tipo": "titulo",
+   "tts": "Mas atenção: P sobre L baixo não é sinal de compra. Pode ser que o lucro vá cair, ou que a empresa tenha uma dívida enorme. É uma régua pra comparar, não uma resposta pronta, e nada aqui é recomendação.",
+   "leg": "Mas atenção: P/L baixo não é sinal de compra. Pode ser que o lucro vá cair, ou que a empresa tenha uma dívida enorme. É uma régua pra comparar, não uma resposta pronta, e nada aqui é recomendação.",
+   "dados": {
+    "titulo": [
+     "P/L é uma régua,",
+     "não uma resposta"
+    ],
+    "subtitulo": "serve para comparar, não para decidir sozinho"
+   }
+  },
+  {
+   "id": "perguntas",
+   "tipo": "lista",
+   "tts": "Antes de achar que algo está barato, pergunta: quanto a empresa lucra? Esse lucro se mantém? E quanto ela deve?",
+   "leg": "Antes de achar que algo está barato, pergunta: quanto a empresa lucra? Esse lucro se mantém? E quanto ela deve?",
+   "dados": {
+    "titulo": [
+     "Antes de achar",
+     "que está barato"
+    ],
+    "itens": [
+     "quanto ela lucra?",
+     "o lucro se mantém?",
+     "quanto ela deve?"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Você olha o preço ou o valor? Responde aqui.",
+   "leg": "Você olha o preço ou o valor? Responde aqui.",
+   "dados": {
+    "linhas": [
+     "Preço ou valor:",
+     "o que você olha?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Ação de R$ 2 pode ser mais cara que uma de R$ 50",
+   "texto": "Uma ação de R$ 2 pode ser mais cara que uma de R$ 50.\n\nAção A: R$ 2, lucro de R$ 0,10 → P/L 20\nAção B: R$ 50, lucro de R$ 10 → P/L 5\nP/L = preço ÷ lucro por ação (anos de lucro)\nÉ uma régua para comparar, não uma resposta pronta.\n\nExemplo hipotético, sem citar empresa. Não é recomendação de compra ou venda.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #bolsa #acoes #shorts"
+  },
+  "instagram": {
+   "texto": "Uma ação de R$ 2 pode ser mais cara que uma de R$ 50.\n\n• Ação A: R$ 2, lucro de R$ 0,10 → P/L 20\n• Ação B: R$ 50, lucro de R$ 10 → P/L 5\n• P/L = preço ÷ lucro por ação (anos de lucro)\n• É uma régua para comparar, não uma resposta pronta.\n\nVocê olha o preço ou o valor? 👇\n\nExemplo hipotético, sem citar empresa. Não é recomendação de compra ou venda.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #bolsa #acoes #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Uma ação de R$ 2 pode ser mais cara que uma de R$ 50. Entenda o P/L. Exemplo hipotético, sem citar empresa. Não é recomendação de compra ou venda. Narração por IA. #educacaofinanceira #investimentos #bolsa #acoes"
+  }
+ }
+}

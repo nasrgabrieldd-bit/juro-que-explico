@@ -73,7 +73,7 @@ export const Versus: React.FC<P> = ({ d }) => {
     return (
       <div style={{ width: horiz ? 520 : 370, padding: "44px 20px", borderRadius: 32, background: hl ? "rgba(182,242,59,.12)" : C.card,
         border: `3px solid ${hl ? C.lime : C.grid}`, translate: horiz ? `0px ${(1 - p) * lado * 160}px` : `${(1 - p) * lado * 300}px 0px`, opacity: p, boxShadow: hl ? "0 0 50px rgba(182,242,59,.18)" : "none" }}>
-        <Texto size={txt.length > 9 ? 62 : 80} display weight={900} color={hl ? C.lime : C.text}>{contar(txt, cont)}</Texto>
+        <Texto size={Math.min(txt.length > 9 ? 62 : 80, /^[A-ZÀ-Ú\s]+$/.test(txt) ? Math.floor(330 / (txt.length * 0.74)) : 99)} display weight={900} color={hl ? C.lime : C.text}>{contar(txt, cont)}</Texto>
         {rot && <Texto size={30} weight={600} color={C.gray} style={{ marginTop: 18, lineHeight: 1.25 }}>{rot}</Texto>}
       </div>
     );

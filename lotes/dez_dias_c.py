@@ -65,9 +65,9 @@ cenas = [
           "setas": [{"rotulo": "desconta", "tom": "erro"}, {"rotulo": "cai na conta", "tom": "neutro"}]},
          leg="Exemplo hipotético. Você contrata R$ 5.000, mas o banco desconta R$ 350 de tarifa e seguro. Na sua conta, entram só [[recebe|R]]."),
     cena(c, "formula", "formula",
-         "Só que as doze parcelas são calculadas sobre os cinco mil. Cada uma sai por [[pmt|R]], e no total você devolve [[devolve|R]] por um dinheiro que realmente recebeu de [[recebe|R]].",
-         {"titulo": "O que você devolve", "linha1": "12 × [[pmt|R]]", "resultado": "[[devolve|R]]", "nota": "por R$ 4.650 recebidos"},
-         leg="Só que as 12 parcelas são calculadas sobre os R$ 5.000. Cada uma sai por [[pmt|R]], e no total você devolve [[devolve|R]] por um dinheiro que realmente recebeu de [[recebe|R]]."),
+         "Só que as doze parcelas são calculadas sobre os cinco mil. Cada uma sai por [[pmt|R2]], e no total você devolve cerca de [[devolve|R]] por um dinheiro que realmente recebeu de [[recebe|R]].",
+         {"titulo": "O que você devolve", "linha1": "12 × [[pmt|R2]]", "resultado": "≈ [[devolve|R]]", "nota": "por R$ 4.650 recebidos"},
+         leg="Só que as 12 parcelas são calculadas sobre os R$ 5.000. Cada uma sai por [[pmt|R2]], e no total você devolve cerca de [[devolve|R]] por um dinheiro que realmente recebeu de [[recebe|R]]."),
     cena(c, "versus", "versus",
          "Esse custo real é o CET, o custo efetivo total. Ele junta juros, tarifa e seguro numa taxa só. Na conta, o um vírgula noventa e nove vira [[cet|pf]] ao mês.",
          {"a": "1,99%", "b": "[[cet|pf]]", "rotulo_a": "a taxa anunciada", "rotulo_b": "o CET, ao mês", "centro": "custo real"},
@@ -86,7 +86,7 @@ escreve(c, "JQE-S044", "CET: a taxa de 1,99% ao mês custa bem mais", "Crédito"
         {"linha1": "Taxa de 1,99%", "linha2": "custa bem mais", "destaque": "o CET"},
         ["Taxa de 1,99% ao mês parece pouco, mas o custo de verdade é maior.", "O que é CET?"], cenas,
         posts(c, "CET: por que a taxa de 1,99% ao mês custa bem mais", "Taxa de 1,99% ao mês parece pouco, mas o custo de verdade é maior.",
-              ["Contrata R$ 5.000, recebe [[recebe|R]] (tarifa e seguro descontados)", "12 parcelas de [[pmt|R]] = [[devolve|R]]", "CET ≈ [[cet|pf]] ao mês, [[anual_cet|p0]] ao ano", "Compare o CET, não só a taxa."],
+              ["Contrata R$ 5.000, recebe [[recebe|R]] (tarifa e seguro descontados)", "12 parcelas de [[pmt|R2]] ≈ [[devolve|R]]", "CET ≈ [[cet|pf]] ao mês, [[anual_cet|p0]] ao ano", "Compare o CET, não só a taxa."],
               "Você já olhou o CET do seu crédito?", "Exemplo hipotético; taxas e tarifas reais variam.",
               ["educacaofinanceira", "credito", "juros", "dinheiro"], "Taxa de 1,99% ao mês parece pouco, mas o custo de verdade é maior. Entenda o CET."),
         loop=True)
@@ -95,7 +95,7 @@ escreve(c, "JQE-S044", "CET: a taxa de 1,99% ao mês custa bem mais", "Crédito"
 c = Calc({"saldoA": "100 - perda", "perdaB": "perda / 3", "saldoB": "100 - perdaB"}, {"perda": 30}, livres=[10, 100])
 cenas = [
     cena(c, "hook", "numero_grande", "Ter dez investimentos não quer dizer que você diversificou.",
-         {"valor": "10 ≠ diversificado", "linhas": ["a conta mostra", "por quê"]}),
+         {"valor": "10 itens", "linhas": ["não é o mesmo que", "diversificar"]}),
     cena(c, "leo", "personagem_queda",
          "O Léo tem dez ações, mas todas do mesmo setor. Um dia, esse setor tem um problema, e todas caem juntas. Para cada cem reais, o Léo ficou com [[saldoA|R]].",
          {"antes": 100, "depois": c.v("saldoA"), "fala_antes": "Tenho 10 ações!", "fala_depois": "Caíram todas juntas", "badge": "−[[perda|n0]]%"},

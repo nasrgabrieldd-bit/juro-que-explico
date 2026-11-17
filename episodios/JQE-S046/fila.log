@@ -1,0 +1,108 @@
+$ python3 pipeline/checa.py episodios/JQE-S046
+OK    expressão segura: f10
+      f10 = 20021.7469
+OK    expressão segura: dado10
+      dado10 = 12000.0000
+OK    expressão segura: cedo
+      cedo = 371940.5959
+OK    expressão segura: tarde
+      tarde = 119871.8490
+OK    expressão segura: baltarde
+      baltarde = 32.2288
+OK    expressão segura: fundo
+      fundo = 85.0000
+OK    expressão segura: sobe
+      sobe = 17.6471
+OK    expressão segura: f10_mil
+      f10_mil = 20.0217
+OK    expressão segura: cedo_mil
+      cedo_mil = 371.9406
+OK    expressão segura: tarde_mil
+      tarde_mil = 119.8718
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    loop: última cena repete visualmente a primeira
+OK    loop: última frase fica aberta (termina em ':' ou ',') e fecha no gancho
+OK    loop: gancho serve de continuação
+OK    gancho: primeira frase com até 16 palavras (9)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (3.8 s)
+OK    duração 71.0 s > 61 s (TikTok Creator Rewards)
+OK    duração 71.0 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/narracao.py episodios/JQE-S046/roteiro.json episodios/JQE-S046
+hook 3.29 s
+m1 12.25 s
+v2 15.97 s
+tarde 10.86 s
+m3 13.7 s
+lista 7.04 s
+volta 3.8 s
+total 69.76 s
+
+$ python3 pipeline/checa.py episodios/JQE-S046
+OK    expressão segura: f10
+      f10 = 20021.7469
+OK    expressão segura: dado10
+      dado10 = 12000.0000
+OK    expressão segura: cedo
+      cedo = 371940.5959
+OK    expressão segura: tarde
+      tarde = 119871.8490
+OK    expressão segura: baltarde
+      baltarde = 32.2288
+OK    expressão segura: fundo
+      fundo = 85.0000
+OK    expressão segura: sobe
+      sobe = 17.6471
+OK    expressão segura: f10_mil
+      f10_mil = 20.0217
+OK    expressão segura: cedo_mil
+      cedo_mil = 371.9406
+OK    expressão segura: tarde_mil
+      tarde_mil = 119.8718
+OK    todo número tem cálculo ou fonte
+OK    sem termo proibido 'garantido'
+OK    sem termo proibido 'garantia de lucro'
+OK    sem termo proibido 'recomendo comprar'
+OK    sem termo proibido 'compre agora'
+OK    sem termo proibido 'venda agora'
+OK    sem termo proibido 'invista em'
+OK    sem termo proibido 'fique rico'
+OK    sem termo proibido 'sem risco'
+OK    sem termo proibido 'lucro certo'
+OK    fontes registradas
+OK    loop: última cena repete visualmente a primeira
+OK    loop: última frase fica aberta (termina em ':' ou ',') e fecha no gancho
+OK    loop: gancho serve de continuação
+OK    gancho: primeira frase com até 16 palavras (9)
+OK    gancho: cena 1 mostra número, comparação ou conta
+OK    gancho: sem saudação nem introdução
+OK    gancho: cena 2 começa até 8 s (3.8 s)
+OK    duração 71.0 s > 61 s (TikTok Creator Rewards)
+OK    duração 71.0 s < 3 min (Shorts)
+APROVADO
+
+$ python3 pipeline/leitura.py episodios/JQE-S046
+APROVADO (leitura)
+
+$ python3 pipeline/render.py episodios/JQE-S046
+master: -14.0 LUFS; pico -1.3 dBFS
+ok /home/claude/juro-que-explico/episodios/JQE-S046/JQE-S046.mp4
+
+$ python3 pipeline/emenda.py episodios/JQE-S046
+diferença média por pixel (0-255), fora da legenda: 1.25; pixels com diferença > 40: 0.57%
+áudio: nível do último 0,1 s = -180.0 dBFS; do primeiro 0,1 s = -125.9 dBFS; duração 69.90 s
+
+ffprobe duracao=69.9s tamanho=17.3MB tempo_de_producao=5.7min

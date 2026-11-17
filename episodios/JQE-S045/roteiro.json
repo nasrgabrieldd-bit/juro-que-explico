@@ -1,0 +1,177 @@
+{
+ "id": "JQE-S045",
+ "titulo": "Ter 10 investimentos não é diversificar",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "erro comum",
+ "formato_narrativo": "personagens + exemplo hipotético",
+ "nota_tela": "Exemplo hipotético · valores inventados, sem citar investimento",
+ "parametros": {
+  "perda": 30
+ },
+ "calculos": {
+  "saldoA": "100 - perda",
+  "perdaB": "perda / 3",
+  "saldoB": "100 - perdaB"
+ },
+ "numeros_livres": [
+  10,
+  100
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Conceito de diversificação (correlação entre ativos)",
+  "Exemplo hipotético: perda de 30% em 1/3 da carteira = 10% no total"
+ ],
+ "capa": {
+  "linha1": "10 investimentos",
+  "linha2": "não é diversificar",
+  "destaque": "a conta mostra"
+ },
+ "ganchos_alternativos": [
+  "Ter 10 investimentos não quer dizer que você diversificou.",
+  "Diversificar de verdade."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Ter dez investimentos não quer dizer que você diversificou.",
+   "leg": "Ter dez investimentos não quer dizer que você diversificou.",
+   "dados": {
+    "valor": "10 itens",
+    "linhas": [
+     "não é o mesmo que",
+     "diversificar"
+    ]
+   }
+  },
+  {
+   "id": "leo",
+   "tipo": "personagem_queda",
+   "tts": "O Léo tem dez ações, mas todas do mesmo setor. Um dia, esse setor tem um problema, e todas caem juntas. Para cada cem reais, o Léo ficou com setenta reais.",
+   "leg": "O Léo tem 10 ações, mas todas do mesmo setor. Um dia, esse setor tem um problema, e todas caem juntas. Para cada R$ 100, o Léo ficou com R$ 70.",
+   "dados": {
+    "antes": 100,
+    "depois": 70,
+    "fala_antes": "Tenho 10 ações!",
+    "fala_depois": "Caíram todas juntas",
+    "badge": "−30%"
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "O problema é a causa em comum. Quando todos os investimentos dependem do mesmo motivo, eles sobem e caem juntos, e ter muitos não protege de nada. É como ter dez guarda-chuvas furados do mesmo modelo.",
+   "leg": "O problema é a causa em comum. Quando todos os investimentos dependem do mesmo motivo, eles sobem e caem juntos, e ter muitos não protege de nada. É como ter dez guarda-chuvas furados do mesmo modelo.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "10 investimentos",
+      "tom": "neutro"
+     },
+     {
+      "texto": "mesmo setor",
+      "tom": "cinza"
+     },
+     {
+      "texto": "caem juntos",
+      "tom": "erro"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "mesmo risco",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "um tropeço",
+      "tom": "erro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Já a Bia espalhou o dinheiro: um terço em ações, um terço em renda fixa e um terço de reserva. No mesmo dia ruim, só a parte das ações caiu trinta por cento. Para cada cem reais, ela ficou com noventa reais.",
+   "leg": "Já a Bia espalhou o dinheiro: um terço em ações, um terço em renda fixa e um terço de reserva. No mesmo dia ruim, só a parte das ações caiu 30%. Para cada R$ 100, ela ficou com R$ 90.",
+   "dados": {
+    "leo": {
+     "fala": "Perdi 30%",
+     "rotulo": "10 do mesmo setor",
+     "valor": 70,
+     "texto": "R$ 70"
+    },
+    "bia": {
+     "fala": "Perdi só 10%",
+     "rotulo": "3 tipos diferentes",
+     "valor": 90.0,
+     "texto": "R$ 90"
+    }
+   }
+  },
+  {
+   "id": "ressalva",
+   "tipo": "titulo",
+   "tts": "Mas papo reto: diversificar não elimina o risco, só espalha. Uma carteira diversificada também pode cair, e quem promete o contrário está vendendo ilusão. A diferença é que ela costuma sofrer menos de uma vez só.",
+   "leg": "Mas papo reto: diversificar não elimina o risco, só espalha. Uma carteira diversificada também pode cair, e quem promete o contrário está vendendo ilusão. A diferença é que ela costuma sofrer menos de uma vez só.",
+   "dados": {
+    "titulo": [
+     "Diversificar espalha",
+     "o risco, não o tira"
+    ],
+    "subtitulo": "exemplo hipotético, sem citar investimento"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Para checar se você diversificou, pergunta: eles dependem do mesmo motivo? São do mesmo tipo? Eu tenho reserva fora disso? Se a resposta for sim, talvez seja só quantidade.",
+   "leg": "Para checar se você diversificou, pergunta: eles dependem do mesmo motivo? São do mesmo tipo? Eu tenho reserva fora disso? Se a resposta for sim, talvez seja só quantidade.",
+   "dados": {
+    "titulo": [
+     "Teste rápido"
+    ],
+    "itens": [
+     "dependem do mesmo motivo?",
+     "são todos do mesmo tipo?",
+     "tenho reserva fora disso?"
+    ]
+   }
+  },
+  {
+   "id": "cta",
+   "tipo": "cta",
+   "tts": "Quantos tipos de investimento você tem? Conta nos comentários.",
+   "leg": "Quantos tipos de investimento você tem? Conta nos comentários.",
+   "dados": {
+    "linhas": [
+     "Quantos tipos",
+     "você tem?"
+    ],
+    "botao": "Comenta aqui embaixo"
+   }
+  },
+  {
+   "id": "assinatura",
+   "tipo": "assinatura",
+   "tts": "Juro que explico.",
+   "leg": "Juro que explico."
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Ter 10 investimentos não é diversificar (a conta)",
+   "texto": "Ter 10 investimentos não quer dizer que você diversificou.\n\n10 ações do mesmo setor: se o setor cai 30%, sobram R$ 70 de R$ 100\n3 tipos diferentes: a mesma queda leva só 10%\nDiversificar espalha o risco, não o tira\n\nExemplo hipotético, sem citar investimento. Não é recomendação.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #diversificacao #bolsa #shorts"
+  },
+  "instagram": {
+   "texto": "Ter 10 investimentos não quer dizer que você diversificou.\n\n• 10 ações do mesmo setor: se o setor cai 30%, sobram R$ 70 de R$ 100\n• 3 tipos diferentes: a mesma queda leva só 10%\n• Diversificar espalha o risco, não o tira\n\nQuantos tipos de investimento você tem? 👇\n\nExemplo hipotético, sem citar investimento. Não é recomendação.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #diversificacao #bolsa #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Ter 10 investimentos não quer dizer que você diversificou. Veja a conta. Exemplo hipotético, sem citar investimento. Não é recomendação. Narração por IA. #educacaofinanceira #investimentos #diversificacao #bolsa"
+  }
+ }
+}

@@ -1,0 +1,182 @@
+{
+ "id": "JQE-S044",
+ "titulo": "CET: a taxa de 1,99% ao mês custa bem mais",
+ "formato": "vertical 9:16",
+ "pilar": "Crédito",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "custo escondido",
+ "formato_narrativo": "passo a passo + setas (loop)",
+ "nota_tela": "Exemplo hipotético · valores inventados; taxas e tarifas reais variam",
+ "parametros": {
+  "valor": 5000,
+  "taxa": 0.0199,
+  "extras": 350,
+  "cet": 0.031895
+ },
+ "calculos": {
+  "pmt": "valor * taxa / (1 - (1 + taxa) ** (-12))",
+  "recebe": "valor - extras",
+  "devolve": "pmt * 12",
+  "extra_pago": "devolve - recebe",
+  "anual_anunciada": "((1 + taxa) ** 12 - 1) * 100",
+  "anual_cet": "((1 + cet) ** 12 - 1) * 100",
+  "confere": "pmt * (1 - (1 + cet) ** (-12)) / cet"
+ },
+ "numeros_livres": [
+  12
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: parcela pela fórmula Price; CET = taxa mensal que iguala o valor recebido às parcelas (encontrada por bisecção)",
+  "Exemplo hipotético"
+ ],
+ "capa": {
+  "linha1": "Taxa de 1,99%",
+  "linha2": "custa bem mais",
+  "destaque": "o CET"
+ },
+ "ganchos_alternativos": [
+  "Taxa de 1,99% ao mês parece pouco, mas o custo de verdade é maior.",
+  "O que é CET?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Taxa de um vírgula noventa e nove por cento ao mês parece pouco. Mas o custo de verdade é maior.",
+   "leg": "Taxa de 1,99% ao mês parece pouco. Mas o custo de verdade é maior.",
+   "dados": {
+    "valor": "1,99%",
+    "linhas": [
+     "ao mês parece pouco,",
+     "mas o custo é maior"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Exemplo hipotético. Você contrata cinco mil reais, mas o banco desconta trezentos e cinquenta de tarifa e seguro. Na sua conta, entram só quatro mil e seiscentos e cinquenta reais.",
+   "leg": "Exemplo hipotético. Você contrata R$ 5.000, mas o banco desconta R$ 350 de tarifa e seguro. Na sua conta, entram só R$ 4.650.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "contrata R$ 5.000",
+      "tom": "neutro"
+     },
+     {
+      "texto": "tarifa e seguro −R$ 350",
+      "tom": "erro"
+     },
+     {
+      "texto": "recebe R$ 4.650",
+      "tom": "cinza"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "desconta",
+      "tom": "erro"
+     },
+     {
+      "rotulo": "cai na conta",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "formula",
+   "tipo": "formula",
+   "tts": "Só que as doze parcelas são calculadas sobre os cinco mil. Cada uma sai por quatrocentos e setenta e dois reais e cinquenta e um centavos, e no total você devolve cerca de cinco mil e seiscentos e setenta reais por um dinheiro que realmente recebeu de quatro mil e seiscentos e cinquenta reais.",
+   "leg": "Só que as 12 parcelas são calculadas sobre os R$ 5.000. Cada uma sai por R$ 472,51, e no total você devolve cerca de R$ 5.670 por um dinheiro que realmente recebeu de R$ 4.650.",
+   "dados": {
+    "titulo": "O que você devolve",
+    "linha1": "12 × R$ 472,51",
+    "resultado": "≈ R$ 5.670",
+    "nota": "por R$ 4.650 recebidos"
+   }
+  },
+  {
+   "id": "versus",
+   "tipo": "versus",
+   "tts": "Esse custo real é o CET, o custo efetivo total. Ele junta juros, tarifa e seguro numa taxa só. Na conta, o um vírgula noventa e nove vira três vírgula dezenove por cento ao mês.",
+   "leg": "Esse custo real é o CET, o custo efetivo total. Ele junta juros, tarifa e seguro numa taxa só. Na conta, o 1,99% vira 3,19% ao mês.",
+   "dados": {
+    "a": "1,99%",
+    "b": "3,19%",
+    "rotulo_a": "a taxa anunciada",
+    "rotulo_b": "o CET, ao mês",
+    "centro": "custo real"
+   }
+  },
+  {
+   "id": "barras",
+   "tipo": "barras",
+   "tts": "Ao ano, a diferença aparece mais. A taxa anunciada dá vinte e sete por cento. Com o CET, o custo passa de quarenta e seis por cento.",
+   "leg": "Ao ano, a diferença aparece mais. A taxa anunciada dá 27%. Com o CET, o custo passa de 46%.",
+   "dados": {
+    "titulo": [
+     "Custo ao ano"
+    ],
+    "itens": [
+     {
+      "rotulo": "taxa anunciada",
+      "valor": 26.675054966592704,
+      "texto": "27%"
+     },
+     {
+      "rotulo": "CET",
+      "valor": 45.75588450130306,
+      "texto": "46%",
+      "destaque": true
+     }
+    ],
+    "nota": "exemplo hipotético; os valores reais variam"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Por isso, antes de assinar, peça o CET, compare o CET e não só a taxa, e leia o que está sendo descontado. O CET precisa aparecer na proposta.",
+   "leg": "Por isso, antes de assinar, peça o CET, compare o CET e não só a taxa, e leia o que está sendo descontado. O CET precisa aparecer na proposta.",
+   "dados": {
+    "titulo": [
+     "Antes de assinar"
+    ],
+    "itens": [
+     "peça o CET",
+     "compare o CET, não a taxa",
+     "leia o que é descontado"
+    ]
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "numero_grande",
+   "tts": "Então, quando uma taxa baixa parecer boa demais, lembra:",
+   "leg": "Então, quando uma taxa baixa parecer boa demais, lembra:",
+   "dados": {
+    "valor": "1,99%",
+    "linhas": [
+     "ao mês parece pouco,",
+     "mas o custo é maior"
+    ]
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "CET: por que a taxa de 1,99% ao mês custa bem mais",
+   "texto": "Taxa de 1,99% ao mês parece pouco, mas o custo de verdade é maior.\n\nContrata R$ 5.000, recebe R$ 4.650 (tarifa e seguro descontados)\n12 parcelas de R$ 472,51 ≈ R$ 5.670\nCET ≈ 3,19% ao mês, 46% ao ano\nCompare o CET, não só a taxa.\n\nExemplo hipotético; taxas e tarifas reais variam.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #credito #juros #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Taxa de 1,99% ao mês parece pouco, mas o custo de verdade é maior.\n\n• Contrata R$ 5.000, recebe R$ 4.650 (tarifa e seguro descontados)\n• 12 parcelas de R$ 472,51 ≈ R$ 5.670\n• CET ≈ 3,19% ao mês, 46% ao ano\n• Compare o CET, não só a taxa.\n\nVocê já olhou o CET do seu crédito? 👇\n\nExemplo hipotético; taxas e tarifas reais variam.\n\nNarração gerada por IA.\n\n#educacaofinanceira #credito #juros #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Taxa de 1,99% ao mês parece pouco, mas o custo de verdade é maior. Entenda o CET. Exemplo hipotético; taxas e tarifas reais variam. Narração por IA. #educacaofinanceira #credito #juros #dinheiro"
+  }
+ },
+ "loop": true
+}

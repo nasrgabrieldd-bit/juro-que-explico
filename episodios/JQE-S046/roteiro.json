@@ -1,0 +1,163 @@
+{
+ "id": "JQE-S046",
+ "titulo": "Mito ou verdade: investir pouco não vale a pena?",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "pergunta",
+ "formato_narrativo": "quiz mito ou verdade (loop)",
+ "nota_tela": "Exemplo ilustrativo · juros hipotéticos de 0,8% ao mês, sem impostos",
+ "parametros": {
+  "taxa": 0.008,
+  "topo": 100
+ },
+ "calculos": {
+  "f10": "100 * (((1 + taxa) ** 120 - 1) / taxa)",
+  "dado10": "100 * 120",
+  "cedo": "300 * (((1 + taxa) ** 300 - 1) / taxa)",
+  "tarde": "300 * (((1 + taxa) ** 180 - 1) / taxa)",
+  "baltarde": "tarde / cedo * 100",
+  "fundo": "topo * 0.85",
+  "sobe": "(topo / fundo - 1) * 100",
+  "f10_mil": "f10 / 1000",
+  "cedo_mil": "cedo / 1000",
+  "tarde_mil": "tarde / 1000"
+ },
+ "numeros_livres": [
+  15,
+  25,
+  85,
+  300
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: valor futuro de aportes mensais, VF = A × ((1 + i)^n − 1) ÷ i",
+  "Exemplo ilustrativo; valores e taxas hipotéticos"
+ ],
+ "capa": {
+  "linha1": "Mito ou verdade:",
+  "linha2": "investir pouco",
+  "destaque": "não vale a pena?"
+ },
+ "ganchos_alternativos": [
+  "Mito ou verdade: investir pouco não vale a pena?",
+  "3 mitos sobre investir."
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "versus",
+   "tts": "Mito ou verdade: investir pouco não vale a pena?",
+   "leg": "Mito ou verdade: investir pouco não vale a pena?",
+   "dados": {
+    "a": "MITO",
+    "b": "VERDADE",
+    "rotulo_a": "investir pouco",
+    "rotulo_b": "não vale a pena?",
+    "centro": "qual é?"
+   }
+  },
+  {
+   "id": "m1",
+   "tipo": "formula",
+   "tts": "Mito. Cem reais por mês, durante dez anos, são só doze mil reais saindo do seu bolso. Com os juros hipotéticos, viram vinte mil reais. Pouco dinheiro, com tempo, vira bastante.",
+   "leg": "Mito. R$ 100 por mês, durante 10 anos, são só R$ 12.000 saindo do seu bolso. Com os juros hipotéticos, viram R$ 20 mil. Pouco dinheiro, com tempo, vira bastante.",
+   "dados": {
+    "titulo": "Mito 1",
+    "linha1": "R$ 100 por mês, 10 anos",
+    "resultado": "R$ 20 mil",
+    "nota": "você coloca R$ 12 mil"
+   }
+  },
+  {
+   "id": "v2",
+   "tipo": "duo",
+   "tts": "Verdade: quanto mais cedo, melhor. A Bia guardou trezentos reais por mês durante vinte e cinco anos. O Léo começou tarde e guardou por quinze. A Bia fica com trezentos e setenta e dois mil reais. O Léo, com cento e vinte mil reais.",
+   "leg": "Verdade: quanto mais cedo, melhor. A Bia guardou R$ 300 por mês durante 25 anos. O Léo começou tarde e guardou por 15. A Bia fica com R$ 372 mil. O Léo, com R$ 120 mil.",
+   "dados": {
+    "leo": {
+     "fala": "Comecei tarde",
+     "rotulo": "15 anos",
+     "valor": 32.228761882217455,
+     "texto": "R$ 120 mil"
+    },
+    "bia": {
+     "fala": "Comecei cedo",
+     "rotulo": "25 anos",
+     "valor": 100,
+     "texto": "R$ 372 mil"
+    }
+   }
+  },
+  {
+   "id": "tarde",
+   "tipo": "titulo",
+   "tts": "Mas começar tarde ainda é bem melhor do que não começar. Os cento e vinte mil reais do Léo são muito mais que zero. O melhor momento já passou, e o segundo melhor é agora.",
+   "leg": "Mas começar tarde ainda é bem melhor do que não começar. Os R$ 120 mil do Léo são muito mais que zero. O melhor momento já passou, e o segundo melhor é agora.",
+   "dados": {
+    "titulo": [
+     "Tarde é melhor",
+     "que nunca"
+    ],
+    "subtitulo": "o segundo melhor momento é agora"
+   }
+  },
+  {
+   "id": "m3",
+   "tipo": "trajetoria",
+   "tts": "E um último mito: investimento sobe todo mês. Não sobe. Pode cair quinze por cento e depois recuperar, ou não. Por isso vale ter prazo e reserva, e não colocar o dinheiro que você vai precisar logo.",
+   "leg": "E um último mito: investimento sobe todo mês. Não sobe. Pode cair 15% e depois recuperar, ou não. Por isso vale ter prazo e reserva, e não colocar o dinheiro que você vai precisar logo.",
+   "dados": {
+    "topo": "R$ 100",
+    "fundo": "R$ 85",
+    "fim": "R$ 100",
+    "rotulo_queda": "−15%",
+    "rotulo_subida": "+17,65%",
+    "nota_subida": "recuperar não é certo"
+   }
+  },
+  {
+   "id": "lista",
+   "tipo": "lista",
+   "tts": "Resumindo: pouco vale a pena, cedo ajuda muito e oscilar faz parte do jogo. Sem promessa, só realidade.",
+   "leg": "Resumindo: pouco vale a pena, cedo ajuda muito e oscilar faz parte do jogo. Sem promessa, só realidade.",
+   "dados": {
+    "titulo": [
+     "O resumo"
+    ],
+    "itens": [
+     "pouco vale a pena",
+     "cedo ajuda muito",
+     "oscilar faz parte"
+    ]
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "versus",
+   "tts": "Então, na próxima vez que ouvir isso, pergunta pra si mesmo:",
+   "leg": "Então, na próxima vez que ouvir isso, pergunta pra si mesmo:",
+   "dados": {
+    "a": "MITO",
+    "b": "VERDADE",
+    "rotulo_a": "investir pouco",
+    "rotulo_b": "não vale a pena?",
+    "centro": "qual é?"
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Mito ou verdade: investir pouco não vale a pena?",
+   "texto": "Mito ou verdade: investir pouco não vale a pena?\n\nMITO: R$ 100 por mês por 10 anos → R$ 20 mil\nVERDADE: quanto mais cedo, melhor (R$ 372 mil × R$ 120 mil)\nComeçar tarde ainda é melhor que nunca\nMITO: investimento sobe todo mês\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #mitoouverdade #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Mito ou verdade: investir pouco não vale a pena?\n\n• MITO: R$ 100 por mês por 10 anos → R$ 20 mil\n• VERDADE: quanto mais cedo, melhor (R$ 372 mil × R$ 120 mil)\n• Começar tarde ainda é melhor que nunca\n• MITO: investimento sobe todo mês\n\nQual mito você já acreditou? 👇\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #mitoouverdade #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Mito ou verdade: investir pouco não vale a pena? O Léo e a Bia respondem. Exemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos. Narração por IA. #educacaofinanceira #investimentos #mitoouverdade #dinheiro"
+  }
+ },
+ "loop": true
+}

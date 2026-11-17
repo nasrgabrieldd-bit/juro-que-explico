@@ -1,0 +1,50 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 74.277,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.723,
+   "texto": "Taxa de um vírgula noventa e nove por cento ao mês parece pouco. Mas o custo de verdade é maior."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 7.273,
+   "dur": 12.123,
+   "texto": "Exemplo hipotético. Você contrata cinco mil reais, mas o banco desconta trezentos e cinquenta de tarifa e seguro. Na sua conta, entram só quatro mil e seiscentos e cinquenta reais."
+  },
+  {
+   "id": "formula",
+   "inicio": 19.845,
+   "dur": 18.136,
+   "texto": "Só que as doze parcelas são calculadas sobre os cinco mil. Cada uma sai por quatrocentos e setenta e dois reais e cinquenta e um centavos, e no total você devolve cerca de cinco mil e seiscentos e setenta reais por um dinheiro que realmente recebeu de quatro mil e seiscentos e cinquenta reais."
+  },
+  {
+   "id": "versus",
+   "inicio": 38.431,
+   "dur": 12.315,
+   "texto": "Esse custo real é o CET, o custo efetivo total. Ele junta juros, tarifa e seguro numa taxa só. Na conta, o um vírgula noventa e nove vira três vírgula dezenove por cento ao mês."
+  },
+  {
+   "id": "barras",
+   "inicio": 51.196,
+   "dur": 9.243,
+   "texto": "Ao ano, a diferença aparece mais. A taxa anunciada dá vinte e sete por cento. Com o CET, o custo passa de quarenta e seis por cento."
+  },
+  {
+   "id": "lista",
+   "inicio": 60.889,
+   "dur": 9.411,
+   "texto": "Por isso, antes de assinar, peça o CET, compare o CET e não só a taxa, e leia o que está sendo descontado. O CET precisa aparecer na proposta."
+  },
+  {
+   "id": "volta",
+   "inicio": 70.749,
+   "dur": 3.477,
+   "texto": "Então, quando uma taxa baixa parecer boa demais, lembra:"
+  }
+ ]
+}

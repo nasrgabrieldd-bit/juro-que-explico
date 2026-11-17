@@ -56,7 +56,7 @@ cenas = [
          leg="Pensa comigo. Uma coisa custa R$ 100 hoje. Com 5% de inflação, no ano seguinte ela custa R$ 105. No outro ano, mais 5%, mas agora em cima dos R$ 105. Dá R$ 110,25."),
     cena(c, "formula", "formula",
          "A conta é multiplicar, não somar. Um vírgula zero cinco vezes um vírgula zero cinco dá um vírgula um zero dois cinco. Ou seja, dez vírgula vinte e cinco por cento.",
-         {"titulo": "Multiplica, não soma", "linha1": "1,05 × 1,05", "resultado": "[[f2|n]]", "nota": "= +10,25%"},
+         {"titulo": "Multiplica, não soma", "linha1": "1,05 × 1,05", "resultado": "1,1025", "nota": "= +10,25%"},
          leg="A conta é multiplicar, não somar. 1,05 × 1,05 = 1,1025. Ou seja, 10,25%."),
     cena(c, "barras", "barras",
          "E o efeito vai crescendo. Em cinco anos, a inflação acumulada passa de [[a5|p0]]. Em dez anos, chega perto de [[a10|p0]]. Por isso o preço das coisas parece sempre subir mais do que a gente lembra.",

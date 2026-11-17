@@ -1,0 +1,50 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 69.765,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 3.285,
+   "texto": "Mito ou verdade: investir pouco não vale a pena?"
+  },
+  {
+   "id": "m1",
+   "inicio": 3.835,
+   "dur": 12.253,
+   "texto": "Mito. Cem reais por mês, durante dez anos, são só doze mil reais saindo do seu bolso. Com os juros hipotéticos, viram vinte mil reais. Pouco dinheiro, com tempo, vira bastante."
+  },
+  {
+   "id": "v2",
+   "inicio": 16.539,
+   "dur": 15.968,
+   "texto": "Verdade: quanto mais cedo, melhor. A Bia guardou trezentos reais por mês durante vinte e cinco anos. O Léo começou tarde e guardou por quinze. A Bia fica com trezentos e setenta e dois mil reais. O Léo, com cento e vinte mil reais."
+  },
+  {
+   "id": "tarde",
+   "inicio": 32.957,
+   "dur": 10.864,
+   "texto": "Mas começar tarde ainda é bem melhor do que não começar. Os cento e vinte mil reais do Léo são muito mais que zero. O melhor momento já passou, e o segundo melhor é agora."
+  },
+  {
+   "id": "m3",
+   "inicio": 44.271,
+   "dur": 13.704,
+   "texto": "E um último mito: investimento sobe todo mês. Não sobe. Pode cair quinze por cento e depois recuperar, ou não. Por isso vale ter prazo e reserva, e não colocar o dinheiro que você vai precisar logo."
+  },
+  {
+   "id": "lista",
+   "inicio": 58.425,
+   "dur": 7.043,
+   "texto": "Resumindo: pouco vale a pena, cedo ajuda muito e oscilar faz parte do jogo. Sem promessa, só realidade."
+  },
+  {
+   "id": "volta",
+   "inicio": 65.917,
+   "dur": 3.797,
+   "texto": "Então, na próxima vez que ouvir isso, pergunta pra si mesmo:"
+  }
+ ]
+}

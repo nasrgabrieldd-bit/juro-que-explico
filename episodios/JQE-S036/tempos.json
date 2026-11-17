@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 72.44,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.373,
+   "texto": "Uma ação de dois reais pode ser mais cara que uma de cinquenta reais."
+  },
+  {
+   "id": "fluxoa",
+   "inicio": 4.923,
+   "dur": 14.92,
+   "texto": "Exemplo inventado, sem citar nenhuma empresa. A ação A custa dois reais e a empresa lucra dez centavos por ação ao ano. Dividindo o preço pelo lucro, dá vinte. É o P sobre L: quantos anos de lucro o preço representa."
+  },
+  {
+   "id": "formulab",
+   "inicio": 20.293,
+   "dur": 11.675,
+   "texto": "Já a ação B custa cinquenta reais, mas a empresa lucra dez reais por ação ao ano. Cinquenta dividido por dez dá cinco. Ou seja, o preço dela se paga com cinco anos de lucro."
+  },
+  {
+   "id": "barras",
+   "inicio": 32.418,
+   "dur": 11.973,
+   "texto": "Pelo preço, a A parece barata. Pelo lucro que ela entrega, é quatro vezes mais cara. Preço de etiqueta não diz se é pechincha, assim como o preço de um carro não diz se ele é um bom negócio."
+  },
+  {
+   "id": "ressalva",
+   "inicio": 44.841,
+   "dur": 12.869,
+   "texto": "Mas atenção: P sobre L baixo não é sinal de compra. Pode ser que o lucro vá cair, ou que a empresa tenha uma dívida enorme. É uma régua pra comparar, não uma resposta pronta, e nada aqui é recomendação."
+  },
+  {
+   "id": "perguntas",
+   "inicio": 58.161,
+   "dur": 7.859,
+   "texto": "Antes de achar que algo está barato, pergunta: quanto a empresa lucra? Esse lucro se mantém? E quanto ela deve?"
+  },
+  {
+   "id": "cta",
+   "inicio": 66.469,
+   "dur": 3.748,
+   "texto": "Você olha o preço ou o valor? Responde aqui."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 70.667,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}

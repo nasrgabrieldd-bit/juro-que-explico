@@ -1,0 +1,56 @@
+{
+ "loop": false,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 78.767,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 4.053,
+   "texto": "Ter dez investimentos não quer dizer que você diversificou."
+  },
+  {
+   "id": "leo",
+   "inicio": 4.603,
+   "dur": 10.736,
+   "texto": "O Léo tem dez ações, mas todas do mesmo setor. Um dia, esse setor tem um problema, e todas caem juntas. Para cada cem reais, o Léo ficou com setenta reais."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 15.789,
+   "dur": 13.595,
+   "texto": "O problema é a causa em comum. Quando todos os investimentos dependem do mesmo motivo, eles sobem e caem juntos, e ter muitos não protege de nada. É como ter dez guarda-chuvas furados do mesmo modelo."
+  },
+  {
+   "id": "duo",
+   "inicio": 29.834,
+   "dur": 13.765,
+   "texto": "Já a Bia espalhou o dinheiro: um terço em ações, um terço em renda fixa e um terço de reserva. No mesmo dia ruim, só a parte das ações caiu trinta por cento. Para cada cem reais, ela ficou com noventa reais."
+  },
+  {
+   "id": "ressalva",
+   "inicio": 44.049,
+   "dur": 14.0,
+   "texto": "Mas papo reto: diversificar não elimina o risco, só espalha. Uma carteira diversificada também pode cair, e quem promete o contrário está vendendo ilusão. A diferença é que ela costuma sofrer menos de uma vez só."
+  },
+  {
+   "id": "lista",
+   "inicio": 58.499,
+   "dur": 12.865,
+   "texto": "Para checar se você diversificou, pergunta: eles dependem do mesmo motivo? São do mesmo tipo? Eu tenho reserva fora disso? Se a resposta for sim, talvez seja só quantidade."
+  },
+  {
+   "id": "cta",
+   "inicio": 71.815,
+   "dur": 4.729,
+   "texto": "Quantos tipos de investimento você tem? Conta nos comentários."
+  },
+  {
+   "id": "assinatura",
+   "inicio": 76.994,
+   "dur": 1.323,
+   "texto": "Juro que explico."
+  }
+ ]
+}
