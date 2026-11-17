@@ -1,0 +1,50 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 72.733,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 5.967,
+   "texto": "Quanto por mês vira um milhão de reais em vinte e cinco anos? Menos do que você imagina."
+  },
+  {
+   "id": "fluxo",
+   "inicio": 6.517,
+   "dur": 14.32,
+   "texto": "Papo reto: ninguém fica milionário de um dia pro outro. Mas o caminho é uma conta. Com juros hipotéticos de zero vírgula oito por cento ao mês, guardar oitocentos e sete reais por mês, durante trezentos meses, chega lá."
+  },
+  {
+   "id": "tempo",
+   "inicio": 21.287,
+   "dur": 13.96,
+   "texto": "E quem manda aqui é o tempo. Em quinze anos, o valor sobe pra dois mil e quinhentos e três reais por mês. Em vinte e cinco, oitocentos e sete reais. Em trinta e cinco, só duzentos e noventa e dois reais."
+  },
+  {
+   "id": "origem",
+   "inicio": 35.697,
+   "dur": 10.919,
+   "texto": "Desse milhão, quanto saiu do seu bolso? Só duzentos e quarenta e dois mil reais. O resto, setecentos e cinquenta e oito mil reais, foi o dinheiro trabalhando."
+  },
+  {
+   "id": "duo",
+   "inicio": 47.065,
+   "dur": 11.123,
+   "texto": "Agora olha a Bia e o Léo. A Bia começou hoje. O Léo esperou dez anos. Pra chegar no mesmo milhão, ele precisa guardar três vírgula um vezes mais por mês."
+  },
+  {
+   "id": "moral",
+   "inicio": 58.638,
+   "dur": 10.139,
+   "texto": "Sem promessa: a taxa é hipotética e o mercado oscila. O ponto é outro. Começar cedo, com o que cabe no bolso, vale mais do que esperar o valor perfeito."
+  },
+  {
+   "id": "volta",
+   "inicio": 69.227,
+   "dur": 3.456,
+   "texto": "E se alguém disser que um milhão é coisa de rico, pergunta:"
+  }
+ ]
+}

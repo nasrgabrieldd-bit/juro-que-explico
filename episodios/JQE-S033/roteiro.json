@@ -1,0 +1,199 @@
+{
+ "id": "JQE-S033",
+ "titulo": "Quanto por mês vira R$ 1 milhão em 25 anos?",
+ "formato": "vertical 9:16",
+ "pilar": "Investimentos",
+ "tipo": "evergreen",
+ "risco": "baixo — conta ilustrativa",
+ "tipo_gancho": "pergunta com número",
+ "formato_narrativo": "explicador + personagens (loop)",
+ "nota_tela": "Exemplo ilustrativo · juros hipotéticos, sem impostos nem inflação",
+ "parametros": {
+  "meta": 1000000,
+  "taxa_mes": 0.008,
+  "anos": 25
+ },
+ "calculos": {
+  "meses": "anos * 12",
+  "A25": "meta * taxa_mes / ((1 + taxa_mes) ** 300 - 1)",
+  "A15": "meta * taxa_mes / ((1 + taxa_mes) ** 180 - 1)",
+  "A35": "meta * taxa_mes / ((1 + taxa_mes) ** 420 - 1)",
+  "aportado": "A25 * 300",
+  "juros": "meta - aportado",
+  "razao": "A15 / A25",
+  "ben": "A25 / A15 * 100",
+  "aportado_mil": "aportado / 1000",
+  "juros_mil": "juros / 1000"
+ },
+ "numeros_livres": [
+  15,
+  35,
+  300
+ ],
+ "numeros_fonte": [],
+ "fontes": [
+  "Cálculo próprio: aporte = meta × i ÷ ((1 + i)^n − 1), com i = 0,8% ao mês",
+  "Exemplo ilustrativo com taxa hipotética"
+ ],
+ "capa": {
+  "linha1": "Quanto por mês",
+  "linha2": "vira R$ 1 milhão?",
+  "destaque": "em 25 anos"
+ },
+ "ganchos_alternativos": [
+  "Um milhão em 25 anos custa menos do que você imagina.",
+  "Quanto por mês vira R$ 1 milhão em 25 anos?"
+ ],
+ "cenas": [
+  {
+   "id": "hook",
+   "tipo": "numero_grande",
+   "tts": "Quanto por mês vira um milhão de reais em vinte e cinco anos? Menos do que você imagina.",
+   "leg": "Quanto por mês vira um milhão de reais em 25 anos? Menos do que você imagina.",
+   "dados": {
+    "valor": "R$ 1 milhão",
+    "linhas": [
+     "em 25 anos:",
+     "quanto por mês?"
+    ]
+   }
+  },
+  {
+   "id": "fluxo",
+   "tipo": "fluxo_setas",
+   "tts": "Papo reto: ninguém fica milionário de um dia pro outro. Mas o caminho é uma conta. Com juros hipotéticos de zero vírgula oito por cento ao mês, guardar oitocentos e sete reais por mês, durante trezentos meses, chega lá.",
+   "leg": "Papo reto: ninguém fica milionário de um dia pro outro. Mas o caminho é uma conta. Com juros hipotéticos de 0,8% ao mês, guardar R$ 807 por mês, durante 300 meses, chega lá.",
+   "dados": {
+    "caixas": [
+     {
+      "texto": "R$ 807 por mês",
+      "tom": "neutro"
+     },
+     {
+      "texto": "300 meses",
+      "tom": "cinza"
+     },
+     {
+      "texto": "R$ 1 milhão",
+      "tom": "ok"
+     }
+    ],
+    "setas": [
+     {
+      "rotulo": "0,8% ao mês",
+      "tom": "neutro"
+     },
+     {
+      "rotulo": "juros compostos",
+      "tom": "neutro"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tempo",
+   "tipo": "barras",
+   "tts": "E quem manda aqui é o tempo. Em quinze anos, o valor sobe pra dois mil e quinhentos e três reais por mês. Em vinte e cinco, oitocentos e sete reais. Em trinta e cinco, só duzentos e noventa e dois reais.",
+   "leg": "E quem manda aqui é o tempo. Em quinze anos, o valor sobe pra R$ 2.503 por mês. Em vinte e cinco, R$ 807. Em trinta e cinco, só R$ 292.",
+   "dados": {
+    "titulo": [
+     "Aporte mensal para",
+     "chegar ao milhão"
+    ],
+    "itens": [
+     {
+      "rotulo": "15 anos",
+      "valor": 2502.672667022968,
+      "texto": "R$ 2.503"
+     },
+     {
+      "rotulo": "25 anos",
+      "valor": 806.5804145461733,
+      "texto": "R$ 807",
+      "destaque": true
+     },
+     {
+      "rotulo": "35 anos",
+      "valor": 291.8975442526093,
+      "texto": "R$ 292"
+     }
+    ],
+    "nota": "juros hipotéticos, sem impostos"
+   }
+  },
+  {
+   "id": "origem",
+   "tipo": "formula",
+   "tts": "Desse milhão, quanto saiu do seu bolso? Só duzentos e quarenta e dois mil reais. O resto, setecentos e cinquenta e oito mil reais, foi o dinheiro trabalhando.",
+   "leg": "Desse milhão, quanto saiu do seu bolso? Só R$ 242 mil. O resto, R$ 758 mil, foi o dinheiro trabalhando.",
+   "dados": {
+    "titulo": "De onde vem o milhão",
+    "linha1": "R$ 242 mil dos seus aportes",
+    "resultado": "R$ 758 mil",
+    "nota": "vieram dos juros"
+   }
+  },
+  {
+   "id": "duo",
+   "tipo": "duo",
+   "tts": "Agora olha a Bia e o Léo. A Bia começou hoje. O Léo esperou dez anos. Pra chegar no mesmo milhão, ele precisa guardar três vírgula um vezes mais por mês.",
+   "leg": "Agora olha a Bia e o Léo. A Bia começou hoje. O Léo esperou dez anos. Pra chegar no mesmo milhão, ele precisa guardar 3,1× mais por mês.",
+   "dados": {
+    "leo": {
+     "fala": "Começo ano que vem",
+     "rotulo": "começa em 10 anos",
+     "valor": 100,
+     "texto": "R$ 2.503"
+    },
+    "bia": {
+     "fala": "Começo hoje!",
+     "rotulo": "começa hoje",
+     "valor": 32.228761882217455,
+     "texto": "R$ 807"
+    }
+   }
+  },
+  {
+   "id": "moral",
+   "tipo": "lista",
+   "tts": "Sem promessa: a taxa é hipotética e o mercado oscila. O ponto é outro. Começar cedo, com o que cabe no bolso, vale mais do que esperar o valor perfeito.",
+   "leg": "Sem promessa: a taxa é hipotética e o mercado oscila. O ponto é outro. Começar cedo, com o que cabe no bolso, vale mais do que esperar o valor perfeito.",
+   "dados": {
+    "titulo": [
+     "O que importa"
+    ],
+    "itens": [
+     "começar com o que cabe",
+     "constância todo mês",
+     "dar tempo ao tempo"
+    ]
+   }
+  },
+  {
+   "id": "volta",
+   "tipo": "numero_grande",
+   "tts": "E se alguém disser que um milhão é coisa de rico, pergunta:",
+   "leg": "E se alguém disser que um milhão é coisa de rico, pergunta:",
+   "dados": {
+    "valor": "R$ 1 milhão",
+    "linhas": [
+     "em 25 anos:",
+     "quanto por mês?"
+    ]
+   }
+  }
+ ],
+ "posts": {
+  "youtube": {
+   "titulo": "Quanto por mês vira R$ 1 milhão em 25 anos? A conta",
+   "texto": "Quanto por mês vira R$ 1 milhão em 25 anos? Menos do que você imagina.\n\n15 anos → R$ 2.503 por mês\n25 anos → R$ 807 por mês\n35 anos → R$ 292 por mês\nSó R$ 242 mil saem do seu bolso.\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nConteúdo educativo, não é recomendação financeira.\nNarração gerada por inteligência artificial.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #shorts"
+  },
+  "instagram": {
+   "texto": "Quanto por mês vira R$ 1 milhão em 25 anos? Menos do que você imagina.\n\n• 15 anos → R$ 2.503 por mês\n• 25 anos → R$ 807 por mês\n• 35 anos → R$ 292 por mês\n• Só R$ 242 mil saem do seu bolso.\n\nQuanto você consegue guardar por mês? 👇\n\nExemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos.\n\nNarração gerada por IA.\n\n#educacaofinanceira #investimentos #jurocomposto #dinheiro #financaspessoais"
+  },
+  "tiktok": {
+   "texto": "Quanto por mês vira R$ 1 milhão em 25 anos? A conta com o Léo e a Bia. Exemplo ilustrativo, juros hipotéticos de 0,8% ao mês, sem impostos. Narração por IA. #educacaofinanceira #investimentos #jurocomposto #dinheiro"
+  }
+ },
+ "loop": true
+}

@@ -24,8 +24,30 @@ A rotina diária pega a primeira pauta da fila, produz, move para "Publicadas" c
 | JQE-S030 | 1% de taxa em 20 anos (refeito de S014) | 19/11/2026 16:00 |
 | JQE-S031 | Aporte maior ou rendimento maior (refeito de S015) | 20/11/2026 12:00 |
 | JQE-S032 | Regra 50/30/20 (refeito de S013) | 20/11/2026 16:00 |
+| JQE-S033 | Quanto por mês vira R$ 1 milhão em 25 anos? (loop) | 21/11/2026 12:00 |
+| JQE-S034 | 3 perguntas antes de escolher onde investir | 21/11/2026 16:00 |
+| JQE-S035 | Dá para começar a investir com R$ 30 por mês (loop) | 22/11/2026 12:00 |
+| JQE-S037 | Dívida a 10% ao mês dobra em menos de 8 meses | 22/11/2026 16:00 |
+| JQE-S038 | R$ 6 mil por ano ou R$ 500 por mês: qual rende mais? (loop) | 23/11/2026 12:00 |
+| JQE-S041 | Yield on cost: 6% que viram mais de 15% | 23/11/2026 16:00 |
+| JQE-S039 | Inflação: 5% + 5% não é 10% | 24/11/2026 12:00 |
+| JQE-S040 | 3 erros de quem está começando a investir (loop) | 24/11/2026 16:00 |
+| JQE-S042 | Financiamento: Price ou SAC, qual cobra mais juros? | 25/11/2026 12:00 |
+| JQE-S047 | Quanto investir para os dividendos pagarem a conta de luz | 25/11/2026 16:00 |
+| JQE-S036 | Ação de R$ 2 pode ser mais cara que uma de R$ 50 | 26/11/2026 12:00 |
+| JQE-S044 | CET: a taxa de 1,99% ao mês custa bem mais (loop) | 26/11/2026 16:00 |
+| JQE-S043 | R$ 800 hoje ou R$ 1.000 em 5 anos: o que vale mais? | 27/11/2026 12:00 |
+| JQE-S048 | Aumento de salário: separe metade antes de se acostumar (loop) | 27/11/2026 16:00 |
+| JQE-S046 | Mito ou verdade: investir pouco não vale a pena? (loop) | 28/11/2026 12:00 |
+| JQE-S045 | Ter 10 investimentos não é diversificar | 28/11/2026 16:00 |
+| JQE-S049 | Carro de R$ 80 mil: o custo escondido em 5 anos | 29/11/2026 12:00 |
+| JQE-S050 | Regra do 114 e do 144: quando o dinheiro triplica | 29/11/2026 16:00 |
+| JQE-S051 | Duas dívidas e um dinheiro extra: qual pagar primeiro? (loop) | 30/11/2026 12:00 |
+| JQE-S052 | R$ 10 mil em 2 anos: guardar mais ou render mais? | 30/11/2026 16:00 |
 
 Substituídos (12/11/2026, pedido do fundador: refazer com voz nova, margem de segurança, gancho de curiosidade e capa): JQE-S004 a S016 e JQE-L001-P1..P3 não vão ao ar; os temas foram refeitos como S017–S032. O vídeo longo JQE-L001 (YouTube BWivb-y51zk) aparece como excluído no canal desde 12/11; não foi reenviado até o fundador confirmar o que houve.
+
+Lote 21–30/11/2026 (skill 2.2, pedido do fundador em 17/11): 20 vídeos S033–S052, tom honesto e de amigo, personagens Léo e Bia, 8 em loop. Em `agenda_pendente.json` conforme as vagas do Buffer. Pautas usadas da fila: assimetria (já no X001), 1 milhão em 25 anos, rotativo/dívida, regra 114/144, preço × valor, aporte mensal × anual, inflação acumulada, yield on cost, Price × SAC, valor presente, CET, diversificação, mito ou verdade, dividendos e conta de luz, carro, mais ideias novas (3 perguntas, R$ 30, 3 erros, aumento, qual dívida pagar, meta de 2 anos).
 
 Aviso de lote enviado em 13/11 para o estoque até 20/11 (S019 a S032 agendados ou em agenda_pendente.json; 7 dias).
 
