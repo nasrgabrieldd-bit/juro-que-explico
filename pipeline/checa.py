@@ -84,7 +84,14 @@ for p in ["garantido", "garantia de lucro", "recomendo comprar", "compre agora",
           "fique rico", "sem risco", "lucro certo"]:
     ok(p not in tudo, f"sem termo proibido '{p}'")
 ok(bool(rot.get("fontes")), "fontes registradas")
-ok(rot["cenas"][-1]["tipo"] == "assinatura", "termina com a assinatura")
+if rot.get("loop"):
+    # vídeo em loop: o fim emenda no começo. A assinatura vira o selo fixo (marca d'água) e a última cena repete o gancho.
+    ult, pri = rot["cenas"][-1], rot["cenas"][0]
+    ok(ult["tipo"] == pri["tipo"] and ult.get("dados") == pri.get("dados"), "loop: última cena repete visualmente a primeira")
+    ok(not re.search(r"[.!?…]\s*$", ult["tts"].strip()), "loop: última frase fica aberta (termina em ':' ou ',') e fecha no gancho")
+    ok(re.match(r"(?i)\s*(cair|ca[ií]|se|quando|[a-zà-ú]+)", pri["tts"]) is not None, "loop: gancho serve de continuação")
+else:
+    ok(rot["cenas"][-1]["tipo"] == "assinatura", "termina com a assinatura")
 
 # retenção (regras para episódios a partir do JQE-S010)
 gancho = rot["cenas"][0]

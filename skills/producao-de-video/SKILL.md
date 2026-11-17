@@ -3,7 +3,7 @@ name: producao-de-video
 description: Skill única de produção de vídeo dos canais do Gabriel (Juro que Explico e Só Sei Que Foi Assim). Use SEMPRE que for produzir, refazer ou planejar vídeos (curtos, longos, cortes), roteiro, narração IA, render, capa, agenda. Começa rodando skills/atualizar_skills.sh para usar a versão mais recente de tudo, inclusive a Lemo-Opuscar.
 ---
 
-# Skill de produção de vídeo (versão 2.0, 16/11/2026)
+# Skill de produção de vídeo (versão 2.1, 17/11/2026)
 
 Histórico de versões em `skills/producao-de-video/CHANGELOG.md`. Fontes externas em `skills/REGISTRO.json`. Tudo o que o fundador manda (skills, links, referências) entra por `skills/REFERENCIAS.md`.
 
@@ -43,6 +43,13 @@ Regras do Motor B para os nossos canais:
 4. **Voz conferida por transcrição** (`asr_check`) para pegar palavra trocada ou número lido errado.
 5. **Prancha de contato** (`sheet.py`) para revisar o vídeo todo em uma imagem.
 6. **Estilo próprio guardado:** o visual de cada canal pode virar um estilo salvo (`MY-STYLES.md`), para todo vídeo novo nascer da mesma base.
+
+## Variedade, personagens e loop (versão 2.1)
+- **Variedade é regra de política**: o YouTube pune conteúdo repetitivo ou "inautêntico" com narração IA. Em cada vídeo, misture pelo menos 3 tipos de cena diferentes dos 2 vídeos anteriores e use pelo menos 1 cena com personagem ou seta. Os tipos novos estão em `jqe-motion/src/cenas2.tsx` (ver PRODUCAO.md, "Cenas com personagens e loop").
+- **Personagens**: só os originais da marca (Léo, camisa verde-limão com "J%"; Bia, camisa branca). Nunca desenhar personagem, mascote ou pessoa real de terceiros.
+- **Tom**: conversa descontraída e prática, segunda pessoa ("pensa comigo", "olha só"), uma ideia por vídeo, exemplo com personagem, humor leve. Temas: investir, juros, bolsa, juntar dinheiro, construir patrimônio. Sem recomendar ativo, sem prometer ganho, sem previsão. Inspiração de jeito de explicar nos canais de referência do projeto; nada copiado.
+- **Loop** (`"loop": true`): a última frase fica aberta ("...lembra:") e a primeira a fecha; a última cena repete o gancho; sem barra de progresso. Para publicar um vídeo em loop, o Instagram usa o `<ID>.mp4` com `thumbnailOffset` 0 (o quadro 0 já é a capa) e NÃO o `_ig.mp4` com capa anexada, que quebraria o loop.
+- **Conformidade (conferir em todo vídeo):** narração por IA declarada nos textos e `isAiGenerated`; sem música ou imagem de terceiros; sem promessa de ganho nem recomendação; título, capa e primeira frase prometem a mesma coisa; sem pedir curtida/compartilhamento em troca de algo; margem de segurança respeitada; exemplo ilustrativo avisado na tela.
 
 ## Fluxo de um vídeo
 Atualizar skills (lei) → pauta e fontes → roteiro e cálculos → checa.py → narração → checa.py → render (A ou B) → margens/prancha → ffprobe → commit e push → HTTP 200 → agendamento no Buffer (ou agenda_pendente.json) → aviso ao fundador. O restante (IDs de canais, horários, limites do Buffer, longos pelo Composio) está no PRODUCAO.md e na skill `canal-faceless-automatizado`.

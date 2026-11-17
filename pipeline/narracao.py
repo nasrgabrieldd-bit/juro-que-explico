@@ -56,14 +56,15 @@ if NATURAL:
 trechos, tempos, t = [], [], INICIO
 sr_final = 24000
 trechos.append(np.zeros(int(INICIO * sr_final), dtype=np.float32))
-for cena in rot["cenas"]:
+for idx, cena in enumerate(rot["cenas"]):
     audio, sr = fala(cena["tts"])
     sr_final = sr
     dur = len(audio) / sr
     tempos.append({"id": cena["id"], "inicio": round(t, 3), "dur": round(dur, 3), "texto": cena["tts"]})
     trechos.append(audio.astype(np.float32))
-    trechos.append(np.zeros(int(PAUSA * sr), dtype=np.float32))
-    t += dur + PAUSA
+    pausa = 0.05 if (rot.get("loop") and idx == len(rot["cenas"]) - 1) else PAUSA  # loop: fim emenda no começo, sem silêncio
+    trechos.append(np.zeros(int(pausa * sr), dtype=np.float32))
+    t += dur + pausa
     print(cena["id"], round(dur, 2), "s")
 
 audio = np.concatenate(trechos)
@@ -78,6 +79,6 @@ if NATURAL:  # mesmo tratamento da amostra aprovada; a duração não muda
                     "acompressor=threshold=-18dB:ratio=2.5:attack=8:release=120,aecho=0.8:0.5:22:0.06",
                     "-ar", str(sr_final), f"{saida_dir}/narracao.wav"], check=True)
     os.remove(bruto)
-json.dump({"voz": str(voz), "velocidade": velocidade, "total": round(len(audio) / sr_final, 3), "cenas": tempos},
+json.dump({"loop": bool(rot.get("loop")), "voz": str(voz), "velocidade": velocidade, "total": round(len(audio) / sr_final, 3), "cenas": tempos},
           open(f"{saida_dir}/tempos.json", "w"), ensure_ascii=False, indent=1)
 print("total", round(len(audio) / sr_final, 2), "s")

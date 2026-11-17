@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, clamp, suave, useFontes } from "./lib";
 import { Assinatura, Layout, TIPOS } from "./cenas";
+import { TIPOS2 } from "./cenas2";
 
 export type Props = { rot: any; tempos: any; marca: any; audio: string; sfx?: boolean };
 
@@ -11,11 +12,13 @@ const SEG_V = { x: 92, y: 260, w: 838, h: 1140, cenaY: 100, cenaH: 800, legY: 93
 const SEG_H = { x: 110, y: 100, w: 1700, h: 860, cenaY: 120, cenaH: 610, legY: 760 };
 let SEG = SEG_V;
 
-const Fundo: React.FC = () => {
+const Fundo: React.FC<{ loop?: boolean }> = ({ loop }) => {
   const frame = useCurrentFrame();
-  const { width, height } = useVideoConfig();
-  const dx = (frame * 0.4) % 90, dy = (frame * 0.25) % 90;
-  const gx = 50 + 18 * Math.sin(frame / 140), gy = 70 + 10 * Math.cos(frame / 170);
+  const { width, height, durationInFrames: N } = useVideoConfig();
+  // em loop, tudo no fundo é periódico no comprimento do vídeo (a emenda do fim com o começo não pula)
+  const f = frame / N;
+  const dx = loop ? (f * 180) % 90 : (frame * 0.4) % 90, dy = loop ? (f * 90) % 90 : (frame * 0.25) % 90;
+  const gx = loop ? 50 + 18 * Math.sin(2 * Math.PI * f) : 50 + 18 * Math.sin(frame / 140), gy = loop ? 70 + 10 * Math.cos(2 * Math.PI * f) : 70 + 10 * Math.cos(frame / 170);
   return (
     <AbsoluteFill style={{ background: C.bg }}>
       <AbsoluteFill style={{ backgroundImage: `linear-gradient(${C.grid}55 1px, transparent 1px), linear-gradient(90deg, ${C.grid}55 1px, transparent 1px)`,
@@ -51,11 +54,11 @@ const Legenda: React.FC<{ texto: string; durF: number; max?: number }> = ({ text
   );
 };
 
-const CenaWrap: React.FC<{ children: React.ReactNode; durF: number; primeira: boolean }> = ({ children, durF, primeira }) => {
+const CenaWrap: React.FC<{ children: React.ReactNode; durF: number; primeira: boolean; fixa?: boolean; semSaida?: boolean }> = ({ children, durF, primeira, fixa, semSaida }) => {
   const frame = useCurrentFrame();
   const entra = primeira ? 1 : interpolate(frame, [0, 12], [0, 1], { ...clamp, easing: suave });
-  const sai = interpolate(frame, [durF - 7, durF], [0, 1], clamp);
-  const zoom = 1 + 0.03 * (frame / Math.max(1, durF));
+  const sai = semSaida ? 0 : interpolate(frame, [durF - 7, durF], [0, 1], clamp);
+  const zoom = fixa ? 1 : 1 + 0.03 * (frame / Math.max(1, durF));
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: entra * (1 - sai),
       scale: String((0.94 + 0.06 * entra) * zoom * (1 - 0.04 * sai)), translate: `0px ${(1 - entra) * 40 - sai * 30}px` }}>
@@ -71,6 +74,7 @@ export const Video: React.FC<Props> = ({ rot, tempos, marca, audio, sfx = true }
   const horiz = width > 1500;
   SEG = horiz ? SEG_H : SEG_V;
   const cenas: any[] = rot.cenas;
+  const loop = !!rot.loop;
   const tmap: Record<string, any> = Object.fromEntries(tempos.cenas.map((c: any) => [c.id, c]));
   const blocos = cenas.map((c, i) => {
     const t = tmap[c.id];
@@ -80,7 +84,7 @@ export const Video: React.FC<Props> = ({ rot, tempos, marca, audio, sfx = true }
   });
   return (
     <AbsoluteFill>
-      <Fundo />
+      <Fundo loop={loop} />
       <Audio src={staticFile(audio)} />
       {/* marca no topo, dentro da área segura */}
       <div style={{ position: "absolute", left: SEG.x, top: SEG.y - 10, fontFamily: "Inter", fontWeight: 800, fontSize: 30, letterSpacing: "0.06em", color: C.lime }}>
@@ -90,12 +94,12 @@ export const Video: React.FC<Props> = ({ rot, tempos, marca, audio, sfx = true }
       <Layout.Provider value={{ w: horiz ? 1500 : 838, horiz }}>
       <div style={{ position: "absolute", left: SEG.x + (SEG.w - (horiz ? 1500 : 838)) / 2, top: SEG.y + SEG.cenaY, width: horiz ? 1500 : 838, height: SEG.cenaH }}>
         {blocos.map(({ c, ini, durF }, i) => {
-          const Comp = c.tipo === "assinatura" ? Assinatura : TIPOS[c.tipo];
+          const Comp = c.tipo === "assinatura" ? Assinatura : (c.tipo === "numero_grande" && c.dados?.de) ? TIPOS2.gancho_seta : (TIPOS2[c.tipo] || TIPOS[c.tipo]);
           if (!Comp) return null;
           return (
             <Sequence key={c.id} from={ini} durationInFrames={durF} layout="none">
               <Sequence from={i === 0 ? -24 : 0} layout="none">
-                <CenaWrap durF={i === 0 ? durF + 24 : durF} primeira={i === 0}>
+                <CenaWrap durF={i === 0 ? durF + 24 : durF} primeira={i === 0} fixa={loop && (i === 0 || i === blocos.length - 1)} semSaida={loop && i === blocos.length - 1}>
                   <Comp d={c.dados || {}} dur={durF} linhas={marca.assinatura_linhas} tagline={marca.tagline} />
                 </CenaWrap>
               </Sequence>
@@ -115,8 +119,8 @@ export const Video: React.FC<Props> = ({ rot, tempos, marca, audio, sfx = true }
       </div>
       {/* selo (marca d'água) */}
       <div style={{ position: "absolute", left: horiz ? undefined : SEG.x, right: horiz ? 1920 - SEG.x - SEG.w : undefined, width: horiz ? undefined : SEG.w, top: horiz ? SEG.y - 10 : SEG.y + SEG.h - 34, textAlign: "center", fontFamily: "Inter", fontWeight: 700, fontSize: 34, color: "rgba(244,247,243,.42)" }}>{marca.selo_texto}</div>
-      {/* barra de progresso */}
-      <div style={{ position: "absolute", left: 0, top: 0, height: 8, width: `${(frame / durationInFrames) * 100}%`, background: C.lime }} />
+      {/* barra de progresso (some em loop: ela denunciaria o fim) */}
+      {!loop && <div style={{ position: "absolute", left: 0, top: 0, height: 8, width: `${(frame / durationInFrames) * 100}%`, background: C.lime }} />}
     </AbsoluteFill>
   );
 };

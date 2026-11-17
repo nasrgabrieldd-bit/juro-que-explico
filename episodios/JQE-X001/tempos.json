@@ -1,0 +1,62 @@
+{
+ "loop": true,
+ "voz": "pm_alex+pm_santa:0.6",
+ "velocidade": 0.94,
+ "total": 85.217,
+ "cenas": [
+  {
+   "id": "hook",
+   "inicio": 0.1,
+   "dur": 6.915,
+   "texto": "Cair cinquenta por cento exige subir cem por cento para voltar. Parece mentira, mas a conta fecha."
+  },
+  {
+   "id": "leo",
+   "inicio": 7.465,
+   "dur": 9.011,
+   "texto": "Pensa comigo. O Léo botou cem reais na bolsa. Aí o mercado azedou e o dinheiro caiu pela metade. Sobraram cinquenta."
+  },
+  {
+   "id": "intuicao",
+   "inicio": 16.925,
+   "dur": 9.947,
+   "texto": "Ele pensa: caiu cinquenta por cento, é só subir cinquenta por cento e pronto. Só que não. Cinquenta por cento de cinquenta são vinte e cinco reais."
+  },
+  {
+   "id": "trajeto",
+   "inicio": 27.322,
+   "dur": 11.528,
+   "texto": "Ou seja, o Léo está com setenta e cinco. Faltam vinte e cinco. Pra voltar aos cem, ele precisa ganhar cinquenta em cima de uma base de cinquenta. Isso dá cem por cento."
+  },
+  {
+   "id": "conta",
+   "inicio": 39.3,
+   "dur": 10.312,
+   "texto": "A conta é fácil: divide o valor de antes pelo que sobrou e tira um. Cem dividido por cinquenta é dois. Menos um, um. Ou seja, cem por cento."
+  },
+  {
+   "id": "tabela",
+   "inicio": 50.062,
+   "dur": 11.128,
+   "texto": "E quanto maior o tombo, mais pesada a volta. Caiu vinte? Precisa subir vinte e cinco. Caiu oitenta? Precisa subir quatrocentos por cento."
+  },
+  {
+   "id": "duo",
+   "inicio": 61.64,
+   "dur": 9.864,
+   "texto": "Agora olha a Bia e o Léo. Os dois perderam metade. O Léo subiu cinquenta e ficou com setenta e cinco. A Bia subiu cem e voltou aos cem."
+  },
+  {
+   "id": "moral",
+   "inicio": 71.954,
+   "dur": 8.283,
+   "texto": "A moral: percentual de perda e de ganho não se anulam. Quanto maior a queda, mais difícil voltar. Vale pra qualquer valor."
+  },
+  {
+   "id": "volta",
+   "inicio": 80.687,
+   "dur": 4.48,
+   "texto": "Então, da próxima vez que alguém falar em cair cinquenta por cento, lembra:"
+  }
+ ]
+}

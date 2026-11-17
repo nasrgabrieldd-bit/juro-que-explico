@@ -67,6 +67,18 @@ Use `lotes/refeitos_2026-11-13.py` (JQE-S017 a S032) como modelo de roteiro. Cam
 | `cta` | `linhas` [2], `botao` |
 | `assinatura` | sem dados; sempre a última cena, `tts`/`leg` = `assinatura_tts` de `marca/marca.json` ("Juro que explico.") |
 
+### Cenas com personagens e loop (jqe-motion, a partir de 17/11/2026)
+| tipo | dados |
+|---|---|
+| `numero_grande` com `de` | gancho com seta: `de` (ex. "−50%"), `valor` (ex. "+100%"), `linhas` [2] |
+| `personagem_queda` | Léo com bloco de dinheiro que cai: `antes`, `depois`, `fala_antes`, `fala_depois`, `badge` |
+| `fluxo_setas` | `caixas` [{texto, tom: neutro/cinza/erro, selo}], `setas` [{rotulo, tom}] (vertical, 3 caixas) |
+| `trajetoria` | V com o Léo caminhando: `topo`, `fundo`, `fim`, `rotulo_queda`, `rotulo_subida`, `nota_subida` |
+| `tabela_setas` | `titulo`, `linhas` [{queda, sobe, destaque}] (até 3 linhas) |
+| `duo` | Léo triste × Bia feliz: `leo`/`bia` = {fala, rotulo, valor (número), texto} |
+Loop: `"loop": true` no roteiro. Última frase aberta (termina em ":" ou ","), última cena igual à primeira (mesmo `tipo` e `dados`), sem cena `assinatura` (o selo fixo faz a marca). `narracao.py` encurta o silêncio final; o render deixa o fundo periódico e some com a barra de progresso. Depois do render, confira o corte: `python3 pipeline/emenda.py episodios/<ID>`. Modelo: `lotes/loop_X001.py`.
+Rode também `python3 pipeline/leitura.py episodios/<ID>` (tempo de leitura dos textos da tela).
+
 Limites de texto: títulos até ~22 caracteres por linha; `resultado` até ~14; legendas são quebradas automaticamente.
 Para o vídeo passar de 61 s, o roteiro precisa de 195 a 230 palavras faladas em 8 a 10 cenas (a voz pm_alex fala cerca de 3 palavras por segundo; 170 palavras deram 57 s).
 

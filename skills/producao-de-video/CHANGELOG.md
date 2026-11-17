@@ -1,5 +1,12 @@
 # Changelog da skill de produção de vídeo
 
+## 2.1 — 17/11/2026
+- **Mais elementos, mesma linguagem visual** (pedido do fundador: os vídeos estavam repetitivos): cenas novas no `jqe-motion` (`cenas2.tsx`) com personagens originais Léo e Bia (SVG na paleta da marca), setas que se desenham, trajetória com personagem em movimento, tabela com setas, dupla de personagens e gancho com seta. Tipos: `personagem_queda`, `fluxo_setas`, `trajetoria`, `tabela_setas`, `duo`, e `numero_grande` com `dados.de` (gancho com seta). Receita completa em PRODUCAO.md ("Cenas com personagens e loop").
+- **Vídeo em loop** (`"loop": true` no roteiro): a última frase fica aberta e fecha na primeira; a última cena repete o gancho; o fundo, o zoom e o áudio são periódicos; sem barra de progresso; a assinatura vira só o selo fixo. `checa.py` e `narracao.py` entendem o modo.
+- **Tom mais próximo** (pedido do fundador): conversa descontraída, segunda pessoa, personagens que viram exemplo ("pensa comigo", "olha a Bia e o Léo"), foco em investir, juros, bolsa, juntar dinheiro e construir patrimônio de forma prática. A referência de tom são os canais Investidor Sardinha e outros da lista do projeto: inspiração de jeito de explicar, nunca de roteiro, frases ou exemplos copiados.
+- **Checagem de leitura** (`pipeline/leitura.py`, técnica adaptada do `readcheck` da Lemo-Opuscar): todo texto da tela precisa de caracteres ÷ 15 s + 1,5 s.
+- Primeiro vídeo da série: `JQE-X001` (em aprovação do fundador; não agendado).
+
 ## 2.0 — 16/11/2026
 - Nova **lei da skill atualizada** (D25): atualizar antes de produzir; tudo que o fundador mandar é registrado, avaliado, integrado e versionado.
 - Skill unificada para Juro que Explico e Só Sei Que Foi Assim (perfil do segundo ainda por preencher).
