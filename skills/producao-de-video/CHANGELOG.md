@@ -1,5 +1,11 @@
 # Changelog da skill de produção de vídeo
 
+## 2.2 — 17/11/2026
+- Integrada a skill **/watch** (bradautomates/claude-video, MIT, commit 03ceb42, 25/09/2026): permite ao Claude assistir vídeos (quadros + legenda/transcrição). Registrada em `REGISTRO.json`; `atualizar_skills.sh` aprendeu o tipo `git-clone` (clona ou atualiza a última versão e instala o yt-dlp). Testada aqui em arquivo local (6 quadros do JQE-X001). **YouTube é bloqueado na nuvem**: uso em redes sociais só no computador do fundador; limitação documentada, sem contorno.
+- Nova seção "Pesquisa por vídeo" com protocolo de estudo de referências (sem copiar).
+- Skill passa a ser multicanal de verdade: `skills/canais/` (perfil por canal + `_modelo.md` para canais futuros) e `skills/pesquisa/` (notas de estudo).
+- Pesquisa inicial de tom (Investidor Sardinha) e de canais educativos (Só Sei Que Foi Assim) registrada como hipótese, a confirmar assistindo.
+
 ## 2.1 — 17/11/2026
 - **Mais elementos, mesma linguagem visual** (pedido do fundador: os vídeos estavam repetitivos): cenas novas no `jqe-motion` (`cenas2.tsx`) com personagens originais Léo e Bia (SVG na paleta da marca), setas que se desenham, trajetória com personagem em movimento, tabela com setas, dupla de personagens e gancho com seta. Tipos: `personagem_queda`, `fluxo_setas`, `trajetoria`, `tabela_setas`, `duo`, e `numero_grande` com `dados.de` (gancho com seta). Receita completa em PRODUCAO.md ("Cenas com personagens e loop").
 - **Vídeo em loop** (`"loop": true` no roteiro): a última frase fica aberta e fecha na primeira; a última cena repete o gancho; o fundo, o zoom e o áudio são periódicos; sem barra de progresso; a assinatura vira só o selo fixo. `checa.py` e `narracao.py` entendem o modo.

@@ -3,7 +3,7 @@ name: producao-de-video
 description: Skill única de produção de vídeo dos canais do Gabriel (Juro que Explico e Só Sei Que Foi Assim). Use SEMPRE que for produzir, refazer ou planejar vídeos (curtos, longos, cortes), roteiro, narração IA, render, capa, agenda. Começa rodando skills/atualizar_skills.sh para usar a versão mais recente de tudo, inclusive a Lemo-Opuscar.
 ---
 
-# Skill de produção de vídeo (versão 2.1, 17/11/2026)
+# Skill de produção de vídeo (versão 2.2, 17/11/2026)
 
 Histórico de versões em `skills/producao-de-video/CHANGELOG.md`. Fontes externas em `skills/REGISTRO.json`. Tudo o que o fundador manda (skills, links, referências) entra por `skills/REFERENCIAS.md`.
 
@@ -18,8 +18,10 @@ Histórico de versões em `skills/producao-de-video/CHANGELOG.md`. Fontes extern
 ## Canais atendidos
 | Canal | Marca e repositório | Situação |
 |---|---|---|
-| Juro que Explico | `marca/marca.json` (preto, verde-limão, cinza); repo nasrgabrieldd-bit/juro-que-explico; manual em PRODUCAO.md; Buffer org "My organization" | Em produção: 2 vídeos por dia (12:00 e 16:00), lotes de 15 dias |
-| Só Sei Que Foi Assim | Marca própria, ainda sem `marca.json`, repositório ou manual neste ambiente. O Composio tem a conta de YouTube "sosei" desse canal | Usa este mesmo método. Antes do primeiro lote: fechar a Fase 0 do método (nome/@, paleta, voz, nicho), criar `marca.json` próprio e registrar em `REGISTRO`/doc 11 do Project |
+| Juro que Explico | `marca/marca.json` (preto, verde-limão, cinza); repo nasrgabrieldd-bit/juro-que-explico; manual em PRODUCAO.md; Buffer org "My organization" | Em produção: 2 vídeos por dia (12:00 e 16:00), lotes de 15 dias. Perfil em `skills/canais/juro-que-explico.md` |
+| Só Sei Que Foi Assim | Marca própria, ainda sem `marca.json`, repositório ou manual neste ambiente. O Composio tem a conta de YouTube "sosei" desse canal | Usa este mesmo método. Perfil em `skills/canais/so-sei-que-foi-assim.md`. Antes do primeiro lote: fechar a Fase 0 do método (nome/@, paleta, voz, nicho), criar `marca.json` próprio e registrar em `REGISTRO`/doc 11 do Project |
+
+Canal novo: copie `skills/canais/_modelo.md`, preencha e registre em `REGISTRO`/doc 11 do Project. Todo canal herda esta skill inteira.
 
 Regra comum: um repositório e um `marca.json` por canal; nunca misturar paleta, nome ou agenda entre canais; o pipeline lê a marca do arquivo, não do código.
 
@@ -51,5 +53,15 @@ Regras do Motor B para os nossos canais:
 - **Loop** (`"loop": true`): a última frase fica aberta ("...lembra:") e a primeira a fecha; a última cena repete o gancho; sem barra de progresso. Para publicar um vídeo em loop, o Instagram usa o `<ID>.mp4` com `thumbnailOffset` 0 (o quadro 0 já é a capa) e NÃO o `_ig.mp4` com capa anexada, que quebraria o loop.
 - **Conformidade (conferir em todo vídeo):** narração por IA declarada nos textos e `isAiGenerated`; sem música ou imagem de terceiros; sem promessa de ganho nem recomendação; título, capa e primeira frase prometem a mesma coisa; sem pedir curtida/compartilhamento em troca de algo; margem de segurança respeitada; exemplo ilustrativo avisado na tela.
 
+## Pesquisa por vídeo: skill /watch (versão 2.2, 17/11/2026)
+Fonte: `claude-video-watch` em `REGISTRO.json` (repo bradautomates/claude-video, MIT). Baixa o vídeo (yt-dlp), tira quadros com ffmpeg e pega legenda ou transcrição; o Claude então lê quadros e texto e "assiste".
+- **Onde roda:** em arquivo local, funciona em qualquer ambiente. **YouTube/Instagram/TikTok só funcionam no computador do fundador** (Claude Code: `/plugin marketplace add bradautomates/claude-video` e `/plugin install watch@claude-video`). No ambiente de nuvem o acesso ao YouTube é bloqueado pela rede (HTTP 403 no proxy); **não contornar**. Sem acesso, a pesquisa usa busca na web, e o resultado é marcado como "hipótese a confirmar assistindo".
+- **Uso:** `python3 ~/claude-video/skills/watch/scripts/watch.py <URL ou arquivo> --detail balanced` (leia os quadros com Read e o texto impresso). Para estudar ritmo: `--detail efficient`. Para vídeos longos, use trechos com `--start` e `--end`.
+- **Também serve para revisar o nosso próprio vídeo** antes de entregar (quadros do início, meio, emenda do loop, final) além de `margens.py` e `emenda.py`.
+- **O que registrar de cada vídeo estudado** (em `skills/pesquisa/<canal>.md`, em palavras nossas, nunca roteiro copiado): gancho (primeiros 3 s), promessa, estrutura (tempo por bloco), gatilhos de curiosidade, tipo de exemplo, ritmo de corte, tom, chamada final, o que NÃO fazer. Máximo de 3 linhas de citação literal, só para análise.
+- **Juro que Explico:** estudar os vídeos principais do Investidor Sardinha (o fundador reenvia os links se faltar) para o tom próximo, prático e descontraído. **Só Sei Que Foi Assim:** estudar canais educativos de curiosidade (português, história, geografia, matemática, filosofia) para ganchos e gatilhos melhores. Listas e hipóteses em `skills/pesquisa/`.
+- **Motor Gemini (opcional):** envia o vídeo ao Google. Só com vídeo público e chave do próprio fundador, que nunca deve colar a chave no chat.
+- Direitos: assistir para aprender é permitido; copiar roteiro, frases, exemplos, edição característica, imagens ou áudio de terceiros não.
+
 ## Fluxo de um vídeo
-Atualizar skills (lei) → pauta e fontes → roteiro e cálculos → checa.py → narração → checa.py → render (A ou B) → margens/prancha → ffprobe → commit e push → HTTP 200 → agendamento no Buffer (ou agenda_pendente.json) → aviso ao fundador. O restante (IDs de canais, horários, limites do Buffer, longos pelo Composio) está no PRODUCAO.md e na skill `canal-faceless-automatizado`.
+Atualizar skills (lei) → pauta, fontes e (se couber) estudo de referência por /watch → pauta → roteiro e cálculos → checa.py → narração → checa.py → render (A ou B) → margens/prancha → ffprobe → commit e push → HTTP 200 → agendamento no Buffer (ou agenda_pendente.json) → aviso ao fundador. O restante (IDs de canais, horários, limites do Buffer, longos pelo Composio) está no PRODUCAO.md e na skill `canal-faceless-automatizado`.

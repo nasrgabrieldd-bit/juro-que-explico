@@ -27,9 +27,24 @@ reg = json.load(open(f"{raiz}/skills/REGISTRO.json"))
 vers_path = f"{raiz}/skills/versoes.json"
 vers = json.load(open(vers_path)) if os.path.exists(vers_path) else {}
 for f in reg["fontes"]:
+    home = os.path.expanduser(f["pasta_local"])
+    if f["tipo"] == "git-clone":
+        # skill simples: clona ou atualiza para a versão mais recente da branch e instala os pacotes pip registrados
+        if os.path.isdir(f"{home}/.git"):
+            subprocess.run(["git", "-C", home, "fetch", "--quiet", "--depth", "1", "origin", f["branch"]])
+            subprocess.run(["git", "-C", home, "reset", "--quiet", "--hard", "FETCH_HEAD"])
+        else:
+            subprocess.run(["git", "clone", "--quiet", "--depth", "1", "--branch", f["branch"], f["repo"], home])
+        for pk in f.get("pip", []):
+            subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--break-system-packages", pk], capture_output=True)
+        c = subprocess.run(["git", "-C", home, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
+        d = subprocess.run(["git", "-C", home, "log", "-1", "--format=%cs"], capture_output=True, text=True).stdout.strip()
+        antigo = vers.get(f["id"], {}).get("commit")
+        vers[f["id"]] = {"commit": c, "data_do_commit": d, "verificado_em": datetime.date.today().isoformat()}
+        print(f"[{f['id']}] commit {c[:10]} ({d})" + ("  <- NOVO desde a última verificação" if antigo and antigo != c else ""))
+        continue
     if f["tipo"] != "git-plugin":
         continue
-    home = os.path.expanduser(f["pasta_local"])
     env = dict(os.environ, LEMO_OPUSCAR_HOME=home, LEMO_OPUSCAR_REPO=f["repo"])
     # o clone novo precisa do setup.sh: baixa só ele se ainda não existir
     setup = os.path.join(home, f["setup"])

@@ -17,6 +17,25 @@
     "Requer Node 20+, ffmpeg 7+ (o 6.x do Ubuntu reprova no mux) e Python 3.11+.",
     "Estilos marcados com a estrela precisam de gerador de imagens externo."
    ]
+  },
+  {
+   "id": "claude-video-watch",
+   "tipo": "git-clone",
+   "repo": "https://github.com/bradautomates/claude-video.git",
+   "branch": "main",
+   "pasta_local": "~/claude-video",
+   "pip": [
+    "yt-dlp[default]"
+   ],
+   "recebida_em": "2026-11-17",
+   "origem_da_indicacao": "Fundador, link alavancax.com/skill-watch-claude (plugin /watch, autor Bradley Bonanno)",
+   "licenca": "MIT",
+   "como_usar": "python3 ~/claude-video/skills/watch/scripts/watch.py <URL ou arquivo> --detail balanced [--no-whisper]  (depois, ler os quadros com Read e o transcript impresso)",
+   "limites": [
+    "No ambiente de nuvem do Claude o acesso ao YouTube é bloqueado por política da rede (HTTP 403 no proxy): a skill só assiste vídeos locais aqui. Não contornar.",
+    "Para assistir vídeos do YouTube, rodar no computador do fundador (Claude Code desktop): /plugin marketplace add bradautomates/claude-video e /plugin install watch@claude-video.",
+    "Motor Gemini (opcional, chave gratuita do Google AI Studio) envia o vídeo ao Google; só usar com vídeos públicos e se o fundador colocar a chave dele (nunca colar a chave no chat)."
+   ]
   }
  ]
 }

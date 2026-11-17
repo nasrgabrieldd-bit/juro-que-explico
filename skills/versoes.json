@@ -3,5 +3,10 @@
   "commit": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
   "data_do_commit": "2026-11-12",
   "verificado_em": "2026-11-17"
+ },
+ "claude-video-watch": {
+  "commit": "03ceb42f7fa2c4439aca01752118044baabffb8f",
+  "data_do_commit": "2026-09-25",
+  "verificado_em": "2026-11-17"
  }
 }
