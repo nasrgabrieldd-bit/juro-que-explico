@@ -51,6 +51,8 @@ Lote 21–30/11/2026 (skill 2.2, pedido do fundador em 17/11): 20 vídeos S033�
 
 Aviso de lote enviado em 13/11 para o estoque até 20/11 (S019 a S032 agendados ou em agenda_pendente.json; 7 dias).
 
+Aviso de lote enviado em 24/11 para o estoque até 30/11 (S036–S052 agendados ou em agenda_pendente.json; 6 dias). Fila restante com poucas pautas inéditas (itens 1, 3, 8, 14, 15, 16–18, 22, 23): acrescentar ideias novas ao montar o lote.
+
 ## Fila (evergreen, baixo risco) — prioridade: investir, juros compostos e dividendos (pedido do fundador, 09/11)
 
 ### Ciclo 26/11–10/12/2026 (relatório quinzenal de 10/11; justificativas em relatorios/2026-11-10.md)
