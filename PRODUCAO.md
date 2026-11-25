@@ -96,7 +96,7 @@ Se a duração ficar abaixo de 61 s, acrescente conteúdo útil (outro exemplo, 
 Apague os `frame_*.png` antes do commit.
 
 ## Publicação (Buffer, organização "My organization")
-- YouTube `6af240c662b70b94b0d6dc1b`: 12:00 e 16:00, `metadata.youtube` = {title, categoryId "27", privacy "public", isAiGenerated true, madeForKids false}.
+- YouTube `6af240c662b70b94b0d6dc1b`: 12:00 e 16:00, `metadata.youtube` = {type "short" (exigido pelo Buffer desde 25/11; vale para vertical de até 3 min), title, categoryId "27", privacy "public", isAiGenerated true, madeForKids false}.
 - Instagram `6af2406162b70b94b0d6d913`: 12:05 e 16:05, `metadata.instagram` = {type "reel", shouldShareToFeed true, isAiGenerated true}.
 - TikTok `6af240ab62b70b94b0d6db65`: 12:10 e 16:10, `metadata.tiktok` = {isAiGenerated true}, vídeo `<ID>_ig.mp4` com `thumbnailOffset` (capa).
 - `mode` customScheduled, `schedulingType` automatic, `dueAt` com offset -03:00 (America/Sao_Paulo).

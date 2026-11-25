@@ -36,7 +36,7 @@ for arg in sys.argv[1:]:
         if c == "yt":
             t = r["posts"]["youtube"]
             p.update(text=t["texto"], assets=[{"video": {"url": url, "metadata": {"title": t["titulo"]}}}],
-                     metadata={"youtube": {"title": t["titulo"], "categoryId": "27", "privacy": "public",
+                     metadata={"youtube": {"type": "short", "title": t["titulo"], "categoryId": "27", "privacy": "public",
                                            "isAiGenerated": True, "madeForKids": False}})
         elif c == "ig":
             # Instagram: versão com a capa chamativa no último segundo, escolhida como capa da grade
